@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Openknowledge Belgium's website`,
+    // TODO UPDATE FOLLOWING
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`
