@@ -32,8 +32,20 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body,
+#___gatsby,
+#___gatsby > * {
+  height: 100%;
+}
+
 body {
   font-size: 1.6rem;
   color: var(--primary-color);
   font-family: var(--fonts-copy);
+}
+
+#app {
+  min-height: 100%;
+  margin: 0 10%;
 }
