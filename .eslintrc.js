@@ -7,13 +7,7 @@ module.exports = {
     node: true
   },
   rules: {
-    'prettier/prettier': [
-      'error',
-      ,
-      {
-        endOfLine: 'auto'
-      }
-    ],
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prop-types': 0,
     'react/no-danger': 0,
