@@ -47,5 +47,86 @@ body {
 
 #app {
   min-height: 100%;
-  margin: 0 10%;
+  margin: 0 5%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand > div {
+  margin-top: 2rem;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.top-nav .nav-items > li {
+  margin-left: 4em;
+}
+
+.footer-nav > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Links */
+.unstyled-links a,
+a.unstyled-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.unstyled-links a:not(.brand) {
+  display: inline-block;
+  padding: 0.5em 0;
+  position: relative;
+}
+
+.unstyled-links a:hover:not(.brand),
+a.unstyled-link:hover,
+a.active {
+  color: var(--color-secondary);
+}
+
+.unstyled-links a:hover:not(.brand)::after,
+a.active::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -0.3rem;
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--color-secondary);
+  transition: all 0.3s;
+}
+
+/* Utils */
+.work-sans {
+  font-family: var(--fonts-title);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bold6 {
+  font-weight: 600;
+}
+
+.lighter {
+  font-weight: 200;
 }

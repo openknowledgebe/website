@@ -1,13 +1,14 @@
 import React from 'react';
+import Header from './Header';
+import NavItems from './NavItems';
 
 const Layout = ({ children }) => {
   return (
     <div id="app">
+      <Header />
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <NavItems className="footer-nav unstyled-links work-sans" />
       </footer>
     </div>
   );
