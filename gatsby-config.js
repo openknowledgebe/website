@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Openknowledge Belgium's website`,
+    title: `Open Knowledge Belgium`,
     // TODO UPDATE FOLLOWING
     author: {
       name: `Kyle Mathews`,
@@ -54,7 +54,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
       }
     },
     `gatsby-plugin-feed`,

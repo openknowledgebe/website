@@ -9,12 +9,12 @@ const Header = () => {
     <header className="unstyled-links work-sans navbar">
       <Link to="/" className="brand">
         <img src={logo} alt="Open Knowledge Belgium" />
-        <div>
-          <span className="bold">Open Knowledge</span>
-          <br /> Belgium
-        </div>
+        <h1>
+          Open&nbsp;Knowledge
+          <br /> <span className="regular">Belgium</span>
+        </h1>
       </Link>
-      <NavItems showActiveStyle className="top-nav" />
+      <NavItems isTop className="top-nav" />
     </header>
   );
 };
