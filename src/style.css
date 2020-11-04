@@ -6,6 +6,11 @@
   --nav-height: 9.8rem;
 }
 
+/* Reset */
+address {
+  font-style: normal;
+}
+
 /* Fonts */
 
 @font-face {
@@ -86,6 +91,20 @@ footer {
   justify-self: flex-end;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-nav .nav-items {
+  flex-direction: column;
+}
+
+footer .socials {
+  margin-top: 1.6rem;
+}
+
 /* Titles */
 h1,
 h2,
@@ -100,6 +119,7 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+  margin: 1rem 0;
 }
 
 /* Navbar */
@@ -128,8 +148,54 @@ h3 {
   display: flex;
 }
 
-.top-nav .nav-items > li {
-  margin-left: 4em;
+.hamburger {
+  background: transparent;
+  border: none;
+  display: block;
+  height: 4rem;
+  width: 3rem;
+  z-index: 1000;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #301948;
+}
+
+.hamburger > span::before,
+.hamburger > span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.hamburger > span::before {
+  top: -0.7rem;
+}
+
+.hamburger > span::after {
+  top: 0.7rem;
+}
+
+.hamburger.open > span {
+  background-color: transparent;
+}
+
+.hamburger.open > span::after,
+.hamburger.open > span::before {
+  top: 0;
+}
+.hamburger.open > span::after {
+  transform: rotate(45deg);
+}
+
+.hamburger.open > span::before {
+  transform: rotate(-45deg);
 }
 
 .footer-nav > ul {
@@ -191,8 +257,13 @@ a.active {
   font-weight: 200;
 }
 
-.hamburger {
-  display: none;
+.flex {
+  display: flex;
+}
+
+/* big right margin */
+.mg-r-b {
+  margin-right: 2.5rem;
 }
 
 /* Media queries */
@@ -214,54 +285,67 @@ a.active {
     align-items: center;
     margin-top: var(--nav-height);
   }
+}
+
+@media (min-width: 699px) {
+  /* Footer */
+  footer > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .contact,
+  footer .socials {
+    width: 45%;
+  }
+
+  footer .footer-nav .nav-items {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+}
+
+@media (min-width: 1200px) {
+  /* Navbar */
+  .top-nav {
+    display: block;
+  }
 
   .hamburger {
-    background: transparent;
-    border: none;
-    display: block;
-    height: 4rem;
-    width: 3rem;
-    z-index: 1000;
+    display: none;
   }
 
-  .hamburger > span,
-  .hamburger > span::before,
-  .hamburger > span::after {
+  .top-nav .nav-items > li {
+    margin-left: 4em;
+  }
+
+  /* Footer */
+  footer > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .footer-nav .nav-items {
+    margin-bottom: 0;
+  }
+
+  footer .footer-nav .nav-items > li {
+    margin-right: 1rem;
+  }
+
+  footer .footer-nav,
+  footer .license {
+    width: 45%;
+  }
+
+  footer .footer-nav {
+    align-self: flex-end;
+  }
+
+  footer .license {
     position: relative;
-    display: block;
-    width: 100%;
-    height: 0.2rem;
-    background-color: #301948;
-  }
-
-  .hamburger > span::before,
-  .hamburger > span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-  }
-
-  .hamburger > span::before {
-    top: -0.7rem;
-  }
-
-  .hamburger > span::after {
-    top: 0.7rem;
-  }
-
-  .hamburger.open > span {
-    background-color: transparent;
-  }
-
-  .hamburger.open > span::after,
-  .hamburger.open > span::before {
-    top: 0;
-  }
-  .hamburger.open > span::after {
-    transform: rotate(45deg);
-  }
-
-  .hamburger.open > span::before {
-    transform: rotate(-45deg);
+    margin-top: -3rem;
   }
 }

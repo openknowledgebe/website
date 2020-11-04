@@ -9,7 +9,7 @@ const links = [
   { to: '/stories', name: 'Our stories' }
 ];
 
-const NavItems = ({ isTop, className }) => {
+const NavItems = ({ isTop = false, className }) => {
   const [isOpen, setOpen] = useState();
 
   const toggle = () => {
@@ -27,7 +27,7 @@ const NavItems = ({ isTop, className }) => {
         <ul className="nav-items">
           {links.map(link => (
             <li key={link.to}>
-              <Link to={link.to} activeClassName={isTop && 'active underlined'}>
+              <Link to={link.to} activeClassName={isTop ? 'active underlined' : ''}>
                 <span>{link.name}</span>
               </Link>
             </li>
