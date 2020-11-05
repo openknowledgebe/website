@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
+import Newsletter from '../components/Newsletter';
 
 const BlogIndex = () => {
   return (
@@ -24,6 +25,7 @@ const BlogIndex = () => {
           <img src="https://via.placeholder.com/516x336" alt="placeholder" />
         </div>
       </section>
+      <Newsletter />
     </Layout>
   );
 };
