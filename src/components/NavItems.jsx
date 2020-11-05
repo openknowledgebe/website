@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 const links = [
@@ -9,21 +9,19 @@ const links = [
   { to: '/stories', name: 'Our stories' }
 ];
 
-const NavItems = ({ isTop = false, className }) => {
-  const [isOpen, setOpen] = useState();
-
-  const toggle = () => {
-    setOpen(!isOpen);
-  };
-
+const NavItems = ({ isTop = false, className, isOpen, toggle }) => {
   return (
     <>
       {isTop && (
-        <button className={`hamburger ${isOpen ? 'open' : ''}`} type="button" onClick={toggle}>
+        <button
+          className={`hamburger ${isOpen ? 'open' : ''}`}
+          type="button"
+          onClick={() => toggle()}
+        >
           <span />
         </button>
       )}
-      <nav className={`bold6 ${className}`} style={{ display: isOpen === true ? 'block' : '' }}>
+      <nav className={`bold6 ${className}`} style={{ display: isOpen ? 'block' : '' }}>
         <ul className="nav-items">
           {links.map(link => (
             <li key={link.to}>
