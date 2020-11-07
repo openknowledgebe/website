@@ -4,7 +4,6 @@ const Newsletter = () => {
   const input = useRef();
   const submit = e => {
     e.preventDefault();
-    // console.log(input.current.value);
   };
   return (
     <section className="newsletter">
