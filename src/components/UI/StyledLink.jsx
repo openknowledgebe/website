@@ -4,6 +4,8 @@ import styled, { css } from 'styled-components';
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
+  font-family: var(--titles-font);
+  font-weight: 600;
 
   &.inline,
   &.hoverable,

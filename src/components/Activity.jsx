@@ -27,7 +27,7 @@ const Activity = ({ name, logo, color, tags }) => {
         <img src={logo} alt={name} />
       </div>
       <div className="activity-link-container">
-        <StyledLink to="/" className="bold6 work-sans activity-link">
+        <StyledLink to="/" className="activity-link">
           <span>{name}</span>
           <img src={arrow} alt="" />
         </StyledLink>

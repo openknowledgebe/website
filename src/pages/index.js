@@ -53,7 +53,7 @@ const Home = () => {
             viverra facilisis sed nec erat. Donec nec sem sodales, cursus risus non, aliquam massa.
             Proin mauris sapien, sollicitudin vitae imperdiet et, rutrum sit amet libero.
           </p>
-          <StyledLink to="/teams" className="bold6 underlined work-sans md inline-block">
+          <StyledLink to="/teams" className="underlined md inline-block">
             <span>Get to know as</span>
           </StyledLink>
         </div>
@@ -61,7 +61,7 @@ const Home = () => {
           <img src="https://via.placeholder.com/516x336" alt="placeholder" />
         </div>
         <div className="sm-only">
-          <StyledLink to="/teams" className="bold6 underlined work-sans" callToAction>
+          <StyledLink to="/teams" className="underlined" callToAction>
             <span>Get to know as</span>
           </StyledLink>
         </div>
@@ -73,7 +73,7 @@ const Home = () => {
             <br />
             activities
           </h2>
-          <StyledLink to="/activities" className="bold6 underlined work-sans md inline-block">
+          <StyledLink to="/activities" className="underlined md inline-block">
             <span>Discover all activities</span>
           </StyledLink>
         </div>
@@ -82,11 +82,7 @@ const Home = () => {
             <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
           ))}
         </div>
-        <StyledLink
-          to="/activities"
-          className="bold6 underlined work-sans sm-only inline-block"
-          callToAction
-        >
+        <StyledLink to="/activities" className="underlined sm-only inline-block" callToAction>
           <span>Discover all activities</span>
         </StyledLink>
       </section>
@@ -105,7 +101,7 @@ const Home = () => {
           <div>
             {pinnedStories.map(({ href, title, date }) => (
               <div key={title} className="pinned-story">
-                <StyledLink href={href} className="pinned-story-link bold6 work-sans">
+                <StyledLink href={href} className="pinned-story-link">
                   {title}
                 </StyledLink>
                 <div className="pinned story-date">{date}</div>
@@ -113,7 +109,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <StyledLink to="/stories" className="bold6 underlined work-sans sm-only" callToAction>
+        <StyledLink to="/stories" className="underlined sm-only" callToAction>
           <span>Discover all stories</span>
         </StyledLink>
       </section>
