@@ -40,7 +40,7 @@ const pinnedActivities = [
   }
 ];
 
-const BlogIndex = () => {
+const Home = () => {
   return (
     <Layout>
       <SEO title="Home" />
@@ -52,12 +52,17 @@ const BlogIndex = () => {
             viverra facilisis sed nec erat. Donec nec sem sodales, cursus risus non, aliquam massa.
             Proin mauris sapien, sollicitudin vitae imperdiet et, rutrum sit amet libero.
           </p>
-          <Link to="/teams" className="unstyled-link bold6 underlined work-sans">
+          <Link to="/teams" className="unstyled-link bold6 underlined work-sans md inline-block">
             <span>Get to know as</span>
           </Link>
         </div>
         <div className="hero-image">
           <img src="https://via.placeholder.com/516x336" alt="placeholder" />
+        </div>
+        <div className="sm-only">
+          <Link to="/teams" className="unstyled-link bold6 underlined work-sans call-to-action">
+            <span>Get to know as</span>
+          </Link>
         </div>
       </section>
       <section className="pinned-activities" data-state="reversed">
@@ -79,6 +84,12 @@ const BlogIndex = () => {
             <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
           ))}
         </div>
+        <Link
+          to="/stories"
+          className="unstyled-link bold6 underlined work-sans sm-only inline-block call-to-action"
+        >
+          <span>Discover all activities</span>
+        </Link>
       </section>
       <section className="pinned-stories">
         <div className="heading">
@@ -94,9 +105,7 @@ const BlogIndex = () => {
           </Link>
         </div>
         <div className="content">
-          <div className="md block">
-            <img src="https://via.placeholder.com/516x336" alt="placeholder" />
-          </div>
+          <img src="https://via.placeholder.com/516x336" alt="placeholder" className="md block" />
           <div>
             {pinnedStories.map(({ href, title, date }) => (
               <div key={title} className="pinned-story">
@@ -120,7 +129,7 @@ const BlogIndex = () => {
   );
 };
 
-export default BlogIndex;
+export default Home;
 
 export const pageQuery = graphql`
   query {

@@ -26,10 +26,12 @@ const Activity = ({ name, logo, color, tags }) => {
       <div className="logo">
         <img src={logo} alt={name} />
       </div>
-      <Link to="/" className="unstyled-link bold6 work-sans activity-link">
-        <span>{name}</span>
-        <img src={arrow} alt="" />
-      </Link>
+      <div className="activity-link-container">
+        <Link to="/" className="unstyled-link bold6 work-sans activity-link">
+          <span>{name}</span>
+          <img src={arrow} alt="" />
+        </Link>
+      </div>
     </div>
   );
 };
