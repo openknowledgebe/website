@@ -2,6 +2,11 @@ import React from 'react';
 import Header from './Header';
 import NavItems from './NavItems';
 
+// normalize CSS across browsers
+import '../normalize.css';
+// custom CSS styles
+import '../style.css';
+
 import { facebookIcon, githubIcon, twitterIcon } from '../images/icons';
 
 const Layout = ({ children }) => {
