@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     --page-lr-margin: 5%; /* page left and right margin */
     --breakpoint-medium: 699px;
     --breakpoint-interm: 1000px; 
-    --breakpoint-large: 1200px;
+    --breakpoint-large: 1200p
   }
 
   /* Reset */

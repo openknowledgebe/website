@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Newsletter from '../components/Newsletter';
 import Activity from '../components/Activity';
+import StyledLink from '../components/UI/StyledLink';
 
 const pinnedStories = [
   {
@@ -52,17 +53,17 @@ const Home = () => {
             viverra facilisis sed nec erat. Donec nec sem sodales, cursus risus non, aliquam massa.
             Proin mauris sapien, sollicitudin vitae imperdiet et, rutrum sit amet libero.
           </p>
-          <Link to="/teams" className="unstyled-link bold6 underlined work-sans md inline-block">
+          <StyledLink to="/teams" className="bold6 underlined work-sans md inline-block">
             <span>Get to know as</span>
-          </Link>
+          </StyledLink>
         </div>
         <div className="hero-image">
           <img src="https://via.placeholder.com/516x336" alt="placeholder" />
         </div>
         <div className="sm-only">
-          <Link to="/teams" className="unstyled-link bold6 underlined work-sans call-to-action">
+          <StyledLink to="/teams" className="bold6 underlined work-sans" callToAction>
             <span>Get to know as</span>
-          </Link>
+          </StyledLink>
         </div>
       </section>
       <section className="pinned-activities" data-state="reversed">
@@ -72,24 +73,22 @@ const Home = () => {
             <br />
             activities
           </h2>
-          <Link
-            to="/stories"
-            className="unstyled-link bold6 underlined work-sans md inline-block call-to-action"
-          >
+          <StyledLink to="/activities" className="bold6 underlined work-sans md inline-block">
             <span>Discover all activities</span>
-          </Link>
+          </StyledLink>
         </div>
         <div className="content">
           {pinnedActivities.map(({ name, logo, color, tags }) => (
             <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
           ))}
         </div>
-        <Link
-          to="/stories"
-          className="unstyled-link bold6 underlined work-sans sm-only inline-block call-to-action"
+        <StyledLink
+          to="/activities"
+          className="bold6 underlined work-sans sm-only inline-block"
+          callToAction
         >
           <span>Discover all activities</span>
-        </Link>
+        </StyledLink>
       </section>
       <section className="pinned-stories">
         <div className="heading">
@@ -97,32 +96,26 @@ const Home = () => {
             Our
             <br /> stories
           </h2>
-          <Link
-            to="/stories"
-            className="unstyled-link bold6 underlined work-sans md inline-block call-to-action"
-          >
+          <StyledLink to="/stories" className="bold6 underlined work-sans md inline-block">
             <span>Discover all stories</span>
-          </Link>
+          </StyledLink>
         </div>
         <div className="content">
           <img src="https://via.placeholder.com/516x336" alt="placeholder" className="md block" />
           <div>
             {pinnedStories.map(({ href, title, date }) => (
               <div key={title} className="pinned-story">
-                <a href={href} className="pinned-story-link unstyled-link bold6 work-sans">
+                <StyledLink href={href} className="pinned-story-link bold6 work-sans">
                   {title}
-                </a>
+                </StyledLink>
                 <div className="pinned story-date">{date}</div>
               </div>
             ))}
           </div>
         </div>
-        <Link
-          to="/stories"
-          className="unstyled-link bold6 underlined work-sans sm-only call-to-action"
-        >
+        <StyledLink to="/stories" className="bold6 underlined work-sans sm-only" callToAction>
           <span>Discover all stories</span>
-        </Link>
+        </StyledLink>
       </section>
       <Newsletter />
     </Layout>

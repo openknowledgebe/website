@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import StyledLink from './UI/StyledLink';
 
 const links = [
   { to: '/', name: 'Open Knowledge' },
@@ -25,9 +25,13 @@ const NavItems = ({ isTop = false, className, isOpen, toggle }) => {
         <ul className="nav-items">
           {links.map(link => (
             <li key={link.to}>
-              <Link to={link.to} activeClassName={isTop ? 'active underlined' : ''}>
+              <StyledLink
+                to={link.to}
+                activeClassName={isTop ? 'active underlined' : ''}
+                className="inline hoverable"
+              >
                 <span>{link.name}</span>
-              </Link>
+              </StyledLink>
             </li>
           ))}
         </ul>

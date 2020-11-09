@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
 import { arrow } from '../images/icons';
+import StyledLink from './UI/StyledLink';
 
 const Activity = ({ name, logo, color, tags }) => {
   const [hovering, setHovering] = useState(false);
@@ -27,10 +27,10 @@ const Activity = ({ name, logo, color, tags }) => {
         <img src={logo} alt={name} />
       </div>
       <div className="activity-link-container">
-        <Link to="/" className="unstyled-link bold6 work-sans activity-link">
+        <StyledLink to="/" className="bold6 work-sans activity-link">
           <span>{name}</span>
           <img src={arrow} alt="" />
-        </Link>
+        </StyledLink>
       </div>
     </div>
   );

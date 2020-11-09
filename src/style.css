@@ -92,41 +92,6 @@ h3 {
   margin: 1rem 0;
 }
 
-/* Links */
-.unstyled-links a,
-a.unstyled-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-a.unstyled-link,
-.unstyled-links a:not(.brand) {
-  display: inline-block;
-  position: relative;
-}
-
-.unstyled-links a:hover:not(.brand),
-a.unstyled-link:hover,
-a.active {
-  color: var(--color-secondary);
-}
-
-.unstyled-links a:hover:not(.brand)::after,
-.underlined::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: -0.2rem;
-  width: 100%;
-  height: 0.2rem;
-  background-color: var(--color-secondary);
-  transition: all 0.3s;
-}
-
-.call-to-action {
-  font-size: 2rem;
-}
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -458,11 +423,6 @@ input {
 
   .newsletter > * {
     width: 45%;
-  }
-
-  /* Links */
-  .call-to-action {
-    font-size: inherit;
   }
 
   .sm-only {
