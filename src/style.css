@@ -120,19 +120,6 @@ section .heading {
   transform: rotate(-45deg);
 }
 
-/* Newsletter */
-.newsletter {
-  color: var(--bg-light);
-  background-color: var(--color-primary);
-  margin-bottom: calc(6rem + 1.5%);
-  display: flex;
-  flex-direction: column;
-}
-
-.newsletter > form > div {
-  max-width: 381px;
-}
-
 /* Activities */
 .pinned-activities .content {
   display: flex;
@@ -303,17 +290,6 @@ section .heading {
 }
 
 @media (min-width: 699px) {
-  /* Newsletter */
-  .newsletter {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .newsletter > * {
-    width: 45%;
-  }
-
   .sm-only {
     display: none !important;
   }

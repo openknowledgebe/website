@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import NavItems from './NavItems';
 import { facebookIcon, githubIcon, twitterIcon } from '../images/icons';
+import { breakpoints } from '../styles/globals';
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -22,7 +23,7 @@ const StyledFooter = styled.footer`
     flex-wrap: wrap;
   }
 
-  @media (min-width: 699px) {
+  @media (min-width: ${breakpoints.medium}px) {
     & > div:first-of-type {
       display: flex;
       justify-content: space-between;
@@ -42,7 +43,7 @@ const StyledFooter = styled.footer`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: ${breakpoints.large}px) {
     & > div {
       display: flex;
       justify-content: space-between;
