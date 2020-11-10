@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
+import { underline } from '../../styles/fragments';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -23,14 +24,9 @@ const StyledLink = styled(Link)`
   &.hoverable:hover::after,
   &.hoverable:focus::after,
   &.underlined::after {
-    position: absolute;
-    content: '';
-    left: 0;
+    ${underline}
     bottom: -0.2rem;
     width: 100%;
-    height: 0.2rem;
-    background-color: var(--color-secondary);
-    transition: all 0.3s;
   }
 
   ${({ callToAction }) =>

@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Newsletter from '../components/Newsletter';
 import Activity from '../components/Activity';
-import StyledLink from '../components/UI/StyledLink';
+import { Img, StyledLink, Title } from '../components/UI';
 
 const pinnedStories = [
   {
@@ -58,7 +58,7 @@ const Home = () => {
           </StyledLink>
         </div>
         <div className="hero-image">
-          <img src="https://via.placeholder.com/516x336" alt="placeholder" />
+          <Img src="https://via.placeholder.com/516x336" alt="placeholder" />
         </div>
         <div className="sm-only">
           <StyledLink to="/teams" className="underlined" callToAction>
@@ -68,11 +68,11 @@ const Home = () => {
       </section>
       <section className="pinned-activities" data-state="reversed">
         <div className="heading">
-          <h2 className="title">
+          <Title>
             Our
             <br />
             activities
-          </h2>
+          </Title>
           <StyledLink to="/activities" className="underlined md inline-block">
             <span>Discover all activities</span>
           </StyledLink>
@@ -88,16 +88,21 @@ const Home = () => {
       </section>
       <section className="pinned-stories">
         <div className="heading">
-          <h2 className="title">
+          <Title>
             Our
             <br /> stories
-          </h2>
+          </Title>
           <StyledLink to="/stories" className="bold6 underlined work-sans md inline-block">
             <span>Discover all stories</span>
           </StyledLink>
         </div>
         <div className="content">
-          <img src="https://via.placeholder.com/516x336" alt="placeholder" className="md block" />
+          <Img
+            src="https://via.placeholder.com/516x336"
+            alt="placeholder"
+            className="md block"
+            css="height:100%; object-fit:cover;"
+          />
           <div>
             {pinnedStories.map(({ href, title, date }) => (
               <div key={title} className="pinned-story">

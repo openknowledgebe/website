@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { arrow } from '../images/icons';
-import StyledLink from './UI/StyledLink';
+import { Img, StyledLink, Tag } from './UI';
 
 const Activity = ({ name, logo, color, tags }) => {
   const [hovering, setHovering] = useState(false);
@@ -18,18 +18,18 @@ const Activity = ({ name, logo, color, tags }) => {
     >
       <div className={`tags ${hovering ? 'show' : 'visually-hidden'}`}>
         {tags.map(tag => (
-          <div key={tag} className="tag">
+          <Tag key={tag} css="margin: 1rem;">
             {tag}
-          </div>
+          </Tag>
         ))}
       </div>
       <div className="logo">
-        <img src={logo} alt={name} />
+        <Img src={logo} alt={name} />
       </div>
       <div className="activity-link-container">
         <StyledLink to="/" className="activity-link">
           <span>{name}</span>
-          <img src={arrow} alt="" />
+          <Img src={arrow} alt="" />
         </StyledLink>
       </div>
     </div>

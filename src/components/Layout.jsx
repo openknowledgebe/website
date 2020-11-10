@@ -3,18 +3,18 @@ import { createGlobalStyle } from 'styled-components';
 
 import Header from './Header';
 import NavItems from './NavItems';
+import { facebookIcon, githubIcon, twitterIcon } from '../images/icons';
 
 // normalize CSS across browsers
-import '../normalize.css';
+import '../styles/normalize.css';
 // custom CSS styles
 import '../style.css';
-
-import { facebookIcon, githubIcon, twitterIcon } from '../images/icons';
 
 const GlobalStyle = createGlobalStyle`
   :root {
     --color-primary: #301948;
     --color-secondary: #641bff;
+    --color-secondary-opacity: #641bffE6;
     --logo-box-hovered: rgba(100, 27, 255, 0.8);
     --fonts-copy: 'Chivo', sans-serif;
     --fonts-title: 'Work Sans', sans-serif;
@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     --page-lr-margin: 5%; /* page left and right margin */
     --breakpoint-medium: 699px;
     --breakpoint-interm: 1000px; 
-    --breakpoint-large: 1200p
+    --breakpoint-large: 1200px;
   }
 
   /* Reset */
@@ -78,6 +78,23 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+  }
+
+  /* Titles */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--fonts-title);
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
   }
 `;
 

@@ -1,5 +1,4 @@
 /* Sections */
-
 section,
 header,
 footer {
@@ -35,30 +34,11 @@ footer {
   width: 100%;
 }
 
-.hero-image > img {
-  width: 100%;
-}
-
 section .heading {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 3rem;
-}
-
-section .title {
-  position: relative;
-  margin: 0;
-}
-
-section .title::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: -0.1rem;
-  width: 5rem;
-  height: 0.2rem;
-  background-color: var(--color-secondary);
 }
 
 /* Footer */
@@ -73,23 +53,6 @@ footer .footer-nav .nav-items {
 
 footer .socials {
   margin-top: 1.6rem;
-}
-
-/* Titles */
-h1,
-h2,
-h3 {
-  font-family: var(--fonts-title);
-}
-
-h1,
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-  margin: 1rem 0;
 }
 
 /* Navbar */
@@ -211,11 +174,6 @@ h3 {
   max-height: 100%;
   overflow: hidden;
 }
-.activity .logo > img {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-}
 
 .activity-link-container {
   position: absolute;
@@ -234,11 +192,6 @@ h3 {
   padding: 2.5rem 1rem 1rem;
 }
 
-.activity-link-container .activity-link > img {
-  display: block;
-  max-width: 100%;
-}
-
 .activity .tags.show {
   position: absolute;
   top: 0;
@@ -252,10 +205,6 @@ h3 {
   justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-}
-
-.activity .tags.show .tag {
-  margin: 1rem;
 }
 
 /* Stories */
@@ -285,27 +234,6 @@ h3 {
 /* Controls */
 .input-group {
   display: flex;
-}
-
-input {
-  padding: 1rem;
-  border: none;
-  width: 100%;
-}
-
-.button {
-  background-color: var(--color-secondary);
-  border: none;
-  color: var(--bg-light);
-  padding: 1rem;
-}
-
-/* Tag */
-.tag {
-  padding: 0.3rem 1rem;
-  color: var(--color-secondary);
-  background-color: var(--bg-light);
-  display: inline-block;
 }
 
 /* Utils */
@@ -485,12 +413,6 @@ input {
 
   .pinned-stories .content > div {
     width: 100%;
-  }
-
-  .pinned-stories .content > img {
-    display: block;
-    height: 100%;
-    object-fit: cover;
   }
 }
 
