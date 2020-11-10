@@ -29,8 +29,8 @@ const StyledLink = styled(Link)`
     width: 100%;
   }
 
-  ${({ callToAction }) =>
-    callToAction &&
+  ${({ $callToAction }) =>
+    $callToAction &&
     css`
       font-size: 2rem;
 

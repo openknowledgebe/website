@@ -61,7 +61,7 @@ const Home = () => {
           <Img src="https://via.placeholder.com/516x336" alt="placeholder" />
         </div>
         <div className="sm-only">
-          <StyledLink to="/teams" className="underlined" callToAction>
+          <StyledLink to="/teams" className="underlined" $callToAction>
             <span>Get to know as</span>
           </StyledLink>
         </div>
@@ -82,7 +82,7 @@ const Home = () => {
             <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
           ))}
         </div>
-        <StyledLink to="/activities" className="underlined sm-only inline-block" callToAction>
+        <StyledLink to="/activities" className="underlined sm-only inline-block" $callToAction>
           <span>Discover all activities</span>
         </StyledLink>
       </section>
@@ -106,7 +106,7 @@ const Home = () => {
           <div>
             {pinnedStories.map(({ href, title, date }) => (
               <div key={title} className="pinned-story">
-                <StyledLink href={href} className="pinned-story-link">
+                <StyledLink to={href} className="pinned-story-link">
                   {title}
                 </StyledLink>
                 <div className="pinned story-date">{date}</div>
@@ -114,7 +114,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <StyledLink to="/stories" className="underlined sm-only" callToAction>
+        <StyledLink to="/stories" className="underlined sm-only" $callToAction>
           <span>Discover all stories</span>
         </StyledLink>
       </section>
