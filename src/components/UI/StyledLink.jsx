@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
-import { underline } from '../../styles/fragments';
+import { underline } from '../../styles/globals';
 
 const StyledLink = styled(Link)`
   text-decoration: none;

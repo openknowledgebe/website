@@ -4,6 +4,10 @@ import styled from 'styled-components';
 import { Button, Input } from './UI';
 import { breakpoints } from '../styles/globals';
 
+const InputGroup = styled.div`
+  display: flex;
+`;
+
 const StyledNewsletter = styled.section`
   & {
     color: var(--bg-light);
@@ -42,7 +46,7 @@ const Newsletter = () => {
         <br /> <span className="regular">Subscribe to our mailing list!</span>
       </h2>
       <form onSubmit={submit}>
-        <div className="input-group">
+        <InputGroup>
           <Input
             placeholder="name@email.com"
             type="email"
@@ -52,7 +56,7 @@ const Newsletter = () => {
           <Button type="submit" className="button">
             signup&nbsp;&#x276F;
           </Button>
-        </div>
+        </InputGroup>
       </form>
     </StyledNewsletter>
   );

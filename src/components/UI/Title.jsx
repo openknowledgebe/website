@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { underline } from '../../styles/fragments';
+import { underline } from '../../styles/globals';
 
 const Title = styled.h2`
   position: relative;

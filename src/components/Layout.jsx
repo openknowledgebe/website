@@ -6,7 +6,6 @@ import Footer from './Footer';
 // normalize CSS across browsers
 import '../styles/normalize.css';
 // custom CSS styles
-import '../style.css';
 import { GlobalStyle } from '../styles/globals';
 
 const Layout = ({ children }) => {

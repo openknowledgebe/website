@@ -1,11 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Newsletter from '../components/Newsletter';
 import Activity from '../components/Activity';
 import { Img, StyledLink, Title } from '../components/UI';
+import { breakpoints } from '../styles/globals';
 
 const pinnedStories = [
   {
@@ -41,11 +43,131 @@ const pinnedActivities = [
   }
 ];
 
+const PinnedActivites = styled.section`
+  & .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  & > ${StyledLink} {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    & .content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: -12px 0 0 -12px;
+      width: calc(100% + 12px);
+    }
+  }
+`;
+
+const PinnedStories = styled.section`
+  @media (min-width: ${breakpoints.medium}px) {
+    & .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & .content > * {
+      max-width: 45%;
+    }
+
+    &.content > * {
+      max-width: 45%;
+    }
+
+    & .content > div {
+      width: 100%;
+    }
+  }
+`;
+
+const PinnedStory = styled.div`
+  padding: 2rem 0;
+
+  &:not(:first-of-type) {
+    border-top: 0.5px solid #a7a5a1;
+  }
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  & .pinned-story-link {
+    display: block;
+  }
+
+  & .story-date {
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+  }
+`;
+
+const Hero = styled.section`
+  display: grid;
+  gap: 2rem;
+
+  & .hero-copy > h1 {
+    margin: 0;
+  }
+
+  & .hero-copy > p {
+    display: none;
+  }
+
+  & .hero-image {
+    justify-self: flex-end;
+    width: 100%;
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    grid-template-columns: 0.6fr 1fr;
+    column-gap: 1rem;
+
+    & .hero-image {
+      width: auto;
+    }
+
+    & .hero-copy {
+      align-self: center;
+    }
+
+    & .hero-copy > h1 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (min-width: ${breakpoints.intermidiate}px) {
+    & .hero-copy {
+      align-self: flex-end;
+    }
+
+    & .hero-copy > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    & .hero-copy > p {
+      display: block;
+    }
+  }
+`;
+
+const Heading = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+`;
+
 const Home = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="hero">
+      <Hero>
         <div className="hero-copy">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
           <p>
@@ -53,71 +175,74 @@ const Home = () => {
             viverra facilisis sed nec erat. Donec nec sem sodales, cursus risus non, aliquam massa.
             Proin mauris sapien, sollicitudin vitae imperdiet et, rutrum sit amet libero.
           </p>
-          <StyledLink to="/teams" className="underlined md inline-block">
+          <StyledLink to="/teams" className="underlined d-inline-block-md d-none-sm">
             <span>Get to know as</span>
           </StyledLink>
         </div>
         <div className="hero-image">
           <Img src="https://via.placeholder.com/516x336" alt="placeholder" />
         </div>
-        <div className="sm-only">
+        <div className="d-none-md">
           <StyledLink to="/teams" className="underlined" $callToAction>
             <span>Get to know as</span>
           </StyledLink>
         </div>
-      </section>
-      <section className="pinned-activities" data-state="reversed">
-        <div className="heading">
+      </Hero>
+      <PinnedActivites data-state="reversed">
+        <Heading>
           <Title>
             Our
             <br />
             activities
           </Title>
-          <StyledLink to="/activities" className="underlined md inline-block">
+          <StyledLink to="/activities" className="underlined d-inline-block-md d-none-sm">
             <span>Discover all activities</span>
           </StyledLink>
-        </div>
+        </Heading>
         <div className="content">
           {pinnedActivities.map(({ name, logo, color, tags }) => (
             <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
           ))}
         </div>
-        <StyledLink to="/activities" className="underlined sm-only inline-block" $callToAction>
+        <StyledLink to="/activities" className="underlined d-none-md" $callToAction>
           <span>Discover all activities</span>
         </StyledLink>
-      </section>
-      <section className="pinned-stories">
-        <div className="heading">
+      </PinnedActivites>
+      <PinnedStories>
+        <Heading>
           <Title>
             Our
             <br /> stories
           </Title>
-          <StyledLink to="/stories" className="bold6 underlined work-sans md inline-block">
+          <StyledLink
+            to="/stories"
+            className="bold6 underlined work-sans d-inline-block-md d-none-sm"
+          >
             <span>Discover all stories</span>
           </StyledLink>
-        </div>
+        </Heading>
         <div className="content">
           <Img
             src="https://via.placeholder.com/516x336"
             alt="placeholder"
-            className="md block"
+            className="d-block-md d-none-sm"
             css="height:100%; object-fit:cover;"
           />
           <div>
             {pinnedStories.map(({ href, title, date }) => (
-              <div key={title} className="pinned-story">
+              <PinnedStory key={title} className="pinned-story">
                 <StyledLink to={href} className="pinned-story-link">
                   {title}
                 </StyledLink>
-                <div className="pinned story-date">{date}</div>
-              </div>
+                <div className="story-date">{date}</div>
+              </PinnedStory>
             ))}
           </div>
         </div>
-        <StyledLink to="/stories" className="underlined sm-only" $callToAction>
+        <StyledLink to="/stories" className="underlined d-none-md" $callToAction>
           <span>Discover all stories</span>
         </StyledLink>
-      </section>
+      </PinnedStories>
       <Newsletter />
     </Layout>
   );
