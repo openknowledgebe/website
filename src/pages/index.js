@@ -124,6 +124,10 @@ const Hero = styled.section`
     width: 100%;
   }
 
+  & .hero-image > ${Img} {
+    width: 100%;
+  }
+
   @media (min-width: ${breakpoints.medium}px) {
     grid-template-columns: 0.6fr 1fr;
     column-gap: 1rem;
