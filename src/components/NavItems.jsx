@@ -1,5 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import StyledLink from './UI/StyledLink';
+import { breakpoints } from '../styles/globals';
 
 const links = [
   { to: '/', name: 'Open Knowledge' },
@@ -9,19 +12,103 @@ const links = [
   { to: '/stories', name: 'Our stories' }
 ];
 
+const Hamburger = styled.button`
+  background: transparent;
+  border: none;
+  display: block;
+  height: 4rem;
+  width: 3rem;
+
+  & > span,
+  & > span::before,
+  & > span::after {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--color-primary);
+  }
+
+  & > span::before,
+  & > span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  & > span::before {
+    top: -0.7rem;
+  }
+
+  & > span::after {
+    top: 0.7rem;
+  }
+
+  &.open > span {
+    background-color: transparent;
+  }
+
+  &.open > span::after,
+  &.open > span::before {
+    top: 0;
+  }
+  &.open > span::after {
+    transform: rotate(45deg);
+  }
+
+  &.open > span::before {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: ${breakpoints.large}px) {
+    & {
+      display: none;
+    }
+  }
+`;
+
+const Nav = styled.nav`
+  & .nav-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  & .nav-items li {
+    min-height: 4rem;
+    margin: 0.5rem 0;
+  }
+
+  @media (min-width: ${breakpoints.large}px) {
+    &.top-nav .nav-items > li {
+      margin-left: 4em;
+    }
+
+    &.top-nav {
+      height: 100%;
+    }
+
+    &.top-nav .nav-items {
+      align-items: flex-end;
+      height: 100%;
+      margin: 0;
+    }
+  }
+`;
+
 const NavItems = ({ isTop = false, className, isOpen, toggle }) => {
   return (
     <>
       {isTop && (
-        <button
+        <Hamburger
           className={`hamburger ${isOpen ? 'open' : ''}`}
           type="button"
           onClick={() => toggle()}
         >
           <span />
-        </button>
+        </Hamburger>
       )}
-      <nav className={`bold6 ${className}`} style={{ display: isOpen ? 'block' : '' }}>
+      <Nav className={`bold6 ${className}`} style={{ display: isOpen ? 'block' : '' }}>
         <ul className="nav-items">
           {links.map(link => (
             <li key={link.to}>
@@ -35,7 +122,7 @@ const NavItems = ({ isTop = false, className, isOpen, toggle }) => {
             </li>
           ))}
         </ul>
-      </nav>
+      </Nav>
     </>
   );
 };
