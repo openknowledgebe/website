@@ -5,7 +5,8 @@ export const underline = css`
   content: '';
   left: 0;
   bottom: -0.1rem;
-  height: 0.2rem;
+  height: 0.1em;
+  max-height: 3px;
   background-color: var(--color-secondary);
 `;
 
@@ -94,7 +95,7 @@ const global = css`
   section,
   footer {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: calc(4rem + 3%);
   }
 
   section[data-state='reversed'],
