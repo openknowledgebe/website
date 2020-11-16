@@ -28,50 +28,71 @@ collections:
       - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
       - { label: 'Color', name: 'color', widget: 'color', default: '#ffffff', allowInput: true }
       - { label: 'Pin', name: 'pin', widget: 'boolean' }
-      - { label: 'Website', name: 'website', widget: 'string', required: false }
-      - label: 'Details'
-        name: 'Details'
-        widget: 'object'
-        required: false
-        fields:
-          - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
-          - { label: 'Description', name: 'description', widget: 'markdown' }
-          - {
-              label: 'Featured Image',
-              name: 'featured_image',
-              widget: 'image',
-              allow_multiple: false,
-            }
-          - label: 'Contact info'
-            name: 'contact_info'
+      - label: 'Activity page'
+        name: 'activity_page'
+        widget: 'list'
+        max: 1
+        hint: "Would you like to link to an existing page or create a new one? Choose accordingly (it's a 'one or the other' type of choice)!"
+        types:
+          - label: 'Link to existing page'
+            name: 'existing_page'
             widget: object
             fields:
-              - { label: Email, name: email, widget: string }
-              - { label: 'Website', name: 'website', widget: 'string', required: false }
-              - label: 'Socials'
-                required: false
-                name: 'socials'
-                widget: object
-                fields:
-                  - { label: Github, name: github, widget: string, required: false }
-                  - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
-                  - { label: LinkedIn, name: linkedin, widget: string, required: false }
-                  - { label: 'Facebook', name: 'facebook', widget: 'string', required: false }
-          - label: 'Members'
-            name: 'members'
-            widget: 'list'
-            allow_add: true
-            summary: '{{fields.name}}'
+              - { label: 'URL', name: 'url', widget: string }
+          - label: 'New page'
+            name: 'new_page'
+            widget: object
             fields:
-              - { label: 'Name', name: 'name', widget: string }
-              - { label: 'Task', name: 'task', widget: 'string', required: false }
-              - label: 'Contact info'
-                name: 'contact_info'
-                widget: object
+              - label: 'Activity detail'
+                name: 'detail'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
                 fields:
-                  - { label: Email, name: email, widget: string }
-                  - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
-                  - { label: LinkedIn, name: linkedin, widget: string, required: false }
+                  - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
+                  - { label: 'Description', name: 'description', widget: 'markdown' }
+                  - {
+                      label: 'Featured Image',
+                      name: 'featured_image',
+                      widget: 'image',
+                      allow_multiple: false,
+                    }
+                  - label: 'Contact info'
+                    name: 'contact_info'
+                    widget: object
+                    fields:
+                      - { label: Email, name: email, widget: string }
+                      - { label: 'Website', name: 'website', widget: 'string', required: false }
+                      - label: 'Socials'
+                        required: false
+                        name: 'socials'
+                        widget: object
+                        fields:
+                          - { label: Github, name: github, widget: string, required: false }
+                          - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+                          - { label: LinkedIn, name: linkedin, widget: string, required: false }
+                          - {
+                              label: 'Facebook',
+                              name: 'facebook',
+                              widget: 'string',
+                              required: false,
+                            }
+                  - label: 'Members'
+                    name: 'members'
+                    widget: 'list'
+                    allow_add: true
+                    add_to_top: true
+                    summary: '{{fields.name}}'
+                    fields:
+                      - { label: 'Name', name: 'name', widget: string }
+                      - { label: 'Task', name: 'task', widget: 'string', required: false }
+                      - label: 'Contact info'
+                        name: 'contact_info'
+                        widget: object
+                        fields:
+                          - { label: Email, name: email, widget: string }
+                          - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+                          - { label: LinkedIn, name: linkedin, widget: string, required: false }
   - name: pages
     label: Pages
     files:
@@ -128,8 +149,22 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Author', name: 'author', widget: string }
       - { label: 'Title', name: 'title', widget: string }
-      - { label: 'Tweet', name: 'tweet', widget: string, required: false }
-      - { label: 'Post', name: 'post', widget: markdown, required: false }
+      - label: 'Post'
+        name: 'post'
+        widget: 'list'
+        max: 1
+        hint: "Is the post a tweet or would you like to create an article? Choose accordingly (it's a 'one or the other' type of choice)!"
+        types:
+          - label: 'Tweet'
+            name: 'tweet'
+            widget: object
+            fields:
+              - { label: 'URL', name: 'url', widget: string }
+          - label: 'Article'
+            name: 'article'
+            widget: object
+            fields:
+              - { label: 'body', name: 'body', widget: markdown }
       - { label: 'Excerpt', name: 'excerpt', widget: text, required: false }
       - label: 'Tags'
         name: 'tags'
