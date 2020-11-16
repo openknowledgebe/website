@@ -1,8 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-import Chivo from '../fonts/Chivo-Regular.ttf';
-import WorkSans from '../fonts/WorkSans-VariableFont_wght.ttf';
-
 export const underline = css`
   position: absolute;
   content: '';
@@ -37,21 +34,6 @@ const global = css`
   /* Reset */
   address {
     font-style: normal;
-  }
-
-  /* Fonts */
-
-  @font-face {
-    font-family: 'Work Sans';
-    src: local('Work Sans') url(${WorkSans}) format('truetype');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Chivo';
-    src: local('Chivo') url(${Chivo}) format('truetype');
-    font-display: swap;
-    font-weight: 400;
   }
 
   /* HTML elements */
