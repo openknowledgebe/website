@@ -4,8 +4,15 @@ backend:
 
 local_backend: true
 
-media_folder: static/img
-public_folder: /img
+media_folder: okbe-website/images/uploads
+public_folder: /images/uploads
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dwyxk1pns
+    api_key: 837367631382331
+    use_transformations: true
 
 collections:
   - name: 'activity'
