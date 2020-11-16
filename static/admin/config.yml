@@ -28,6 +28,15 @@ collections:
       - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
       - { label: 'Color', name: 'color', widget: 'color', default: '#ffffff', allowInput: true }
       - { label: 'Pin', name: 'pin', widget: 'boolean' }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'relation'
+        multiple: true
+        collection: settings
+        file: tags
+        value_field: tags.*.name
+        search_fields: [tags.*.name]
+        hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
       - label: 'Activity page'
         name: 'activity_page'
         widget: 'list'
