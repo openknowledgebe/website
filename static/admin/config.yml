@@ -105,10 +105,142 @@ collections:
   - name: pages
     label: Pages
     files:
+      - label: 'Home'
+        name: 'homepage'
+        file: content/pages/home.md
+        fields:
+          - label: 'Header'
+            name: 'header'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Tagline', name: 'tagline', widget: string }
+              - { label: 'Mission', name: 'mission', widget: 'markdown', minimal: true }
+              - {
+                  label: 'Featured image',
+                  name: 'featured_image',
+                  widget: 'image',
+                  allow_multiple: false,
+                }
+              - label: 'Call to action'
+                name: 'cta'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link Type',
+                      name: 'link_type',
+                      widget: 'select',
+                      options: ['internal', 'external'],
+                    }
+                  - {
+                      label: 'Link URL',
+                      name: 'url',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
+                    }
+          - label: 'Activities Section'
+            name: 'activities'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - label: 'Call to action'
+                name: 'cta'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link Type',
+                      name: 'link_type',
+                      widget: 'select',
+                      options: ['internal', 'external'],
+                    }
+                  - {
+                      label: 'Link URL',
+                      name: 'url',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
+                    }
+          - label: 'Stories Section'
+            name: 'stories'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Featured image',
+                  name: 'featured_image',
+                  widget: 'image',
+                  allow_multiple: false,
+                }
+              - label: 'Call to action'
+                name: 'cta'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link Type',
+                      name: 'link_type',
+                      widget: 'select',
+                      options: ['internal', 'external'],
+                    }
+                  - {
+                      label: 'Link URL',
+                      name: 'url',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
+                    }
+          - label: 'Newsletter Section'
+            name: 'newsletter'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: string }
+              - { label: 'Subheading', name: 'subheading' }
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.',
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Team'
         name: team
         file: content/pages/team.md
         fields:
+          - label: 'Header'
+            name: 'header'
+            widget: object
+            summary: Expand
+            collapsed: true
+            fields:
+              - label: 'About volunteers'
+                name: 'about_volunteers'
+                widget: object
+                summary: Expand
+                collapsed: true
+                fields:
+                  - { label: 'Heading', name: 'heading', widget: 'string' }
+                  - { label: 'Body', name: 'body', widget: markdown }
+              - {
+                  label: 'Featured image',
+                  name: 'featured_image',
+                  widget: 'image',
+                  allow_multiple: false,
+                }
           - label: 'Board of directors'
             name: 'directors'
             widget: 'list'
@@ -149,6 +281,17 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.',
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
   - name: 'story'
     label: 'Story'
     folder: content/stories
@@ -190,7 +333,7 @@ collections:
     files:
       - label: 'Tags'
         name: 'tags'
-        file: content/tags.json
+        file: content/settings/tags.json
         format: json
         fields:
           - label: 'Tags'
@@ -201,3 +344,74 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
+      - label: 'Navbar'
+        name: 'navbar'
+        file: content/settings/navbar.md
+        fields:
+          - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
+          - { label: 'Organization Name', name: 'org_name', widget: string }
+          - label: 'Menu Items'
+            name: 'nav_items'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - {
+                  label: 'Link Type',
+                  name: 'link_type',
+                  widget: 'select',
+                  options: ['internal', 'external'],
+                }
+              - {
+                  label: 'Link URL',
+                  name: 'url',
+                  widget: 'string',
+                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
+                }
+      - label: 'Footer'
+        name: 'footer'
+        file: content/settings/footer.md
+        fields:
+          - label: 'Contact'
+            name: 'contact'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: string }
+              - { label: 'Contact Info', name: 'contact_info', widget: markdown }
+          - label: 'Socials'
+            name: 'socials'
+            widget: object
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: string }
+              - { label: Github, name: github, widget: string }
+              - { label: 'Twitter', name: 'twitter', widget: 'string' }
+              - { label: 'Facebook', name: 'facebook', widget: 'string' }
+          - label: 'Footer Navigation'
+            name: 'footer_nav'
+            widget: object
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - label: 'Navigation Items'
+                name: 'nav_items'
+                widget: 'list'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link Type',
+                      name: 'link_type',
+                      widget: 'select',
+                      options: ['internal', 'external'],
+                    }
+                  - {
+                      label: 'Link URL',
+                      name: 'url',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
+                    }
+          - label: 'Attributions'
+            name: 'attributions'
+            widget: 'markdown'
