@@ -1,14 +1,12 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-import Chivo from '../fonts/Chivo-Regular.ttf';
-import WorkSans from '../fonts/WorkSans-VariableFont_wght.ttf';
-
 export const underline = css`
   position: absolute;
   content: '';
   left: 0;
   bottom: -0.1rem;
-  height: 0.2rem;
+  height: 0.1em;
+  max-height: 3px;
   background-color: var(--color-secondary);
 `;
 
@@ -37,21 +35,6 @@ const global = css`
   /* Reset */
   address {
     font-style: normal;
-  }
-
-  /* Fonts */
-
-  @font-face {
-    font-family: 'Work Sans';
-    src: local('Work Sans') url(${WorkSans}) format('truetype');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Chivo';
-    src: local('Chivo') url(${Chivo}) format('truetype');
-    font-display: swap;
-    font-weight: 400;
   }
 
   /* HTML elements */
@@ -112,7 +95,7 @@ const global = css`
   section,
   footer {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: calc(4rem + 3%);
   }
 
   section[data-state='reversed'],
