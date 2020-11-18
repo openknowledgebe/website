@@ -39,6 +39,10 @@ const StyledFooter = styled.footer`
       margin-top: 0;
     }
 
+    & p {
+      margin: 0;
+    }
+
     & .footer-nav .nav-items {
       flex-direction: row;
     }

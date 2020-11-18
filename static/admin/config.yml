@@ -315,7 +315,7 @@ collections:
     files:
       - label: 'Tags'
         name: 'tags'
-        file: content/settings/tags.json
+        file: content/settings/tags/index.json
         format: json
         fields:
           - label: 'Tags'
