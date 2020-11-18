@@ -47,7 +47,7 @@ collections:
             name: 'existing_page'
             widget: object
             fields:
-              - { label: 'URL', name: 'url', widget: string }
+              - { label: 'URL', name: 'to', widget: string }
           - label: 'New page'
             name: 'new_page'
             widget: object
@@ -131,14 +131,8 @@ collections:
                 fields:
                   - { label: 'Label', name: 'label', widget: 'string' }
                   - {
-                      label: 'Link Type',
-                      name: 'link_type',
-                      widget: 'select',
-                      options: ['internal', 'external'],
-                    }
-                  - {
-                      label: 'Link URL',
-                      name: 'url',
+                      label: 'Link',
+                      name: 'to',
                       widget: 'string',
                       hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
                     }
@@ -156,14 +150,8 @@ collections:
                 fields:
                   - { label: 'Label', name: 'label', widget: 'string' }
                   - {
-                      label: 'Link Type',
-                      name: 'link_type',
-                      widget: 'select',
-                      options: ['internal', 'external'],
-                    }
-                  - {
-                      label: 'Link URL',
-                      name: 'url',
+                      label: 'Link',
+                      name: 'to',
                       widget: 'string',
                       hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
                     }
@@ -187,14 +175,8 @@ collections:
                 fields:
                   - { label: 'Label', name: 'label', widget: 'string' }
                   - {
-                      label: 'Link Type',
-                      name: 'link_type',
-                      widget: 'select',
-                      options: ['internal', 'external'],
-                    }
-                  - {
-                      label: 'Link URL',
-                      name: 'url',
+                      label: 'Link',
+                      name: 'to',
                       widget: 'string',
                       hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
                     }
@@ -311,7 +293,7 @@ collections:
             name: 'tweet'
             widget: object
             fields:
-              - { label: 'URL', name: 'url', widget: string }
+              - { label: 'URL', name: 'to', widget: string }
           - label: 'Article'
             name: 'article'
             widget: object
@@ -346,7 +328,7 @@ collections:
               - { label: 'Name', name: 'name', widget: string }
       - label: 'Navbar'
         name: 'navbar'
-        file: content/settings/navbar.md
+        file: content/settings/navbar/index.md
         fields:
           - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
           - { label: 'Organization Name', name: 'org_name', widget: string }
@@ -356,20 +338,14 @@ collections:
             fields:
               - { label: 'Label', name: 'label', widget: 'string' }
               - {
-                  label: 'Link Type',
-                  name: 'link_type',
-                  widget: 'select',
-                  options: ['internal', 'external'],
-                }
-              - {
-                  label: 'Link URL',
-                  name: 'url',
+                  label: 'Link',
+                  name: 'to',
                   widget: 'string',
                   hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
                 }
       - label: 'Footer'
         name: 'footer'
-        file: content/settings/footer.md
+        file: content/settings/footer/index.md
         fields:
           - label: 'Contact'
             name: 'contact'
@@ -391,27 +367,15 @@ collections:
               - { label: 'Facebook', name: 'facebook', widget: 'string' }
           - label: 'Footer Navigation'
             name: 'footer_nav'
-            widget: object
-            summary: 'Expand'
-            collapsed: true
+            widget: 'list'
             fields:
-              - label: 'Navigation Items'
-                name: 'nav_items'
-                widget: 'list'
-                fields:
-                  - { label: 'Label', name: 'label', widget: 'string' }
-                  - {
-                      label: 'Link Type',
-                      name: 'link_type',
-                      widget: 'select',
-                      options: ['internal', 'external'],
-                    }
-                  - {
-                      label: 'Link URL',
-                      name: 'url',
-                      widget: 'string',
-                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
-                    }
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - {
+                  label: 'Link',
+                  name: 'to',
+                  widget: 'string',
+                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link.',
+                }
           - label: 'Attributions'
             name: 'attributions'
             widget: 'markdown'

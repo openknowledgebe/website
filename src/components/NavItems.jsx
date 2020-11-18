@@ -4,14 +4,6 @@ import styled from 'styled-components';
 import StyledLink from './UI/StyledLink';
 import { breakpoints } from '../styles/globals';
 
-const links = [
-  { to: '/', name: 'Open Knowledge' },
-  { to: '/team', name: 'Team' },
-  { to: '/activities', name: 'Our activities' },
-  { to: '/calendar', name: 'Calendar' },
-  { to: '/stories', name: 'Our stories' }
-];
-
 const Hamburger = styled.button`
   background: transparent;
   border: none;
@@ -96,7 +88,7 @@ const Nav = styled.nav`
   }
 `;
 
-const NavItems = ({ isTop = false, className, isOpen, toggle }) => {
+const NavItems = ({ isTop = false, className, isOpen, toggle, links }) => {
   return (
     <>
       {isTop && (
@@ -117,7 +109,7 @@ const NavItems = ({ isTop = false, className, isOpen, toggle }) => {
                 activeClassName={isTop ? 'active underlined' : ''}
                 className="inline hoverable"
               >
-                <span>{link.name}</span>
+                <span>{link.label}</span>
               </StyledLink>
             </li>
           ))}
