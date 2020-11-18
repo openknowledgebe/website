@@ -5,8 +5,7 @@ import StyleInjector from './StyleInjector';
 import { Tag } from '../../components/UI';
 
 const TagExt = styled(Tag)`
-    background-color: #F9F6FF;;
-  }
+  background-color: #f9f6ff;
 `;
 
 const Tags = ({ entry }) => {
