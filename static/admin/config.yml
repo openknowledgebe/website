@@ -27,11 +27,12 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
       - { label: 'Color', name: 'color', widget: 'color', default: '#ffffff', allowInput: true }
-      - { label: 'Pin', name: 'pin', widget: 'boolean' }
+      - { label: 'Pin', name: 'pin', widget: 'boolean', default: false }
       - label: 'Tags'
         name: 'tags'
         widget: 'relation'
         multiple: true
+        required: false
         collection: settings
         file: tags
         value_field: tags.*.name
@@ -287,6 +288,8 @@ collections:
         name: 'post'
         widget: 'list'
         max: 1
+        min: 1
+        required: true
         hint: "Is the post a tweet or would you like to create an article? Choose accordingly (it's a 'one or the other' type of choice)!"
         types:
           - label: 'Tweet'
@@ -304,12 +307,13 @@ collections:
         name: 'tags'
         widget: 'relation'
         multiple: true
+        required: false
         collection: settings
         file: tags
         value_field: tags.*.name
         search_fields: [tags.*.name]
         hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
-      - { label: 'Pin', name: 'pin', widget: boolean }
+      - { label: 'Pin', name: 'pin', widget: boolean, default: false }
   - name: 'settings'
     label: 'Settings'
     files:
