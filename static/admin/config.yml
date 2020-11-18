@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: openknowledgebe/website
+  name: test-repo
 
 local_backend: true
 
