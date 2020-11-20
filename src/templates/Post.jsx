@@ -3,23 +3,11 @@ import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
 
 import Layout from '../components/Layout';
-import { Date } from '../components/UI';
+import { StoryHeader } from '../components/Story';
 
 const Body = styled.div`
   max-width: 80rem;
   margin: auto;
-`;
-
-const Title = styled.h1`
-  max-width: 40rem;
-  width: 100%;
-`;
-
-const Meta = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-weight: 600;
-  font-size: 1.4rem;
 `;
 
 export default function Post() {
@@ -33,13 +21,7 @@ export default function Post() {
 export const PostTemplate = ({ data }) => {
   return (
     <article>
-      <header className="work-sans" style={{ padding: 0, marginBottom: '1rem' }}>
-        <Title>{data.title}</Title>
-        <Meta>
-          <Date date={data.date} />
-          <address>{data.author}</address>
-        </Meta>
-      </header>
+      <StoryHeader title={data.title} date={data.date} author={data.author} />
       <Body>
         <Markdown>{data.body}</Markdown>
       </Body>
