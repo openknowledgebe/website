@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: openknowledgebe/website
+  branch: main
 
 local_backend: true
 
