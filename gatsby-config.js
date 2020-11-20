@@ -27,6 +27,13 @@ module.exports = {
         name: `footer`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/stories/articles`,
+        name: `post`
+      }
+    },
     // Commented to avoid errors, will come in use later
     {
       resolve: `gatsby-transformer-remark`,

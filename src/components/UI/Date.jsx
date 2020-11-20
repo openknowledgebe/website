@@ -6,11 +6,7 @@ const StyledDate = styled.time`
 `;
 
 const Date = ({ date }) => {
-  return (
-    <StyledDate dateTime={date}>
-      {date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
-    </StyledDate>
-  );
+  return <StyledDate dateTime={date}>{date}</StyledDate>;
 };
 
 export default Date;

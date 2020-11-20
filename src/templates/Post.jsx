@@ -1,19 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import { StoryHeader } from '../components/Story';
+import SEO from '../components/SEO';
 
 const Body = styled.div`
   max-width: 80rem;
   margin: auto;
 `;
 
-export default function Post() {
+export default function Post({ data }) {
+  const {
+    frontmatter: { title, date, author },
+    html,
+    excerpt
+  } = data.markdownRemark;
+
+  const post = { title, date, author, body: html, excerpt };
   return (
     <Layout>
-      <PostTemplate />
+      <SEO title={title} description={excerpt} />
+      <PostTemplate data={post} />
     </Layout>
   );
 }
@@ -28,3 +38,17 @@ export const PostTemplate = ({ data }) => {
     </article>
   );
 };
+
+export const pageQuery = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date(formatString: "LL")
+        author
+      }
+      excerpt(pruneLength: 304)
+      html
+    }
+  }
+`;
