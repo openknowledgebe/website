@@ -71,7 +71,8 @@ const global = css`
   /* Titles */
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-family: var(--fonts-title);
   }
 
@@ -83,6 +84,11 @@ const global = css`
   h3 {
     font-size: 1.8rem;
     margin: 1rem 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-weight: 600;
   }
 
   /* Sections */
