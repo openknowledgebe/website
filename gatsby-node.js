@@ -6,11 +6,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const parent = getNode(node.parent);
     const collection = parent.sourceInstanceName;
 
-    if (collection === 'post') {
+    if (collection === 'story') {
       const slug = createFilePath({
         node,
         getNode,
-        basePath: `content/stories/articles`,
+        basePath: `content/stories`,
         trailingSlash: false
       });
       createNodeField({
@@ -30,10 +30,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const Post = require.resolve(`./src/templates/Post.jsx`);
+  const Story = require.resolve(`./src/templates/Story.jsx`);
   const result = await graphql(`
     {
-      posts: allMarkdownRemark(filter: { fields: { collection: { eq: "post" } } }) {
+      stories: allMarkdownRemark(filter: { fields: { collection: { eq: "story" } } }) {
         edges {
           node {
             frontmatter {
@@ -58,11 +58,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  const { posts } = result.data;
-  posts.edges.forEach(({ node }) => {
+  const { stories } = result.data;
+  stories.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: Post,
+      component: Story,
       context: {
         // additional data can be passed via context
         slug: node.fields.slug

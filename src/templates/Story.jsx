@@ -12,7 +12,7 @@ const Body = styled.div`
   margin: auto;
 `;
 
-export default function Post({ data }) {
+export default function Story({ data }) {
   const {
     frontmatter: { title, date, author },
     html,
@@ -23,12 +23,12 @@ export default function Post({ data }) {
   return (
     <Layout>
       <SEO title={title} description={excerpt} />
-      <PostTemplate data={post} />
+      <StoryTemplate data={post} />
     </Layout>
   );
 }
 
-export const PostTemplate = ({ data }) => {
+export const StoryTemplate = ({ data }) => {
   return (
     <article>
       <StoryHeader title={data.title} date={data.date} author={data.author} />

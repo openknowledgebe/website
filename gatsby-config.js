@@ -30,11 +30,10 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/stories/articles`,
-        name: `post`
+        path: `${__dirname}/content/stories`,
+        name: `story`
       }
     },
-    // Commented to avoid errors, will come in use later
     {
       resolve: `gatsby-transformer-remark`,
       options: {

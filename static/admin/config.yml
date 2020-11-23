@@ -55,7 +55,7 @@ collections:
           collection: activity,
         }
       - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Description', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'featured_image', widget: 'image', allow_multiple: false }
       - label: 'Contact info'
         name: 'contact_info'
@@ -87,29 +87,29 @@ collections:
               - { label: Email, name: email, widget: string }
               - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
               - { label: LinkedIn, name: linkedin, widget: string, required: false }
-  - name: 'tweet_stories'
-    label: 'Tweets'
-    folder: content/stories/tweets
-    label_singular: 'Tweet'
-    create: true
-    slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: string }
-      - { label: 'URL', name: 'to', widget: string }
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'relation'
-        multiple: true
-        required: false
-        collection: settings
-        file: tags
-        value_field: tags.*.name
-        search_fields: [tags.*.name]
-        hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
-  - name: 'post_stories'
-    label: 'Posts'
-    label_singular: 'Post'
-    folder: content/stories/articles
+  # - name: 'tweet_stories'
+  #   label: 'Tweets'
+  #   folder: content/stories/tweets
+  #   label_singular: 'Tweet'
+  #   create: true
+  #   slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: string }
+  #     - { label: 'URL', name: 'to', widget: string }
+  #     - label: 'Tags'
+  #       name: 'tags'
+  #       widget: 'relation'
+  #       multiple: true
+  #       required: false
+  #       collection: settings
+  #       file: tags
+  #       value_field: tags.*.name
+  #       search_fields: [tags.*.name]
+  #       hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
+  - name: 'stories'
+    label: 'Stories'
+    label_singular: 'Story'
+    folder: content/stories
     create: true
     slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
     fields:
@@ -218,21 +218,12 @@ collections:
                 add_to_top: true
                 label_singular: 'a story'
                 summary: '{{field.activity}}'
-                types:
+                fields:
                   - {
-                      label: 'Tweet',
-                      name: 'tweet',
+                      label: 'Story',
+                      name: 'story',
                       widget: 'relation',
-                      collection: tweet_stories,
-                      search_fields: ['title', 'url'],
-                      value_field: '{{slug}}',
-                      display_fields: ['title', 'url'],
-                    }
-                  - {
-                      label: 'Post',
-                      name: 'post',
-                      widget: 'relation',
-                      collection: post_stories,
+                      collection: stories,
                       search_fields: ['title', 'date'],
                       value_field: '{{slug}}',
                       display_fields: ['title', 'date'],
@@ -344,25 +335,12 @@ collections:
                   hint: 'Appears in the browser tab.',
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
-  - name: 'settings'
-    label: 'Settings'
+  - name: 'header_footer'
+    label: 'Header & Footer'
     files:
-      - label: 'Tags'
-        name: 'tags'
-        file: content/settings/tags/index.json
-        format: json
-        fields:
-          - label: 'Tags'
-            name: 'tags'
-            widget: 'list'
-            allow_add: true
-            label_singular: 'a tag'
-            summary: '{{fields.name}}'
-            fields:
-              - { label: 'Name', name: 'name', widget: string }
-      - label: 'Navbar'
-        name: 'navbar'
-        file: content/settings/navbar/index.md
+      - label: 'Header'
+        name: 'header'
+        file: content/settings/header/index.md
         fields:
           - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
           - { label: 'Organization Name', name: 'org_name', widget: string }
@@ -413,3 +391,19 @@ collections:
           - label: 'Attributions'
             name: 'attributions'
             widget: 'markdown'
+  - name: 'settings'
+    label: 'Settings'
+    files:
+      - label: 'Tags'
+        name: 'tags'
+        file: content/settings/tags/index.json
+        format: json
+        fields:
+          - label: 'Tags'
+            name: 'tags'
+            widget: 'list'
+            allow_add: true
+            label_singular: 'a tag'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }
