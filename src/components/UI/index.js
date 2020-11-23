@@ -5,3 +5,4 @@ export { default as Tag } from './Tag';
 export { default as Input } from './Input';
 export { default as Button } from './Button';
 export { default as Person } from './Person';
+export { default as Date } from './Date';

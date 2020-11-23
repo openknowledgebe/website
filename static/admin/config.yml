@@ -1,19 +1,409 @@
 backend:
   name: github
   repo: openknowledgebe/website
+  branch: main
 
-media_folder: static/img
-public_folder: /img
+local_backend: true
+
+media_folder: okbe-website/images/uploads
+public_folder: /images/uploads
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dwyxk1pns
+    api_key: 837367631382331
+    use_transformations: true
 
 collections:
-  - name: 'activity'
-    label: 'Activity'
-    folder: 'content/activity'
+  - name: 'activities'
+    label: 'Activities Overview'
+    label_singular: 'Activity'
+    folder: 'content/activities/overview'
     create: true
     identifier_field: name
     slug: '{{name}}'
-    editor:
-      preview: false
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Logo', name: 'logo', widget: 'image' }
+      - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
+      - { label: 'Color', name: 'color', widget: 'color', default: '#ffffff', allowInput: true }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'relation'
+        multiple: true
+        required: false
+        collection: settings
+        file: tags
+        value_field: tags.*.name
+        search_fields: [tags.*.name]
+        hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
+      - { label: 'Website', name: 'website', widget: 'string', required: false }
+  - name: 'activity_page'
+    label: 'Activities Pages'
+    folder: 'content/activities/pages'
+    label_singular: 'Activity Page'
+    create: true
+    identifier_field: name
+    slug: '{{name}}'
+    fields:
+      - {
+          label: 'Name',
+          name: 'name',
+          widget: 'relation',
+          search_fields: ['name'],
+          value_field: 'name',
+          collection: activity,
+        }
+      - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
+      - { label: 'Description', name: 'body', widget: 'markdown' }
+      - { label: 'Featured Image', name: 'featured_image', widget: 'image', allow_multiple: false }
+      - label: 'Contact info'
+        name: 'contact_info'
+        widget: object
+        fields:
+          - { label: Email, name: email, widget: string }
+          - label: 'Socials'
+            required: false
+            name: 'socials'
+            widget: object
+            fields:
+              - { label: Github, name: github, widget: string, required: false }
+              - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+              - { label: LinkedIn, name: linkedin, widget: string, required: false }
+              - { label: 'Facebook', name: 'facebook', widget: 'string', required: false }
+      - label: 'Members'
+        name: 'members'
+        widget: 'list'
+        allow_add: true
+        add_to_top: true
+        summary: '{{fields.name}}'
+        fields:
+          - { label: 'Name', name: 'name', widget: string }
+          - { label: 'Task', name: 'task', widget: 'string', required: false }
+          - label: 'Contact info'
+            name: 'contact_info'
+            widget: object
+            fields:
+              - { label: Email, name: email, widget: string }
+              - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+              - { label: LinkedIn, name: linkedin, widget: string, required: false }
+  # - name: 'tweet_stories'
+  #   label: 'Tweets'
+  #   folder: content/stories/tweets
+  #   label_singular: 'Tweet'
+  #   create: true
+  #   slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: string }
+  #     - { label: 'URL', name: 'to', widget: string }
+  #     - label: 'Tags'
+  #       name: 'tags'
+  #       widget: 'relation'
+  #       multiple: true
+  #       required: false
+  #       collection: settings
+  #       file: tags
+  #       value_field: tags.*.name
+  #       search_fields: [tags.*.name]
+  #       hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
+  - name: 'stories'
+    label: 'Stories'
+    label_singular: 'Story'
+    folder: content/stories
+    create: true
+    slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
+    fields:
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: string }
+      - { label: 'Title', name: 'title', widget: string }
+      - { label: 'Article', name: 'body', widget: markdown }
+      - { label: 'Excerpt', name: 'excerpt', widget: text, required: false }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'relation'
+        multiple: true
+        required: false
+        collection: settings
+        file: tags
+        value_field: tags.*.name
+        search_fields: [tags.*.name]
+        hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
+  - name: pages
+    label: Pages
+    files:
+      - label: 'Home'
+        name: 'homepage'
+        file: content/pages/home.md
+        fields:
+          - label: 'Header'
+            name: 'header'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Tagline', name: 'tagline', widget: string }
+              - { label: 'Mission', name: 'mission', widget: 'markdown', minimal: true }
+              - {
+                  label: 'Featured image',
+                  name: 'featured_image',
+                  widget: 'image',
+                  allow_multiple: false,
+                }
+              - label: 'Call to action'
+                name: 'cta'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link',
+                      name: 'to',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                    }
+          - label: 'Activities Section'
+            name: 'activities'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - label: 'Featured Activities'
+                name: 'featured_activities'
+                widget: 'list'
+                max: 3
+                allow_add: true
+                add_to_top: true
+                label_singular: 'an activity'
+                summary: '{{field.activity}}'
+                field:
+                  {
+                    label: 'Activity',
+                    name: 'activity',
+                    widget: 'relation',
+                    collection: activities,
+                    search_fields: ['name'],
+                    value_field: 'name',
+                  }
+              - label: 'Call to action'
+                name: 'cta'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link',
+                      name: 'to',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                    }
+          - label: 'Stories Section'
+            name: 'stories'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - {
+                  label: 'Featured image',
+                  name: 'featured_image',
+                  widget: 'image',
+                  allow_multiple: false,
+                }
+              - label: 'Featured Stories'
+                name: 'featured_stories'
+                widget: 'list'
+                max: 3
+                allow_add: true
+                add_to_top: true
+                label_singular: 'a story'
+                summary: '{{field.activity}}'
+                fields:
+                  - {
+                      label: 'Story',
+                      name: 'story',
+                      widget: 'relation',
+                      collection: stories,
+                      search_fields: ['title', 'date'],
+                      value_field: '{{slug}}',
+                      display_fields: ['title', 'date'],
+                    }
+              - label: 'Call to action'
+                name: 'cta'
+                widget: 'object'
+                collapsed: true
+                summary: 'Expand'
+                fields:
+                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - {
+                      label: 'Link',
+                      name: 'to',
+                      widget: 'string',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                    }
+          - label: 'Newsletter Section'
+            name: 'newsletter'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: string }
+              - { label: 'Subheading', name: 'subheading' }
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.',
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Team'
+        name: team
+        file: content/pages/team.md
+        fields:
+          - label: 'Header'
+            name: 'header'
+            widget: object
+            summary: Expand
+            collapsed: true
+            fields:
+              - label: 'About volunteers'
+                name: 'about_volunteers'
+                widget: object
+                summary: Expand
+                collapsed: true
+                fields:
+                  - { label: 'Heading', name: 'heading', widget: 'string' }
+                  - { label: 'Body', name: 'body', widget: markdown }
+              - {
+                  label: 'Featured image',
+                  name: 'featured_image',
+                  widget: 'image',
+                  allow_multiple: false,
+                }
+          - label: 'Board of directors'
+            name: 'directors'
+            widget: 'list'
+            allow_add: true
+            label_singular: 'a board member'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }
+              - { label: 'Task', name: 'task', widget: 'string', required: false }
+              - label: 'Contact info'
+                name: 'contact_info'
+                widget: object
+                fields:
+                  - { label: Email, name: email, widget: string }
+                  - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+                  - { label: LinkedIn, name: linkedin, widget: string, required: false }
+          - label: 'Team members'
+            name: 'team'
+            widget: 'list'
+            allow_add: true
+            label_singular: 'a member'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }
+              - { label: 'Task', name: 'task', widget: 'string', required: false }
+              - label: 'Contact info'
+                name: 'contact_info'
+                widget: object
+                fields:
+                  - { label: Email, name: email, widget: string }
+                  - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+                  - { label: LinkedIn, name: linkedin, widget: string, required: false }
+          - label: 'Open positions'
+            name: 'positions'
+            widget: 'list'
+            allow_add: true
+            label_singular: 'a position'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.',
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
+  - name: 'header_footer'
+    label: 'Header & Footer'
+    files:
+      - label: 'Header'
+        name: 'header'
+        file: content/settings/header/index.md
+        fields:
+          - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
+          - { label: 'Organization Name', name: 'org_name', widget: string }
+          - label: 'Menu Items'
+            name: 'nav_items'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - {
+                  label: 'Link',
+                  name: 'to',
+                  widget: 'string',
+                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                }
+      - label: 'Footer'
+        name: 'footer'
+        file: content/settings/footer/index.md
+        fields:
+          - label: 'Contact'
+            name: 'contact'
+            widget: 'object'
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: string }
+              - { label: 'Contact Info', name: 'contact_info', widget: markdown }
+          - label: 'Socials'
+            name: 'socials'
+            widget: object
+            summary: 'Expand'
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: string }
+              - { label: Github, name: github, widget: string }
+              - { label: 'Twitter', name: 'twitter', widget: 'string' }
+              - { label: 'Facebook', name: 'facebook', widget: 'string' }
+          - label: 'Footer Navigation'
+            name: 'footer_nav'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - {
+                  label: 'Link',
+                  name: 'to',
+                  widget: 'string',
+                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                }
+          - label: 'Attributions'
+            name: 'attributions'
+            widget: 'markdown'
+  - name: 'settings'
+    label: 'Settings'
+    files:
+      - label: 'Tags'
+        name: 'tags'
+        file: content/settings/tags/index.json
+        format: json
+        fields:
+          - label: 'Tags'
+            name: 'tags'
+            widget: 'list'
+            allow_add: true
+            label_singular: 'a tag'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }

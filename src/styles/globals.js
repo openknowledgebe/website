@@ -94,12 +94,14 @@ const global = css`
   /* Sections */
   section,
   header,
-  footer {
+  footer,
+  article {
     padding: 2rem var(--page-lr-margin);
   }
 
   section,
-  footer {
+  footer,
+  article {
     padding-top: 4rem;
     padding-bottom: calc(4rem + 3%);
   }
