@@ -59,6 +59,14 @@ const StyledHeader = styled.header`
   }
 `;
 
+const legacyLinks = [
+  { to: '/', label: 'Open Knowledge' },
+  { to: '/team', label: 'Team' },
+  { to: '/activities', label: 'Our activities' },
+  { to: '/calendar', label: 'Calendar' },
+  { to: '/stories', label: 'Our stories' }
+];
+
 const Header = () => {
   const [isOpen, setOpen] = useState();
   const callbackMenuToggled = () => {
@@ -74,7 +82,13 @@ const Header = () => {
           <br /> <span className="regular">Belgium</span>
         </h1>
       </StyledLink>
-      <NavItems isTop className="top-nav" isOpen={isOpen} toggle={callbackMenuToggled} />
+      <NavItems
+        isTop
+        className="top-nav"
+        isOpen={isOpen}
+        toggle={callbackMenuToggled}
+        links={legacyLinks}
+      />
     </StyledHeader>
   );
 };
