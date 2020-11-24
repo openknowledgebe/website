@@ -29,7 +29,7 @@ const global = css`
     --bg-light: #ffff;
     --max-zindex: 1000;
     --high-zindex: 999;
-    --page-lr-margin: 5%; /* page left and right margin */
+    --page-lr-margin: 20px; /* page left and right margin */
   }
 
   /* Reset */
@@ -146,6 +146,17 @@ const global = css`
     display: flex;
   }
 
+  /* emulated flex gap */
+  .gap {
+    --gap: 12px;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+  }
+
+  .gap > * {
+    margin: var(--gap) 0 0 var(--gap);
+  }
+
   /* big right margin */
   .mg-r-b {
     margin-right: 2.5rem;
@@ -166,6 +177,9 @@ const global = css`
   }
 
   @media (min-width: ${breakpoints.medium}px) {
+    :root {
+      --page-lr-margin: 40px; /* page left and right margin */
+    }
     .d-block-md {
       display: block !important;
     }
@@ -176,6 +190,12 @@ const global = css`
 
     .d-none-md {
       display: none !important;
+    }
+  }
+
+  @media (min-width: ${breakpoints.large}px) {
+    :root {
+      --page-lr-margin: 60px; /* page left and right margin */
     }
   }
 `;

@@ -24,6 +24,10 @@ const StyledHeader = styled.header`
     font-size: inherit;
   }
 
+  & .top-nav {
+    display: none;
+  }
+
   @media (max-width: ${breakpoints.large - 1}px) {
     background-color: var(--bg-light);
     box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.05);
@@ -32,7 +36,6 @@ const StyledHeader = styled.header`
     z-index: var(--max-zindex);
 
     & .top-nav {
-      display: none;
       position: absolute;
       top: var(--nav-height);
       left: 0;
@@ -52,7 +55,7 @@ const StyledHeader = styled.header`
     }
   }
 
-  @media (min-width: ${breakpoints.large}) {
+  @media (min-width: ${breakpoints.large}px) {
     & .top-nav {
       display: block;
     }

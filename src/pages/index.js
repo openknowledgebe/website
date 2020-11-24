@@ -50,7 +50,7 @@ const PinnedActivites = styled.section`
     flex-direction: column;
   }
 
-  & > ${StyledLink} {
+  & > a {
     margin-top: 2rem;
   }
 

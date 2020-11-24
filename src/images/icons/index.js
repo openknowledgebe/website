@@ -6,3 +6,6 @@ export { default as twitterBlackIcon } from './twitter-black.svg';
 export { default as mailIcon } from './mail.svg';
 export { default as linkedinIcon } from './linkedin.svg';
 export { default as headshotIcon } from './placeholder-person.svg';
+export { default as btmFacingArrow } from './btm-facing-arrow.svg';
+export { default as githubBlackIcon } from './github-black.svg';
+export { default as facebookBlackIcon } from './facebook-black.svg';
