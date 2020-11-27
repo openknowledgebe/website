@@ -289,6 +289,7 @@ collections:
             widget: 'list'
             allow_add: true
             label_singular: 'a board member'
+            add_to_top: true
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
@@ -304,6 +305,7 @@ collections:
             name: 'team'
             widget: 'list'
             allow_add: true
+            add_to_top: true
             label_singular: 'a member'
             summary: '{{fields.name}}'
             fields:
@@ -318,12 +320,30 @@ collections:
                   - { label: LinkedIn, name: linkedin, widget: string, required: false }
           - label: 'Open positions'
             name: 'positions'
-            widget: 'list'
-            allow_add: true
-            label_singular: 'a position'
-            summary: '{{fields.name}}'
+            widget: 'object'
+            summary: 'Expand'
             fields:
-              - { label: 'Name', name: 'name', widget: string }
+              - label: 'Employee'
+                name: 'employee'
+                widget: list
+                add_to_top: true
+                allow_add: true
+                summary: '{{fields.job}}'
+                field: { label: 'Job', name: 'job', widget: string }
+              - label: 'Internship'
+                name: 'internship'
+                widget: list
+                add_to_top: true
+                allow_add: true
+                summary: '{{fields.job}}'
+                field: { label: 'Job', name: 'job', widget: string }
+              - label: 'Volunteer'
+                name: 'volunteer'
+                widget: list
+                add_to_top: true
+                allow_add: true
+                summary: '{{fields.job}}'
+                field: { label: 'Job', name: 'job', widget: string }
           - label: 'SEO & Meta'
             name: 'seo'
             widget: 'object'
