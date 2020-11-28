@@ -86,8 +86,8 @@ const OpenPositions = styled.article`
 export default function Team() {
   return (
     <Layout>
-      <SEO />
-      <TeamTemplate />;
+      <SEO title="Our team" />
+      <TeamTemplate data={{}} />;
     </Layout>
   );
 }
@@ -100,16 +100,16 @@ export const TeamTemplate = ({ data }) => {
           Our <br />
           Team
         </Title>
-        <Img src={data.header.featured_image} alt="" />
+        <Img src={data?.header?.featured_image} alt="" />
         <article>
-          <h3>{data.header.about_volunteers.heading}</h3>
-          {data.header.about_volunteers.body && (
+          <h3>{data?.header?.about_volunteers.heading}</h3>
+          {data?.header?.about_volunteers.body && (
             <Markdown options={{ forceBlock: true }}>{data.header.about_volunteers.body}</Markdown>
           )}
         </article>
       </Header>
 
-      {data.team && (
+      {data?.team && (
         <Members>
           <h3>Team</h3>
           <div className="members">
@@ -120,7 +120,7 @@ export const TeamTemplate = ({ data }) => {
         </Members>
       )}
 
-      {data.directors && (
+      {data?.directors && (
         <Members>
           <h3>Board of directors</h3>
           <div className="members">
@@ -131,7 +131,7 @@ export const TeamTemplate = ({ data }) => {
         </Members>
       )}
 
-      {data.positions && (
+      {data?.positions && (
         <OpenPositions>
           <h3>We're hiring!</h3>
           <div>
