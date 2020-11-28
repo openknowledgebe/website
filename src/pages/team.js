@@ -64,7 +64,7 @@ const Members = styled.article`
   & .members {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
-    grid-gap: 4rem;
+    gap: 4rem;
     justify-content: center;
   }
 `;

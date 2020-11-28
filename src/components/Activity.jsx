@@ -8,7 +8,6 @@ import { breakpoints } from '../styles/globals';
 const ActivityCard = styled.div`
   position: relative;
   height: 17.5rem;
-  margin: 2rem 0;
 
   & .logo {
     max-width: 100%;
@@ -34,8 +33,6 @@ const ActivityCard = styled.div`
   @media (min-width: ${breakpoints.medium}px) {
     width: 30rem;
     height: 40rem;
-    margin: 0 15px;
-    margin: calc(2rem + 12px) 0 2rem 12px;
   }
 
   @media (min-width: ${breakpoints.large}px) {

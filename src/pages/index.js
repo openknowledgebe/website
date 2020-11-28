@@ -44,6 +44,9 @@ const pinnedActivities = [
 ];
 
 const PinnedActivites = styled.section`
+  & .content.gap {
+    --gap: 30px;
+  }
   & .content {
     display: flex;
     justify-content: space-between;
@@ -58,8 +61,10 @@ const PinnedActivites = styled.section`
     & .content {
       flex-direction: row;
       flex-wrap: wrap;
-      margin: -12px 0 0 -12px;
-      width: calc(100% + 12px);
+    }
+
+    & .content.gap > * {
+      margin: calc(2rem + 12px) 0 2rem var(--gap);
     }
   }
 `;
@@ -203,7 +208,7 @@ const Home = () => {
             <span>Discover all activities</span>
           </StyledLink>
         </Heading>
-        <div className="content">
+        <div className="content gap">
           {pinnedActivities.map(({ name, logo, color, tags }) => (
             <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
           ))}
