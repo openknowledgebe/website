@@ -13,6 +13,7 @@ const init = {
 const ActivityPage = ({ entry, fieldsMetaData, getAsset }) => {
   const { data } = entry.toJS();
   data.contact_info = data.contact_info || {};
+  data.tags = fieldsMetaData.getIn(['name', 'data.tags']);
   data.featured_image = getAsset(entry.getIn(['data', 'featured_image'])).toString(0);
   data.contact_info.website = fieldsMetaData.getIn(['name', 'data.website']);
   const merged = { ...init, ...data };

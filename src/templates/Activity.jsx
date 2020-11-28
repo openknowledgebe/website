@@ -200,7 +200,7 @@ export const ActivityTemplate = ({ data }) => {
           <MainSection>
             <div className="heading gap">
               <Title as="h1">{data.name}</Title>
-              {data.tags && data.tags.map(({ name }) => <Tag key={name}>{name}</Tag>)}
+              {data.tags && data.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
             </div>
             {data.catchphrase && <h3>{data.catchphrase}</h3>}
             <Markdown options={{ forceBlock: true }}>{data.body}</Markdown>
