@@ -6,15 +6,15 @@ import SEO from '../components/SEO';
 import { Title } from '../components/UI';
 import { breakpoints } from '../styles/globals';
 
-const Activities = styled.div`
+const ActivitiesContainer = styled.div`
   & > * {
     margin-bottom: 30px;
   }
 
-  @media (min-width: ${breakpoints.medium - 200}px) {
+  @media (min-width: ${breakpoints.medium}px) {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    gap: 30px 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
 
     & > * {
       width: auto;
@@ -22,16 +22,16 @@ const Activities = styled.div`
     }
   }
 
-  @media (min-width: ${breakpoints.medium}px) {
-    grid-template-columns: repeat(3, 33.33%);
+  @media (min-width: ${breakpoints.medium + 150}px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: ${breakpoints.large}px) {
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
   }
 `;
 
-const activities = ({ data }) => {
+const Activities = ({ data }) => {
   return (
     <Layout>
       <SEO title="Our activities" />
@@ -40,15 +40,15 @@ const activities = ({ data }) => {
           Our <br />
           activities
         </Title>
-        <Activities>
+        <ActivitiesContainer>
           {data &&
             data.map(({ name, logo, tags, color }) => (
               <Activity key={name} name={name} logo={logo} tags={tags} color={color} />
             ))}
-        </Activities>
+        </ActivitiesContainer>
       </section>
     </Layout>
   );
 };
 
-export default activities;
+export default Activities;
