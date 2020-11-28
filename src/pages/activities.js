@@ -42,8 +42,8 @@ const Activities = ({ data }) => {
         </Title>
         <ActivitiesContainer>
           {data &&
-            data.map(({ name, logo, tags, color }) => (
-              <Activity key={name} name={name} logo={logo} tags={tags} color={color} />
+            data.map(({ name, logo, tags, color, to }) => (
+              <Activity key={name} name={name} logo={logo} tags={tags} color={color} to={to} />
             ))}
         </ActivitiesContainer>
       </section>

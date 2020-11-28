@@ -57,7 +57,7 @@ const ActivityLinks = styled.div`
   }
 `;
 
-const Activity = ({ name, logo, color, tags }) => {
+const Activity = ({ name, logo, color, tags, to }) => {
   const [hovering, setHovering] = useState(false);
   const defaultColor = 'var(--bg-light)';
   return (
@@ -71,18 +71,20 @@ const Activity = ({ name, logo, color, tags }) => {
       onBlur={() => setHovering(false)}
       onFocus={() => setHovering(true)}
     >
-      <div className={`tags ${hovering ? 'show' : 'visually-hidden'}`}>
-        {tags.map(tag => (
-          <Tag key={tag} css="margin: 1rem;">
-            {tag}
-          </Tag>
-        ))}
-      </div>
+      {tags && (
+        <div className={`tags ${hovering ? 'show' : 'visually-hidden'}`}>
+          {tags.map(tag => (
+            <Tag key={tag} css="margin: 1rem;">
+              {tag}
+            </Tag>
+          ))}
+        </div>
+      )}
       <div className="logo">
         <Img src={logo} alt={name} />
       </div>
       <ActivityLinks>
-        <StyledLink to="/" className="activity-link">
+        <StyledLink to={to} className="activity-link">
           <span>{name}</span>
           <Img src={arrow} alt="" />
         </StyledLink>

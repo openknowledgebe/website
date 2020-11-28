@@ -37,7 +37,7 @@ collections:
         value_field: tags.*.name
         search_fields: [tags.*.name]
         hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
-      - { label: 'Website', name: 'website', widget: 'string', required: false }
+      - { label: 'Website', name: 'to', widget: 'string', required: false }
   - name: 'activity_page'
     label: 'Activities Pages'
     folder: 'content/activities/pages'

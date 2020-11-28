@@ -209,8 +209,8 @@ const Home = () => {
           </StyledLink>
         </Heading>
         <div className="content gap">
-          {pinnedActivities.map(({ name, logo, color, tags }) => (
-            <Activity name={name} logo={logo} color={color} tags={tags} key={name} />
+          {pinnedActivities.map(({ name, logo, color, tags, to }) => (
+            <Activity name={name} logo={logo} color={color} tags={tags} key={name} to={to} />
           ))}
         </div>
         <StyledLink to="/activities" className="underlined d-none-md" $callToAction>
