@@ -9,10 +9,21 @@ const init = {
   }
 };
 
-const Team = ({ entry }) => {
+const Team = ({ entry, getAsset }) => {
   const { data } = entry.toJS();
 
   const merged = { ...init, ...data };
+
+  if (merged.header.featured_image) {
+    merged.header.featured_image = getAsset(
+      entry.getIn(['data', 'header', 'featured_image'])
+    ).toString();
+  } else {
+    merged.header.featured_image = 'https://via.placeholder.com/850x550/';
+  }
+
+  merged.header.about_volunteers = merged.header.about_volunteers || {};
+
   return (
     <StyleInjector>
       <TeamTemplate data={merged} />

@@ -5,15 +5,8 @@ backend:
 
 local_backend: true
 
-media_folder: okbe-website/images/uploads
+media_folder: content/images/uploads
 public_folder: /images/uploads
-
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dwyxk1pns
-    api_key: 837367631382331
-    use_transformations: true
 
 collections:
   - name: 'activities'
@@ -52,7 +45,7 @@ collections:
           widget: 'relation',
           search_fields: ['name'],
           value_field: 'name',
-          collection: activity,
+          collection: activities,
         }
       - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
       - { label: 'Description', name: 'body', widget: 'markdown' }

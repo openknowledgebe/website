@@ -3,8 +3,10 @@ import React from 'react';
 import ActivityCard from '../../components/Activity';
 import StyleInjector from './StyleInjector';
 
-const Activity = ({ entry }) => {
+const Activity = ({ entry, getAsset }) => {
   const { data } = entry.toJS();
+
+  data.logo = getAsset(entry.getIn(['data', 'logo'])).toString();
 
   return (
     <StyleInjector>
