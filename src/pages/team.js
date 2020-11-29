@@ -87,7 +87,7 @@ export default function Team() {
   return (
     <Layout>
       <SEO title="Our team" />
-      <TeamTemplate data={{}} />;
+      <TeamTemplate data={{}} />
     </Layout>
   );
 }
