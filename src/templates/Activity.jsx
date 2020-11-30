@@ -212,13 +212,15 @@ export const ActivityTemplate = ({ data }) => {
                 <img src={btmFacingArrow} role="presentation" alt="" />
               </div>
               <address>
-                <div>
-                  <span className="work-sans bold6">Website</span>
-                  <br />
-                  <ActivityLink href={data.contact_info.website}>
-                    {data.contact_info.website}
-                  </ActivityLink>
-                </div>
+                {data.contact_info.website && (
+                  <div>
+                    <span className="work-sans bold6">Website</span>
+                    <br />
+                    <ActivityLink href={data.contact_info.website}>
+                      {data.contact_info.website}
+                    </ActivityLink>
+                  </div>
+                )}
                 <div>
                   <span className="work-sans bold6">Email</span>
                   <br />

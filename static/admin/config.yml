@@ -10,9 +10,9 @@ public_folder: /images/uploads
 
 collections:
   - name: 'activities'
-    label: 'Activities Overview'
+    label: 'Activities'
     label_singular: 'Activity'
-    folder: 'content/activities/overview'
+    folder: 'content/activities'
     create: true
     identifier_field: name
     slug: '{{name}}'
@@ -31,22 +31,6 @@ collections:
         search_fields: [tags.*.name]
         hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
       - { label: 'Website', name: 'to', widget: 'string', required: false }
-  - name: 'activity_page'
-    label: 'Activities Pages'
-    folder: 'content/activities/pages'
-    label_singular: 'Activity Page'
-    create: true
-    identifier_field: name
-    slug: '{{name}}'
-    fields:
-      - {
-          label: 'Name',
-          name: 'name',
-          widget: 'relation',
-          search_fields: ['name'],
-          value_field: 'name',
-          collection: activities,
-        }
       - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
       - { label: 'Description', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'featured_image', widget: 'image', allow_multiple: false }
