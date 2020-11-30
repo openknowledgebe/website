@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
+
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import StoryCard from '../components/Story/Card';
@@ -18,6 +20,7 @@ const StoriesContainer = styled.div`
 `;
 
 const Stories = ({ data }) => {
+  const stories = data.stories.edges;
   return (
     <Layout>
       <SEO title="Our stories" />
@@ -27,8 +30,8 @@ const Stories = ({ data }) => {
           stories
         </Title>
         <StoriesContainer>
-          {data &&
-            data.map(({ title, date, excerpt }) => (
+          {stories &&
+            stories.map(({ node: { frontmatter: { title, date }, excerpt } }) => (
               <StoryCard key={title} title={title} date={date} excerpt={excerpt} />
             ))}
         </StoriesContainer>
@@ -38,3 +41,25 @@ const Stories = ({ data }) => {
 };
 
 export default Stories;
+
+export const pageQuery = graphql`
+  query {
+    stories: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "story" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "LL")
+          }
+          excerpt(pruneLength: 304)
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;

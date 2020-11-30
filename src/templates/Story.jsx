@@ -11,6 +11,10 @@ import { Tag as StyledTag } from '../components/UI';
 const Body = styled.div`
   max-width: 80rem;
   margin: auto;
+
+  & img {
+    max-width: 100%;
+  }
 `;
 
 const Tag = styled(StyledTag)`
@@ -40,13 +44,12 @@ export default function Story({ data }) {
   );
 }
 
-export const StoryTemplate = ({ data }) => {
+export const StoryTemplate = ({ data, preview }) => {
   return (
     <article>
       <StoryHeader title={data.title} date={data.date} author={data.author} />
       <Body>
-        <Markdown>{data.body}</Markdown>
-
+        {preview ? data.body : data.body && <Markdown>{data.body}</Markdown>}
         <Tags className="gap">
           {data.tags &&
             data.tags.map(tag => {
