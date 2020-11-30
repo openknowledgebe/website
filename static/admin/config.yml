@@ -33,7 +33,19 @@ collections:
       - { label: 'Website', name: 'to', widget: 'string', required: false }
       - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
       - { label: 'Description', name: 'body', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'featured_image', widget: 'image', allow_multiple: false }
+      - label: 'Featured image'
+        name: 'featured_image'
+        widget: 'object'
+        fields:
+          - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+          - {
+              label: 'Description',
+              name: 'alt',
+              widget: string,
+              required: false,
+              hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+              default: '',
+            }
       - label: 'Contact info'
         name: 'contact_info'
         widget: object
@@ -127,12 +139,19 @@ collections:
             fields:
               - { label: 'Tagline', name: 'tagline', widget: string }
               - { label: 'Mission', name: 'mission', widget: 'markdown', minimal: true }
-              - {
-                  label: 'Featured image',
-                  name: 'featured_image',
-                  widget: 'image',
-                  allow_multiple: false,
-                }
+              - label: 'Featured image'
+                name: 'featured_image'
+                widget: 'object'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+                  - {
+                      label: 'Description',
+                      name: 'alt',
+                      widget: string,
+                      required: false,
+                      hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+                      default: '',
+                    }
               - label: 'Call to action'
                 name: 'cta'
                 widget: 'object'
@@ -188,12 +207,19 @@ collections:
             summary: 'Expand'
             collapsed: true
             fields:
-              - {
-                  label: 'Featured image',
-                  name: 'featured_image',
-                  widget: 'image',
-                  allow_multiple: false,
-                }
+              - label: 'Featured image'
+                name: 'featured_image'
+                widget: 'object'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+                  - {
+                      label: 'Description',
+                      name: 'alt',
+                      widget: string,
+                      required: false,
+                      hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+                      default: '',
+                    }
               - label: 'Featured Stories'
                 name: 'featured_stories'
                 widget: 'list'
@@ -262,12 +288,19 @@ collections:
                 fields:
                   - { label: 'Heading', name: 'heading', widget: 'string' }
                   - { label: 'Body', name: 'body', widget: markdown }
-              - {
-                  label: 'Featured image',
-                  name: 'featured_image',
-                  widget: 'image',
-                  allow_multiple: false,
-                }
+              - label: 'Featured image'
+                name: 'featured_image'
+                widget: 'object'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+                  - {
+                      label: 'Description',
+                      name: 'alt',
+                      widget: string,
+                      required: false,
+                      hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+                      default: '',
+                    }
           - label: 'Board of directors'
             name: 'directors'
             widget: 'list'

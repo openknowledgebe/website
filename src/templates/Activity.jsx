@@ -194,7 +194,7 @@ export const ActivityTemplate = ({ data }) => {
     <>
       <ActivityHeader>
         <div className="banner-image">
-          <Img src={data.featured_image} alt="placeholder" />
+          <Img src={data.featured_image.image} alt={data.featured_image.alt} />
         </div>
         <div className="container">
           <MainSection>

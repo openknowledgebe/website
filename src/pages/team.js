@@ -100,7 +100,7 @@ export const TeamTemplate = ({ data }) => {
           Our <br />
           Team
         </Title>
-        <Img src={data?.header?.featured_image} alt="" />
+        <Img src={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
         <article>
           <h3>{data?.header?.about_volunteers.heading}</h3>
           {data?.header?.about_volunteers.body && (

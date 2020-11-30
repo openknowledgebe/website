@@ -32,12 +32,14 @@ const Team = ({ entry, getAsset }) => {
 
   const merged = { ...init, ...data };
 
-  if (merged.header.featured_image) {
-    merged.header.featured_image = getAsset(
-      entry.getIn(['data', 'header', 'featured_image'])
+  merged.header.featured_image = merged.header.featured_image || {};
+
+  if (merged.header.featured_image.image) {
+    merged.header.featured_image.image = getAsset(
+      entry.getIn(['data', 'header', 'featured_image', 'image'])
     ).toString();
   } else {
-    merged.header.featured_image = 'https://via.placeholder.com/850x550/';
+    merged.header.featured_image.image = 'https://via.placeholder.com/850x550/';
   }
 
   merged.header.about_volunteers = merged.header.about_volunteers || {};
