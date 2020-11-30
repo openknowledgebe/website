@@ -16,12 +16,18 @@ const Activity = ({ entry, getAsset }) => {
   const { data } = entry.toJS();
 
   data.logo = getAsset(entry.getIn(['data', 'logo'])).toString();
-
   data.contact_info = data.contact_info || {};
-
   data.contact_info.website = data.to;
-
   data.featured_image = getAsset(entry.getIn(['data', 'featured_image'])).toString();
+
+  if (data.members) {
+    data.members = data.members.map(member => {
+      return {
+        ...member,
+        picture: member.picture && getAsset(member.picture).toString()
+      };
+    });
+  }
 
   const merged = { ...init, ...data };
 

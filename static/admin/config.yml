@@ -57,6 +57,13 @@ collections:
         fields:
           - { label: 'Name', name: 'name', widget: string }
           - { label: 'Task', name: 'task', widget: 'string', required: false }
+          - {
+              label: 'Picture',
+              name: 'picture',
+              widget: 'image',
+              allow_multiple: false,
+              required: false,
+            }
           - label: 'Contact info'
             name: 'contact_info'
             widget: object
@@ -271,6 +278,13 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: string }
               - { label: 'Task', name: 'task', widget: 'string', required: false }
+              - {
+                  label: 'Picture',
+                  name: 'picture',
+                  widget: 'image',
+                  allow_multiple: false,
+                  required: false,
+                }
               - label: 'Contact info'
                 name: 'contact_info'
                 widget: object
@@ -288,6 +302,13 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: string }
               - { label: 'Task', name: 'task', widget: 'string', required: false }
+              - {
+                  label: 'Picture',
+                  name: 'picture',
+                  widget: 'image',
+                  allow_multiple: false,
+                  required: false,
+                }
               - label: 'Contact info'
                 name: 'contact_info'
                 widget: object

@@ -113,8 +113,8 @@ export const TeamTemplate = ({ data }) => {
         <Members>
           <h3>Team</h3>
           <div className="members">
-            {data.team.map(({ name, task, contact_info: socials, headshot }) => (
-              <Person key={name} task={task} socials={socials} name={name} picture={headshot} />
+            {data.team.map(({ name, task, contact_info: socials, picture }) => (
+              <Person key={name} task={task} socials={socials} name={name} picture={picture} />
             ))}
           </div>
         </Members>
@@ -124,8 +124,8 @@ export const TeamTemplate = ({ data }) => {
         <Members>
           <h3>Board of directors</h3>
           <div className="members">
-            {data.directors.map(({ name, task, contact_info: socials, headshot }) => (
-              <Person key={name} task={task} socials={socials} name={name} picture={headshot} />
+            {data.directors.map(({ name, task, contact_info: socials, picture }) => (
+              <Person key={name} task={task} socials={socials} name={name} picture={picture} />
             ))}
           </div>
         </Members>

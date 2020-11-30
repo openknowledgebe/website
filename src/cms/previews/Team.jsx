@@ -12,6 +12,24 @@ const init = {
 const Team = ({ entry, getAsset }) => {
   const { data } = entry.toJS();
 
+  if (data.directors) {
+    data.directors = data.directors.map(member => {
+      return {
+        ...member,
+        picture: member.picture && getAsset(member.picture).toString()
+      };
+    });
+  }
+
+  if (data.team) {
+    data.team = data.team.map(member => {
+      return {
+        ...member,
+        picture: member.picture && getAsset(member.picture).toString()
+      };
+    });
+  }
+
   const merged = { ...init, ...data };
 
   if (merged.header.featured_image) {
