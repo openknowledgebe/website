@@ -5,7 +5,7 @@ backend:
 
 local_backend: true
 
-media_folder: content/images/uploads
+media_folder: static/images/uploads
 public_folder: /images/uploads
 
 collections:
@@ -398,6 +398,7 @@ collections:
           - label: 'Menu Items'
             name: 'nav_items'
             widget: 'list'
+            add_to_top: true
             fields:
               - { label: 'Label', name: 'label', widget: 'string' }
               - {
