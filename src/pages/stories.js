@@ -31,8 +31,8 @@ const Stories = ({ data }) => {
         </Title>
         <StoriesContainer>
           {stories &&
-            stories.map(({ node: { frontmatter: { title, date }, excerpt } }) => (
-              <StoryCard key={title} title={title} date={date} excerpt={excerpt} />
+            stories.map(({ node: { frontmatter: { title, date }, excerpt, fields: { slug } } }) => (
+              <StoryCard key={title} title={title} date={date} excerpt={excerpt} to={slug} />
             ))}
         </StoriesContainer>
       </section>

@@ -41,10 +41,10 @@ const Card = styled.article`
   }
 `;
 
-const StoryCard = ({ title, date, excerpt }) => {
+const StoryCard = ({ title, date, excerpt, to }) => {
   return (
     <Card className="box">
-      <Header title={title} date={date} />
+      <Header title={title} date={date} to={to} />
       <p>{`${excerpt}...`}</p>
     </Card>
   );
