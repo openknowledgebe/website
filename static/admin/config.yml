@@ -301,12 +301,12 @@ collections:
                       hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
                       default: '',
                     }
-          - label: 'Board of directors'
-            name: 'directors'
+          - label: 'Team members'
+            name: 'team'
             widget: 'list'
             allow_add: true
-            label_singular: 'a board member'
             add_to_top: true
+            label_singular: 'a member'
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
@@ -325,12 +325,12 @@ collections:
                   - { label: Email, name: email, widget: string }
                   - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
                   - { label: LinkedIn, name: linkedin, widget: string, required: false }
-          - label: 'Team members'
-            name: 'team'
+          - label: 'Board of directors'
+            name: 'directors'
             widget: 'list'
             allow_add: true
+            label_singular: 'a board member'
             add_to_top: true
-            label_singular: 'a member'
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
