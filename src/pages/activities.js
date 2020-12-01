@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
+
 import Activity from '../components/Activity';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -32,6 +34,7 @@ const ActivitiesContainer = styled.div`
 `;
 
 const Activities = ({ data }) => {
+  const activities = data.activities.edges;
   return (
     <Layout>
       <SEO title="Our activities" />
@@ -41,10 +44,17 @@ const Activities = ({ data }) => {
           activities
         </Title>
         <ActivitiesContainer>
-          {data &&
-            data.map(({ name, logo, tags, color, to }) => (
-              <Activity key={name} name={name} logo={logo} tags={tags} color={color} to={to} />
-            ))}
+          {activities &&
+            activities.map(
+              ({
+                node: {
+                  frontmatter: { name, logo, color, tags },
+                  fields: { slug: to }
+                }
+              }) => (
+                <Activity key={name} name={name} logo={logo} tags={tags} color={color} to={to} />
+              )
+            )}
         </ActivitiesContainer>
       </section>
     </Layout>
@@ -52,3 +62,25 @@ const Activities = ({ data }) => {
 };
 
 export default Activities;
+
+export const pageQuery = graphql`
+  query {
+    activities: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "activity" } } }
+      sort: { fields: frontmatter___name, order: ASC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            name
+            logo
+            color
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
