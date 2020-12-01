@@ -1,25 +1,49 @@
 {
   "tags": [
     {
-      "name": "Civic action"
+      "name": "civic action"
     },
     {
-      "name": "Co-creation"
+      "name": "co-creation"
     },
     {
-      "name": "Event"
+      "name": "event"
     },
     {
-      "name": "Linked Open Data"
+      "name": "linked open data"
     },
     {
-      "name": "Open data"
+      "name": "open data"
     },
     {
-      "name": "Open Transport"
+      "name": "open transport"
     },
     {
-      "name": "Open source"
+      "name": "open source"
+    },
+    {
+      "name": "open belgium"
+    },
+    {
+      "name": "osoc"
+    },
+    {
+      "name": "air quality"
+    },
+    {
+      "name": "civic labs"
+    },
+    {
+      "name": "open education"
+    },
+    {
+      "name": "openstreetmap"
+    },
+    {
+      "name": "wikidata"
+    },
+    {
+      "name": "wikipedia"
     }
   ]
 }

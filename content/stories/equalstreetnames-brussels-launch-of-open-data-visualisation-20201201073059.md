@@ -2,6 +2,11 @@
 date: 2020-03-03T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: 'EqualStreetNames Brussels: Launch of open data visualisation'
+tags:
+  - open data
+  - openstreetmap
+  - wikidata
+  - wikipedia
 ---
 
 **Less than 7% of street names have been named after a woman in Brussels: launch of _[EqualStreetNames.Brussels](https://equalstreetnames.brussels/)_**

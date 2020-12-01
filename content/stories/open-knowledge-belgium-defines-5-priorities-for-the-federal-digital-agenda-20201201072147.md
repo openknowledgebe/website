@@ -2,6 +2,8 @@
 date: 2020-11-10T09:00:00.000Z
 author: Astrid Steenackers
 title: 'Open Knowledge Belgium defines 5 priorities for the federal digital agenda '
+tags:
+  - open transport
 ---
 
 # 1. The federal open data strategy

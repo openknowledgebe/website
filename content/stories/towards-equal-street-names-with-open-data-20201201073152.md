@@ -2,6 +2,11 @@
 date: 2020-03-03T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: ' Towards Equal Street Names with Open Data'
+tags:
+  - open data
+  - openstreetmap
+  - wikidata
+  - wikipedia
 ---
 
 **We are using Open Data to build a map visualizing the streets names of Brussels by gender. We need your help!**

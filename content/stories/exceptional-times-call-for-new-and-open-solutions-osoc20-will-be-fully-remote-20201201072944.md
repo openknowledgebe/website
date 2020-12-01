@@ -3,6 +3,9 @@ date: 2020-05-05T08:00:00.000Z
 author: Dries Van Ransbeeck
 title: 'Exceptional times call for new and open solutions: #osoc20 will be fully
   remote'
+tags:
+  - osoc
+  - event
 ---
 
 A virus is throwing a spanner in the works for businesses and organisations around the globe. At the same time, we are witnessing a surge in innovation, creativity and flexibility from all parts of society. Open Knowledge Belgium wants to take on the challenge and be part of the solution. **How?** With Open Summer of Code, we provide both private and public organisations with the opportunity to tap into the creativity of digital natives and build a prototype for digital projects in only 4 weeks time.
