@@ -337,6 +337,7 @@ export const pageQuery = graphql`
         members {
           name
           task
+          picture
           contact_info {
             email
             twitter

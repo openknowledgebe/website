@@ -90,6 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               members {
                 name
                 task
+                picture
                 contact_info {
                   email
                   twitter
