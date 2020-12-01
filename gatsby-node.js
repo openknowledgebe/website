@@ -6,6 +6,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const parent = getNode(node.parent);
     const collection = parent.sourceInstanceName;
 
+    // Create slug for a story
     if (collection === 'story') {
       const slug = createFilePath({
         node,
@@ -20,6 +21,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       });
     }
 
+    // Create slug for an activity
+    if (collection === 'activity') {
+      const slug = createFilePath({
+        node,
+        getNode,
+        basePath: `content/activities`,
+        trailingSlash: false
+      });
+      createNodeField({
+        node,
+        name: `slug`,
+        value: `/activities${slug}`
+      });
+    }
+
     createNodeField({
       node,
       name: 'collection',
@@ -31,6 +47,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const Story = require.resolve(`./src/templates/Story.jsx`);
+  const Activity = require.resolve(`./src/templates/Activity.jsx`);
   const result = await graphql(`
     {
       stories: allMarkdownRemark(filter: { fields: { collection: { eq: "story" } } }) {
@@ -49,6 +66,44 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      activities: allMarkdownRemark(filter: { fields: { collection: { eq: "activity" } } }) {
+        edges {
+          node {
+            frontmatter {
+              name
+              to
+              catchphrase
+              featured_image {
+                image
+                alt
+              }
+              contact_info {
+                email
+                socials {
+                  github
+                  twitter
+                  facebook
+                  linkedin
+                }
+              }
+              members {
+                name
+                task
+                contact_info {
+                  email
+                  twitter
+                  linkedin
+                }
+              }
+            }
+            excerpt
+            html
+            fields {
+              slug
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -58,7 +113,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  const { stories } = result.data;
+  const { stories, activities } = result.data;
   stories.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
@@ -69,4 +124,47 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     });
   });
+  activities.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: Activity,
+      context: {
+        // additional data can be passed via context
+        slug: node.fields.slug
+      }
+    });
+  });
+};
+
+// Define some fields to avoid breaking the website
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      contact_info: ContactInfo
+      members: [Members]
+    }
+
+    type Members {
+      task: String
+      contact_info: ContactInfo
+    }
+
+    type ContactInfo {
+      twitter: String
+      linkedin: String
+      socials: Socials
+    }
+
+    type Socials {
+      github: String
+      twitter: String
+      facebook: String
+      linkedin: String
+    }
+  `;
+  createTypes(typeDefs);
 };

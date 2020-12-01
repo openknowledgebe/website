@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -180,11 +181,30 @@ const Members = styled.section`
   }
 `;
 
-export default function Activity() {
+export default function Activity({ data }) {
+  const {
+    // eslint-disable-next-line camelcase
+    frontmatter: { name, to, catchphrase, featured_image, contact_info, members },
+    html,
+    excerpt
+  } = data.markdownRemark;
+
+  contact_info.website = to;
+
+  const activity = {
+    name,
+    to,
+    catchphrase,
+    featured_image,
+    contact_info,
+    members,
+    body: html,
+    excerpt
+  };
   return (
     <Layout>
-      <SEO />
-      <ActivityTemplate />
+      <SEO title={name} description={excerpt} />
+      <ActivityTemplate data={activity} />
     </Layout>
   );
 }
@@ -286,3 +306,39 @@ export const ActivityTemplate = ({ data }) => {
     </>
   );
 };
+
+export const pageQuery = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        name
+        to
+        catchphrase
+        featured_image {
+          image
+          alt
+        }
+        contact_info {
+          email
+          socials {
+            github
+            twitter
+            facebook
+            linkedin
+          }
+        }
+        members {
+          name
+          task
+          contact_info {
+            email
+            twitter
+            linkedin
+          }
+        }
+      }
+      excerpt
+      html
+    }
+  }
+`;
