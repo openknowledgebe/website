@@ -91,6 +91,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 name
                 task
                 picture
+                id
                 contact_info {
                   email
                   twitter
@@ -161,6 +162,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Members {
+      id: ID
       picture: String
       task: String
       contact_info: ContactInfo

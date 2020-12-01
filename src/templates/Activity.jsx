@@ -299,14 +299,8 @@ export const ActivityTemplate = ({ data }) => {
       </ActivityHeader>
       {data.members && (
         <Members>
-          {data.members.map(({ name, task, picture, contact_info: socials }) => (
-            <Person
-              key={socials.email}
-              name={name}
-              task={task}
-              socials={socials}
-              picture={picture}
-            />
+          {data.members.map(({ name, task, picture, contact_info: socials, id }) => (
+            <Person key={id} name={name} task={task} socials={socials} picture={picture} />
           ))}
         </Members>
       )}
@@ -338,6 +332,7 @@ export const pageQuery = graphql`
           name
           task
           picture
+          id
           contact_info {
             email
             twitter
