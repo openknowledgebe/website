@@ -75,6 +75,7 @@ export const pageQuery = graphql`
             name
             logo
             color
+            tags
           }
           fields {
             slug

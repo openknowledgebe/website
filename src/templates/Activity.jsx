@@ -184,7 +184,7 @@ const Members = styled.section`
 export default function Activity({ data }) {
   const {
     // eslint-disable-next-line camelcase
-    frontmatter: { name, to, catchphrase, featured_image, contact_info, members },
+    frontmatter: { name, to, catchphrase, featured_image, contact_info, members, tags },
     html,
     excerpt
   } = data.markdownRemark;
@@ -198,6 +198,7 @@ export default function Activity({ data }) {
     featured_image,
     contact_info,
     members,
+    tags,
     body: html,
     excerpt
   };
@@ -299,7 +300,13 @@ export const ActivityTemplate = ({ data }) => {
       {data.members && (
         <Members>
           {data.members.map(({ name, task, picture, contact_info: socials }) => (
-            <Person name={name} task={task} socials={socials} picture={picture} />
+            <Person
+              key={socials.email}
+              name={name}
+              task={task}
+              socials={socials}
+              picture={picture}
+            />
           ))}
         </Members>
       )}
@@ -336,6 +343,7 @@ export const pageQuery = graphql`
             linkedin
           }
         }
+        tags
       }
       excerpt
       html

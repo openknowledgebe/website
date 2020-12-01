@@ -33,12 +33,12 @@ const Tags = styled.div`
 
 export default function Story({ data }) {
   const {
-    frontmatter: { title, date, author },
+    frontmatter: { title, date, author, tags },
     html,
     excerpt
   } = data.markdownRemark;
 
-  const post = { title, date, author, body: html, excerpt };
+  const post = { title, date, author, tags, body: html, excerpt };
 
   return (
     <Layout>
@@ -72,6 +72,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "LL")
         author
+        tags
       }
       excerpt(pruneLength: 304)
       html

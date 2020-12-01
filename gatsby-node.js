@@ -57,6 +57,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               title
               date
               author
+              tags
             }
             excerpt(pruneLength: 304)
             html
@@ -95,6 +96,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                   linkedin
                 }
               }
+              tags
             }
             excerpt
             html
@@ -146,6 +148,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       contact_info: ContactInfo
       members: [Members]
+      tags: [String]
     }
 
     type Members {
