@@ -80,7 +80,7 @@ collections:
             name: 'contact_info'
             widget: object
             fields:
-              - { label: Email, name: email, widget: string, required: false, default: '' }
+              - { label: Email, name: email, widget: string, required: false }
               - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
               - { label: LinkedIn, name: linkedin, widget: string, required: false }
   # - name: 'tweet_stories'
