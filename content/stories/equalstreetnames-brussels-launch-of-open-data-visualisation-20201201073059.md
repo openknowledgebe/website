@@ -1,5 +1,5 @@
 ---
-date: 2020-12-01T07:30:03.339Z
+date: 2020-03-03T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: 'EqualStreetNames Brussels: Launch of open data visualisation'
 ---

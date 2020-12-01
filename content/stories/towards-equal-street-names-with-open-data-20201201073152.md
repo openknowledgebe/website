@@ -4,8 +4,6 @@ author: Dries Van Ransbeeck
 title: ' Towards Equal Street Names with Open Data'
 ---
 
-<!--StartFragment-->
-
 **We are using Open Data to build a map visualizing the streets names of Brussels by gender. We need your help!**
 
 The names of public spaces (streets, avenues, squares and others) define the identity of a city and how citizens interact with it. Brussels suffers from a major inequality between male and female street names and we want to help fix this!
@@ -51,5 +49,3 @@ Absolutely not! Just your ambition to change the street names 😉
 **Organised by whom?**
 
 This project is the result of a collaboration between not-for-profit organisations Open Knowledge Belgium, OpenStreetMap Belgium, Wikimedia Belgium and the feminist collective Noms Peut-Être. The event is made possible with the support of Equal.Brussels.
-
-<!--EndFragment-->
