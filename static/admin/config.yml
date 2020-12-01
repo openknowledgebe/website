@@ -129,7 +129,7 @@ collections:
     files:
       - label: 'Home'
         name: 'homepage'
-        file: content/pages/home.md
+        file: content/pages/home/index.md
         fields:
           - label: 'Header'
             name: 'header'
@@ -272,7 +272,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Team'
         name: team
-        file: content/pages/team.md
+        file: content/pages/team/index.md
         fields:
           - label: 'Header'
             name: 'header'

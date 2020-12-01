@@ -149,9 +149,18 @@ exports.createSchemaCustomization = ({ actions }) => {
       contact_info: ContactInfo
       members: [Members]
       tags: [String]
+      featured_image: FeaturedImage
+      header: Header
+      team: [Members]
+      directors: [Members]
+    }
+
+    type Header {
+      featured_image: FeaturedImage
     }
 
     type Members {
+      picture: String
       task: String
       contact_info: ContactInfo
     }
@@ -167,6 +176,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       twitter: String
       facebook: String
       linkedin: String
+    }
+
+    type FeaturedImage {
+      alt: String
     }
   `;
   createTypes(typeDefs);

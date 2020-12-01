@@ -1,6 +1,8 @@
 import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
+
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { Img, Person, Title } from '../components/UI';
@@ -83,11 +85,14 @@ const OpenPositions = styled.article`
   }
 `;
 
-export default function Team() {
+export default function Team({ data }) {
+  const {
+    frontmatter: { seo }
+  } = data.team;
   return (
     <Layout>
-      <SEO title="Our team" />
-      <TeamTemplate data={{}} />
+      <SEO title={seo.title} description={seo.description} />
+      <TeamTemplate data={{ ...data.team.frontmatter }} />
     </Layout>
   );
 }
@@ -177,3 +182,46 @@ export const TeamTemplate = ({ data }) => {
     </>
   );
 };
+
+export const pageQuery = graphql`
+  query {
+    team: markdownRemark(fields: { collection: { eq: "team" } }) {
+      frontmatter {
+        header {
+          featured_image {
+            image
+            alt
+          }
+          about_volunteers {
+            heading
+            body
+          }
+        }
+        team {
+          name
+          task
+          picture
+          contact_info {
+            email
+            twitter
+            linkedin
+          }
+        }
+        directors {
+          name
+          task
+          picture
+          contact_info {
+            email
+            twitter
+            linkedin
+          }
+        }
+        seo {
+          description
+          title
+        }
+      }
+    }
+  }
+`;
