@@ -109,7 +109,11 @@ collections:
     create: true
     slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
     fields:
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - label: 'Date'
+        name: 'date'
+        widget: 'datetime'
+        date_format: "DD/MM/YYYY"
+        time_format: false
       - { label: 'Author', name: 'author', widget: string }
       - { label: 'Title', name: 'title', widget: string }
       - { label: 'Article', name: 'body', widget: markdown }
