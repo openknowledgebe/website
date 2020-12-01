@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Markdown from 'markdown-to-jsx';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
@@ -11,6 +10,10 @@ import { Tag as StyledTag } from '../components/UI';
 const Body = styled.div`
   max-width: 80rem;
   margin: auto;
+
+  & a {
+    overflow-wrap: anywhere;
+  }
 
   & img {
     max-width: 100%;
@@ -36,6 +39,7 @@ export default function Story({ data }) {
   } = data.markdownRemark;
 
   const post = { title, date, author, body: html, excerpt };
+
   return (
     <Layout>
       <SEO title={title} description={excerpt} />
@@ -49,7 +53,7 @@ export const StoryTemplate = ({ data, preview }) => {
     <article>
       <StoryHeader title={data.title} date={data.date} author={data.author} />
       <Body>
-        {preview ? data.body : data.body && <Markdown>{data.body}</Markdown>}
+        {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
         <Tags className="gap">
           {data.tags &&
             data.tags.map(tag => {
