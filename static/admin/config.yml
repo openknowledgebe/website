@@ -111,9 +111,8 @@ collections:
     fields:
       - label: 'Date'
         name: 'date'
-        widget: 'datetime'
-        date_format: "DD/MM/YYYY"
-        time_format: false
+        widget: 'date'
+        date_format: 'DD/MM/YYYY'
       - { label: 'Author', name: 'author', widget: string }
       - { label: 'Title', name: 'title', widget: string }
       - { label: 'Article', name: 'body', widget: markdown }
