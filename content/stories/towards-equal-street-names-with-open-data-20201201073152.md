@@ -1,5 +1,5 @@
 ---
-date: 2020-03-03T09:00:00.000Z
+date: 2020-02-03T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: ' Towards Equal Street Names with Open Data'
 tags:

@@ -1,7 +1,7 @@
 ---
-date: 2017-05-04T22:00:00.000Z
+date: 2017-05-04T09:00:00.000Z
 author: Dries Van Ransbeeck
-title: ' Launch of Civic Lab Brussels'
+title: 'Launch of Civic Lab Brussels'
 tags:
   - event
   - civic labs

@@ -1,5 +1,5 @@
 ---
-date: 2018-03-04T23:00:00.000Z
+date: 2018-03-04T09:00:00.000Z
 author: Thomas Duvivier
 title: ' Open data day : Towards Clean Air with Open Data!'
 tags:

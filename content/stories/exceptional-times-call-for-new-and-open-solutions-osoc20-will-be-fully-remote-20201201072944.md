@@ -1,5 +1,5 @@
 ---
-date: 2020-05-05T08:00:00.000Z
+date: 2020-05-05T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: 'Exceptional times call for new and open solutions: #osoc20 will be fully
   remote'

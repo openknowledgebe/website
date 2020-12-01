@@ -1,5 +1,5 @@
 ---
-date: 2018-03-28T08:00:00.000Z
+date: 2018-03-28T09:00:00.000Z
 author: Julia Thomaschki
 title: '5 Lessons We Learned From Open Belgium 2018 '
 tags:

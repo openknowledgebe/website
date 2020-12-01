@@ -1,5 +1,5 @@
 ---
-date: 2017-02-20T23:00:00.000Z
+date: 2017-02-20T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: ' Open Education Kickoff Meeting'
 tags:

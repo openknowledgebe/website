@@ -1,5 +1,5 @@
 ---
-date: 2017-05-30T22:00:00.000Z
+date: 2017-05-30T09:00:00.000Z
 author: Dries Van Ransbeeck
 title: 'Open Knowledge Belgium is preparing for open Summer of code 2017 '
 tags:
