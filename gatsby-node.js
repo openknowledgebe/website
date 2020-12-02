@@ -14,10 +14,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         basePath: `content/stories`,
         trailingSlash: false
       });
+
+      const base = slug.split(/-(.+)/)[1];
+      const date = new Date(node.frontmatter.date);
+
       createNodeField({
         node,
         name: `slug`,
-        value: `/stories${slug}`
+        value: `/${date.getFullYear()}/${date
+          .getMonth()
+          .toString()
+          .padStart(2, '0')}/${date.getDay().toString().padStart(2, '0')}/${base}`
       });
 
       createNodeField({
