@@ -107,12 +107,15 @@ collections:
     label_singular: 'Story'
     folder: content/stories
     create: true
-    slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
+    slug: '{{year}}{{month}}{{day}}-{{title}}'
     fields:
       - label: 'Date'
         name: 'date'
-        widget: 'date'
+        widget: 'datetime'
+        picker_utc: true
         date_format: 'DD/MM/YYYY'
+        time_format: false
+        hint: "Format: 'DD/MM/YYYY'"
       - { label: 'Author', name: 'author', widget: string }
       - { label: 'Title', name: 'title', widget: string }
       - { label: 'Article', name: 'body', widget: markdown }
