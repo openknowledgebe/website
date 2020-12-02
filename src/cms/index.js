@@ -7,6 +7,7 @@ import Footer from './previews/Footer';
 import Story from './previews/Story';
 import Tags from './previews/Tags';
 import Team from './previews/Team';
+import Home from './previews/Home';
 
 // generate IDs
 CMS.registerEventListener({
@@ -31,3 +32,4 @@ CMS.registerPreviewTemplate('tags', Tags);
 CMS.registerPreviewTemplate('stories', Story);
 CMS.registerPreviewTemplate('activities', Activity);
 CMS.registerPreviewTemplate('team', Team);
+CMS.registerPreviewTemplate('homepage', Home);

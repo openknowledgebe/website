@@ -34,7 +34,7 @@ const StyledNewsletter = styled.section`
   }
 `;
 
-const Newsletter = () => {
+const Newsletter = ({ content }) => {
   const input = useRef();
   const submit = e => {
     e.preventDefault();
@@ -42,8 +42,8 @@ const Newsletter = () => {
   return (
     <StyledNewsletter>
       <h2 id="a11y-email-field">
-        Want to be up-to-date?
-        <br /> <span className="regular">Subscribe to our mailing list!</span>
+        {content?.heading}
+        <br /> <span className="regular">{content?.subheading}</span>
       </h2>
       <form onSubmit={submit}>
         <InputGroup>

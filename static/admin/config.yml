@@ -189,7 +189,8 @@ collections:
                     widget: 'relation',
                     collection: activities,
                     search_fields: ['name'],
-                    value_field: 'name',
+                    value_field: '{{slug}}',
+                    display_field: 'name',
                   }
               - label: 'Call to action'
                 name: 'cta'
@@ -230,17 +231,17 @@ collections:
                 allow_add: true
                 add_to_top: true
                 label_singular: 'a story'
-                summary: '{{field.activity}}'
-                fields:
-                  - {
-                      label: 'Story',
-                      name: 'story',
-                      widget: 'relation',
-                      collection: stories,
-                      search_fields: ['title', 'date'],
-                      value_field: '{{slug}}',
-                      display_fields: ['title', 'date'],
-                    }
+                summary: '{{field.story}}'
+                field:
+                  {
+                    label: 'Story',
+                    name: 'story',
+                    widget: 'relation',
+                    collection: stories,
+                    search_fields: ['title', 'date'],
+                    value_field: '{{slug}}',
+                    display_fields: ['title', 'date'],
+                  }
               - label: 'Call to action'
                 name: 'cta'
                 widget: 'object'
