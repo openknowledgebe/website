@@ -19,6 +19,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `slug`,
         value: `/stories${slug}`
       });
+
+      createNodeField({
+        node,
+        name: `o_slug`,
+        value: `${slug.substring(1)}`
+      });
     }
 
     // Create slug for an activity
@@ -33,6 +39,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         node,
         name: `slug`,
         value: `/activities${slug}`
+      });
+
+      createNodeField({
+        node,
+        name: `o_slug`,
+        value: `${slug.substring(1)}`
       });
     }
 
@@ -155,9 +167,14 @@ exports.createSchemaCustomization = ({ actions }) => {
       header: Header
       team: [Members]
       directors: [Members]
+      stories: Stories
     }
 
     type Header {
+      featured_image: FeaturedImage
+    }
+
+    type Stories {
       featured_image: FeaturedImage
     }
 
