@@ -140,28 +140,33 @@ const Heading = styled.div`
 `;
 
 const Home = ({ data }) => {
-  const cpData = data;
   const {
     frontmatter: { seo }
   } = data.home;
 
-  cpData.home.frontmatter.activities.featured_activities = cpData.home.frontmatter.activities.featured_activities.map(
-    activity => ({
-      ...activity.frontmatter,
-      ...activity.fields
-    })
-  );
+  const featuredActivities = data.home.frontmatter.activities.featured_activities.map(activity => ({
+    ...activity.frontmatter,
+    ...activity.fields
+  }));
 
-  cpData.home.frontmatter.stories.featured_stories = cpData.home.frontmatter.stories.featured_stories.map(
-    story => ({
-      ...story.frontmatter,
-      ...story.fields
-    })
-  );
+  const activities = {
+    ...data.home.frontmatter.activities,
+    featured_activities: featuredActivities
+  };
+
+  const featuredStories = data.home.frontmatter.stories.featured_stories.map(story => ({
+    ...story.frontmatter,
+    ...story.fields
+  }));
+
+  const stories = {
+    ...data.home.frontmatter.stories,
+    featured_stories: featuredStories
+  };
   return (
     <Layout>
       <SEO title={seo.title} description={seo.description} />
-      <HomeTemplate data={{ ...cpData.home.frontmatter }} />
+      <HomeTemplate data={{ ...data.home.frontmatter, activities, stories }} />
     </Layout>
   );
 };
