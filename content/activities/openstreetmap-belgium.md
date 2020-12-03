@@ -2,6 +2,9 @@
 name: OpenStreetMap Belgium
 logo: /images/uploads/osmbe-logo.png
 color: '#ffffff'
+tags:
+  - openstreetmap
+  - open data
 to: https://openstreetmap.be/
 catchphrase: Crazy about Mapping
 featured_image:
@@ -15,14 +18,19 @@ contact_info:
 members:
   - name: Ben Abelshausen
     task: Board member
-    contact_info: null
+    contact_info:
+      twitter: https://twitter.com/xivk
+      linkedin: https://www.linkedin.com/in/benabelshausen/
     id: f91d69b5-cd65-4b3f-9a92-5d188db6c570
+    picture: /images/uploads/benabelshausen.png
   - name: Jonathan Beliën
     task: Board member
     contact_info:
       twitter: https://twitter.com/jbelien
       email: ''
+      linkedin: https://www.linkedin.com/in/jbelien/
     id: 5597a68c-ffe6-4779-8786-721536ef1a1f
+    picture: /images/uploads/jonathanbelien.jpg
   - name: Joost Schouppe
     task: Board member
     contact_info: null
