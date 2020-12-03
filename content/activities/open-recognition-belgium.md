@@ -4,7 +4,7 @@ logo: /images/uploads/openrecognition-logo.png
 color: '#cc2b55'
 tags:
   - open recognition
-  - ' open badges'
+  - 'open badges'
   - open education
 to: https://openrecognition.be/
 catchphrase: If we are serious about addressing the skill gap, we should
@@ -31,7 +31,7 @@ members:
     contact_info:
       email: dries.vanacker@openknowledge.be
       twitter: https://twitter.com/drievana
-      linkedin: https://www.linkedin.com/in/dries-vanacker-22191257/
+      linkedin: https://www.linkedin.com/in/dries-vanacker/
     id: bf827031-ae90-46b1-a7eb-87cfb9f39c44
 ---
 
