@@ -64,6 +64,8 @@ directors:
   - name: Bert Jehoul
     contact_info:
       email: bert@openknowledge.be
+      twitter: https://twitter.com/jeborsel
+      linkedin: https://www.linkedin.com/in/bertjehoul/
     picture: /images/uploads/bertjehoul.jpg
   - contact_info:
       email: toon.nelissen@openknowledge.be
@@ -77,6 +79,8 @@ directors:
   - name: Dries Vanacker
     contact_info:
       email: dries.vanacker@openknowledge.be
+      twitter: https://twitter.com/drievana
+      linkedin: https://www.linkedin.com/in/dries-vanacker/
     picture: /images/uploads/driesvanacker.jpg
   - name: Toon Vanagt
     contact_info:
