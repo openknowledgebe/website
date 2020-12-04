@@ -13,6 +13,9 @@ collections:
     label: 'Activities'
     label_singular: 'Activity'
     folder: 'content/activities'
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
     create: true
     identifier_field: name
     slug: '{{name}}'
