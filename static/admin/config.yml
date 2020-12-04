@@ -201,7 +201,7 @@ collections:
                     collection: activities,
                     search_fields: ['name'],
                     value_field: '{{slug}}',
-                    display_field: 'name',
+                    display_fields: ['name'],
                   }
               - label: 'Call to action'
                 name: 'cta'

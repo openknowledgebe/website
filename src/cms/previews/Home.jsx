@@ -13,8 +13,8 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
   }
 
   if (data.stories?.featured_image?.image) {
-    data.header.featured_image.image = getAsset(
-      entry.getIn(['data', 'header', 'featured_image', 'image'])
+    data.stories.featured_image.image = getAsset(
+      entry.getIn(['data', 'stories', 'featured_image', 'image'])
     ).toString();
   }
 
@@ -25,12 +25,14 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
       'activity',
       'activities'
     ]);
-    if (activities && activities.size === data.activities.featured_activities.length)
+
+    if (activities && activities.size === data.activities.featured_activities.length) {
       data.activities.featured_activities = data.activities.featured_activities.map(activity => {
         const activityData = activities.getIn([activity]).toJS();
         activityData.slug = `${window.location.protocol}//${window.location.host}/activities/${activity}`;
         return activityData;
       });
+    }
   }
 
   if (data.stories?.featured_stories) {

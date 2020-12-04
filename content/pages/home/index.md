@@ -13,7 +13,7 @@ header:
     to: /team
 activities:
   featured_activities:
-    - openstreetmap-belgium
+    - openstreetmap-belgium/index
   cta:
     label: Discover all activities
     to: /activities
@@ -21,9 +21,9 @@ stories:
   featured_image:
     image: community.jpg
   featured_stories:
-    - open-knowledge-belgium-is-preparing-for-open-summer-of-code-2017-20201201174314
-    - launch-of-civic-lab-brussels-20201201174631
-    - 5-lessons-we-learned-from-open-belgium-2018-20201201172037
+    - open-knowledge-belgium-is-preparing-for-open-summer-of-code-2017-20201201174314/index
+    - launch-of-civic-lab-brussels-20201201174631/index
+    - 5-lessons-we-learned-from-open-belgium-2018-20201201172037/index
   cta:
     label: Discover all stories
     to: /stories
