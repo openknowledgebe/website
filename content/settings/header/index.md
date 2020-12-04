@@ -1,5 +1,5 @@
 ---
-logo: /images/uploads/okbe-withname.svg
+logo: okbe-withname.svg
 org_name: Open Knowledge Belgium
 nav_items:
   - label: Open Knowledge

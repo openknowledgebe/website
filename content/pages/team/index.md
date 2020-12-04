@@ -1,7 +1,7 @@
 ---
 header:
   featured_image:
-    image: /images/uploads/okbe-withname.svg
+    image: okbe-withname.svg
   about_volunteers:
     heading: Our volunteers
     body: We have too many volunteers to sum them all up by name but Open Knowledge
@@ -46,7 +46,7 @@ directors:
       email: jonathan@openknowledge.be
       twitter: https://twitter.com/jbelien
       linkedin: https://www.linkedin.com/in/jbelien/
-    picture: /images/uploads/jonathanbelien.jpg
+    picture: jonathanbelien.jpg
   - name: Raf Buyle
     task: ''
     contact_info:
@@ -75,7 +75,7 @@ directors:
       email: bert@openknowledge.be
       twitter: https://twitter.com/jeborsel
       linkedin: https://www.linkedin.com/in/bertjehoul/
-    picture: /images/uploads/bertjehoul.jpg
+    picture: bertjehoul.jpg
   - contact_info:
       email: toon.nelissen@openknowledge.be
       linkedin: https://www.linkedin.com/in/toonnelissen/
@@ -96,7 +96,7 @@ directors:
       email: dries.vanacker@openknowledge.be
       twitter: https://twitter.com/drievana
       linkedin: https://www.linkedin.com/in/dries-vanacker/
-    picture: /images/uploads/driesvanacker.jpg
+    picture: driesvanacker.jpg
   - name: Toon Vanagt
     contact_info:
       twitter: https://twitter.com/toon

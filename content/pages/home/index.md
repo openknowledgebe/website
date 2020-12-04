@@ -7,7 +7,7 @@ header:
     technology to unlock information, enabling people to use and share knowledge
     in Belgium and beyond.
   featured_image:
-    image: /images/uploads/civic_labs_brussels_kickoff_2.jpg
+    image: civic_labs_brussels_kickoff_2.jpg
   cta:
     label: Get to know us
     to: /team
@@ -19,7 +19,7 @@ activities:
     to: /activities
 stories:
   featured_image:
-    image: /images/uploads/community.jpg
+    image: community.jpg
   featured_stories:
     - open-knowledge-belgium-is-preparing-for-open-summer-of-code-2017-20201201174314
     - launch-of-civic-lab-brussels-20201201174631

@@ -142,6 +142,8 @@ collections:
       - label: 'Home'
         name: 'homepage'
         file: content/pages/home/index.md
+        media_folder: ''
+        public_folder: ''
         fields:
           - label: 'Header'
             name: 'header'
@@ -286,6 +288,8 @@ collections:
       - label: 'Team'
         name: team
         file: content/pages/team/index.md
+        media_folder: ''
+        public_folder: ''
         fields:
           - label: 'Header'
             name: 'header'
@@ -405,6 +409,8 @@ collections:
       - label: 'Header'
         name: 'header'
         file: content/settings/header/index.md
+        media_folder: ''
+        public_folder: ''
         fields:
           - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
           - { label: 'Organization Name', name: 'org_name', widget: string }
