@@ -109,6 +109,9 @@ collections:
     label: 'Stories'
     label_singular: 'Story'
     folder: content/stories
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
     create: true
     slug: '{{year}}{{month}}{{day}}-{{title}}'
     fields:
