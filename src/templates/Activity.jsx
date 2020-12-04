@@ -316,7 +316,9 @@ export const pageQuery = graphql`
         to
         catchphrase
         featured_image {
-          image
+          image {
+            publicURL
+          }
           alt
         }
         contact_info {

@@ -30,7 +30,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: `o_slug`,
-        value: `${slug.substring(1)}`
+        value: `${slug.substring(1)}/index`
       });
     }
 
@@ -51,7 +51,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: `o_slug`,
-        value: `${slug.substring(1)}`
+        value: `${slug.substring(1)}/index`
       });
     }
 

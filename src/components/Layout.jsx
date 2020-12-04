@@ -43,7 +43,9 @@ const Layout = ({ children }) => {
                 label
                 to
               }
-              logo
+              logo {
+                publicURL
+              }
               org_name
             }
           }
@@ -56,7 +58,12 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <div id="app">
-        <Header data={headerData.edges[0].node.frontmatter} />
+        <Header
+          data={{
+            ...headerData.edges[0].node.frontmatter,
+            logo: headerData.edges[0].node.frontmatter.logo.publicURL
+          }}
+        />
         <main>{children}</main>
         <Footer data={footerData.edges[0].node.frontmatter} />
       </div>

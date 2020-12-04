@@ -73,7 +73,9 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             name
-            logo
+            logo {
+              publicURL
+            }
             color
             tags
           }

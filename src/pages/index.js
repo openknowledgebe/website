@@ -146,7 +146,8 @@ const Home = ({ data }) => {
 
   const featuredActivities = data.home.frontmatter.activities.featured_activities.map(activity => ({
     ...activity.frontmatter,
-    ...activity.fields
+    ...activity.fields,
+    logo: activity.frontmatter.logo.publicURL
   }));
 
   const activities = {
@@ -161,12 +162,24 @@ const Home = ({ data }) => {
 
   const stories = {
     ...data.home.frontmatter.stories,
-    featured_stories: featuredStories
+    featured_stories: featuredStories,
+    featured_image: {
+      ...data.home.frontmatter.stories.featured_image,
+      image: data.home.frontmatter.stories.featured_image.image.publicURL
+    }
+  };
+
+  const header = {
+    ...data.home.frontmatter.header,
+    featured_image: {
+      ...data.home.frontmatter.header.featured_image,
+      image: data.home.frontmatter.header.featured_image.image.publicURL
+    }
   };
   return (
     <Layout>
       <SEO title={seo.title} description={seo.description} />
-      <HomeTemplate data={{ ...data.home.frontmatter, activities, stories }} />
+      <HomeTemplate data={{ ...data.home.frontmatter, header, activities, stories }} />
     </Layout>
   );
 };
@@ -271,14 +284,18 @@ export const query = graphql`
           }
           featured_image {
             alt
-            image
+            image {
+              publicURL
+            }
           }
         }
         activities {
           featured_activities {
             frontmatter {
               name
-              logo
+              logo {
+                publicURL
+              }
               tags
               color
             }
@@ -297,7 +314,9 @@ export const query = graphql`
             to
           }
           featured_image {
-            image
+            image {
+              publicURL
+            }
             alt
           }
           featured_stories {

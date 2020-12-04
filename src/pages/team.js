@@ -192,7 +192,9 @@ export const pageQuery = graphql`
       frontmatter {
         header {
           featured_image {
-            image
+            image {
+              publicURL
+            }
             alt
           }
           about_volunteers {
