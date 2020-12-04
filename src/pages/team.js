@@ -136,7 +136,10 @@ export const TeamTemplate = ({ data }) => {
         </Members>
       )}
 
-      {data?.positions && (
+      {data?.positions &&
+      (data.positions.employee?.length > 0 ||
+        data.positions.internship?.length > 0 ||
+        data.positions.volunteer?.length > 0) ? (
         <OpenPositions>
           <h3>We're hiring!</h3>
           <div>
@@ -144,7 +147,7 @@ export const TeamTemplate = ({ data }) => {
               <img src={btmFacingArrow} role="presentation" alt="" />
             </div>
             <div className="jobs">
-              {data.positions.employee && data.positions.employee.length && (
+              {data.positions.employee?.length > 0 ? (
                 <div>
                   <h4>Employee</h4>
                   <ul>
@@ -153,8 +156,8 @@ export const TeamTemplate = ({ data }) => {
                     ))}
                   </ul>
                 </div>
-              )}
-              {data.positions.internship && data.positions.internship.length && (
+              ) : undefined}
+              {data.positions.internship?.length > 0 ? (
                 <div>
                   <h4>Internship</h4>
                   <ul>
@@ -163,9 +166,9 @@ export const TeamTemplate = ({ data }) => {
                     ))}
                   </ul>
                 </div>
-              )}
+              ) : undefined}
 
-              {data.positions.volunteer && data.positions.volunteer.length && (
+              {data.positions.volunteer?.length > 0 ? (
                 <div>
                   <h4>Volunteer</h4>
                   <ul>
@@ -174,11 +177,11 @@ export const TeamTemplate = ({ data }) => {
                     ))}
                   </ul>
                 </div>
-              )}
+              ) : undefined}
             </div>
           </div>
         </OpenPositions>
-      )}
+      ) : undefined}
     </>
   );
 };
