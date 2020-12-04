@@ -22,7 +22,7 @@ members:
       twitter: https://twitter.com/xivk
       linkedin: https://www.linkedin.com/in/benabelshausen/
     id: f91d69b5-cd65-4b3f-9a92-5d188db6c570
-    picture: /images/uploads/benabelshausen.png
+    picture: /images/uploads/benabelshausen.jpeg
   - name: Jonathan Beliën
     task: Board member
     contact_info:
@@ -33,7 +33,9 @@ members:
     picture: /images/uploads/jonathanbelien.jpg
   - name: Joost Schouppe
     task: Board member
-    contact_info: null
+    contact_info:
+      twitter: https://twitter.com/joostjakob
+      linkedin: https://www.linkedin.com/in/joost-schouppe-60393948/
     id: 4d941d6c-57a2-436a-bb4f-6bc5f18f6859
 ---
 
