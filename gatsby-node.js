@@ -94,7 +94,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               to
               catchphrase
               featured_image {
-                image
+                image {
+                  publicURL
+                }
                 alt
               }
               contact_info {
@@ -109,7 +111,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               members {
                 name
                 task
-                picture
+                picture {
+                  publicURL
+                }
                 id
                 contact_info {
                   email
@@ -135,7 +139,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
-
   const { stories, activities } = result.data;
   stories.edges.forEach(({ node }) => {
     createPage({
@@ -187,7 +190,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Members {
       id: ID
-      picture: String
       task: String
       contact_info: ContactInfo
     }

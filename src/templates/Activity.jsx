@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
@@ -183,7 +184,6 @@ const Members = styled.section`
 
 export default function Activity({ data }) {
   const {
-    // eslint-disable-next-line camelcase
     frontmatter: { name, to, catchphrase, featured_image, contact_info, members, tags },
     html,
     excerpt
@@ -191,13 +191,21 @@ export default function Activity({ data }) {
 
   contact_info.website = to;
 
+  const mbrs = members.map(member => ({
+    ...member,
+    picture: member.picture?.publicURL
+  }));
+
   const activity = {
     name,
     to,
     catchphrase,
-    featured_image,
+    featured_image: {
+      ...featured_image,
+      image: featured_image.image.publicURL
+    },
     contact_info,
-    members,
+    members: mbrs,
     tags,
     body: html,
     excerpt
@@ -333,7 +341,9 @@ export const pageQuery = graphql`
         members {
           name
           task
-          picture
+          picture {
+            publicURL
+          }
           id
           contact_info {
             email

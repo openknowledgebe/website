@@ -52,7 +52,14 @@ const Activities = ({ data }) => {
                   fields: { slug: to }
                 }
               }) => (
-                <Activity key={name} name={name} logo={logo} tags={tags} color={color} to={to} />
+                <Activity
+                  key={name}
+                  name={name}
+                  logo={logo.publicURL}
+                  tags={tags}
+                  color={color}
+                  to={to}
+                />
               )
             )}
         </ActivitiesContainer>

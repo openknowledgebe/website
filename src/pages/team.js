@@ -85,14 +85,34 @@ const OpenPositions = styled.article`
   }
 `;
 
+const mapPictures = members =>
+  members.map(member => ({
+    ...member,
+    picture: member.picture?.publicURL
+  }));
+
 export default function Team({ data }) {
   const {
     frontmatter: { seo }
   } = data.team;
+
   return (
     <Layout>
       <SEO title={seo.title} description={seo.description} />
-      <TeamTemplate data={{ ...data.team.frontmatter }} />
+      <TeamTemplate
+        data={{
+          ...data.team.frontmatter,
+          header: {
+            ...data.team.frontmatter.header,
+            featured_image: {
+              ...data.team.frontmatter.header.featured_image,
+              image: data.team.frontmatter.header.featured_image.image.publicURL
+            }
+          },
+          team: mapPictures(data.team.frontmatter.team),
+          directors: mapPictures(data.team.frontmatter.directors)
+        }}
+      />
     </Layout>
   );
 }
@@ -205,7 +225,9 @@ export const pageQuery = graphql`
         team {
           name
           task
-          picture
+          picture {
+            publicURL
+          }
           contact_info {
             email
             twitter
@@ -215,7 +237,9 @@ export const pageQuery = graphql`
         directors {
           name
           task
-          picture
+          picture {
+            publicURL
+          }
           contact_info {
             email
             twitter
