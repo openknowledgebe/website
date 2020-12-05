@@ -191,10 +191,12 @@ export default function Activity({ data }) {
 
   contact_info.website = to;
 
-  const mbrs = members.map(member => ({
-    ...member,
-    picture: member.picture?.publicURL
-  }));
+  const mbrs = members
+    ? members.map(member => ({
+        ...member,
+        picture: member.picture?.publicURL
+      }))
+    : [];
 
   const activity = {
     name,
