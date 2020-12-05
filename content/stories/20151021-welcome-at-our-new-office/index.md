@@ -1,6 +1,6 @@
 ---
 date: '2015-10-21T13:04:32+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Welcome at our new office.'
 tags:
   - featured

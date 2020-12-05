@@ -1,6 +1,6 @@
 ---
 date: '2014-12-19T11:13:08+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'So why does Belgium rank so low?'
 tags:
   - featured

@@ -1,6 +1,6 @@
 ---
 date: '2014-03-05T14:23:54+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Apps For Ghent IV DataDive: The Prequel'
 tags:
   - events

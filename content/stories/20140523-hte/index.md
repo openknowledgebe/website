@@ -1,6 +1,6 @@
 ---
 date: '2014-05-23T15:27:10+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Hack the elections presentation'
 tags:
   - events

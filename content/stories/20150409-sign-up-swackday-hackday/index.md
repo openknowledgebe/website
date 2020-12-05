@@ -1,6 +1,6 @@
 ---
 date: '2015-04-09T17:00:44+00:00'
-author: Lara Deraes
+author: laraderaes
 title: 'Sign up for Swackday, a thrilling hackday'
 tags:
   - events

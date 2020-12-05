@@ -1,6 +1,6 @@
 ---
 date: '2015-04-22T14:54:00+00:00'
-author: Sander Meert
+author: sandermeert
 title: 'Another intern joins the open team!'
 tags:
   - general

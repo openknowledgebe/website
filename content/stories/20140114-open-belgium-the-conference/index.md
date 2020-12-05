@@ -1,6 +1,6 @@
 ---
 date: '2014-01-14T21:33:54+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Open Belgium – The Conference'
 tags:
   - datadays2014

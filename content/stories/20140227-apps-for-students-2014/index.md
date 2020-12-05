@@ -1,6 +1,6 @@
 ---
 date: '2014-02-27T18:00:04+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Next saturday: Apps For Students'
 tags:
   - events

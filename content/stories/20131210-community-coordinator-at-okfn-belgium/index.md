@@ -1,6 +1,6 @@
 ---
 date: '2013-12-10T13:00:09+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Community coordinator at OKFN Belgium'
 tags:
   - general

@@ -1,6 +1,6 @@
 ---
 date: '2014-04-30T13:35:48+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Attention to all datajournalists and devs.: The Pre-Dataharvest+ Hackaton is upon us'
 tags:
   - events

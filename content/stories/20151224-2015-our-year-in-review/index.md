@@ -1,6 +1,6 @@
 ---
 date: '2015-12-24T14:47:01+00:00'
-author: Lara Deraes
+author: laraderaes
 title: '2015, our year in review'
 tags:
   - featured

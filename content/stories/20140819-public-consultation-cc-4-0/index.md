@@ -1,6 +1,6 @@
 ---
 date: '2014-08-19T12:09:53+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Your view on the Dutch 4.0 Creative Commons license translations.'
 tags:
   - featured

@@ -1,6 +1,6 @@
 ---
 date: '2014-04-10T10:54:27+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'eGov Mobility Hackathon'
 tags:
   - events

@@ -1,6 +1,6 @@
 ---
 date: '2014-03-07T11:48:45+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: '#ddays14 Apps for Europe Business Lounge'
 tags:
   - datadays2014

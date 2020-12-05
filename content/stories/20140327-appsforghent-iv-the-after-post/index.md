@@ -1,6 +1,6 @@
 ---
 date: '2014-03-27T13:14:21+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'AppsforGhent IV – The after post'
 tags:
   - events

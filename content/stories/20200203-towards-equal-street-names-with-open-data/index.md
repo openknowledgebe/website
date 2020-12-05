@@ -1,6 +1,6 @@
 ---
 date: '2020-02-03T14:51:34+00:00'
-author: Dries Van Ransbeeck
+author: driesvr
 title: 'Towards Equal Street Names with Open Data'
 tags:
   - events

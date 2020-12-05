@@ -1,6 +1,6 @@
 ---
 date: '2014-03-03T13:54:20+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Media-hack-a-thon? A creative hackathon concept in Belgium.'
 tags:
   - events

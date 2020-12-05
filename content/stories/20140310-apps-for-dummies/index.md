@@ -1,6 +1,6 @@
 ---
 date: '2014-03-10T15:01:50+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Apps for Dummies'
 tags:
   - events

@@ -1,6 +1,6 @@
 ---
 date: '2017-02-21T17:13:26+00:00'
-author: Dries Van Ransbeeck
+author: driesvr
 title: 'Open Education Kickoff Meeting'
 tags:
   - 'open education'

@@ -1,6 +1,6 @@
 ---
 date: '2015-04-28T10:08:07+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Crowdsourcing the next open Summer of code speakers'
 tags:
   - events

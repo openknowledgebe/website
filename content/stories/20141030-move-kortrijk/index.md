@@ -1,6 +1,6 @@
 ---
 date: '2014-10-30T17:26:26+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: '‘Move Kortrijk’ – Hacking exercise and sports'
 tags:
   - events

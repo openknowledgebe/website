@@ -1,6 +1,6 @@
 ---
 date: '2020-11-10T18:28:07+00:00'
-author: Astrid Steenackers
+author: steenackersastrid
 title: 'Open Knowledge Belgium defines 5 priorities for the federal digital agenda'
 tags:
   - featured

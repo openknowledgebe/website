@@ -1,6 +1,6 @@
 ---
 date: '2015-10-27T10:11:23+00:00'
-author: Lara Deraes
+author: laraderaes
 title: 'Datawijs, bridge between young people and open data'
 tags:
   - featured

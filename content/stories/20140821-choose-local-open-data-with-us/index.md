@@ -1,6 +1,6 @@
 ---
 date: '2014-08-21T14:35:28+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Choose local open data with us'
 tags:
   - events

@@ -1,6 +1,6 @@
 ---
 date: '2014-06-19T11:04:37+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'Open Antwerp – Local Data Census'
 tags:
   - events

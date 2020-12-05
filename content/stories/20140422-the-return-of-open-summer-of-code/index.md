@@ -1,6 +1,6 @@
 ---
 date: '2014-04-22T15:12:07+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'The return of open Summer of code'
 tags:
   - events

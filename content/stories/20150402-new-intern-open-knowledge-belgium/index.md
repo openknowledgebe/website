@@ -1,6 +1,6 @@
 ---
 date: '2015-04-02T13:16:41+00:00'
-author: Lara Deraes
+author: laraderaes
 title: 'New intern at Open Knowledge Belgium'
 tags:
   - general

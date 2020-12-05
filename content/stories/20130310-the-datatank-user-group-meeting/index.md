@@ -1,6 +1,6 @@
 ---
 date: '2013-03-10T20:52:03+00:00'
-author: Jan Vansteenlandt
+author: janvansteenlandt
 title: 'The DataTank user group meeting'
 tags:
   - 'we open data'

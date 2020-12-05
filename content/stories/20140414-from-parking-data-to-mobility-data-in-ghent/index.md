@@ -1,6 +1,6 @@
 ---
 date: '2014-04-14T14:05:58+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'From parking data to mobility data in Ghent'
 tags:
   - events

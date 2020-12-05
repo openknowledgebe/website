@@ -1,6 +1,6 @@
 ---
 date: '2016-09-28T11:13:08+00:00'
-author: Pieter-Jan Pauwels
+author: pjpauwels
 title: 'A new challenge for me is a new opportunity for Open Knowledge Belgium'
 tags:
   - featured
