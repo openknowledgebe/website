@@ -1,6 +1,6 @@
 ---
 date: '2016-11-20T21:08:05+00:00'
-author: driesvr
+author: Dries Van Ransbeeck
 title: 'Open Belgium: Open Programme Gathering'
 tags:
   - events

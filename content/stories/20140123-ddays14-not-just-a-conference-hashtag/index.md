@@ -1,6 +1,6 @@
 ---
 date: '2014-01-23T17:56:48+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: '#ddays14, not just a conference hashtag'
 tags:
   - datadays2014

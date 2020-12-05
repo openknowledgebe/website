@@ -1,6 +1,6 @@
 ---
 date: '2020-03-03T09:56:31+00:00'
-author: driesvr
+author: Dries Van Ransbeeck
 title: 'EqualStreetNames Brussels: Launch of open data visualisation'
 tags:
   - equalstreetnames

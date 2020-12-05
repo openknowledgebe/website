@@ -1,6 +1,6 @@
 ---
 date: '2014-01-29T11:56:37+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Apps4EU: Turning data into business'
 tags:
   - events

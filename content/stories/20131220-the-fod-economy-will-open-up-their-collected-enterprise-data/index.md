@@ -1,6 +1,6 @@
 ---
 date: '2013-12-20T16:53:44+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'The FOD Economy will open up their collected enterprise data'
 tags:
   - general

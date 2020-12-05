@@ -1,6 +1,6 @@
 ---
 date: '2014-12-09T16:39:24+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Belgium scores slightly higher on the Global Open Data Index, big expectations for 2015'
 tags:
   - featured

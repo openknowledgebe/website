@@ -1,6 +1,6 @@
 ---
 date: '2014-05-22T14:16:48+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Hack the elections – When social data meets open data'
 tags:
   - events

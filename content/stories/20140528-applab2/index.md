@@ -1,6 +1,6 @@
 ---
 date: '2014-05-28T16:52:16+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'AppLAB2 – Visualise the City of Kortrijk'
 tags:
   - events
