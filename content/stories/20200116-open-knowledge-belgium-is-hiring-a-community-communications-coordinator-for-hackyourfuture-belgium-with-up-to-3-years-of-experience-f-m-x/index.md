@@ -1,6 +1,6 @@
 ---
 date: '2020-01-16T12:03:29+00:00'
-author: driesvr
+author: Dries Van Ransbeeck
 title: 'We’re hiring a Community & Communications Coordinator for HackYourFuture Belgium with up to 3 years of experience (F/M/X)'
 tags:
   - jobs

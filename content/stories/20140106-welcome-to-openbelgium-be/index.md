@@ -1,6 +1,6 @@
 ---
 date: '2014-01-06T16:35:13+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Welcome to OpenBelgium.be'
 tags:
   - datadays2014

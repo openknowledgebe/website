@@ -1,6 +1,6 @@
 ---
 date: '2016-06-24T14:42:26+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Introducing W4P, a crowdsourcing for open, social and local projects.'
 tags:
   - featured

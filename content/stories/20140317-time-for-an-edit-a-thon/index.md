@@ -1,6 +1,6 @@
 ---
 date: '2014-03-17T16:34:16+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Time for an Edit-a-thon'
 tags:
   - events

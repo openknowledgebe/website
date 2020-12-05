@@ -1,6 +1,6 @@
 ---
 date: '2014-12-08T11:20:45+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'The final way to become an Apps for Europe finalist.'
 tags:
   - applications

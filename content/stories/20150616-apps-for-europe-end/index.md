@@ -1,6 +1,6 @@
 ---
 date: '2015-06-16T16:25:55+00:00'
-author: laraderaes
+author: Lara Deraes
 title: 'Apps4eu: a positive influence on the Open Data business scene'
 tags:
   - 'apps for x'

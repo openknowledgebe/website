@@ -1,6 +1,6 @@
 ---
 date: '2014-09-01T14:42:35+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Apps for Europe is looking for the best open data apps'
 tags:
   - applications

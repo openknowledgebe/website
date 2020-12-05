@@ -1,6 +1,6 @@
 ---
 date: '2014-10-21T15:08:59+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Apps For Europe: Take your Open Data application to the next level.'
 tags:
   - events

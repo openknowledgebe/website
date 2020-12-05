@@ -1,6 +1,6 @@
 ---
 date: '2014-02-11T17:33:07+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'The City of Antwerp releases 210 extra datasets on their Open Data Portal'
 tags:
   - 'open data news'

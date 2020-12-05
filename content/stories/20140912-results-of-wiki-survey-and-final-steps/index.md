@@ -1,6 +1,6 @@
 ---
 date: '2014-09-12T12:00:00+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Results of Wiki Survey and final steps'
 tags:
   - featured

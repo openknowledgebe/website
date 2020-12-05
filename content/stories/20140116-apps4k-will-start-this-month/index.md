@@ -1,6 +1,6 @@
 ---
 date: '2014-01-16T18:36:53+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Apps4K will start this month'
 tags:
   - events

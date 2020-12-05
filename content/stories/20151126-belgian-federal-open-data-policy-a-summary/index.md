@@ -1,6 +1,6 @@
 ---
 date: '2015-11-26T17:43:18+00:00'
-author: laraderaes
+author: Lara Deraes
 title: 'Belgian federal Open Data policy, a summary.'
 tags:
   - 'open data news'

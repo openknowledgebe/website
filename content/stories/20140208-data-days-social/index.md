@@ -1,6 +1,6 @@
 ---
 date: '2014-02-08T16:10:16+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Data Days goes social'
 tags:
   - datadays2014

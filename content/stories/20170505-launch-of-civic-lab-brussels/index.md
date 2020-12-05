@@ -1,6 +1,6 @@
 ---
 date: '2017-05-05T08:42:44+00:00'
-author: driesvr
+author: Dries Van Ransbeeck
 title: "Launch of Civic Lab\_Brussels"
 tags:
   - 'civic labs'

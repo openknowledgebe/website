@@ -1,6 +1,6 @@
 ---
 date: '2014-03-10T16:27:56+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'The Chest Project – Call for ideas'
 tags:
   - general

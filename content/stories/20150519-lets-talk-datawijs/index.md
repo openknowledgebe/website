@@ -1,6 +1,6 @@
 ---
 date: '2015-05-19T15:12:34+00:00'
-author: laraderaes
+author: Lara Deraes
 title: 'Let’s talk Datawijs'
 tags:
   - 'open data'

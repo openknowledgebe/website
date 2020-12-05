@@ -1,6 +1,6 @@
 ---
 date: '2015-09-02T13:31:41+00:00'
-author: pjpauwels
+author: Pieter-Jan Pauwels
 title: 'Open Knowledge is looking for a new headquarters in Ghent'
 tags:
   - featured
