@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import logo from '../images/logo/okbe.svg';
 import NavItems from './NavItems';
 import StyledLink from './UI/StyledLink';
 
@@ -19,9 +18,12 @@ const StyledHeader = styled.header`
     line-height: normal;
   }
 
-  & .brand > h1 {
-    margin: 2rem 0 0;
-    font-size: inherit;
+  & .brand img {
+    transform: scale(1.2);
+  }
+
+  & .top-nav {
+    display: none;
   }
 
   @media (max-width: ${breakpoints.large - 1}px) {
@@ -32,7 +34,6 @@ const StyledHeader = styled.header`
     z-index: var(--max-zindex);
 
     & .top-nav {
-      display: none;
       position: absolute;
       top: var(--nav-height);
       left: 0;
@@ -52,22 +53,14 @@ const StyledHeader = styled.header`
     }
   }
 
-  @media (min-width: ${breakpoints.large}) {
+  @media (min-width: ${breakpoints.large}px) {
     & .top-nav {
       display: block;
     }
   }
 `;
 
-const legacyLinks = [
-  { to: '/', label: 'Open Knowledge' },
-  { to: '/team', label: 'Team' },
-  { to: '/activities', label: 'Our activities' },
-  { to: '/calendar', label: 'Calendar' },
-  { to: '/stories', label: 'Our stories' }
-];
-
-const Header = () => {
+const Header = ({ data }) => {
   const [isOpen, setOpen] = useState();
   const callbackMenuToggled = () => {
     setOpen(!isOpen);
@@ -76,10 +69,8 @@ const Header = () => {
   return (
     <StyledHeader className="work-sans" data-state={`${isOpen ? 'reversed' : ''}`}>
       <StyledLink to="/" className="brand">
-        <img src={logo} alt="Open Knowledge Belgium" />
         <h1>
-          Open&nbsp;Knowledge
-          <br /> <span className="regular">Belgium</span>
+          <img src={data.logo} alt={data.org_name} />
         </h1>
       </StyledLink>
       <NavItems
@@ -87,7 +78,7 @@ const Header = () => {
         className="top-nav"
         isOpen={isOpen}
         toggle={callbackMenuToggled}
-        links={legacyLinks}
+        links={data.nav_items}
       />
     </StyledHeader>
   );

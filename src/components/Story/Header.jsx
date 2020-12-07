@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Date } from '../UI';
+import { Date, StyledLink } from '../UI';
 
 const Title = styled.h1`
   max-width: 40rem;
@@ -15,10 +15,24 @@ const Meta = styled.div`
   font-size: 1.4rem;
 `;
 
-const Header = ({ title, date, author }) => {
+const Link = styled(StyledLink)`
+  &:hover,
+  &:focus,
+  &.active {
+    color: inherit;
+  }
+`;
+
+const Header = ({ title, date, author, to }) => {
   return (
     <header className="work-sans" style={{ padding: 0, marginBottom: '1rem' }}>
-      <Title>{title}</Title>
+      {to ? (
+        <Link to={to}>
+          <Title>{title}</Title>
+        </Link>
+      ) : (
+        <Title>{title}</Title>
+      )}
       <Meta>
         {date && <Date date={date} />}
         {author && <address>{author}</address>}

@@ -5,21 +5,17 @@ backend:
 
 local_backend: true
 
-media_folder: okbe-website/images/uploads
+media_folder: static/images/uploads
 public_folder: /images/uploads
-
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dwyxk1pns
-    api_key: 837367631382331
-    use_transformations: true
 
 collections:
   - name: 'activities'
-    label: 'Activities Overview'
+    label: 'Activities'
     label_singular: 'Activity'
-    folder: 'content/activities/overview'
+    folder: 'content/activities'
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
     create: true
     identifier_field: name
     slug: '{{name}}'
@@ -37,26 +33,22 @@ collections:
         value_field: tags.*.name
         search_fields: [tags.*.name]
         hint: Tag not found? Go to 'Settings > Tags' to add a new tag!
-      - { label: 'Website', name: 'website', widget: 'string', required: false }
-  - name: 'activity_page'
-    label: 'Activities Pages'
-    folder: 'content/activities/pages'
-    label_singular: 'Activity Page'
-    create: true
-    identifier_field: name
-    slug: '{{name}}'
-    fields:
-      - {
-          label: 'Name',
-          name: 'name',
-          widget: 'relation',
-          search_fields: ['name'],
-          value_field: 'name',
-          collection: activity,
-        }
+      - { label: 'Website', name: 'to', widget: 'string', required: false }
       - { label: 'Catchphrase', name: 'catchphrase', widget: 'string', required: false }
       - { label: 'Description', name: 'body', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'featured_image', widget: 'image', allow_multiple: false }
+      - label: 'Featured image'
+        name: 'featured_image'
+        widget: 'object'
+        fields:
+          - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+          - {
+              label: 'Description',
+              name: 'alt',
+              widget: string,
+              required: false,
+              hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+              default: '',
+            }
       - label: 'Contact info'
         name: 'contact_info'
         widget: object
@@ -80,11 +72,18 @@ collections:
         fields:
           - { label: 'Name', name: 'name', widget: string }
           - { label: 'Task', name: 'task', widget: 'string', required: false }
+          - {
+              label: 'Picture',
+              name: 'picture',
+              widget: 'image',
+              allow_multiple: false,
+              required: false,
+            }
           - label: 'Contact info'
             name: 'contact_info'
             widget: object
             fields:
-              - { label: Email, name: email, widget: string }
+              - { label: Email, name: email, widget: string, required: false }
               - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
               - { label: LinkedIn, name: linkedin, widget: string, required: false }
   # - name: 'tweet_stories'
@@ -110,10 +109,19 @@ collections:
     label: 'Stories'
     label_singular: 'Story'
     folder: content/stories
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
     create: true
-    slug: '{{title}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}'
+    slug: '{{year}}{{month}}{{day}}-{{title}}'
     fields:
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - label: 'Date'
+        name: 'date'
+        widget: 'datetime'
+        picker_utc: true
+        date_format: 'DD/MM/YYYY'
+        time_format: false
+        hint: "Format: 'DD/MM/YYYY'"
       - { label: 'Author', name: 'author', widget: string }
       - { label: 'Title', name: 'title', widget: string }
       - { label: 'Article', name: 'body', widget: markdown }
@@ -133,7 +141,9 @@ collections:
     files:
       - label: 'Home'
         name: 'homepage'
-        file: content/pages/home.md
+        file: content/pages/home/index.md
+        media_folder: ''
+        public_folder: ''
         fields:
           - label: 'Header'
             name: 'header'
@@ -143,12 +153,19 @@ collections:
             fields:
               - { label: 'Tagline', name: 'tagline', widget: string }
               - { label: 'Mission', name: 'mission', widget: 'markdown', minimal: true }
-              - {
-                  label: 'Featured image',
-                  name: 'featured_image',
-                  widget: 'image',
-                  allow_multiple: false,
-                }
+              - label: 'Featured image'
+                name: 'featured_image'
+                widget: 'object'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+                  - {
+                      label: 'Description',
+                      name: 'alt',
+                      widget: string,
+                      required: false,
+                      hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+                      default: '',
+                    }
               - label: 'Call to action'
                 name: 'cta'
                 widget: 'object'
@@ -183,7 +200,8 @@ collections:
                     widget: 'relation',
                     collection: activities,
                     search_fields: ['name'],
-                    value_field: 'name',
+                    value_field: '{{slug}}',
+                    display_fields: ['name'],
                   }
               - label: 'Call to action'
                 name: 'cta'
@@ -204,12 +222,19 @@ collections:
             summary: 'Expand'
             collapsed: true
             fields:
-              - {
-                  label: 'Featured image',
-                  name: 'featured_image',
-                  widget: 'image',
-                  allow_multiple: false,
-                }
+              - label: 'Featured image'
+                name: 'featured_image'
+                widget: 'object'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+                  - {
+                      label: 'Description',
+                      name: 'alt',
+                      widget: string,
+                      required: false,
+                      hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+                      default: '',
+                    }
               - label: 'Featured Stories'
                 name: 'featured_stories'
                 widget: 'list'
@@ -217,17 +242,17 @@ collections:
                 allow_add: true
                 add_to_top: true
                 label_singular: 'a story'
-                summary: '{{field.activity}}'
-                fields:
-                  - {
-                      label: 'Story',
-                      name: 'story',
-                      widget: 'relation',
-                      collection: stories,
-                      search_fields: ['title', 'date'],
-                      value_field: '{{slug}}',
-                      display_fields: ['title', 'date'],
-                    }
+                summary: '{{field.story}}'
+                field:
+                  {
+                    label: 'Story',
+                    name: 'story',
+                    widget: 'relation',
+                    collection: stories,
+                    search_fields: ['title', 'date'],
+                    value_field: '{{slug}}',
+                    display_fields: ['title', 'date'],
+                  }
               - label: 'Call to action'
                 name: 'cta'
                 widget: 'object'
@@ -262,7 +287,9 @@ collections:
               - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Team'
         name: team
-        file: content/pages/team.md
+        file: content/pages/team/index.md
+        media_folder: ''
+        public_folder: ''
         fields:
           - label: 'Header'
             name: 'header'
@@ -278,21 +305,36 @@ collections:
                 fields:
                   - { label: 'Heading', name: 'heading', widget: 'string' }
                   - { label: 'Body', name: 'body', widget: markdown }
-              - {
-                  label: 'Featured image',
-                  name: 'featured_image',
-                  widget: 'image',
-                  allow_multiple: false,
-                }
-          - label: 'Board of directors'
-            name: 'directors'
+              - label: 'Featured image'
+                name: 'featured_image'
+                widget: 'object'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+                  - {
+                      label: 'Description',
+                      name: 'alt',
+                      widget: string,
+                      required: false,
+                      hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
+                      default: '',
+                    }
+          - label: 'Team members'
+            name: 'team'
             widget: 'list'
             allow_add: true
-            label_singular: 'a board member'
+            add_to_top: true
+            label_singular: 'a member'
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
               - { label: 'Task', name: 'task', widget: 'string', required: false }
+              - {
+                  label: 'Picture',
+                  name: 'picture',
+                  widget: 'image',
+                  allow_multiple: false,
+                  required: false,
+                }
               - label: 'Contact info'
                 name: 'contact_info'
                 widget: object
@@ -300,15 +342,23 @@ collections:
                   - { label: Email, name: email, widget: string }
                   - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
                   - { label: LinkedIn, name: linkedin, widget: string, required: false }
-          - label: 'Team members'
-            name: 'team'
+          - label: 'Board of directors'
+            name: 'directors'
             widget: 'list'
             allow_add: true
-            label_singular: 'a member'
+            label_singular: 'a board member'
+            add_to_top: true
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
               - { label: 'Task', name: 'task', widget: 'string', required: false }
+              - {
+                  label: 'Picture',
+                  name: 'picture',
+                  widget: 'image',
+                  allow_multiple: false,
+                  required: false,
+                }
               - label: 'Contact info'
                 name: 'contact_info'
                 widget: object
@@ -318,12 +368,30 @@ collections:
                   - { label: LinkedIn, name: linkedin, widget: string, required: false }
           - label: 'Open positions'
             name: 'positions'
-            widget: 'list'
-            allow_add: true
-            label_singular: 'a position'
-            summary: '{{fields.name}}'
+            widget: 'object'
+            summary: 'Expand'
             fields:
-              - { label: 'Name', name: 'name', widget: string }
+              - label: 'Employee'
+                name: 'employee'
+                widget: list
+                add_to_top: true
+                allow_add: true
+                summary: '{{fields.job}}'
+                field: { label: 'Job', name: 'job', widget: string }
+              - label: 'Internship'
+                name: 'internship'
+                widget: list
+                add_to_top: true
+                allow_add: true
+                summary: '{{fields.job}}'
+                field: { label: 'Job', name: 'job', widget: string }
+              - label: 'Volunteer'
+                name: 'volunteer'
+                widget: list
+                add_to_top: true
+                allow_add: true
+                summary: '{{fields.job}}'
+                field: { label: 'Job', name: 'job', widget: string }
           - label: 'SEO & Meta'
             name: 'seo'
             widget: 'object'
@@ -341,12 +409,15 @@ collections:
       - label: 'Header'
         name: 'header'
         file: content/settings/header/index.md
+        media_folder: ''
+        public_folder: ''
         fields:
           - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
           - { label: 'Organization Name', name: 'org_name', widget: string }
           - label: 'Menu Items'
             name: 'nav_items'
             widget: 'list'
+            add_to_top: true
             fields:
               - { label: 'Label', name: 'label', widget: 'string' }
               - {
