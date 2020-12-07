@@ -13,7 +13,8 @@ header:
     to: /team
 activities:
   featured_activities:
-    - openstreetmap-belgium/index
+    - open-summer-of-code/index
+    - open-belgium/index
   cta:
     label: Discover all activities
     to: /activities
