@@ -26,6 +26,4 @@ Essent.be support Apps for Ghent with their data, but also awarded the team RMϞ
 
 Finally, there was the TEDxGhent prize for the best presentation. This prize went to 9K. The team has been awarded a speaking slot at TEDxGhent, the 22d of June 2013.
 
-<div class="wp-caption alignnone" style="width: 624px">![](8592827782_0a0435721c_b.jpg)The team 9K receives the TEDxGhent prize
-
-</div>
+![](8592827782_0a0435721c_b.jpg)The team 9K receives the TEDxGhent prize

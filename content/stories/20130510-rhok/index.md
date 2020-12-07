@@ -11,7 +11,7 @@ tags:
 
 It has become a tradition that OKFN Belgium plays a part in Random Hacks of Kindness: a weekend where programmers hack for a better world. OKFN Belgium will be present with a couple of Geospatial datasets from the Flemish provincial tourism organization. The datasets are on their way to be opened: all horseback riding paths in Flanders, all bike routes and all hikers’ routes.
 
-![](logo2.png)
+![](http://www.rhok.be/wp-content/uploads/2011/10/logo2.png)
 
 On 1-2 June 2013, the EJC and De Persgroep, the leading media company in the Flemish/Dutch media landscape, will be hacking with the coders and programmers at the Random Hacks of Kindness hackathon in Belgium.
 

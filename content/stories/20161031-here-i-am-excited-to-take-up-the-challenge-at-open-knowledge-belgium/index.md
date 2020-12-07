@@ -17,8 +17,6 @@ As Pieter-Jan and I aren’t identical twin brothers, some things are going to s
 >
 > — Dries Van Ransbeeck (@DVRansbeeck) [October 17, 2016](https://twitter.com/DVRansbeeck/status/788016043126128640)
 
-<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
-
 ### My belief: Open Knowledge and Open Data for a better and more sustainable future
 
 With previous experiences in data modelling, civic engagement and crowdsourcing, I have developed a keen interest in open innovation and the power of many intrinsically motivated individuals contributing to projects with social and societal impact, serving the interests of the many rather than the happy few. However I do have plenty of room to learn, especially on the more technical side (currently taking a [MOOC on Linked Data Engineering](https://open.hpi.de/courses/semanticweb2016)), I’m more than ready to take up the challenge and start working on projects, which are often, at the crossroads of public interest and private initiative.

@@ -15,6 +15,6 @@ The Storify summary below is a way to show everyone, attendees / speakers and pe
 
 And for those who want to gaze at the presentations that were given during the event, head over to the [DataDays Website](http://www.datadays.eu/presentations/). Want to watch the pictures of the event itself? On [Facebook](https://www.facebook.com/media/set/?set=a.283437808472346.1073741829.247409818741812&type=1) there are quite a lot of pictures to be found.
 
-<div class="storify">\[[View the story “Open Belgium Conference 2014” on Storify](//storify.com/PJPauwels/open-belgium-conference-2014)\]
+\[[View the story “Open Belgium Conference 2014” on Storify](//storify.com/PJPauwels/open-belgium-conference-2014)\]
 
-</div>Last but not least we would like to thank our co-organisers, our sponsors, volunteers, speakers, ambassadors and attendees. There are to many to call by name but you know who you are and we thank you for being there at our side.
+Last but not least we would like to thank our co-organisers, our sponsors, volunteers, speakers, ambassadors and attendees. There are to many to call by name but you know who you are and we thank you for being there at our side.

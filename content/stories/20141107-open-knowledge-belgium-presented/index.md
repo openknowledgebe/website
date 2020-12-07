@@ -7,7 +7,7 @@ tags:
   - general
 ---
 
-Open Knowledge Belgium is an umbrella organisation for Open Knowledge initiatives in Belgium. Our most important asset are our working groups. Open Knowledge Belgium tries to support these working groups working around a certain open subject in a loose setting by providing them help with submitting projects, bringing them together on a yearly conference, providing them with technical tools to e.g., open up data (http://thedatatank.com), providing them the contacts to talk with ambitious students during summer of code and so forth.
+Open Knowledge Belgium is an umbrella organisation for Open Knowledge initiatives in Belgium. Our most important asset are our working groups. Open Knowledge Belgium tries to support these working groups working around a certain open subject in a loose setting by providing them help with submitting projects, bringing them together on a yearly conference, providing them with technical tools to e.g., open up data (<http://thedatatank.com>), providing them the contacts to talk with ambitious students during summer of code and so forth.
 
 Each of these working groups have a representative in in the general Open Knowledge Belgium board of directors. And we have a full-time community manager.
 

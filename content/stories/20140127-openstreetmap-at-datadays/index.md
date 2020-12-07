@@ -1,6 +1,6 @@
 ---
 date: '2014-01-27T14:40:38+00:00'
-author: benabelshausen
+author: Ben Abelshausen
 title: 'OpenStreetMap @ DataDays'
 tags:
   - datadays2014

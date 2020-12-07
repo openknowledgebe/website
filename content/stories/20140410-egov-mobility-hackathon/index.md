@@ -24,4 +24,4 @@ There’s a whole Storify about the Hackathon by Coworking Namur (French only).
 
 Congratulations to the winners and we hope to see you again during the energy hackathon.
 
-<div class="storify">[[View the story “Hackathon sur la Mobilité 4-5 avril 2014 au Coworking Namur #HackWall” on Storify](//storify.com/CoworkingNamur/hackaton-sur-la-mobilite-le-8-avril-2014-au-cowork)]</div>
+[[View the story “Hackathon sur la Mobilité 4-5 avril 2014 au Coworking Namur #HackWall” on Storify](//storify.com/CoworkingNamur/hackaton-sur-la-mobilite-le-8-avril-2014-au-cowork)]

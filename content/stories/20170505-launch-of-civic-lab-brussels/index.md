@@ -14,7 +14,9 @@ tags:
 
 <iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/1tZYePo9y213Ho" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="427"> </iframe>
 
-<div style="margin-bottom:5px">  **[Introduction to Civic Lab Brussels](https://www.slideshare.net/DriesVanRansbeeck/introduction-to-civic-lab-brussels "Introduction to Civic Lab Brussels")**  from **[Dries Van Ransbeeck](https://www.slideshare.net/DriesVanRansbeeck)** </div> **How did we come up with this idea?**
+**[Introduction to Civic Lab Brussels](https://www.slideshare.net/DriesVanRansbeeck/introduction-to-civic-lab-brussels 'Introduction to Civic Lab Brussels')** from **[Dries Van Ransbeeck](https://www.slideshare.net/DriesVanRansbeeck)**
+
+**How did we come up with this idea?**
 
 It all started during a fruitful discussion with Open Knowledge Germany at Open Belgium earlier in March. While talking about the [26 OK Labs](https://codefor.de/) in Germany, more specifically being intrigued by the air quality project of [OK Lab Stuttgart](https://www.meetup.com/OK-Lab-Stuttgart-Meet-Up/), we got to ask ourselves: why wouldn’t we launch something similar in Brussels/Belgium?
 
@@ -41,9 +43,9 @@ At our kickoff meetup we were pleased to welcome 33 open believers — what corr
 
 Thanks to the diversity among attendees, our kickoff meetup turned out to be a big success. This is also where the potential lies for Civic labs: bringing researchers, hackers, civil servants, entrepreneurs and civil society representatives in the same room and inviting them to collaboratively work on open projects.
 
-<div class="wp-caption alignnone" id="attachment_1480" style="width: 310px">![](Civic_Labs_Brussels_Kickoff_2-300x225.jpg) Civic Labs Brussels Kickoff
+![](Civic_Labs_Brussels_Kickoff_2-300x225.jpg) Civic Labs Brussels Kickoff
 
-</div>**What to expect from our next Civic Lab meetups?**
+**What to expect from our next Civic Lab meetups?**
 
 During our next open gathering there will be presentations about both running projects —e.g. air quality, OpenStreetMap and open food data — as well new projects in Civic Lab Brussels as, for instance, from Wikimedia Belgium and Dewey.
 

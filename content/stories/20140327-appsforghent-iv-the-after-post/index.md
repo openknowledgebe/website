@@ -25,4 +25,4 @@ All in all we had some great input from the teams and a new look into the minds 
 
 ### Or relive the social media side of things with this storify:
 
-<div class="storify">[[View the story “Apps for Ghent IV Social Media Aftermath” on Storify](//storify.com/PJPauwels/apps-for-ghent-iv-aftermath)]</div>
+[[View the story “Apps for Ghent IV Social Media Aftermath” on Storify](//storify.com/PJPauwels/apps-for-ghent-iv-aftermath)]

@@ -9,7 +9,9 @@ tags:
   - opendata
 ---
 
-<div class="g-group l-lg-mar-bot-6 l-md-mar-bot-4 "><div class="g-cell g-cell-10-12 g-cell-md-1-1"><div class="has-user-generated-content js-d-read-more read-more js-read-more read-more--medium-down read-more--expanded"><div class="js-xd-read-more-toggle-view read-more__toggle-view"><div class="js-xd-read-more-contents text-body-medium">**We are using Open Data to build a map visualizing the streets names of Brussels by gender. We need your help!** </div></div></div></div></div><div class="g-group l-mar-bot-6 l-sm-mar-bot-4"><div class="structured-content g-cell g-cell-10-12 g-cell-md-1-1"><div class="has-user-generated-content"><div class="structured-content-rich-text structured-content__module l-align-left l-mar-vert-6 l-sm-mar-vert-4 text-body-medium">The names of public spaces (streets, avenues, squares and others) define the identity of a city and how citizens interact with it. Brussels suffers from a major inequality between male and female street names and we want to help fix this!
+**We are using Open Data to build a map visualizing the streets names of Brussels by gender. We need your help!**
+
+The names of public spaces (streets, avenues, squares and others) define the identity of a city and how citizens interact with it. Brussels suffers from a major inequality between male and female street names and we want to help fix this!
 
 Event info &amp; registration: <http://equalstreetnamesbrussels.eventbrite.co.uk/>
 
@@ -47,10 +49,8 @@ You need to come with your own computer.
 
 **Do I need a technical profile to come?**
 
-Absolutely not! Just your ambition to change the street names ![😉](1f609.png)
+Absolutely not! Just your ambition to change the street names ! 😉
 
 **Organised by whom?**
 
 This project is the result of a collaboration between not-for-profit organisations Open Knowledge Belgium, OpenStreetMap Belgium, Wikimedia Belgium and the feminist collective Noms Peut-Être. The event is made possible with the support of Equal.Brussels.
-
-</div></div></div></div>

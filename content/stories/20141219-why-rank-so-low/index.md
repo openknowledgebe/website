@@ -26,13 +26,9 @@ The Twitter-conversation with Phil Archer from W3C and Pieter Colpaert sums up o
 >
 > — Phil Archer (@philarcher1) [December 9, 2014](https://twitter.com/philarcher1/status/542364745110937600)
 
-<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
-
 > [@philarcher1](https://twitter.com/philarcher1) [@opendataforum\_](https://twitter.com/opendataforum_) A lot of national datasets are not [\#opendata](https://twitter.com/hashtag/opendata?src=hash). If we’d have a census for regions, Flanders would score way ↑
 >
 > — Pieter Colpaert (@pietercolpaert) [December 9, 2014](https://twitter.com/pietercolpaert/status/542365214558416896)
-
-<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
 
 But don’t get us wrong, the [Global Data Index](http://index.okfn.org/) is a great tool to benchmark countries on their national open data efforts. And to have a relative simple tool for the open community to crowdsource a global ranking you need to make certain choices. But that doesn’t mean that Belgium is doing a bad job. Open Data in Belgium and broader open knowledge is mostly emerging from bottom up initiatives by numerous organisations and local/regional governments.
 

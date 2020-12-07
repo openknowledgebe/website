@@ -8,9 +8,9 @@ tags:
 
 Yesterday we had our first data discussion at the offices of Truvo. Truvo is the provider of the Print (pages d’or/gouden gids) in Belgium, but also the largest Internet agency in the country. It turned out to be a very inspiring meeting. Thanks to all attendees and Truvo for hosting.
 
-<div class="wp-caption aligncenter" style="width: 210px">![Truvo logo](http://www.ua.ac.be/images/ua/container9151/TRUVO_logo.gif)Truvo logo
+![Truvo logo](http://www.ua.ac.be/images/ua/container9151/TRUVO_logo.gif)Truvo logo
 
-</div>### **What data?**
+### **What data?**
 
 Truvo distributes both the white and the yellow pages in Belgium and next to that truvo has established the largest internet full service agency for SME customers selling internet solutions from 20€ per month. They have 25K website customers, are the largest Google reseller, as well as Facebook, beweb, sanoma and other local media.
 
@@ -20,9 +20,9 @@ This means they have an incredible amount of data, which they check regularly, w
 
 A good example of the way to go is Canada. It was brought forward several times during the discussion as an example where Belgium can easily get in 1 to 2 months.
 
-<div class="wp-caption aligncenter" id="attachment_77" style="width: 310px">[![Yellow API](yellowapi-300x157.png)](http://yellowapi.com)Yellow API . com
+[![Yellow API](yellowapi-300x157.png)](http://yellowapi.com)Yellow API . com
 
-</div>This is a read-only (distribution and syndication) API where your can query the yellow pages. It allows any website to earn money, as it shares the revenue of possible ads that you may show in your application. The geolocations present in that API are more accurate than the geolocations in Google Maps as the company behind Yellow checks this on a regular basis. Inside the API you can easily match twitter, foursquare and personal Yellow Pages account to get more information in one HTTP request.
+This is a read-only (distribution and syndication) API where your can query the yellow pages. It allows any website to earn money, as it shares the revenue of possible ads that you may show in your application. The geolocations present in that API are more accurate than the geolocations in Google Maps as the company behind Yellow checks this on a regular basis. Inside the API you can easily match twitter, foursquare and personal Yellow Pages account to get more information in one HTTP request.
 
 ### Open Data?
 

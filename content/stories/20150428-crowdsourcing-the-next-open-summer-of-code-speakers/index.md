@@ -21,138 +21,31 @@ Last year we had the honour of having [Hans Verscheure](https://twitter.com/hans
 
 This is what they came up with:
 
-<div style="width:30%;padding:0 10pt 0 0;float:left;">**Name**  
-  
-Tim Berners-Lee  
-  
-Lea Verou  
-  
-Douglas Crockford  
-  
-Paul Irish  
-  
-Rachel Rayns  
-  
-Gabe Newell  
-  
-Massimo Banzi  
-  
-Zhong Xu  
-  
-Harry Roberts  
-  
-Wouter Smet  
-  
-Alexander De Croo  
-  
-Jeremyle Van  
-  
-Arne Bassez  
-  
-Kristof Houben  
-  
-Roy Van Dijk  
-  
-Valentijn Destoop  
-  
-Stephane Vanhalkman  
-  
-Addy Osmani  
-  
-Tim Van Lier  
-  
-Thomas Joos  
-  
-Michiel Akkermans  
-  
-Robin Wauters </div><div style="width:30%;padding:0 10pt 0 0;float:left;">**Twitter or link**  
-  
-[@Timberners\_lee](https://twitter.com/timberners_lee)  
-  
-[@LeaVerou](https://twitter.com/LeaVerou)  
-  
-[GitHub Crockford](https://github.com/douglascrockford)  
-  
-[@paul\_irish](https://twitter.com/paul_irish)  
-  
-[@rachelrayns](https://twitter.com/rachelrayns)  
-  
-[Gabe Newell](http://www.forbes.com/profile/gabe-newell/)  
-  
-[@mbanzi](https://twitter.com/mbanzi)  
-  
-[@zhxu](https://twitter.com/zhxu)  
-  
-[@csswizardry](https://twitter.com/csswizardry)  
-  
-[@woutersmet](https://twitter.com/woutersmet)  
-  
-[@alexanderdecroo](https://twitter.com/alexanderdecroo)  
-  
-[@jeremylv](https://twitter.com/jeremylv)  
-  
-[@Arnebassez](https://twitter.com/Arnebassez)  
-  
-[@houbenkristof](https://twitter.com/houbenkristof)  
-  
-[@r\_oy](https://twitter.com/r_oy)  
-  
-[@quidante](https://twitter.com/quidante)  
-  
-[Roninweb on Dribble](https://dribbble.com/roninweb)  
-  
-[@addyosmani](https://twitter.com/addyosmani)  
-  
-[@vanlier](https://twitter.com/vanlier)  
-  
-[@thomasjoos](https://twitter.com/thomasjoos)  
-  
-[Michel Akkermans](https://www.clear2pay.com/about-us/michel-akkermans)  
-  
-[@robinwauters](https://twitter.com/robinwauters)</div><div style="width:30%;padding:0 10pt 0 0;float:left;">**Subject**  
-  
-Linked Open Data  
-  
-CSS  
-  
-Javascript  
-  
-Javascript  
-  
-Raspberry Pi  
-  
-Half Life 3  
-  
-Arduino  
-  
-Posios Story  
-  
-Design  
-  
-Growth Hacking  
-  
-Innovation in Belgium  
-  
-Sunrise story  
-  
-Start up  
-  
-Product Design  
-  
-Design  
-  
-Design  
-  
-Design  
-  
-Javascript  
-  
-Digital Media  
-  
-Innovation  
-  
-Start-Up BE  
-  
-Tech in EU </div><div style="clear:both;"></div>Are you one of the speakers mentioned above and are you enthused to speak to our students during open Summer of code? We have no big budgets, but powerhouse students, fine Belgian beers and innovation flowing through our systems. We will be located somewhere in or near a Belgian city. We open up the talks to people located at our host and stream the whole thing via Google Hangout on Air for those who can’t make it. Because you know, we want to open up our knowledge.
+| Name                | Twitter or link                                                         | Subject               |
+| ------------------- | ----------------------------------------------------------------------- | --------------------- |
+| Tim Berners-Lee     | [@Timberners_lee](https://twitter.com/timberners_lee)                   | Linked Open Data      |
+| Lea Verou           | [@LeaVerou](https://twitter.com/LeaVerou)                               | CSS                   |
+| Douglas Crockford   | [GitHub Crockford](https://github.com/douglascrockford)                 | Javascript            |
+| Paul Irish          | [@paul_irish](https://twitter.com/paul_irish)                           | Javascript            |
+| Rachel Rayns        | [@rachelrayns](https://twitter.com/rachelrayns)                         | Raspberry Pi          |
+| Gabe Newell         | [Gabe Newell](http://www.forbes.com/profile/gabe-newell/)               | Half Life 3           |
+| Massimo Banzi       | [@mbanzi](https://twitter.com/mbanzi)                                   | Arduino               |
+| Zhong Xu            | [@zhxu](https://twitter.com/zhxu)                                       | Posios Story          |
+| Harry Roberts       | [@csswizardry](https://twitter.com/csswizardry)                         | Design                |
+| Wouter Smet         | [@woutersmet](https://twitter.com/woutersmet)                           | Growth Hacking        |
+| Alexander De Croo   | [@alexanderdecroo](https://twitter.com/alexanderdecroo)                 | Innovation in Belgium |
+| Jeremyle Van        | [@jeremylv](https://twitter.com/jeremylv)                               | Sunrise story         |
+| Arne Bassez         | [@Arnebassez](https://twitter.com/Arnebassez)                           | Start up              |
+| Kristof Houben      | [@houbenkristof](https://twitter.com/houbenkristof)                     | Product Design        |
+| Roy Van Dijk        | [@r_oy](https://twitter.com/r_oy)                                       | Design                |
+| Valentijn Destoop   | [@quidante](https://twitter.com/quidante)                               | Design                |
+| Stephane Vanhalkman | [Roninweb on Dribble](https://dribbble.com/roninweb)                    | Design                |
+| Addy Osmani         | [@addyosmani](https://twitter.com/addyosmani)                           | Javascript            |
+| Tim Van Lier        | [@vanlier](https://twitter.com/vanlier)                                 | Digital Media         |
+| Thomas Joos         | [@thomasjoos](https://twitter.com/thomasjoos)                           | Innovation            |
+| Michiel Akkermans   | [Michel Akkermans](https://www.clear2pay.com/about-us/michel-akkermans) | Start-Up BE           |
+| Robin Wauters       | [@robinwauters](https://twitter.com/robinwauters)                       | Tech in EU            |
+
+Are you one of the speakers mentioned above and are you enthused to speak to our students during open Summer of code? We have no big budgets, but powerhouse students, fine Belgian beers and innovation flowing through our systems. We will be located somewhere in or near a Belgian city. We open up the talks to people located at our host and stream the whole thing via Google Hangout on Air for those who can’t make it. Because you know, we want to open up our knowledge.
 
 ![Phil Archer live](14754163796_416fba00af_k-683x1024.jpg)

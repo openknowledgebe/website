@@ -19,7 +19,9 @@ With 10 Business Lounges happening throughout Europe this year, [Apps for Europe
 
 2\. You can also enter the online business lounge by providing information about your application, team and business model. The Apps for Europe online competition will run from September 1st to December 31st 2014.
 
-<div style="text-align: center">[<button style="margin: 0 auto">Click here to submit your application for the Online Business Lounge</button>  ](http://www.appsforeurope.eu/content/submit-your-application)</div>##### About last years competition
+[Click here to submit your application for the Online Business Lounge](http://www.appsforeurope.eu/content/submit-your-application)
+
+##### About last years competition
 
 Last years winner [BikeCityGuide.org](http://www.appsforeurope.eu/article/bikecityguide) has show the potential of using open data to enhance their company and expand their services. Since the [international Business Lounge](http://www.bikecityguide.org/blog/2014/04/bikecityguide-wins-apps-for-europe-award/) at Future Everything last year they were able to reach new cities and raise almost 140.000,- in crowdfunding. A true success story!
 
@@ -27,6 +29,7 @@ And talking about a successes, the audience award was won by [Nostalgeo](http://
 
 Other Belgian finalists were [data.be](http://data.be/), making KBO data searchable and [Carambla](https://carambla.com/), the parking app that provides information about parking space in 3 major cities in Belgium. And next year we want a strong Belgian presence at the international Business Lounge as well.
 
-<div class="wp-caption aligncenter" id="attachment_5071" style="width: 500px">![Nostalgeo at the International Business Lounge](https://farm4.staticflickr.com/3808/13621765125_4500ed89b8_c.jpg)Ides from Nostalgeo receiving the Audience award at the International Business Lounge 2014
+![Nostalgeo at the International Business Lounge](https://farm4.staticflickr.com/3808/13621765125_4500ed89b8_c.jpg)
+Ides from Nostalgeo receiving the Audience award at the International Business Lounge 2014
 
-</div>Over the past years many local, regional and national app competitions in Europe have been organized to stimulated developers and companies to build new applications with open data. Apps for Europe has taken it to the next level. By adding Business Lounges to local events we introduce the world of open data development to that of investors, accelerators, incubators and more. Want more information about the Apps for Europe project? Mail to [Pieter-Jan](mailto:pieterjan@okfn.be) or leave a comment below.
+Over the past years many local, regional and national app competitions in Europe have been organized to stimulated developers and companies to build new applications with open data. Apps for Europe has taken it to the next level. By adding Business Lounges to local events we introduce the world of open data development to that of investors, accelerators, incubators and more. Want more information about the Apps for Europe project? Mail to [Pieter-Jan](mailto:pieterjan@okfn.be) or leave a comment below.

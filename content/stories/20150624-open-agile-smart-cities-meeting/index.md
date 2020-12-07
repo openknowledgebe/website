@@ -16,6 +16,4 @@ If you give a presentation on Open Knowledge Belgium yourself, feel free to reus
 >
 > — frontierCities (@frontierCities) [June 24, 2015](https://twitter.com/frontierCities/status/613641371048611840)
 
-<script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
-
 Pieter

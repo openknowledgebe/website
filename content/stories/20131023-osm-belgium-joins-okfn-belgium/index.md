@@ -1,6 +1,6 @@
 ---
 date: '2013-10-23T10:55:08+00:00'
-author: benabelshausen
+author: Ben Abelshausen
 title: 'OSM Belgium joins OKFN Belgium'
 tags:
   - featured

@@ -11,7 +11,7 @@ tags:
 
 # ![](http://extern.waag.org/ivonne/a4eu/Competition.jpg)
 
-<div class="region region-content" style="font-weight: inherit; font-style: inherit;"><div class="block block-system" id="block-system-main" style="font-weight: inherit; font-style: inherit;"><div class="content" style="font-weight: inherit; font-style: inherit;"><div class="content" style="color: #373737;"><div class="field field-name-body field-type-text-with-summary field-label-hidden" style="font-weight: inherit; font-style: inherit;"><div class="field-items" style="font-weight: inherit; font-style: inherit;"><div class="field-item even" style="font-weight: inherit; font-style: inherit;">Are you making an **open data based app**? Apps for Europe runs an annual competition to find the best new apps across Europe that we can help scale into viable businesses.
+Are you making an **open data based app** ? Apps for Europe runs an annual competition to find the best new apps across Europe that we can help scale into viable businesses.
 
 - **Who can enter?** Anyone that uses some form of open data in their application or service!
 - **How do I enter?** You need to [enter your application online](http://www.appsforeurope.eu/content/submit-your-application), all the local business lounge are over.
@@ -45,5 +45,3 @@ Apps for Europe is a support network with a mission to turn data based apps into
 ## Can’t find what you’re looking for?
 
 Email: <info@appsforeurope.eu> and we’ll help you.
-
-</div></div></div></div></div></div></div>

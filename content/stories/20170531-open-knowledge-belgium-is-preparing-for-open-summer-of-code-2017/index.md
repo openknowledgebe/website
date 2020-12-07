@@ -21,11 +21,17 @@ tags:
 
 As the tradition goes, the first Monday after International Open Data Day, Open Knowledge Belgium organises its Open Belgium conference on open knowledge and open data in Belgium.
 
-<figure class="graf graf--figure">![](1*SaTQ_gM5nJf6LyMGTUZczw.png)<figcaption class="imageCaption">Open Belgium was made possible by an incredible group of volunteers</figcaption></figure>This year’s community-driven gathering of open enthusiasts took place in Brussels for the first time and was a big success. More than 250 people with different backgrounds showed up to talk about the current state of and next steps towards more open knowledge and open data in Belgium.
+![](1*SaTQ_gM5nJf6LyMGTUZczw.png)
+
+Open Belgium was made possible by an incredible group of volunteers
+
+This year’s community-driven gathering of open enthusiasts took place in Brussels for the first time and was a big success. More than 250 people with different backgrounds showed up to talk about the current state of and next steps towards more open knowledge and open data in Belgium.
 
 <iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/CHu5InX3faGGVW" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="427"> </iframe>
 
-<div style="margin-bottom:5px">  **[Overview Open Belgium 2017](https://www.slideshare.net/OpenKnowledgeBE/overview-open-belgium-2017 "Overview Open Belgium 2017")**  from **[Open Knowledge Belgium](https://www.slideshare.net/OpenKnowledgeBE)** </div>All presentations, notes and visuals of Open Belgium are available on <http://2017.openbelgium.be/presentations>.
+**[Overview Open Belgium 2017](https://www.slideshare.net/OpenKnowledgeBE/overview-open-belgium-2017 'Overview Open Belgium 2017')** from **[Open Knowledge Belgium](https://www.slideshare.net/OpenKnowledgeBE)**
+
+All presentations, notes and visuals of Open Belgium are available on <http://2017.openbelgium.be/presentations>.
 
 **Launch of Civic Lab Brussels**
 
@@ -37,7 +43,9 @@ Eventually, after a wonderful visit to [BeCentral](http://www.becentral.org/) �
 
 <iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/1tZYePo9y213Ho" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="427"> </iframe>
 
-<div style="margin-bottom:5px">  **[Introduction to Civic Lab Brussels](https://www.slideshare.net/DriesVanRansbeeck/introduction-to-civic-lab-brussels "Introduction to Civic Lab Brussels")**  from **[Dries Van Ransbeeck](https://www.slideshare.net/DriesVanRansbeeck)** </div>The goal of Civic Labs Brussels is two-fold: on the one hand, offering volunteers opportunities to contribute to civic projects they care about. On the other hand, providing initiative-takers of open project with help and advice from fellow citizens.
+**[Introduction to Civic Lab Brussels](https://www.slideshare.net/DriesVanRansbeeck/introduction-to-civic-lab-brussels 'Introduction to Civic Lab Brussels')** from **[Dries Van Ransbeeck](https://www.slideshare.net/DriesVanRansbeeck)**
+
+The goal of Civic Labs Brussels is two-fold: on the one hand, offering volunteers opportunities to contribute to civic projects they care about. On the other hand, providing initiative-takers of open project with help and advice from fellow citizens.
 
 Open in the case of our Civic Lab means, corresponding to the [Open Definition](http://opendefinition.org/), yet slightly shorter, that anyone can freely contribute to and benefit from the project. No strings attached.
 
@@ -47,4 +55,6 @@ Civic Lab meetups are not only to put open initiatives in the picture and hang o
 
 Last but not least, Open Knowledge Belgium is preparing for the seventh edition of its annual [open Summer of code](http://2017.summerofcode.be/). From 3rd until 27th July, 36 programming, design and communications students will be working under the guidance of experienced coaches on 10 different open innovation projects with real-life impact.
 
-<div class="embed-vimeo" style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="338" mozallowfullscreen="" src="https://player.vimeo.com/video/188284459" webkitallowfullscreen="" width="600"></iframe></div>If you want to stay updated about open Summer of code and all other activities, please follow [Open Knowledge Belgium on Twitter](https://twitter.com/OpenKnowledgeBE) or subscribe to its [newsletter](https://www.openknowledge.be/#subform).
+<iframe allowfullscreen="" frameborder="0" height="338" mozallowfullscreen="" src="https://player.vimeo.com/video/188284459" webkitallowfullscreen="" width="600"></iframe>
+
+If you want to stay updated about open Summer of code and all other activities, please follow [Open Knowledge Belgium on Twitter](https://twitter.com/OpenKnowledgeBE) or subscribe to its [newsletter](https://www.openknowledge.be/#subform).

@@ -31,9 +31,9 @@ How much efficiency can be gained by distributing the data through some form of 
 
 To make this reality, all the efforts to engage the coding community to use your Open Data should also happen within your organisation. At least to raise the _awareness_ of the value of data and the importance of data quality. This is where the feedback loop is key. By showing results of third party developments, preferably in a fancy app, a lot of civil servants see their data used and useful in a way that is previously seen as not possible for a government: “trendy, interactive, mobile or user-friendly”, terms that are not easily associated with governments.
 
-<div class="wp-caption aligncenter" style="width: 738px">![](open-data-in-gent-1-728.jpg?cb=1316415281)Open Data, Stad Gent
+![](open-data-in-gent-1-728.jpg)Open Data, Stad Gent
 
-</div>***You are not alone…***
+**_You are not alone…_**
 
 For different reasons, the public accessible toilets in Ghent are managed by different departments, each working with their own ‘siloed’ applications. It took some effort to combine those into a printed map of the public toilets in Ghent. Some considerable editorial effort was necessary to clean up the data, so the right parameters could be attributed consistently to the various sources.
 

@@ -65,4 +65,4 @@ The pan-European competition will run again from 2014/15 culminating in another 
 For more information about the project visit [www.appsforeurope.eu](http://appsforeurope.eu/)  
 For more insights on the conference itself through the attendees, here’s is a storify:
 
-<div class="storify">[[View the story “International Business Lounge 2014 – FutureEverything” on Storify](//storify.com/Apps4EU/international-business-lounge-2014-futureeverythin)]</div>
+[[View the story “International Business Lounge 2014 – FutureEverything” on Storify](//storify.com/Apps4EU/international-business-lounge-2014-futureeverythin)]
