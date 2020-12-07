@@ -8,7 +8,7 @@ tags:
 
 For the third time we organize Random Hacks of Kindness in Belgium. Random Hacks of Kindness is a rapidly growing global initiative encompassing a community of over 5,500 innovators in over 30 countries making the world a better place by developing practical, open source technology solutions to respond to some of the most complex challenges facing humanity. This is done by defining problems, organizing hackathons, and ensuring projects are effectively deployed. Join us on December 1st and 2nd for the next series of global hackathons.
 
-[![](http://www.rhok.be/wp-content/uploads/2011/10/logo2.png)](http://rhok.be)
+[![](//www.rhok.be/wp-content/uploads/2011/10/logo2.png)](http://rhok.be)
 
 At the next event we’ll be working on some ideas from [Bond Zonder Naam](http://www.bzn.be). One of the ideas will be used during their next campagne which goes live on 12/12/12 (10 days after the event). We’ll also be brainstorming about food wastes, some problems around Journalism and a possible cooperation with Doctors Without Borders. More info on some of the ideas can be found on our blog: [www.rhok.be/blog/](http://www.rhok.be/blog/)
 

@@ -30,8 +30,6 @@ More information on <http://schoolkid.be>
 
 <span style="text-decoration: underline">Benevolent working group leader</span>: Lieven Janssen (lieven.janssen at okfn.org)
 
-![](http://www.ibbt.be/userfiles/images/blog/hackaton.jpg)
-
 <span style="text-decoration: underline">Update</span>: This working group has certainly been going through the most amazing evolution the past few months. We have been organizing Apps For Ghent, open data workshop for Truvo, Labs For VDAB, Apps For Flanders, the Open Data Day for Flanders and a lot of these events are still in the pipeline: Apps For Antwerp (first of December), Apps For Bruges (First half of 2013), Apps For Ghent 3, and so on and so forth, each time bringing together more than 50 developers, students, data enthusiasts, policy makers, data owners and so on.
 
 Want to get involved in one of the current working groups? Interested in setting up your own working group at OKFN Belgium? Interested in our app/hack/make contests? Don’t hesitate to contact us.

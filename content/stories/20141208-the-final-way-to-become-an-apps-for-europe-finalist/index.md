@@ -9,8 +9,6 @@ tags:
   - appsforeurope
 ---
 
-# ![](http://extern.waag.org/ivonne/a4eu/Competition.jpg)
-
 Are you making an **open data based app** ? Apps for Europe runs an annual competition to find the best new apps across Europe that we can help scale into viable businesses.
 
 - **Who can enter?** Anyone that uses some form of open data in their application or service!

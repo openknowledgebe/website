@@ -7,7 +7,7 @@ tags:
   - featured
 ---
 
-[![Very-Basic-Lock-icon](http://blog.openbelgium.be/wp-content/uploads/2014/01/Very-Basic-Lock-icon-300x256.png)](http://blog.openbelgium.be/wp-content/uploads/2014/01/Very-Basic-Lock-icon.png)Although Open Data is a known concept in Belgium for several years, according to the ranking on the [Open Data Index](https://index.okfn.org/country/), Belgium only ranks 58th out of the 70 registered countries. That’s something we at OKFN Belgium believe can be improved if we all work together. That’s why we revived [OpenBelgium.be](http://openbelgium.be), a place for all the Belgian Open Data enthusiasts.
+Although Open Data is a known concept in Belgium for several years, according to the ranking on the [Open Data Index](https://index.okfn.org/country/), Belgium only ranks 58th out of the 70 registered countries. That’s something we at OKFN Belgium believe can be improved if we all work together. That’s why we revived [OpenBelgium.be](http://openbelgium.be), a place for all the Belgian Open Data enthusiasts.
 
 **This website is not** **just** **a website**
 

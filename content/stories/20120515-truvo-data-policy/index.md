@@ -8,8 +8,6 @@ tags:
 
 Yesterday we had our first data discussion at the offices of Truvo. Truvo is the provider of the Print (pages d’or/gouden gids) in Belgium, but also the largest Internet agency in the country. It turned out to be a very inspiring meeting. Thanks to all attendees and Truvo for hosting.
 
-![Truvo logo](http://www.ua.ac.be/images/ua/container9151/TRUVO_logo.gif)Truvo logo
-
 ### **What data?**
 
 Truvo distributes both the white and the yellow pages in Belgium and next to that truvo has established the largest internet full service agency for SME customers selling internet solutions from 20€ per month. They have 25K website customers, are the largest Google reseller, as well as Facebook, beweb, sanoma and other local media.

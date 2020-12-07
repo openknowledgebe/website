@@ -6,8 +6,6 @@ tags:
   - 'apps for x'
 ---
 
-![](http://appsforflanders.be/wp-content/themes/vibrant/images/logo.png)
-
 _Apps For Flanders is a new project by OKFN Belgium to support digital creativity concerning open knowledge in Flanders. It is a series of events to build a community. Local events will co-operate towards the creation of new applications -in the broad sense of the word- with Flanders as their goal audience._
 
 So let’s get to it! We are **inviting you** to participate in several events to enrich Flanders’ open knowledge applications.
