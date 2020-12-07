@@ -18,8 +18,6 @@ footer_nav:
     label: Team
   - to: /activities
     label: Our activities
-  - to: /calendar
-    label: Calendar
   - to: /stories
     label: Our stories
 attributions: >-

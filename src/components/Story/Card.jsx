@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { breakpoints } from '../../styles/globals';
 
 import Header from './Header';
 
@@ -19,15 +20,32 @@ const Card = styled.article`
   &:focus-within time {
     color: var(--bg-light);
   }
+
+  & p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    & p {
+      -webkit-line-clamp: 4;
+    }
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    & p {
+      -webkit-line-clamp: 5;
+    }
+  }
 `;
 
-const StoryCard = ({ title, date, excerpt }) => {
-  const shrinked = excerpt.length > 304 ? `${excerpt.substring(0, 304)}...` : excerpt;
-
+const StoryCard = ({ title, date, excerpt, to }) => {
   return (
     <Card className="box">
-      <Header title={title} date={date} />
-      <p>{shrinked}</p>
+      <Header title={title} date={date} to={to} />
+      <p>{`${excerpt}...`}</p>
     </Card>
   );
 };

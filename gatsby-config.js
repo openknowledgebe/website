@@ -23,6 +23,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/settings/header`,
+        name: `header`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/settings/footer`,
         name: `footer`
       }
@@ -32,6 +39,27 @@ module.exports = {
       options: {
         path: `${__dirname}/content/stories`,
         name: `story`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/activities`,
+        name: `activity`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages/team`,
+        name: `team`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages/home`,
+        name: `home`
       }
     },
     {
@@ -88,5 +116,9 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`
-  ]
+  ],
+  mapping: {
+    'MarkdownRemark.frontmatter.stories.featured_stories': `MarkdownRemark.fields.o_slug`,
+    'MarkdownRemark.frontmatter.activities.featured_activities': `MarkdownRemark.fields.o_slug`
+  }
 };

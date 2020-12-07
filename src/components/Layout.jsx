@@ -10,7 +10,7 @@ import '../styles/normalize.css';
 import { GlobalStyle } from '../styles/globals';
 
 const Layout = ({ children }) => {
-  const { footerData } = useStaticQuery(graphql`
+  const { footerData, headerData } = useStaticQuery(graphql`
     query {
       footerData: allMarkdownRemark(filter: { fields: { collection: { eq: "footer" } } }) {
         edges {
@@ -35,6 +35,22 @@ const Layout = ({ children }) => {
           }
         }
       }
+      headerData: allMarkdownRemark(filter: { fields: { collection: { eq: "header" } } }) {
+        edges {
+          node {
+            frontmatter {
+              nav_items {
+                label
+                to
+              }
+              logo {
+                publicURL
+              }
+              org_name
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -42,7 +58,12 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <div id="app">
-        <Header />
+        <Header
+          data={{
+            ...headerData.edges[0].node.frontmatter,
+            logo: headerData.edges[0].node.frontmatter.logo.publicURL
+          }}
+        />
         <main>{children}</main>
         <Footer data={footerData.edges[0].node.frontmatter} />
       </div>
