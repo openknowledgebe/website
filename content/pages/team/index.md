@@ -33,6 +33,7 @@ team:
       email: astrid@openknowledge.be
       twitter: https://twitter.com/SteenackersA
       linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
+    picture: astridsteenackers.jpg
   - name: Dries Van Ransbeeck
     task: General Coordinator
     contact_info:
