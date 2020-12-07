@@ -1,11 +1,10 @@
 ---
 header:
-  tagline: A world where knowledge creates power for the many, not the few.
-  mission: That's a world we believe in. A goal we're aiming for. Open Knowledge
-    Belgium is a grass roots organisation that consists of people, mainly
-    volunteers, passionate about openness, using advocacy, research and
-    technology to unlock information, enabling people to use and share knowledge
-    in Belgium and beyond.
+  tagline: A world where knowledge creates power for the many, not the few
+  mission: That's a world we believe in. A goal we aim for. Open Knowledge Belgium
+    is a grass roots organisation that consists of people, mainly volunteers,
+    passionate about openness. We use advocacy, research, technology and
+    projects to unlock information, enabling people to use and share knowledge.
   featured_image:
     image: civic_labs_brussels_kickoff_2.jpg
   cta:
@@ -29,7 +28,7 @@ stories:
     label: Discover all stories
     to: /stories
 newsletter:
-  heading: Want to be up-to-date?
+  heading: Want to stay up-to-date?
   subheading: Subscribe to our mailing list!
 seo:
   title: Home
