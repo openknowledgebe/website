@@ -11,9 +11,9 @@ tags:
   - ranking
 ---
 
-<span style="font-weight: 400;">Yesterday the World Wide Web Foundation has released the</span>[ <span style="font-weight: 400;">third edition of the Open Data Barometer</span>](http://opendatabarometer.org/doc/3rdEdition/ODB-3rdEdition-GlobalReport.pdf)<span style="font-weight: 400;">. A collaborative research that covers 92 countries and ranks them by three key parameters: </span>**readiness**<span style="font-weight: 400;"> (how prepared are governments regarding open data initiatives?), </span>**implementation** <span style="font-weight: 400;">(are governments putting their commitments into practice?) and </span>**impact**<span style="font-weight: 400;"> (is open government data being used in ways that result in practical benefits?). Let’s take a closer look at how Belgium did this year.</span>
+<span style="font-weight: 400;">Yesterday the World Wide Web Foundation has released the</span>[<span style="font-weight: 400;">third edition of the Open Data Barometer</span>](http://opendatabarometer.org/doc/3rdEdition/ODB-3rdEdition-GlobalReport.pdf)<span style="font-weight: 400;">. A collaborative research that covers 92 countries and ranks them by three key parameters: </span>**readiness**<span style="font-weight: 400;"> (how prepared are governments regarding open data initiatives?), </span>**implementation** <span style="font-weight: 400;">(are governments putting their commitments into practice?) and </span>**impact**<span style="font-weight: 400;"> (is open government data being used in ways that result in practical benefits?). Let’s take a closer look at how Belgium did this year.</span>
 
-[![ODB_Belgium](ODB_Belgium-1024x499.png)](http://be.okfn.org/files/2016/04/ODB_Belgium.png)
+![ODB_Belgium](ODB_Belgium-1024x499.png)
 
 **So is the glass half full or half empty?**
 
@@ -25,7 +25,7 @@ tags:
 
 <span style="font-weight: 400;">At the same time, the scores for both ‘Readiness’ and ‘Implementations’ have slightly declined from 2014, which leaves ‘Impact’ as the sole parameter on which Belgium has actually progressed (from 30 to 48). This is actually good news, since impact was Belgium’s weakest point – and still is. ‘Political Impact’ is the parameter by which Belgium is performing much weaker than the average in the region of Europe and Central Asia. It received ‘0’ for the question ‘To what extent has open data had a noticeable impact on increasing government efficiency and effectiveness?’</span>
 
-[![ODB_top_10](ODB_top_10.png)](http://be.okfn.org/files/2016/04/ODB_top_10.png)
+![ODB_top_10](ODB_top_10.png)
 
 **The neighborhood**
 

@@ -84,7 +84,7 @@ _Footnotes_
 
 1. [_https://data.gov.be/nl/news/federale-open-data-strategie​ -http://digitalbelgium.be/wp-content/uploads/2017/07/compressed_NLStrategisch-dossier.pdf_](https://data.gov.be/nl/news/federale-open-data-strategie%E2%80%8B%20-http://digitalbelgium.be/wp-content/uploads/2017/07/compressed_NLStrategisch-dossier.pdf)
 2. _<https://data.gov.be>_
-3. _<https://be.okfn.org/2015/07/24/green-light-for-the-belgian-federal-open-data-strategy/>_
+3. _<https://openknowledge.be/2015/07/24/green-light-for-the-belgian-federal-open-data-strategy/>_
 4. _<https://twitter.com/VincentVQ/status/1313739256041529344>_
 5. _The European “core vocabularies” can provide guidance in this case [https://ec.europa.eu/isa2/solutions/core-vocabularies_en](https://ec.europa.eu/isa2/solutions/core-vocabularies_en)_
 6. [_https://data.vlaanderen.be_](https://data.vlaanderen.be)

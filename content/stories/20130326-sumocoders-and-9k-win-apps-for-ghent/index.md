@@ -8,7 +8,7 @@ tags:
 
 Apps for Ghent has been organised for the third time. It is the ideal moment for citizens of the city of Ghent to show that Open Government Data can make the life of citizens easier, better or more fun. This edition welcomed 15 teams. The teams invented concepts from a smarter government service, to participation and sustainable energy.
 
-[![logo_screen_square_bgTransparent](logo_screen_square_bgTransparent.png)](http://okfn.be/files/2011/12/logo_screen_square_bgTransparent.png)
+![logo_screen_square_bgTransparent](logo_screen_square_bgTransparent.png)
 
 The organisers (OKFN Belgium, the City of Ghent, iMinds, Ghent Web Valley and Ghent living lab) are very satisfied with this edition. Apart from the contest, it has shown to be an excellent place to network as well.
 

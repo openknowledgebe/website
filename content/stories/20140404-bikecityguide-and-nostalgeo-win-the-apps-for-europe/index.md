@@ -36,7 +36,7 @@ An Belgian app which allows the user to combine old postcards with contemporary 
 
 All 10 finalists had enjoyed a fully packed few days in the neo-gothic splendour of Manchester Town Hall, an incredible setting for the showcase of the business benefits of Open Data.
 
-The event kicked off with an introduction to the project by Frank Kresin ([Waag Society](http://waag.org/nl)) with speakers addressing the value of Open Data, including Milena Popova ([Europeana](http://www.europeana.eu/)), Julian Tait ([FutureEverything](http://futureeverything.org/)) and Pieter Colpaert ([OKFN Belgium](http://okfn.be/)).
+The event kicked off with an introduction to the project by Frank Kresin ([Waag Society](http://waag.org/nl)) with speakers addressing the value of Open Data, including Milena Popova ([Europeana](http://www.europeana.eu/)), Julian Tait ([FutureEverything](http://futureeverything.org/)) and Pieter Colpaert ([OKFN Belgium](https://openknowledge.be/)).
 
 The finalists’ ideas were exhibited with videos throughout the duration of the conference. They also took part in a series of workshops that aimed to equip them with the tools and knowledge to grow their ideas into sustainable businesses; there were sessions on media, UX design and finance.The culmination of day one was a networking event on the atmospheric twenty-fourth floor of Manchester City Tower. Conference delegates gathered to meet with the finalists and talk to them about their ideas.
 

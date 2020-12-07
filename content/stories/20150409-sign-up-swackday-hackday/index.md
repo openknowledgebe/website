@@ -12,7 +12,7 @@ tags:
   - swackday
 ---
 
-[![SWACKDAY](SWACKDAY.jpg)](http://be.okfn.org/files/2015/04/SWACKDAY.jpg)
+![SWACKDAY](SWACKDAY.jpg)
 
 Exciting news! The 25th of April, we’ll be organising Swackday. This hackday will focus on two subjects, being oSoc15 and Apps for Ghent. Everyone that could be an asset for the team, can take part. To top this all off, after the hackday, we’ll have a nerdy LAN party.
 

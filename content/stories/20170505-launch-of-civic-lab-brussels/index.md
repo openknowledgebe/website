@@ -41,7 +41,7 @@ At our kickoff meetup we were pleased to welcome 33 open believers — what corr
 
 Thanks to the diversity among attendees, our kickoff meetup turned out to be a big success. This is also where the potential lies for Civic labs: bringing researchers, hackers, civil servants, entrepreneurs and civil society representatives in the same room and inviting them to collaboratively work on open projects.
 
-<div class="wp-caption alignnone" id="attachment_1480" style="width: 310px">[![](Civic_Labs_Brussels_Kickoff_2-300x225.jpg)](http://be.okfn.org/files/2017/05/Civic_Labs_Brussels_Kickoff_2.jpg)Civic Labs Brussels Kickoff
+<div class="wp-caption alignnone" id="attachment_1480" style="width: 310px">![](Civic_Labs_Brussels_Kickoff_2-300x225.jpg) Civic Labs Brussels Kickoff
 
 </div>**What to expect from our next Civic Lab meetups?**
 

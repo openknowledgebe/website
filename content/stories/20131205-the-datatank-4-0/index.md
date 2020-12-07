@@ -11,7 +11,7 @@ tags:
 
 The DataTank is open source software, just like CKAN, Drupal or Elastic Search, which you can use to transform a dataset into an HTTP API.
 
-[![datatank_logo-300x152](datatank_logo-300x152.png)](http://okfn.be/files/2013/12/datatank_logo-300x152.png)
+![datatank_logo-300x152](datatank_logo-300x152.png)
 
 The DataTank has come a long way, since the idea was conceived by Bart van Loon in 2008, it has been taken over by Pieter Colpaert in 2010, to then be managed by the Open Knowledge Foundation Belgium. Today we are proud to launch a more stable code base on which professional support will be provided.
 

@@ -6,7 +6,7 @@ tags:
   - 'creative commons'
 ---
 
-[![](Schermafbeelding-2012-05-31-om-21.06.21.png)](http://okfn.be/files/2012/05/Schermafbeelding-2012-05-31-om-21.06.21.png)
+![](Schermafbeelding-2012-05-31-om-21.06.21.png)
 
 I’m happy to announce that from here on out Creative Commons Belgium will cluster with and be sited under the OKFN Belgium organization!
 

@@ -12,7 +12,7 @@ tags:
   - start-up
 ---
 
-<style>img.alignleft { float: left; margin: 0 1em 1em 0; }</style></head><body>[![a4e_logo](a4e_logo.png)](http://be.okfn.org/files/2015/06/a4e_logo.png)**Last week, we attended the closing event of [Apps for Europe](http://www.appsforeurope.eu/) in Berlin. Over the course of two days, we evaluated the project that encouraged creators of Open Data apps to turn their ideas into a viable business. Our conclusion? We consider Apps4EU a success, it definitely had a positive influence on the Open Data business scene.**
+<style>img.alignleft { float: left; margin: 0 1em 1em 0; }</style></head><body>![a4e_logo](a4e_logo.png) **Last week, we attended the closing event of [Apps for Europe](http://www.appsforeurope.eu/) in Berlin. Over the course of two days, we evaluated the project that encouraged creators of Open Data apps to turn their ideas into a viable business. Our conclusion? We consider Apps4EU a success, it definitely had a positive influence on the Open Data business scene.**
 
 In a nutshell, Apps for Europe is a **support network** for organisers of competitions using Open Data and stimulates hackathon winners in converting their concept into a viable **business**. Thus socio-economic value is created and the benefits of Open Data can flourish. Top-notch projects can enter in a pan-European competition, putting local initiatives under an **European** spotlight.
 
@@ -21,7 +21,7 @@ In a nutshell, Apps for Europe is a **support network** for organisers of compet
 On the 10th and 11th of June, we took the time to look back at Apps4EU and its outcomes, together with 18 other European countries. To keep this all breezy and blithe, the coordinating organisation made use of rather unusual evaluation and brainstorm techniques such as the ideation tool [HatParty](http://hatparty.eu/) for example. Let me assure you that you want to stay in the running with that one!  
 For the first night, we joined the **Startup acceleration event** in the Wikimedia offices, co-organised by [ODIne](http://opendataincubator.eu/) and [Finodex](http://www.finodex-project.eu/). Fascinating speeches were given and we even got a keynote from Nicolas Zimmer, chairman of the [Technology Foundation Berlin](https://www.technologiestiftung-berlin.de/en/home/).
 
-[![IMG_20150610_192312](IMG_20150610_192312-e1434379029351.jpg)](http://be.okfn.org/files/2015/06/IMG_20150610_192312-e1434379029351.jpg)
+![IMG_20150610_192312](IMG_20150610_192312-e1434379029351.jpg)
 
 #### Impact on Open Data
 

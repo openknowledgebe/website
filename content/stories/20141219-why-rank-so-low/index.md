@@ -10,11 +10,11 @@ tags:
   - opendataindex
 ---
 
-In our article on the [9th of December](http://okfn.be/2014/12/09/belgium-scores-slightly-higher-on-the-global-open-data-index-big-expectations-for-2015/) we’ve talked about Belgium scoring slightly higher on the Global Open Data Index. We went from 58th to 53rd. And even though we have positive aspirations for 2015 because we now have a federal minister of the Digital Agenda who is directly responsible for Open Data and multiple mentions in the policy agreement. We did get a few questions and remarks on our results:
+In our article on the [9th of December](https://openknowledge.be/2014/12/09/belgium-scores-slightly-higher-on-the-global-open-data-index-big-expectations-for-2015/) we’ve talked about Belgium scoring slightly higher on the Global Open Data Index. We went from 58th to 53rd. And even though we have positive aspirations for 2015 because we now have a federal minister of the Digital Agenda who is directly responsible for Open Data and multiple mentions in the policy agreement. We did get a few questions and remarks on our results:
 
 _Why is Belgium so low in relation to it’s neighbouring countries? Every [Western European](http://t.co/EDpfLkjQ7a) country sits at the top._
 
-_How can a country with an established [local Open Knowledge Chapter](http://okfn.be/) and projects like [iRail](https://irail.be/route) still rank only halfway the index?_
+_How can a country with an established [local Open Knowledge Chapter](https://openknowledge.be/) and projects like [iRail](https://irail.be/route) still rank only halfway the index?_
 
 To sum it up, we were asked the question: Why does Belgium rank so low?
 

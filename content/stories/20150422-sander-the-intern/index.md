@@ -6,7 +6,7 @@ tags:
   - general
 ---
 
-Hey, [![Day 8: Cutting and pasting](Blogme-246x300.jpg)](http://be.okfn.org/files/2015/04/Blogme.jpg)I’m Sander and I’m the newest addition to the intern team of Open Knowledge Belgium. With me as a new recruit our intern workforce has been increased by 100%! Which means we can do at least twice as much work. I will be spending the next 8 weeks at Open Knowledge Belgium, working on various projects such as the [open Summer of code](http://2015.summerofcode.be/ 'oSoc15 website') preparations and DCAT.be.
+Hey, ![Day 8: Cutting and pasting](Blogme-246x300.jpg) I’m Sander and I’m the newest addition to the intern team of Open Knowledge Belgium. With me as a new recruit our intern workforce has been increased by 100%! Which means we can do at least twice as much work. I will be spending the next 8 weeks at Open Knowledge Belgium, working on various projects such as the [open Summer of code](http://2015.summerofcode.be/ 'oSoc15 website') preparations and DCAT.be.
 
 **So who am I?**
 
@@ -18,7 +18,7 @@ Apart from being a student and temporary minion at Open Knowledge Belgium, I’m
 
 **What’s my job?**
 
-[![oSoc15 Infographic](20150422_144241-169x300.jpg)](http://be.okfn.org/files/2015/04/20150422_144241.jpg)The very first day I already got plenty of work to keep me occupied for a while. I was assigned as Lara’s minion to help her with the [oSoc15 website](http://2015.summerofcode.be/ 'oSoc15 website'), as well as make an infographic which we can send to students who would be interested. In the picture it shows me cutting and pasting the various infographic tidbits.
+![oSoc15 Infographic](20150422_144241-169x300.jpg) The very first day I already got plenty of work to keep me occupied for a while. I was assigned as Lara’s minion to help her with the [oSoc15 website](http://2015.summerofcode.be/ 'oSoc15 website'), as well as make an infographic which we can send to students who would be interested. In the picture it shows me cutting and pasting the various infographic tidbits.
 
 The next day Pieter (the big boss) showed me the other projects that could use some helping hands.
 

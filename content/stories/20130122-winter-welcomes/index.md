@@ -6,7 +6,7 @@ tags:
   - general
 ---
 
-We are really pleased to welcome **three new colleagues**, Michiel Vancoillie and Jan Vansteenlandt who join us as programmers, and Mathias Van Compernolle who is already coordinating [Apps For X](http://okfn.be/2012/12/26/apps-for-whisky/).
+We are really pleased to welcome **three new colleagues**, Michiel Vancoillie and Jan Vansteenlandt who join us as programmers, and Mathias Van Compernolle who is already coordinating [Apps For X](https://openknowledge.be/2012/12/26/apps-for-whisky/).
 
 Mathias is currently working for iDROPS that organizes innovation labs within the broad social sector and creative industries. He earlier got involved with OKFN BE and the Apps For Flanders and Whisky events. Don’t hesitate to contact this zippy boy!
 

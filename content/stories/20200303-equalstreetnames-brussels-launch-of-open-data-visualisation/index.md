@@ -13,7 +13,7 @@ tags:
 
 **Less than 7% of street names have been named after a woman in Brussels: launch of** [**_EqualStreetNames.Brussels_**](https://equalstreetnames.brussels/)
 
-[**Open Knowledge Belgium**](https://be.okfn.org/)**, an association advocating for the use of Open Data,** [**Noms Peut-Être**](https://nomspeutetre.wordpress.com/)**, a feminist collective advocating for more equality in the public space and 60 citizens have created a map visualizing the street names of Brussels by gender. With male names highlighted in yellow and female names in purple, the platform visualizes the imbalance present in the attribution of a name to a public space in Brussels Region. Results: only** **6%** **of street names are named after women and only one street is named after a transgender man.**
+[**Open Knowledge Belgium**](https://openknowledge.be/)**, an association advocating for the use of Open Data,** [**Noms Peut-Être**](https://nomspeutetre.wordpress.com/)**, a feminist collective advocating for more equality in the public space and 60 citizens have created a map visualizing the street names of Brussels by gender. With male names highlighted in yellow and female names in purple, the platform visualizes the imbalance present in the attribution of a name to a public space in Brussels Region. Results: only** **6%** **of street names are named after women and only one street is named after a transgender man.**
 
 The names of public spaces (streets, avenues, squares and others) define the identity of a city and how citizens interact with it.There are several ways to approach the inequality of street names and leverage a positive change in our society. Ours is with the use of Open Data to create a **map visualizing the street names of Brussels by gender.**
 
@@ -31,7 +31,7 @@ More information &amp; registration here: <https://equalstreetnamesworkshop.even
 
 **Open Knowledge Belgium** is an association advocating for the use of Open Data and for Open Education.
 
-Website: <https://be.okfn.org/>
+Website: <https://openknowledge.be/>
 
 **Noms Peut-Être** is a feminist collective aiming to, in Brussels Region, to put forward women\* from here and elsewhere, denounce the invisibility of women\* in the public space, in History and to propose new inspiring models for everyone. The collective is active throughout the year by doing civil disobedience actions.
 

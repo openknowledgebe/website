@@ -19,7 +19,7 @@ Here is the information about what will take place:
 
 [![Data Days logowit copy](Data-Days-logowit-copy-300x162.png)](http://openbelgium.be/wp-content/uploads/2014/01/Data-Days-logowit-copy.png)
 
-The DataDays conference itself is a joint effort of the [Open Knowledge Foundation (OKFN)](http://okfn.be/), The European project [Citadel on the Move](http://www.citadelonthemove.eu/) and the [Linked Organisation of Local Authority ICT Societies (LOLA)](http://lola-ict.org/).
+The DataDays conference itself is a joint effort of the [Open Knowledge Foundation (OKFN)](https://openknowledge.be/), The European project [Citadel on the Move](http://www.citadelonthemove.eu/) and the [Linked Organisation of Local Authority ICT Societies (LOLA)](http://lola-ict.org/).
 
 The program allows you to travel from Open Belgium to Open Europe and to arrive at Open World:
 
@@ -34,14 +34,14 @@ Open Data is a global phenomenon. Its true implications only become apparent whe
 
 **Registration**  
 You can choose different modules or go for the full conference package.  
-Visit http://www.datadays.eu/registration/ to find out what fits you best and register now!
+Visit <http://www.datadays.eu/registration/> to find out what fits you best and register now!
 
 **Conference venue**  
 The conference will be held in Ghent, Belgium, from February 17 – 19, 2014.  
 Day 1: STAM (located at the Bijloke site) – Day 2 &amp; 3: De Bijloke (nearby STAM)
 
 **Conference program**  
-Visit http://www.datadays.eu and check out the full program.
+Visit <http://www.datadays.eu> and check out the full program.
 
 **Entrance Bursary**  
 You can enter your information for an entrance bursary through <http://bit.ly/1fv6DVx>. The deadline for this bursary is the 31st of january. If you have any question about the form or the bursary, please mail to pieter-jan.pauwels@okfn.org.

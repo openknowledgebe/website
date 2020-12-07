@@ -28,7 +28,7 @@ In September, the [World Wide Web Foundation](http://http://www.webfoundation.or
 
 [These are the results for the first year:](http://www.webfoundation.org/2012/09/introducing-the-open-data-index/od-index/)
 
-[![](OD-index1-781x1024.png)](http://okfn.be/files/2012/11/OD-index1.png)
+![](OD-index1-781x1024.png)
 
 The results and [methodology](http://thewebindex.org/2012/09/2012-Web-Index-Key-Findings.pdf) of the study have been [severely criticised](http://www.access-info.org/en/open-government-data/302-spain-is-a-world-leader-in-open-data-says-who) by some Spanish organisations, who felt that Spain was wrongly portrayed as a leader in open data. They complained about how the results were based on perception of only one person. In fact, the Web Foundation based its findings on a combination of existing data from other sources and a questionnaire for experts in each country.
 

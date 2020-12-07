@@ -15,7 +15,7 @@ tags:
   - 'open data day'
 ---
 
-[![](towards-clean-air-1.png)](http://be.okfn.org/files/2018/03/towards-clean-air-1.png)
+![](towards-clean-air-1.png)
 
 <span style="font-weight: 400">On Saturday **3rd March** took place the Open Data Day, for the occasion, no less than 355 events occurred around the globe. One of them, “Towards Clean Air with Open Data!”, happened in BeCentral in Brussels.</span>
 

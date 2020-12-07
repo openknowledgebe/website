@@ -7,7 +7,7 @@ tags:
   - employee
 ---
 
-_[![Pieter-Jan Pauwels](205ed5e.jpg)](http://okfn.be/files/2013/12/205ed5e.jpg)Let me introduce myself. I’m Pieter-Jan and from now on I’m the new community coordinator at the Open Knowledge Foundation Belgium. I’ll be lead on projects such as Data Days, open Summer of code, Apps for Europe, SoLoMIDEM, The Datatank and many other projects. Above all that I’ll be assisting all the volunteers in making OKFN a known organisation within the field and making open data used and useful._
+_![Pieter-Jan Pauwels](205ed5e.jpg) Let me introduce myself. I’m Pieter-Jan and from now on I’m the new community coordinator at the Open Knowledge Foundation Belgium. I’ll be lead on projects such as Data Days, open Summer of code, Apps for Europe, SoLoMIDEM, The Datatank and many other projects. Above all that I’ll be assisting all the volunteers in making OKFN a known organisation within the field and making open data used and useful._
 
 **What does that mean for us?**
 

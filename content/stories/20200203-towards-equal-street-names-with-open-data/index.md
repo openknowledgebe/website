@@ -17,7 +17,7 @@ There are several ways to approach the inequality of street names and leverage a
 
 **How do we plan to do this?**
 
-**Several not-for-profits** [Open Knowledge Belgium](https://be.okfn.org/), [OpenStreetMap Belgium](https://openstreetmap.be/fr/) and [Wikimedia Belgium](https://be.wikimedia.org/wiki/Wikimedia_Belgium) **are partnering up to build a map vizualizing the street names of Brussels by gender.** To make this happen, we will use [open data](http://opendefinition.org/) – data which can be freely used, modified, and shared by anyone for any purpose – from OpenStreetMap and Wikipedia.
+**Several not-for-profits** [Open Knowledge Belgium](https://openknowledge.be/), [OpenStreetMap Belgium](https://openstreetmap.be/) and [Wikimedia Belgium](https://be.wikimedia.org/wiki/Wikimedia_Belgium) **are partnering up to build a map vizualizing the street names of Brussels by gender.** To make this happen, we will use [open data](http://opendefinition.org/) – data which can be freely used, modified, and shared by anyone for any purpose – from OpenStreetMap and Wikipedia.
 
 **And to do so, we need your help!**
 

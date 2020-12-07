@@ -16,4 +16,4 @@ If you’re a student, you can register you or your team at [http://appsforfland
 
 If you just want to stop by, please RSVP at <http://www.meetup.com/OpenKnowledgeFoundation/Belgium/781062/>
 
-[![](appsforflanderssponsors-300x95.png 'appsforflanderssponsors')](http://be.okfn.org/files/2012/09/appsforflanderssponsors.png)
+![](appsforflanderssponsors-300x95.png 'appsforflanderssponsors')

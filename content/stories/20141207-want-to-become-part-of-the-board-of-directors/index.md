@@ -7,7 +7,7 @@ tags:
   - general
 ---
 
-In February 2015, Open Knowledge Belgium will celebrate its third anniversary during the Open Belgium conference (http://2015.openbelgium.be). This is also the time that the official functions within the board of directors have been doing their work for 3 years now. We will be open to accept new people in the board of directors of the vzw/asbl.
+In February 2015, Open Knowledge Belgium will celebrate its third anniversary during the Open Belgium conference (<http://2015.openbelgium.be>). This is also the time that the official functions within the board of directors have been doing their work for 3 years now. We will be open to accept new people in the board of directors of the vzw/asbl.
 
 More information about what you can apply for and how this election will work, can be found on the “[_Board of directors 2015-2018 application form_](https://docs.google.com/forms/d/1JqHa1Az1Mu-kOEsdEn9Qxmk87BrOtsheLgBkxhciavo/viewform 'Application form')“.
 
@@ -23,4 +23,4 @@ The board of directors at Open Knowledge Belgium consists out of: a president, a
 
 Being a board member at Open Knowledge Belgium implies holding a conference call each 3 to 4 months to hold a board meeting where financials and administration are discussed (funding, expenses, possible projects within working groups, etc.), and to reply in a timely fashion on the mailinglist of the board (currently ~5 mails/month) to give your input on on-going discussions.
 
-[CC-BY 2.0 ](https://creativecommons.org/licenses/by/2.0/) OKFN on Flickr
+[CC-BY 2.0](https://creativecommons.org/licenses/by/2.0/) OKFN on Flickr

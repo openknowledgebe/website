@@ -13,4 +13,4 @@ Together with Essent.be and other energy actors we’re organizing Apps For Ener
 
 During this co-creation weekend we want to stimulate and inspire developers to work on new innovative applications based on open energy data set. Moreover, not only developers are invited to take the challenge, the weekend is open for people interested in the energy theme like students, sociologists, economists, researchers,… Main goal is to find new ideas for applications on energy and to develop them in a prototype all in just one weekend!
 
-More information here via [www.OKFN.be](http://okfn.be) and [www.appsforenergy.be](http://www.appsforenergy.be) for up-to-date news and registrations.
+More information here via [www.OKFN.be](https://openknowledge.be/) and [www.appsforenergy.be](http://www.appsforenergy.be) for up-to-date news and registrations.

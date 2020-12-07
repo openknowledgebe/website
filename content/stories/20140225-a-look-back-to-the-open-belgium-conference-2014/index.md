@@ -9,7 +9,7 @@ tags:
   - datadays
 ---
 
-Last monday, on the 17th of February 2014, the first edition of the Open Belgium Conference was held in the STAM Museum in the City of Ghent as part of the three day conference called DataDays. DataDays is an initiative organised by [OKFN Belgium](http://okfn.be/), [Citadel on the move](http://www.citadelonthemove.eu/) and [LOLA](http://lola-ict.org/) to discuss the role and future of Open Data on a national, European and global level.
+Last monday, on the 17th of February 2014, the first edition of the Open Belgium Conference was held in the STAM Museum in the City of Ghent as part of the three day conference called DataDays. DataDays is an initiative organised by [OKFN Belgium](https://openknowledge.be/), [Citadel on the move](http://www.citadelonthemove.eu/) and [LOLA](http://lola-ict.org/) to discuss the role and future of Open Data on a national, European and global level.
 
 The Storify summary below is a way to show everyone, attendees / speakers and people who couldn’t make it on how it all went down.
 
