@@ -88,7 +88,7 @@ const OpenPositions = styled.article`
 const mapPictures = members =>
   members.map(member => ({
     ...member,
-    picture: member.picture?.childImageSharp.fixed
+    picture: member.picture?.childImageSharp
   }));
 
 export default function Team({ data }) {

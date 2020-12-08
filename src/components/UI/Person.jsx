@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'gatsby-image';
 import styled from 'styled-components';
 import { twitterBlackIcon, mailIcon, linkedinIcon, headshotIcon } from '../../images/icons';
 
-import Img from './Img';
+import { Img } from './Img';
 
 const StyledPerson = styled.div`
   display: flex;
@@ -14,6 +13,13 @@ const StyledPerson = styled.div`
     justify-content: center;
     align-items: center;
     background: #f8f6fe;
+
+    width: 300px;
+    height: 215px;
+
+    & > img {
+      max-height: 100%;
+    }
   }
 `;
 
@@ -40,15 +46,9 @@ const Person = ({ name, picture, socials, task }) => {
     <StyledPerson>
       <div className="img">
         {picture ? (
-          <Image alt={name} fixed={picture} />
+          <Img alt={name} image={picture} />
         ) : (
-          <Img
-            role="presentation"
-            alt=""
-            src={headshotIcon}
-            css="background: #F8F6FE; padding: 5rem; width: 300px; height: 215px;"
-            className="img"
-          />
+          <Img role="presentation" alt="" src={headshotIcon} />
         )}
       </div>
       <PersonFooter>

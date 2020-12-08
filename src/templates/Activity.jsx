@@ -194,7 +194,7 @@ export default function Activity({ data }) {
   const mbrs = members
     ? members.map(member => ({
         ...member,
-        picture: member.picture?.childImageSharp.fixed
+        picture: member.picture?.childImageSharp
       }))
     : [];
 
