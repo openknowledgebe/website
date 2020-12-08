@@ -7,8 +7,9 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Newsletter from '../components/Newsletter';
 import Activity from '../components/Activity';
-import { Img, StyledLink, Title } from '../components/UI';
-import { breakpoints } from '../styles/globals';
+import { StyledLink, Title } from '../components/UI';
+import { Img as Image } from '../components/UI/Img';
+import { breakpoints, dimensions } from '../styles/globals';
 
 const PinnedActivites = styled.section`
   & .content.gap {
@@ -41,19 +42,30 @@ const PinnedStories = styled.section`
     & .content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
 
-    & .content > * {
-      max-width: 45%;
-    }
+    & .content {
+      & > * {
+        max-width: 45%;
+      }
 
-    &.content > * {
-      max-width: 45%;
-    }
+      & > .img-container {
+        width: 100%;
+        & > * {
+          max-width: ${dimensions.featured.width}px;
+          height: 100%;
+          width: 100%;
+        }
 
-    & .content > div {
-      width: 100%;
+        & > img {
+          object-fit: cover;
+        }
+      }
+
+      & > .stories {
+        align-self: center;
+        width: 100%;
+      }
     }
   }
 `;
@@ -96,16 +108,12 @@ const Hero = styled.section`
     width: 100%;
   }
 
-  & .hero-image > ${Img} {
-    width: 100%;
-  }
-
   @media (min-width: ${breakpoints.medium}px) {
     grid-template-columns: 0.6fr 1fr;
     column-gap: 1rem;
 
     & .hero-image {
-      width: auto;
+      max-width: ${dimensions.featured.width}px;
     }
 
     & .hero-copy {
@@ -165,7 +173,7 @@ const Home = ({ data }) => {
     featured_stories: featuredStories,
     featured_image: {
       ...data.home.frontmatter.stories.featured_image,
-      image: data.home.frontmatter.stories.featured_image.image.publicURL
+      image: data.home.frontmatter.stories.featured_image.image.childImageSharp
     }
   };
 
@@ -173,7 +181,7 @@ const Home = ({ data }) => {
     ...data.home.frontmatter.header,
     featured_image: {
       ...data.home.frontmatter.header.featured_image,
-      image: data.home.frontmatter.header.featured_image.image.publicURL
+      image: data.home.frontmatter.header.featured_image.image.childImageSharp
     }
   };
   return (
@@ -200,7 +208,10 @@ export const HomeTemplate = ({ data }) => {
           </StyledLink>
         </div>
         <div className="hero-image">
-          <Img src={data.header?.featured_image?.image} alt={data.header?.featured_image?.alt} />
+          <Image
+            image={data.header?.featured_image?.image}
+            alt={data.header?.featured_image?.alt}
+          />
         </div>
         <div className="d-none-md">
           <StyledLink to={data.header?.cta?.to} className="underlined" $callToAction>
@@ -245,13 +256,14 @@ export const HomeTemplate = ({ data }) => {
           </StyledLink>
         </Heading>
         <div className="content">
-          <Img
-            src={data.stories?.featured_image?.image}
-            alt={data.stories?.featured_image?.alt}
-            className="d-block-md d-none-sm"
-            css="height:100%; object-fit:cover;"
-          />
-          <div>
+          <div className="img-container">
+            <Image
+              image={data.stories?.featured_image?.image}
+              alt={data.stories?.featured_image?.alt}
+              className="d-block-md d-none-sm"
+            />
+          </div>
+          <div className="stories">
             {data.stories?.featured_stories.map(({ slug, title, date }) => (
               <PinnedStory key={title} className="pinned-story">
                 <StyledLink to={slug} className="pinned-story-link">
@@ -283,10 +295,7 @@ export const query = graphql`
             to
           }
           featured_image {
-            alt
-            image {
-              publicURL
-            }
+            ...GeneralFeaturedImage
           }
         }
         activities {
@@ -314,10 +323,7 @@ export const query = graphql`
             to
           }
           featured_image {
-            image {
-              publicURL
-            }
-            alt
+            ...GeneralFeaturedImage
           }
           featured_stories {
             frontmatter {

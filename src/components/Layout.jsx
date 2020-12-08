@@ -74,18 +74,28 @@ const Layout = ({ children }) => {
 export default Layout;
 
 export const query = graphql`
-  fragment GeneralFeaturedImage on Frontmatter {
-    featured_image {
-      image {
-        childImageSharp {
-          fluid(maxWidth: 516, fit: CONTAIN) {
-            ...GatsbyImageSharpFluid
-          }
+  fragment GeneralFeaturedImage on FeaturedImage {
+    image {
+      childImageSharp {
+        fluid(maxWidth: 516, fit: CONTAIN) {
+          ...GatsbyImageSharpFluid
         }
       }
-      alt
     }
+    alt
   }
+  # fragment GeneralFeaturedImage on Frontmatter {
+  #   featured_image {
+  #     image {
+  #       childImageSharp {
+  #         fluid(maxWidth: 516, fit: CONTAIN) {
+  #           ...GatsbyImageSharpFluid
+  #         }
+  #       }
+  #     }
+  #     alt
+  #   }
+  # }
 
   fragment ActivityFeaturedImage on Frontmatter {
     featured_image {

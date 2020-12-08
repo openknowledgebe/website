@@ -17,6 +17,16 @@ export const breakpoints = {
   large: 1200
 };
 
+export const dimensions = {
+  headshot: {
+    height: 215,
+    width: 300
+  },
+  featured: {
+    width: 516
+  }
+};
+
 const global = css`
   :root {
     --color-primary: #301948;
