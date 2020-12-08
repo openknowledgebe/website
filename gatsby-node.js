@@ -110,9 +110,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               members {
                 name
                 task
-                picture {
-                  publicURL
-                }
                 id
                 contact_info {
                   email

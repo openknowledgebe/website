@@ -194,7 +194,7 @@ export default function Activity({ data }) {
   const mbrs = members
     ? members.map(member => ({
         ...member,
-        picture: member.picture?.publicURL
+        picture: member.picture?.childImageSharp.fixed
       }))
     : [];
 
@@ -343,9 +343,7 @@ export const pageQuery = graphql`
         members {
           name
           task
-          picture {
-            publicURL
-          }
+          ...Picture
           id
           contact_info {
             email

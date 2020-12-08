@@ -72,3 +72,42 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+
+export const query = graphql`
+  fragment GeneralFeaturedImage on Frontmatter {
+    featured_image {
+      image {
+        childImageSharp {
+          fluid(maxWidth: 516, fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      alt
+    }
+  }
+
+  fragment ActivityFeaturedImage on Frontmatter {
+    featured_image {
+      image {
+        childImageSharp {
+          fluid(maxWidth: 859, fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      alt
+    }
+  }
+
+  fragment Picture on Members {
+    picture {
+      childImageSharp {
+        fixed(width: 300, height: 215, fit: INSIDE, grayscale: true) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;

@@ -88,7 +88,7 @@ const OpenPositions = styled.article`
 const mapPictures = members =>
   members.map(member => ({
     ...member,
-    picture: member.picture?.publicURL
+    picture: member.picture?.childImageSharp.fixed
   }));
 
 export default function Team({ data }) {
@@ -139,7 +139,13 @@ export const TeamTemplate = ({ data }) => {
           <h3>Team</h3>
           <div className="members">
             {data.team.map(({ name, task, contact_info: socials, picture }) => (
-              <Person key={name} task={task} socials={socials} name={name} picture={picture} />
+              <Person
+                key={socials.email}
+                task={task}
+                socials={socials}
+                name={name}
+                picture={picture}
+              />
             ))}
           </div>
         </Members>
@@ -150,7 +156,13 @@ export const TeamTemplate = ({ data }) => {
           <h3>Board of directors</h3>
           <div className="members">
             {data.directors.map(({ name, task, contact_info: socials, picture }) => (
-              <Person key={name} task={task} socials={socials} name={name} picture={picture} />
+              <Person
+                key={socials.email}
+                task={task}
+                socials={socials}
+                name={name}
+                picture={picture}
+              />
             ))}
           </div>
         </Members>
@@ -225,9 +237,7 @@ export const pageQuery = graphql`
         team {
           name
           task
-          picture {
-            publicURL
-          }
+          ...Picture
           contact_info {
             email
             twitter
@@ -237,9 +247,7 @@ export const pageQuery = graphql`
         directors {
           name
           task
-          picture {
-            publicURL
-          }
+          ...Picture
           contact_info {
             email
             twitter
