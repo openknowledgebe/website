@@ -71,14 +71,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       stories: allMarkdownRemark(filter: { fields: { collection: { eq: "story" } } }) {
         edges {
           node {
-            frontmatter {
-              title
-              date
-              author
-              tags
-            }
-            excerpt(pruneLength: 304)
-            html
             fields {
               slug
             }
@@ -88,39 +80,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       activities: allMarkdownRemark(filter: { fields: { collection: { eq: "activity" } } }) {
         edges {
           node {
-            frontmatter {
-              name
-              to
-              catchphrase
-              featured_image {
-                image {
-                  publicURL
-                }
-                alt
-              }
-              contact_info {
-                email
-                socials {
-                  github
-                  twitter
-                  facebook
-                  linkedin
-                }
-              }
-              members {
-                name
-                task
-                id
-                contact_info {
-                  email
-                  twitter
-                  linkedin
-                }
-              }
-              tags
-            }
-            excerpt
-            html
             fields {
               slug
             }
