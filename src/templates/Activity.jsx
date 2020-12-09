@@ -6,7 +6,8 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { Img, Person, Tag as StyledTag, Title } from '../components/UI';
+import { Person, Tag as StyledTag, Title } from '../components/UI';
+import { Img } from '../components/UI/Img';
 import {
   btmFacingArrow,
   facebookBlackIcon,
@@ -15,7 +16,7 @@ import {
   githubBlackIcon
 } from '../images/icons';
 
-import { breakpoints } from '../styles/globals';
+import { breakpoints, dimensions } from '../styles/globals';
 
 const ActivityLink = styled.a`
   text-decoration: none;
@@ -97,10 +98,13 @@ const ActivityHeader = styled.header`
     width: 100%;
   }
 
-  & .banner-image > ${Img} {
-    width: 100%;
-    max-height: 400px;
+  & .banner-image > img {
     object-fit: cover;
+  }
+
+  & .banner-image > * {
+    width: 100%;
+    max-height: ${dimensions.activityFeatured.mobileMaxHeight}px;
   }
 
   & .container {
@@ -158,11 +162,11 @@ const ActivityHeader = styled.header`
     }
 
     & .banner-image {
-      width: auto;
+      width: 55%;
       order: 2;
     }
 
-    & .banner-image > ${Img} {
+    & .banner-image > * {
       max-height: unset;
       height: 100%;
     }
@@ -204,7 +208,7 @@ export default function Activity({ data }) {
     catchphrase,
     featured_image: {
       ...featured_image,
-      image: featured_image.image.publicURL
+      image: featured_image.image.childImageSharp
     },
     contact_info,
     members: mbrs,
@@ -225,7 +229,7 @@ export const ActivityTemplate = ({ data }) => {
     <>
       <ActivityHeader>
         <div className="banner-image">
-          <Img src={data.featured_image.image} alt={data.featured_image.alt} />
+          <Img image={data.featured_image.image} alt={data.featured_image.alt} />
         </div>
         <div className="container">
           <MainSection>
@@ -307,7 +311,7 @@ export const ActivityTemplate = ({ data }) => {
           </ContactBox>
         </div>
       </ActivityHeader>
-      {data.members && (
+      {data.members && data.members.length > 0 && (
         <Members>
           {data.members.map(({ name, task, picture, contact_info: socials, id }) => (
             <Person key={id} name={name} task={task} socials={socials} picture={picture} />
@@ -326,10 +330,7 @@ export const pageQuery = graphql`
         to
         catchphrase
         featured_image {
-          image {
-            publicURL
-          }
-          alt
+          ...ActivityFeaturedImage
         }
         contact_info {
           email

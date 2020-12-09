@@ -86,18 +86,15 @@ export const query = graphql`
     alt
   }
 
-  fragment ActivityFeaturedImage on Frontmatter {
-    featured_image {
-      image {
-        childImageSharp {
-          fluid(maxWidth: 859, fit: CONTAIN) {
-            ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
+  fragment ActivityFeaturedImage on FeaturedImage {
+    image {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
-      alt
     }
+    alt
   }
 
   fragment Picture on Members {

@@ -28,6 +28,10 @@ export const dimensions = {
   logo: {
     maxWidth: 300,
     maxHeight: 300
+  },
+  activityFeatured: {
+    mobileMaxHeight: 400, // maximum height on smaller screens
+    largeMaxWidth: 856 // maximum width on bigger screens
   }
 };
 
