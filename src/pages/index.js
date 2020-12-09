@@ -155,7 +155,7 @@ const Home = ({ data }) => {
   const featuredActivities = data.home.frontmatter.activities.featured_activities.map(activity => ({
     ...activity.frontmatter,
     ...activity.fields,
-    logo: activity.frontmatter.logo.publicURL
+    logo: activity.frontmatter.logo.childImageSharp
   }));
 
   const activities = {
@@ -302,9 +302,7 @@ export const query = graphql`
           featured_activities {
             frontmatter {
               name
-              logo {
-                publicURL
-              }
+              ...Logo
               tags
               color
             }

@@ -55,7 +55,7 @@ const Activities = ({ data }) => {
                 <Activity
                   key={name}
                   name={name}
-                  logo={logo.publicURL}
+                  logo={logo.childImageSharp}
                   tags={tags}
                   color={color}
                   to={to}
@@ -80,9 +80,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             name
-            logo {
-              publicURL
-            }
+            ...Logo
             color
             tags
           }

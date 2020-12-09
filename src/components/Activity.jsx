@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { arrow } from '../images/icons';
-import { Img, StyledLink, Tag } from './UI';
-import { breakpoints } from '../styles/globals';
+import { StyledLink, Tag } from './UI';
+import { Img } from './UI/Img';
+import { breakpoints, dimensions } from '../styles/globals';
 
 const ActivityCard = styled.div`
   position: relative;
   height: 17.5rem;
 
   & .logo {
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: ${dimensions.logo.maxWidth}px;
+    max-height: ${dimensions.logo.maxHeight}px;
+
+    & > * {
+      max-height: 100%;
+    }
   }
 
   & .tags.show {
@@ -81,7 +87,7 @@ const Activity = ({ name, logo, color, tags, to }) => {
         </div>
       )}
       <div className="logo">
-        <Img src={logo} alt={name} />
+        <Img image={logo} alt={name} />
       </div>
       <ActivityLinks>
         <StyledLink to={to} className="activity-link">

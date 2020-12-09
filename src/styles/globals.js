@@ -24,6 +24,10 @@ export const dimensions = {
   },
   featured: {
     width: 516
+  },
+  logo: {
+    maxWidth: 300,
+    maxHeight: 300
   }
 };
 
