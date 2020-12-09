@@ -1,5 +1,5 @@
 ---
-date: '2014-04-14T14:05:58+00:00'
+date: 2014-04-14T14:05:58.000Z
 author: Pieter-Jan Pauwels
 title: 'From parking data to mobility data in Ghent'
 tags:

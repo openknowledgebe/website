@@ -1,5 +1,5 @@
 ---
-date: '2014-09-25T10:40:36+00:00'
+date: 2014-09-25T10:40:36.000Z
 author: 'Pieter Colpaert'
 title: 'E-gov awards Agoria (nl)'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-02-08T16:10:16+00:00'
+date: 2014-02-08T16:10:16.000Z
 author: Pieter-Jan Pauwels
 title: 'Data Days goes social'
 tags:

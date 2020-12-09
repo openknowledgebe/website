@@ -1,5 +1,5 @@
 ---
-date: '2012-06-02T11:33:53+00:00'
+date: 2012-06-02T11:33:53.000Z
 author: "Yannick H'Madoun"
 title: 'Creative Commons Belgium'
 tags:

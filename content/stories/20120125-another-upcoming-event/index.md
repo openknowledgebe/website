@@ -1,5 +1,5 @@
 ---
-date: '2012-01-25T17:35:37+00:00'
+date: 2012-01-25T17:35:37.000Z
 author: 'Pieter Colpaert'
 title: 'Another Upcoming Event!'
 tags:

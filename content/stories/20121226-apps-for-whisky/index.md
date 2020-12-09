@@ -1,5 +1,5 @@
 ---
-date: '2012-12-26T20:41:36+00:00'
+date: 2012-12-26T20:41:36.000Z
 author: 'Pieter Colpaert'
 title: 'Apps For Whisky'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2012-05-12T13:50:27+00:00'
+date: 2012-05-12T13:50:27.000Z
 author: 'Pieter Colpaert'
 title: 'Yellow Pages'
 tags:

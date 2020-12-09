@@ -1,5 +1,5 @@
 ---
-date: '2016-10-31T15:57:53+00:00'
+date: 2016-10-31T15:57:53.000Z
 author: Dries Van Ransbeeck
 title: 'Here I am; excited to take up the challenge at Open Knowledge Belgium'
 tags:

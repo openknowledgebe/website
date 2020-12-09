@@ -1,5 +1,5 @@
 ---
-date: '2015-11-26T17:43:18+00:00'
+date: 2015-11-26T17:43:18.000Z
 author: Lara Deraes
 title: 'Belgian federal Open Data policy, a summary.'
 tags:

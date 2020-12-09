@@ -1,5 +1,5 @@
 ---
-date: '2015-04-22T19:23:05+00:00'
+date: 2015-04-22T19:23:05.000Z
 author: 'Pieter Colpaert'
 title: 'The PSI law ready before the summer'
 tags:

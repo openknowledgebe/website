@@ -1,5 +1,5 @@
 ---
-date: '2016-04-22T09:40:26+00:00'
+date: 2016-04-22T09:40:26.000Z
 author: 'Anastasia Valeeva'
 title: 'Belgium in the Open Data Barometer: Half way through'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-02-25T15:24:40+00:00'
+date: 2014-02-25T15:24:40.000Z
 author: Pieter-Jan Pauwels
 title: 'A look back to the Open Belgium Conference 2014'
 tags:

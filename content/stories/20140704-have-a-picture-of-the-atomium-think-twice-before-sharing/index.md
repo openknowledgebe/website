@@ -1,5 +1,5 @@
 ---
-date: '2014-07-04T12:36:10+00:00'
+date: 2014-07-04T12:36:10.000Z
 author: 'Pieter Colpaert'
 title: 'Have a picture of the Atomium? Think twice before sharing!'
 tags:

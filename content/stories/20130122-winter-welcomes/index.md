@@ -1,5 +1,5 @@
 ---
-date: '2013-01-22T12:29:34+00:00'
+date: 2013-01-22T12:29:34.000Z
 author: 'Pieter Colpaert'
 title: 'Winter welcomes'
 tags:

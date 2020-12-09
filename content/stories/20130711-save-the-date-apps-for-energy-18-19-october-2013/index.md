@@ -1,5 +1,5 @@
 ---
-date: '2013-07-11T16:11:55+00:00'
+date: 2013-07-11T16:11:55.000Z
 author: 'Mathias Van Compernolle'
 title: 'Save the date: Apps For Energy 18 & 19 October 2013!'
 tags:

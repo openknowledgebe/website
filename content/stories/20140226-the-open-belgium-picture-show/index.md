@@ -1,5 +1,5 @@
 ---
-date: '2014-02-26T16:45:12+00:00'
+date: 2014-02-26T16:45:12.000Z
 author: Pieter-Jan Pauwels
 title: 'The Open Belgium conference picture show'
 tags:

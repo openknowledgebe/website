@@ -1,5 +1,5 @@
 ---
-date: '2014-04-10T10:54:27+00:00'
+date: 2014-04-10T10:54:27.000Z
 author: Pieter-Jan Pauwels
 title: 'eGov Mobility Hackathon'
 tags:

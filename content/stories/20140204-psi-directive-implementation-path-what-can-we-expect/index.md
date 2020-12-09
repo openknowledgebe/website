@@ -1,5 +1,5 @@
 ---
-date: '2014-02-04T15:42:59+00:00'
+date: 2014-02-04T15:42:59.000Z
 author: 'Pieter Colpaert'
 title: 'PSI-Directive implementation path, what can we expect?'
 tags:

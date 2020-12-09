@@ -1,5 +1,5 @@
 ---
-date: '2013-12-10T13:00:09+00:00'
+date: 2013-12-10T13:00:09.000Z
 author: Pieter-Jan Pauwels
 title: 'Community coordinator at OKFN Belgium'
 tags:

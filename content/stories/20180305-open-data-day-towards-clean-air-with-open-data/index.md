@@ -1,5 +1,5 @@
 ---
-date: '2018-03-05T17:32:11+00:00'
+date: 2018-03-05T17:32:11.000Z
 author: 'Thomas Duvivier'
 title: 'Open data day : Towards Clean Air with Open Data!'
 tags:

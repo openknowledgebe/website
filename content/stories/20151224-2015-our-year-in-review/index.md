@@ -1,5 +1,5 @@
 ---
-date: '2015-12-24T14:47:01+00:00'
+date: 2015-12-24T14:47:01.000Z
 author: Lara Deraes
 title: '2015, our year in review'
 tags:

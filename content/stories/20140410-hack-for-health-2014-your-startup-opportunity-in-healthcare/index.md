@@ -1,5 +1,5 @@
 ---
-date: '2014-04-10T09:43:55+00:00'
+date: 2014-04-10T09:43:55.000Z
 author: Pieter-Jan Pauwels
 title: 'Hack for Health 2014, your startup opportunity in healthcare'
 tags:

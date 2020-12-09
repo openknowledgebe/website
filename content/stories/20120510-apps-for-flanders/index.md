@@ -1,5 +1,5 @@
 ---
-date: '2012-05-10T10:55:11+00:00'
+date: 2012-05-10T10:55:11.000Z
 author: 'Pieter Colpaert'
 title: 'Apps For Flanders'
 tags:

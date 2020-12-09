@@ -1,5 +1,5 @@
 ---
-date: '2013-01-27T21:42:26+00:00'
+date: 2013-01-27T21:42:26.000Z
 author: 'Pieter Colpaert'
 title: 'We Open Data'
 tags:

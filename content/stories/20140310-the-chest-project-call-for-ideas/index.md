@@ -1,5 +1,5 @@
 ---
-date: '2014-03-10T16:27:56+00:00'
+date: 2014-03-10T16:27:56.000Z
 author: Pieter-Jan Pauwels
 title: 'The Chest Project – Call for ideas'
 tags:

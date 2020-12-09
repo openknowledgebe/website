@@ -1,5 +1,5 @@
 ---
-date: '2015-06-24T12:14:34+00:00'
+date: 2015-06-24T12:14:34.000Z
 author: 'Pieter Colpaert'
 title: 'Open & Agile Smart Cities meeting'
 tags:

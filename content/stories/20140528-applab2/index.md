@@ -1,5 +1,5 @@
 ---
-date: '2014-05-28T16:52:16+00:00'
+date: 2014-05-28T16:52:16.000Z
 author: Pieter-Jan Pauwels
 title: 'AppLAB2 – Visualise the City of Kortrijk'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-09-01T14:42:35+00:00'
+date: 2014-09-01T14:42:35.000Z
 author: Pieter-Jan Pauwels
 title: 'Apps for Europe is looking for the best open data apps'
 tags:

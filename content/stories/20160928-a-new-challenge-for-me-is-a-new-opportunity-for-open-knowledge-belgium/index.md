@@ -1,5 +1,5 @@
 ---
-date: '2016-09-28T11:13:08+00:00'
+date: 2016-09-28T11:13:08.000Z
 author: Pieter-Jan Pauwels
 title: 'A new challenge for me is a new opportunity for Open Knowledge Belgium'
 tags:

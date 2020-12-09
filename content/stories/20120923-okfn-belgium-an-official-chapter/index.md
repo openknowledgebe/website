@@ -1,5 +1,5 @@
 ---
-date: '2012-09-23T15:44:39+00:00'
+date: 2012-09-23T15:44:39.000Z
 author: 'Pieter Colpaert'
 title: 'OKFN Belgium, an official chapter'
 tags:

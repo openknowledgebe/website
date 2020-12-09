@@ -1,5 +1,5 @@
 ---
-date: '2013-05-04T11:43:12+00:00'
+date: 2013-05-04T11:43:12.000Z
 author: 'Pieter Colpaert'
 title: 'Flemish Open Data licenses'
 tags:

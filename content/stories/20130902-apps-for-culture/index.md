@@ -1,5 +1,5 @@
 ---
-date: '2013-09-02T11:09:42+00:00'
+date: 2013-09-02T11:09:42.000Z
 author: 'Pieter Colpaert'
 title: 'Apps for Culture'
 tags:

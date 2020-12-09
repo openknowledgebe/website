@@ -1,5 +1,5 @@
 ---
-date: '2012-11-22T15:22:46+00:00'
+date: 2012-11-22T15:22:46.000Z
 author: 'Pieter Colpaert'
 title: 'Legislative version control'
 tags:

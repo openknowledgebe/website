@@ -1,5 +1,5 @@
 ---
-date: '2013-05-10T00:37:02+00:00'
+date: 2013-05-10T00:37:02.000Z
 author: 'Pieter Colpaert'
 title: 'Random Hacks of Kindness'
 tags:

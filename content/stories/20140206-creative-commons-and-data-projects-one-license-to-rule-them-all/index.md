@@ -1,5 +1,5 @@
 ---
-date: '2014-02-06T11:07:33+00:00'
+date: 2014-02-06T11:07:33.000Z
 author: "Yannick H'Madoun"
 title: 'Creative Commons and data projects. One license to rule them all'
 tags:

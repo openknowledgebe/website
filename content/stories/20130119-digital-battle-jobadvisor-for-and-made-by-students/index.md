@@ -1,5 +1,5 @@
 ---
-date: '2013-01-19T18:40:38+00:00'
+date: 2013-01-19T18:40:38.000Z
 author: 'Mathias Van Compernolle'
 title: 'Digital Battle: jobadvisor for and made by students'
 tags:

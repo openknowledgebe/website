@@ -1,5 +1,5 @@
 ---
-date: '2013-01-30T11:52:29+00:00'
+date: 2013-01-30T11:52:29.000Z
 author: 'Pieter Colpaert'
 title: 'Open Transport working group'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2013-05-31T21:54:40+00:00'
+date: 2013-05-31T21:54:40.000Z
 author: 'Mathias Van Compernolle'
 title: 'Apps for Flanders – Business Lounge'
 tags:

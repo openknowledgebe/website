@@ -1,5 +1,5 @@
 ---
-date: '2013-06-28T23:40:45+00:00'
+date: 2013-06-28T23:40:45.000Z
 author: 'Pieter Colpaert'
 title: 'Server outage and open Summer of code 2013'
 tags:

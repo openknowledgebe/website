@@ -1,5 +1,5 @@
 ---
-date: '2013-12-05T11:00:03+00:00'
+date: 2013-12-05T11:00:03.000Z
 author: 'Pieter Colpaert'
 title: 'The DataTank: New version, professional support.'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-02-11T14:29:26+00:00'
+date: 2014-02-11T14:29:26.000Z
 author: 'Mathias Van Compernolle'
 title: 'The future: My Open Data most wanted'
 tags:

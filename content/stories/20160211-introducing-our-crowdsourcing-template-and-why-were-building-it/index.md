@@ -1,5 +1,5 @@
 ---
-date: '2016-02-11T17:23:32+00:00'
+date: 2016-02-11T17:23:32.000Z
 author: Pieter-Jan Pauwels
 title: 'Introducing our crowdsourcing template and why we’re building it.'
 tags:

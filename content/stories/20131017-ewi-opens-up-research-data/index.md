@@ -1,5 +1,5 @@
 ---
-date: '2013-10-17T12:08:27+00:00'
+date: 2013-10-17T12:08:27.000Z
 author: 'Katleen Janssen'
 title: 'EWI opens up research data!'
 tags:

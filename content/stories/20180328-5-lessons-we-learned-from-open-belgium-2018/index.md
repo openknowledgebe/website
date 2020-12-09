@@ -1,5 +1,5 @@
 ---
-date: '2018-03-28T10:21:28+00:00'
+date: 2018-03-28T10:21:28.000Z
 author: 'Julia Thomaschki'
 title: '5 Lessons We Learned From Open Belgium 2018'
 tags:

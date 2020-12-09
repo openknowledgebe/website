@@ -1,5 +1,5 @@
 ---
-date: '2014-03-07T11:48:45+00:00'
+date: 2014-03-07T11:48:45.000Z
 author: Pieter-Jan Pauwels
 title: '#ddays14 Apps for Europe Business Lounge'
 tags:

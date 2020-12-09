@@ -1,5 +1,5 @@
 ---
-date: '2014-12-01T14:54:30+00:00'
+date: 2014-12-01T14:54:30.000Z
 author: 'Pieter Colpaert'
 title: 'Open Ghent'
 tags:

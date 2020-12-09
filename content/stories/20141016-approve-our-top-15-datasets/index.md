@@ -1,5 +1,5 @@
 ---
-date: '2014-10-16T12:32:23+00:00'
+date: 2014-10-16T12:32:23.000Z
 author: Pieter-Jan Pauwels
 title: 'Local Data Census: Do you approve our top 15 datasets?'
 tags:

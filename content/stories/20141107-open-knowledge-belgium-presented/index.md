@@ -1,5 +1,5 @@
 ---
-date: '2014-11-07T11:49:42+00:00'
+date: 2014-11-07T11:49:42.000Z
 author: 'Pieter Colpaert'
 title: 'Open Knowledge Belgium presented'
 tags:

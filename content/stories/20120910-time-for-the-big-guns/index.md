@@ -1,5 +1,5 @@
 ---
-date: '2012-09-10T08:24:39+00:00'
+date: 2012-09-10T08:24:39.000Z
 author: 'Stephane Roelandt'
 title: 'Time for the Big Guns'
 tags:

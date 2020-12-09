@@ -1,5 +1,5 @@
 ---
-date: '2014-09-12T12:00:00+00:00'
+date: 2014-09-12T12:00:00.000Z
 author: Pieter-Jan Pauwels
 title: 'Results of Wiki Survey and final steps'
 tags:

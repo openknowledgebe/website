@@ -1,5 +1,5 @@
 ---
-date: '2012-09-02T09:34:36+00:00'
+date: 2012-09-02T09:34:36.000Z
 author: 'Pieter Colpaert'
 title: 'Apps For Flanders: a student hackathon'
 tags:

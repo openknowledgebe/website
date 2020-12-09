@@ -1,5 +1,5 @@
 ---
-date: '2014-05-23T15:27:10+00:00'
+date: 2014-05-23T15:27:10.000Z
 author: Pieter-Jan Pauwels
 title: 'Hack the elections presentation'
 tags:

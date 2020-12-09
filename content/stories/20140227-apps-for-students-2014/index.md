@@ -1,5 +1,5 @@
 ---
-date: '2014-02-27T18:00:04+00:00'
+date: 2014-02-27T18:00:04.000Z
 author: Pieter-Jan Pauwels
 title: 'Next saturday: Apps For Students'
 tags:

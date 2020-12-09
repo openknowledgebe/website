@@ -1,5 +1,5 @@
 ---
-date: '2012-11-20T00:05:07+00:00'
+date: 2012-11-20T00:05:07.000Z
 author: 'Pieter Colpaert'
 title: 'Relaunching Creative Commons Belgium'
 tags:

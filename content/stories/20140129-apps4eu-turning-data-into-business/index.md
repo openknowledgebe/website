@@ -1,5 +1,5 @@
 ---
-date: '2014-01-29T11:56:37+00:00'
+date: 2014-01-29T11:56:37.000Z
 author: Pieter-Jan Pauwels
 title: 'Apps4EU: Turning data into business'
 tags:

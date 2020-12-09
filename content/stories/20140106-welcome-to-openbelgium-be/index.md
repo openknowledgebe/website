@@ -1,5 +1,5 @@
 ---
-date: '2014-01-06T16:35:13+00:00'
+date: 2014-01-06T16:35:13.000Z
 author: Pieter-Jan Pauwels
 title: 'Welcome to OpenBelgium.be'
 tags:

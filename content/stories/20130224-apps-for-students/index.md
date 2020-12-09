@@ -1,5 +1,5 @@
 ---
-date: '2013-02-24T20:57:27+00:00'
+date: 2013-02-24T20:57:27.000Z
 author: 'Mathias Van Compernolle'
 title: 'Apps for Students'
 tags:

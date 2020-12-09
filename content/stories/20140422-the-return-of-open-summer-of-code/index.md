@@ -1,5 +1,5 @@
 ---
-date: '2014-04-22T15:12:07+00:00'
+date: 2014-04-22T15:12:07.000Z
 author: Pieter-Jan Pauwels
 title: 'The return of open Summer of code'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2013-03-26T20:28:59+00:00'
+date: 2013-03-26T20:28:59.000Z
 author: 'Pieter Colpaert'
 title: 'Sumocoders and 9K win Apps for Ghent'
 tags:

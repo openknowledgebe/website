@@ -1,5 +1,5 @@
 ---
-date: '2015-07-24T11:54:04+00:00'
+date: 2015-07-24T11:54:04.000Z
 author: 'Pieter Colpaert'
 title: 'Green light for the Belgian federal Open Data strategy'
 tags:

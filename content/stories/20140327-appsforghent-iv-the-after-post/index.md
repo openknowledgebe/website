@@ -1,5 +1,5 @@
 ---
-date: '2014-03-27T13:14:21+00:00'
+date: 2014-03-27T13:14:21.000Z
 author: Pieter-Jan Pauwels
 title: 'AppsforGhent IV – The after post'
 tags:

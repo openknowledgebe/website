@@ -1,5 +1,5 @@
 ---
-date: '2014-05-23T14:11:26+00:00'
+date: 2014-05-23T14:11:26.000Z
 author: 'Pieter Colpaert'
 title: 'Relaunching BeLaws'
 tags:

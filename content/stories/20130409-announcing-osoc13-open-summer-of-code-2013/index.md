@@ -1,5 +1,5 @@
 ---
-date: '2013-04-09T20:49:09+00:00'
+date: 2013-04-09T20:49:09.000Z
 author: 'Pieter Colpaert'
 title: 'Announcing #oSoc13: open Summer of code 2013'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-03-10T15:01:50+00:00'
+date: 2014-03-10T15:01:50.000Z
 author: Pieter-Jan Pauwels
 title: 'Apps for Dummies'
 tags:

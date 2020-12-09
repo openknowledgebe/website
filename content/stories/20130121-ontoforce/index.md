@@ -1,5 +1,5 @@
 ---
-date: '2013-01-21T12:25:50+00:00'
+date: 2013-01-21T12:25:50.000Z
 author: 'Pieter Colpaert'
 title: 'Friends find funding'
 tags:

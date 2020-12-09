@@ -1,5 +1,5 @@
 ---
-date: '2014-10-21T15:08:59+00:00'
+date: 2014-10-21T15:08:59.000Z
 author: Pieter-Jan Pauwels
 title: 'Apps For Europe: Take your Open Data application to the next level.'
 tags:

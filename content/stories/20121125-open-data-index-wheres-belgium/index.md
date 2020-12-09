@@ -1,5 +1,5 @@
 ---
-date: '2012-11-25T11:46:25+00:00'
+date: 2012-11-25T11:46:25.000Z
 author: 'Katleen Janssen'
 title: 'Open Data Index – Where’s Belgium?'
 tags:

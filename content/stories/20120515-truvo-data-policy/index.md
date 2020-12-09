@@ -1,5 +1,5 @@
 ---
-date: '2012-05-15T07:07:18+00:00'
+date: 2012-05-15T07:07:18.000Z
 author: 'Pieter Colpaert'
 title: 'Truvo’s data policy'
 tags:

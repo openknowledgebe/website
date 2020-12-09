@@ -1,5 +1,5 @@
 ---
-date: '2013-03-10T20:33:11+00:00'
+date: 2013-03-10T20:33:11.000Z
 author: 'Mathias Van Compernolle'
 title: 'Info session Summer of Code 2013'
 tags:

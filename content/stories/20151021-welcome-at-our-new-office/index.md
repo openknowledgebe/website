@@ -1,5 +1,5 @@
 ---
-date: '2015-10-21T13:04:32+00:00'
+date: 2015-10-21T13:04:32.000Z
 author: Pieter-Jan Pauwels
 title: 'Welcome at our new office.'
 tags:

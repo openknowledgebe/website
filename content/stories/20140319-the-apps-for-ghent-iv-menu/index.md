@@ -1,5 +1,5 @@
 ---
-date: '2014-03-19T13:56:41+00:00'
+date: 2014-03-19T13:56:41.000Z
 author: Pieter-Jan Pauwels
 title: 'What’s on the Apps For Ghent IV Menu?'
 tags:

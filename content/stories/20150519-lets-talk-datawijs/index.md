@@ -1,5 +1,5 @@
 ---
-date: '2015-05-19T15:12:34+00:00'
+date: 2015-05-19T15:12:34.000Z
 author: Lara Deraes
 title: 'Let’s talk Datawijs'
 tags:

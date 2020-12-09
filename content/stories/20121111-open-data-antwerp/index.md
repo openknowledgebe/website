@@ -1,5 +1,5 @@
 ---
-date: '2012-11-11T12:41:35+00:00'
+date: 2012-11-11T12:41:35.000Z
 author: 'Pieter Colpaert'
 title: 'Open Data Antwerp'
 tags:

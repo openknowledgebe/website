@@ -1,5 +1,5 @@
 ---
-date: '2014-08-04T15:38:43+00:00'
+date: 2014-08-04T15:38:43.000Z
 author: 'Pieter Colpaert'
 title: 'Third edition of the Open Data Day Flanders (Dutch)'
 tags:

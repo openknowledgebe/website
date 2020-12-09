@@ -1,5 +1,5 @@
 ---
-date: '2014-08-19T12:09:53+00:00'
+date: 2014-08-19T12:09:53.000Z
 author: Pieter-Jan Pauwels
 title: 'Your view on the Dutch 4.0 Creative Commons license translations.'
 tags:

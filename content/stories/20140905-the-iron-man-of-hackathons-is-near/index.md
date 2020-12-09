@@ -1,5 +1,5 @@
 ---
-date: '2014-09-05T11:13:20+00:00'
+date: 2014-09-05T11:13:20.000Z
 author: Pieter-Jan Pauwels
 title: 'The iron man of all hackathons in the Benelux is near.'
 tags:

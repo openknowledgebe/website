@@ -1,5 +1,5 @@
 ---
-date: '2012-11-20T17:30:13+00:00'
+date: 2012-11-20T17:30:13.000Z
 author: 'Pieter Colpaert'
 title: 'Open Data is not for sprinters'
 tags:

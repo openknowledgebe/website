@@ -1,5 +1,5 @@
 ---
-date: '2016-04-19T14:46:44+00:00'
+date: 2016-04-19T14:46:44.000Z
 author: 'Anastasia Valeeva'
 title: 'Diplohack Datad(r)ive Webinar summary'
 tags:

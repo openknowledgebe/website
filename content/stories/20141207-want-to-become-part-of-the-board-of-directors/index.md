@@ -1,5 +1,5 @@
 ---
-date: '2014-12-07T13:21:15+00:00'
+date: 2014-12-07T13:21:15.000Z
 author: 'Pieter Colpaert'
 title: 'Want to become part of the board of directors?'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2015-04-28T10:08:07+00:00'
+date: 2015-04-28T10:08:07.000Z
 author: Pieter-Jan Pauwels
 title: 'Crowdsourcing the next open Summer of code speakers'
 tags:

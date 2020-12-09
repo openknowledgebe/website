@@ -1,5 +1,5 @@
 ---
-date: '2013-06-13T12:47:15+00:00'
+date: 2013-06-13T12:47:15.000Z
 author: 'Mathias Van Compernolle'
 title: 'Data Dive on tourism'
 tags:

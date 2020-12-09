@@ -1,5 +1,5 @@
 ---
-date: '2014-01-23T17:56:48+00:00'
+date: 2014-01-23T17:56:48.000Z
 author: Pieter-Jan Pauwels
 title: '#ddays14, not just a conference hashtag'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-08-06T14:06:39+00:00'
+date: 2014-08-06T14:06:39.000Z
 author: 'Pieter Colpaert'
 title: 'Raising data quality by opening up in the city of Ghent'
 tags:

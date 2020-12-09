@@ -1,5 +1,5 @@
 ---
-date: '2013-11-25T18:58:04+00:00'
+date: 2013-11-25T18:58:04.000Z
 author: 'Pieter Colpaert'
 title: 'Data Days – The Hackathon'
 tags:

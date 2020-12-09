@@ -1,5 +1,5 @@
 ---
-date: '2014-03-17T16:34:16+00:00'
+date: 2014-03-17T16:34:16.000Z
 author: Pieter-Jan Pauwels
 title: 'Time for an Edit-a-thon'
 tags:

@@ -1,5 +1,5 @@
 ---
-date: '2014-08-21T14:35:28+00:00'
+date: 2014-08-21T14:35:28.000Z
 author: Pieter-Jan Pauwels
 title: 'Choose local open data with us'
 tags:

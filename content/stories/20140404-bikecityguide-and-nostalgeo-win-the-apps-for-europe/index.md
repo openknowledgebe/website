@@ -1,5 +1,5 @@
 ---
-date: '2014-04-04T19:23:22+00:00'
+date: 2014-04-04T19:23:22.000Z
 author: Pieter-Jan Pauwels
 title: 'BikeCityGuide and Nostalgeo win the Apps for Europe competition.'
 tags:

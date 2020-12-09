@@ -1,5 +1,5 @@
 ---
-date: '2014-02-12T11:46:21+00:00'
+date: 2014-02-12T11:46:21.000Z
 author: 'Pieter Colpaert'
 title: 'The true concept of Open Government'
 tags:

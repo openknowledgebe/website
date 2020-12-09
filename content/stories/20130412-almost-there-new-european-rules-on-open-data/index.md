@@ -1,5 +1,5 @@
 ---
-date: '2013-04-12T18:33:20+00:00'
+date: 2013-04-12T18:33:20.000Z
 author: 'Mathias Van Compernolle'
 title: 'Almost there: new European rules on open data'
 tags:
