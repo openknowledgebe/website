@@ -6,13 +6,17 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { Img, Person, Title } from '../components/UI';
-import { breakpoints } from '../styles/globals';
+import { breakpoints, dimensions } from '../styles/globals';
 import { btmFacingArrow } from '../images/icons';
 
 const Header = styled.header`
-  & img {
+  & .img {
     width: 100%;
     margin-top: 2rem;
+
+    & > img {
+      width: 100%;
+    }
   }
 
   & article {
@@ -37,10 +41,20 @@ const Header = styled.header`
       grid-area: t;
     }
 
-    & ${Img} {
+    & .img {
       grid-area: i;
       margin: 0;
-      min-height: 100%;
+      max-width: ${dimensions.featured.width}px !important;
+      height: 100%;
+
+      & > * {
+        height: 100%;
+        width: 100%;
+      }
+
+      & > img {
+        object-fit: cover;
+      }
     }
 
     & article {
@@ -88,7 +102,7 @@ const OpenPositions = styled.article`
 const mapPictures = members =>
   members.map(member => ({
     ...member,
-    picture: member.picture?.childImageSharp
+    picture: member.picture
   }));
 
 export default function Team({ data }) {
@@ -106,7 +120,7 @@ export default function Team({ data }) {
             ...data.team.frontmatter.header,
             featured_image: {
               ...data.team.frontmatter.header.featured_image,
-              image: data.team.frontmatter.header.featured_image.image.publicURL
+              image: data.team.frontmatter.header.featured_image.image
             }
           },
           team: mapPictures(data.team.frontmatter.team),
@@ -125,7 +139,9 @@ export const TeamTemplate = ({ data }) => {
           Our <br />
           Team
         </Title>
-        <Img src={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
+        <div className="img">
+          <Img image={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
+        </div>
         <article>
           <h3>{data?.header?.about_volunteers.heading}</h3>
           {data?.header?.about_volunteers.body && (
@@ -224,10 +240,7 @@ export const pageQuery = graphql`
       frontmatter {
         header {
           featured_image {
-            image {
-              publicURL
-            }
-            alt
+            ...GeneralFeaturedImage
           }
           about_volunteers {
             heading

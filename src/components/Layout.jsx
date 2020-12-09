@@ -82,6 +82,8 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_withWebp
         }
       }
+      extension
+      publicURL
     }
     alt
   }
@@ -104,6 +106,8 @@ export const query = graphql`
           ...GatsbyImageSharpFixed_withWebp
         }
       }
+      extension
+      publicURL
     }
   }
 
@@ -114,6 +118,8 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
+      extension
+      publicURL
     }
   }
 `;

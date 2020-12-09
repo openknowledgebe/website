@@ -7,8 +7,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Newsletter from '../components/Newsletter';
 import Activity from '../components/Activity';
-import { StyledLink, Title } from '../components/UI';
-import { Img as Image } from '../components/UI/Img';
+import { Img, StyledLink, Title } from '../components/UI';
 import { breakpoints, dimensions } from '../styles/globals';
 
 const PinnedActivites = styled.section`
@@ -155,7 +154,7 @@ const Home = ({ data }) => {
   const featuredActivities = data.home.frontmatter.activities.featured_activities.map(activity => ({
     ...activity.frontmatter,
     ...activity.fields,
-    logo: activity.frontmatter.logo.childImageSharp
+    logo: activity.frontmatter.logo
   }));
 
   const activities = {
@@ -173,7 +172,7 @@ const Home = ({ data }) => {
     featured_stories: featuredStories,
     featured_image: {
       ...data.home.frontmatter.stories.featured_image,
-      image: data.home.frontmatter.stories.featured_image.image.childImageSharp
+      image: data.home.frontmatter.stories.featured_image.image
     }
   };
 
@@ -181,7 +180,7 @@ const Home = ({ data }) => {
     ...data.home.frontmatter.header,
     featured_image: {
       ...data.home.frontmatter.header.featured_image,
-      image: data.home.frontmatter.header.featured_image.image.childImageSharp
+      image: data.home.frontmatter.header.featured_image.image
     }
   };
   return (
@@ -208,10 +207,7 @@ export const HomeTemplate = ({ data }) => {
           </StyledLink>
         </div>
         <div className="hero-image">
-          <Image
-            image={data.header?.featured_image?.image}
-            alt={data.header?.featured_image?.alt}
-          />
+          <Img image={data.header?.featured_image?.image} alt={data.header?.featured_image?.alt} />
         </div>
         <div className="d-none-md">
           <StyledLink to={data.header?.cta?.to} className="underlined" $callToAction>
@@ -257,7 +253,7 @@ export const HomeTemplate = ({ data }) => {
         </Heading>
         <div className="content">
           <div className="img-container">
-            <Image
+            <Img
               image={data.stories?.featured_image?.image}
               alt={data.stories?.featured_image?.alt}
               className="d-block-md d-none-sm"

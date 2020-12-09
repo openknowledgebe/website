@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { arrow } from '../images/icons';
-import { StyledLink, Tag } from './UI';
-import { Img } from './UI/Img';
+import { Img, StyledLink, Tag } from './UI';
 import { breakpoints, dimensions } from '../styles/globals';
 
 const ActivityCard = styled.div`

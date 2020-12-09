@@ -6,8 +6,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { Person, Tag as StyledTag, Title } from '../components/UI';
-import { Img } from '../components/UI/Img';
+import { Img, Person, Tag as StyledTag, Title } from '../components/UI';
 import {
   btmFacingArrow,
   facebookBlackIcon,
@@ -198,7 +197,7 @@ export default function Activity({ data }) {
   const mbrs = members
     ? members.map(member => ({
         ...member,
-        picture: member.picture?.childImageSharp
+        picture: member.picture
       }))
     : [];
 
@@ -208,7 +207,7 @@ export default function Activity({ data }) {
     catchphrase,
     featured_image: {
       ...featured_image,
-      image: featured_image.image.childImageSharp
+      image: featured_image.image
     },
     contact_info,
     members: mbrs,

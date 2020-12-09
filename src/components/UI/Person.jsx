@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { twitterBlackIcon, mailIcon, linkedinIcon, headshotIcon } from '../../images/icons';
 
-import { Img } from './Img';
+import Img from './Img';
 
 const StyledPerson = styled.div`
   display: flex;
