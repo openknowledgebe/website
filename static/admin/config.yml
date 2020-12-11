@@ -19,6 +19,9 @@ collections:
     create: true
     identifier_field: name
     slug: '{{name}}'
+    description:
+      "Click on the button 'New Activity' to add an activity or modify an existing activity by choosing one in the list below.
+      You can 'pin' an activity by heading over to 'Pages > Home > Activities Section > Featured Activities'."
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
@@ -78,6 +81,7 @@ collections:
               widget: 'image',
               allow_multiple: false,
               required: false,
+              hint: 'Your picture is automatically transformed to fit a certain size and a grayscale effect is applied.',
             }
           - label: 'Contact info'
             name: 'contact_info'
@@ -114,6 +118,9 @@ collections:
     public_folder: ''
     create: true
     slug: '{{year}}{{month}}{{day}}-{{title}}'
+    description:
+      "Click on the button 'New Story' to create a story or modify an existing story by choosing one in the list below.
+      You can 'pin' a story by heading over to 'Pages > Home > Stories Section > Featured Stories'."
     fields:
       - label: 'Date'
         name: 'date'
@@ -125,7 +132,13 @@ collections:
       - { label: 'Author', name: 'author', widget: string }
       - { label: 'Title', name: 'title', widget: string }
       - { label: 'Article', name: 'body', widget: markdown }
-      - { label: 'Excerpt', name: 'excerpt', widget: text, required: false }
+      - {
+          label: 'Excerpt',
+          name: 'excerpt',
+          widget: text,
+          required: false,
+          hint: "Although the excerpt of the story can be generated automatically, it's done by taking the few first characters of the story body.",
+        }
       - label: 'Tags'
         name: 'tags'
         widget: 'relation'
@@ -193,6 +206,7 @@ collections:
                 add_to_top: true
                 label_singular: 'an activity'
                 summary: '{{field.activity}}'
+                hint: 'Only a maximum of 3 activities can be shown on the homepage. But you can always remove and replace.'
                 field:
                   {
                     label: 'Activity',
@@ -243,6 +257,7 @@ collections:
                 add_to_top: true
                 label_singular: 'a story'
                 summary: '{{field.story}}'
+                hint: 'Only a maximum of 3 stories can be shown on the homepage. But you can always remove and replace.'
                 field:
                   {
                     label: 'Story',
@@ -334,6 +349,7 @@ collections:
                   widget: 'image',
                   allow_multiple: false,
                   required: false,
+                  hint: 'Your picture is automatically transformed to fit a certain size and a grayscale effect is applied.',
                 }
               - label: 'Contact info'
                 name: 'contact_info'
@@ -358,6 +374,7 @@ collections:
                   widget: 'image',
                   allow_multiple: false,
                   required: false,
+                  hint: 'Your picture is automatically transformed to fit a certain size and a grayscale effect is applied.',
                 }
               - label: 'Contact info'
                 name: 'contact_info'

@@ -20,6 +20,10 @@ const Story = ({ entry, widgetFor }) => {
     <StyleInjector>
       <div>
         <h2>Card Preview</h2>
+        <small>
+          You may see characters that shoudn't be here... Don't worry, they won't appear in the live
+          website!
+        </small>
         <StoryCard title={data.title} date={data.date} excerpt={excerpt} />
       </div>
       <hr />
