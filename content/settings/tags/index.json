@@ -1,61 +1,61 @@
 {
   "tags": [
     {
-      "name": "civic action"
-    },
-    {
-      "name": "co-creation"
-    },
-    {
-      "name": "event"
-    },
-    {
-      "name": "linked open data"
-    },
-    {
-      "name": "open data"
-    },
-    {
-      "name": "open transport"
-    },
-    {
-      "name": "open source"
-    },
-    {
-      "name": "open belgium"
-    },
-    {
-      "name": "osoc"
-    },
-    {
       "name": "air quality"
+    },
+    {
+      "name": "civic action"
     },
     {
       "name": "civic labs"
     },
     {
+      "name": "co-creation"
+    },
+    {
+      "name": "diversity"
+    },
+    {
+      "name": "event"
+    },
+    {
+      "name": "inclusion"
+    },
+    {
+      "name": "linked open data"
+    },
+    {
+      "name": "open badges"
+    },
+    {
+      "name": "open belgium"
+    },
+    {
+      "name": "open data"
+    },
+    {
       "name": "open education"
     },
     {
+      "name": "open recognition"
+    },
+    {
+      "name": "open source"
+    },
+    {
+      "name": "open transport"
+    },
+    {
       "name": "openstreetmap"
+    },
+    {
+      "name": "osoc"
     },
     {
       "name": "wikidata"
     },
     {
       "name": "wikipedia"
-    },
-    {
-      "name": "diversity"
-    },
-    {
-      "name": "inclusion"
-    },
-    {
-      "name": "open recognition"
-    },
-    {
-      "name": "open badges"
     }
   ]
 }
