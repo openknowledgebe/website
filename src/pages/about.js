@@ -4,15 +4,10 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-
-const Body = styled.article`
-  padding: 0;
-  max-width: 700px;
-  margin: auto;
-`;
+import { Article } from '../components/UI';
 
 const Header = styled.header`
-  padding: 0;
+  padding: 0 0 3rem;
 `;
 
 export default function About({ data }) {
@@ -36,9 +31,9 @@ export const AboutTemplate = ({ data, preview }) => {
         <h1>{data.seo?.title}</h1>
       </Header>
 
-      <Body>
+      <Article>
         {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
-      </Body>
+      </Article>
     </article>
   );
 };

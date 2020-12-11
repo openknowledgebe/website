@@ -6,3 +6,4 @@ export { default as Input } from './Input';
 export { default as Button } from './Button';
 export { default as Person } from './Person';
 export { default as Date } from './Date';
+export { default as Article } from './Article';
