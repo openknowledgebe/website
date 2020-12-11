@@ -17,6 +17,24 @@ export const breakpoints = {
   large: 1200
 };
 
+export const dimensions = {
+  headshot: {
+    height: 215,
+    width: 300
+  },
+  featured: {
+    width: 516
+  },
+  logo: {
+    maxWidth: 300,
+    maxHeight: 300
+  },
+  activityFeatured: {
+    mobileMaxHeight: 400, // maximum height on smaller screens
+    largeMaxWidth: 856 // maximum width on bigger screens
+  }
+};
+
 const global = css`
   :root {
     --color-primary: #301948;

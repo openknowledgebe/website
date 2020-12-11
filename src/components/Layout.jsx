@@ -72,3 +72,54 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+
+// if you change sizes here, you should also do the same in ../styles/globals.js dimensions object
+export const query = graphql`
+  fragment GeneralFeaturedImage on FeaturedImage {
+    image {
+      childImageSharp {
+        fluid(maxWidth: 516, fit: CONTAIN) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+      extension
+      publicURL
+    }
+    alt
+  }
+
+  fragment ActivityFeaturedImage on FeaturedImage {
+    image {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    alt
+  }
+
+  fragment Picture on Members {
+    picture {
+      childImageSharp {
+        fixed(width: 300, height: 215, fit: INSIDE, grayscale: true) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+      extension
+      publicURL
+    }
+  }
+
+  fragment Logo on Frontmatter {
+    logo {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+      extension
+      publicURL
+    }
+  }
+`;
