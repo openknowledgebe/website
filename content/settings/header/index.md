@@ -2,8 +2,8 @@
 logo: okbe-withname.svg
 org_name: Open Knowledge Belgium
 nav_items:
-  - label: Open Knowledge
-    to: /
+  - label: About
+    to: /about
   - label: Team
     to: /team
   - label: Our activities
