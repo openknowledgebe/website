@@ -5,9 +5,9 @@ header:
   about_volunteers:
     heading: Our volunteers
     body: We have too many volunteers to sum them all up by name but Open Knowledge
-      Belgium wouldn't be complete without its passionate volunteers. All of our
-      working groups and most of our projects rely on the great work of
-      volunteers, and we're greatly thankful for that.
+      Belgium wouldn't be complete without them. All of our activities rely on
+      the great work of passionate volunteers, and we're eternally grateful for
+      that.
 team:
   - name: Lien Arits
     task: Community and Communications Coordinator HackYourFuture Belgium
@@ -33,6 +33,7 @@ team:
       email: astrid@openknowledge.be
       twitter: https://twitter.com/SteenackersA
       linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
+    picture: astridsteenackers.jpg
   - name: Dries Van Ransbeeck
     task: General Coordinator
     contact_info:

@@ -52,14 +52,7 @@ const Activities = ({ data }) => {
                   fields: { slug: to }
                 }
               }) => (
-                <Activity
-                  key={name}
-                  name={name}
-                  logo={logo.publicURL}
-                  tags={tags}
-                  color={color}
-                  to={to}
-                />
+                <Activity key={name} name={name} logo={logo} tags={tags} color={color} to={to} />
               )
             )}
         </ActivitiesContainer>
@@ -80,9 +73,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             name
-            logo {
-              publicURL
-            }
+            ...Logo
             color
             tags
           }

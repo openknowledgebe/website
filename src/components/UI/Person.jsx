@@ -7,6 +7,20 @@ import Img from './Img';
 const StyledPerson = styled.div`
   display: flex;
   flex-direction: column;
+
+  & > .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f6fe;
+
+    width: 300px;
+    height: 215px;
+
+    & > img {
+      max-height: 100%;
+    }
+  }
 `;
 
 const PersonFooter = styled.div`
@@ -30,16 +44,13 @@ const PersonFooter = styled.div`
 const Person = ({ name, picture, socials, task }) => {
   return (
     <StyledPerson>
-      {picture ? (
-        <Img alt={name} src={picture} />
-      ) : (
-        <Img
-          role="presentation"
-          alt=""
-          src={headshotIcon}
-          css="background: #F8F6FE; padding: 5rem;"
-        />
-      )}
+      <div className="img">
+        {picture ? (
+          <Img alt={name} image={picture} />
+        ) : (
+          <Img role="presentation" alt="" src={headshotIcon} />
+        )}
+      </div>
       <PersonFooter>
         <div>
           <h4>{name}</h4>

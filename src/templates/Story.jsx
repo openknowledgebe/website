@@ -5,20 +5,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { StoryHeader } from '../components/Story';
 import SEO from '../components/SEO';
-import { Tag as StyledTag } from '../components/UI';
-
-const Body = styled.div`
-  max-width: 80rem;
-  margin: auto;
-
-  & a {
-    overflow-wrap: anywhere;
-  }
-
-  & img {
-    max-width: 100%;
-  }
-`;
+import { Article, Tag as StyledTag } from '../components/UI';
 
 const Tag = styled(StyledTag)`
   background-color: #f9f6ff;
@@ -52,7 +39,7 @@ export const StoryTemplate = ({ data, preview }) => {
   return (
     <article>
       <StoryHeader title={data.title} date={data.date} author={data.author} />
-      <Body>
+      <Article>
         {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
         <Tags className="gap">
           {data.tags &&
@@ -60,7 +47,7 @@ export const StoryTemplate = ({ data, preview }) => {
               return <Tag key={tag}>{tag}</Tag>;
             })}
         </Tags>
-      </Body>
+      </Article>
     </article>
   );
 };
