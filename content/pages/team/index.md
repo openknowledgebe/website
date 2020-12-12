@@ -49,7 +49,7 @@ directors:
       linkedin: https://www.linkedin.com/in/jbelien/
     picture: jonathanbelien.jpg
   - name: Raf Buyle
-    task: ''
+    task: Policy Advisor
     contact_info:
       email: raf.buyle@openknowledge.be
       linkedin: https://be.linkedin.com/in/rafbuyle
@@ -71,33 +71,39 @@ directors:
       email: gwen@openknowledge.be
       linkedin: https://www.linkedin.com/in/gwenfranck/
       twitter: https://twitter.com/g_fra
+    task: Policy Advisor
   - name: Bert Jehoul
     contact_info:
       email: bert@openknowledge.be
       twitter: https://twitter.com/jeborsel
       linkedin: https://www.linkedin.com/in/bertjehoul/
     picture: bertjehoul.jpg
+    task: Treasurer
   - contact_info:
       email: toon.nelissen@openknowledge.be
       linkedin: https://www.linkedin.com/in/toonnelissen/
       twitter: https://twitter.com/ToonNelissen
     name: Toon Nelissen
+    task: Treasurer
   - name: Joost Schouppe
     contact_info:
       email: joost@openknowledge.be
       linkedin: https://www.linkedin.com/in/joost-schouppe-60393948/
       twitter: https://twitter.com/joostjakob
+    task: Human Capital Lead
   - name: Thimo Thoeye
     contact_info:
       email: thimo@openknowledge.be
       linkedin: https://be.linkedin.com/in/thimothoeye
       twitter: https://twitter.com/tthoeye
+    task: Secretary
   - name: Dries Vanacker
     contact_info:
       email: dries.vanacker@openknowledge.be
       twitter: https://twitter.com/drievana
       linkedin: https://www.linkedin.com/in/dries-vanacker/
     picture: driesvanacker.jpg
+    task: Human Capital Lead
   - name: Toon Vanagt
     contact_info:
       twitter: https://twitter.com/toon
@@ -108,6 +114,7 @@ directors:
       email: mathias@openknowledge.be
       linkedin: https://www.linkedin.com/in/mathias-van-compernolle-b0a6b011/
       twitter: https://twitter.com/mvcomper
+    task: Secretary
 positions:
   volunteer: []
   internship: []
