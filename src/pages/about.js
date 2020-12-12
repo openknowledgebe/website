@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { Article } from '../components/UI';
+import { Article, Title } from '../components/UI';
 
 const Header = styled.header`
   padding: 0 0 3rem;
@@ -28,7 +28,7 @@ export const AboutTemplate = ({ data, preview }) => {
   return (
     <article>
       <Header>
-        <h1>{data.seo?.title}</h1>
+        <Title as="h1">{data.seo?.title}</Title>
       </Header>
 
       <Article>
