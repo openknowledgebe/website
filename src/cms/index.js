@@ -23,6 +23,18 @@ CMS.registerEventListener({
       });
       return data.set('members', members);
     }
+
+    if (entry.get('collection') === 'settings' && entry.get('slug') === 'tags') {
+      // lowercase
+      const tags = data.get('tags').map(tag => tag.set('name', tag.get('name').toLowerCase()));
+
+      // sort
+      return data.set(
+        'tags',
+        tags.sortBy(tag => tag.get('name'))
+      );
+    }
+
     return data;
   }
 });

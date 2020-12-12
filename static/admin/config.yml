@@ -492,6 +492,7 @@ collections:
             name: 'tags'
             widget: 'list'
             allow_add: true
+            add_to_top: true
             label_singular: 'a tag'
             summary: '{{fields.name}}'
             fields:
