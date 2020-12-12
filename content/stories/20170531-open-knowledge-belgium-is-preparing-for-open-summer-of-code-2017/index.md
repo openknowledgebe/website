@@ -21,7 +21,7 @@ tags:
 
 As the tradition goes, the first Monday after International Open Data Day, Open Knowledge Belgium organises its Open Belgium conference on open knowledge and open data in Belgium.
 
-![](1*SaTQ_gM5nJf6LyMGTUZczw.png)
+![](openbelgium.png)
 
 Open Belgium was made possible by an incredible group of volunteers
 
