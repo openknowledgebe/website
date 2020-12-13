@@ -15,6 +15,7 @@ team:
       email: lien@hackyourfuture.be
       linkedin: https://www.linkedin.com/in/lien-arits-88722683/
       twitter: https://twitter.com/LienArits
+    picture: lienarits.jpg
   - name: Manon Brulard
     task: Project Coordinator HackYourFuture Belgium
     contact_info:
