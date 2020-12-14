@@ -12,7 +12,7 @@ tags:
 **OpenKnowledge is what happens when OpenData become useful.**
 
 > MT [@zoerobinson1](https://twitter.com/zoerobinson1): What is [\#openknowledge](https://twitter.com/search?q=%23openknowledge&src=hash)? It’s “what [\#opendata](https://twitter.com/search?q=%23opendata&src=hash) becomes when it is made useful” [@hubwestminster](https://twitter.com/hubwestminster) [\#OPD14](https://twitter.com/search?q=%23OPD14&src=hash) [pic.twitter.com/MZgGG4KHjF](http://t.co/MZgGG4KHjF)  
-> ![Open Data definition](Ber85F3IIAEjw7C.jpg:large)
+> ![Open Data definition](Ber85F3IIAEjw7C.jpg)
 >
 > — Open Knowledge Fdn (@OKFN) [January 23, 2014](https://twitter.com/OKFN/statuses/426431427476226048)
 

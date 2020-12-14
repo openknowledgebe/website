@@ -14,6 +14,7 @@ activities:
   featured_activities:
     - open-summer-of-code/index
     - open-belgium/index
+    - hackyourfuture-belgium/index
   cta:
     label: Discover all activities
     to: /activities
