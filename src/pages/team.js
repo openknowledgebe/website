@@ -131,108 +131,106 @@ export default function Team({ data }) {
   );
 }
 
-export const TeamTemplate = ({ data }) => {
-  return (
-    <>
-      <Header>
-        <Title as="h1">
-          Our <br />
-          Team
-        </Title>
-        <div className="img">
-          <Img image={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
+export const TeamTemplate = ({ data }) => (
+  <>
+    <Header>
+      <Title as="h1">
+        Our <br />
+        Team
+      </Title>
+      <div className="img">
+        <Img image={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
+      </div>
+      <article>
+        <h3>{data?.header?.about_volunteers.heading}</h3>
+        {data?.header?.about_volunteers.body && (
+          <Markdown options={{ forceBlock: true }}>{data.header.about_volunteers.body}</Markdown>
+        )}
+      </article>
+    </Header>
+
+    {data?.team && (
+      <Members>
+        <h3>Team</h3>
+        <div className="members">
+          {data.team.map(({ name, task, contact_info: socials, picture }) => (
+            <Person
+              key={socials.email}
+              task={task}
+              socials={socials}
+              name={name}
+              picture={picture}
+            />
+          ))}
         </div>
-        <article>
-          <h3>{data?.header?.about_volunteers.heading}</h3>
-          {data?.header?.about_volunteers.body && (
-            <Markdown options={{ forceBlock: true }}>{data.header.about_volunteers.body}</Markdown>
-          )}
-        </article>
-      </Header>
+      </Members>
+    )}
 
-      {data?.team && (
-        <Members>
-          <h3>Team</h3>
-          <div className="members">
-            {data.team.map(({ name, task, contact_info: socials, picture }) => (
-              <Person
-                key={socials.email}
-                task={task}
-                socials={socials}
-                name={name}
-                picture={picture}
-              />
-            ))}
+    {data?.directors && (
+      <Members>
+        <h3>Board of directors</h3>
+        <div className="members">
+          {data.directors.map(({ name, task, contact_info: socials, picture }) => (
+            <Person
+              key={socials.email}
+              task={task}
+              socials={socials}
+              name={name}
+              picture={picture}
+            />
+          ))}
+        </div>
+      </Members>
+    )}
+
+    {data?.positions &&
+    (data.positions.employee?.length > 0 ||
+      data.positions.internship?.length > 0 ||
+      data.positions.volunteer?.length > 0) ? (
+      <OpenPositions>
+        <h3>We're hiring!</h3>
+        <div>
+          <div className="arrow">
+            <img src={btmFacingArrow} role="presentation" alt="" />
           </div>
-        </Members>
-      )}
+          <div className="jobs">
+            {data.positions.employee?.length > 0 ? (
+              <div>
+                <h4>Employee</h4>
+                <ul>
+                  {data.positions.employee.map(job => (
+                    <li key={job}>{job}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : undefined}
+            {data.positions.internship?.length > 0 ? (
+              <div>
+                <h4>Internship</h4>
+                <ul>
+                  {data.positions.internship.map(job => (
+                    <li key={job}>{job}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : undefined}
 
-      {data?.directors && (
-        <Members>
-          <h3>Board of directors</h3>
-          <div className="members">
-            {data.directors.map(({ name, task, contact_info: socials, picture }) => (
-              <Person
-                key={socials.email}
-                task={task}
-                socials={socials}
-                name={name}
-                picture={picture}
-              />
-            ))}
+            {data.positions.volunteer?.length > 0 ? (
+              <div>
+                <h4>Volunteer</h4>
+                <ul>
+                  {data.positions.volunteer.map(job => (
+                    <li key={job}>{job}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : undefined}
           </div>
-        </Members>
-      )}
-
-      {data?.positions &&
-      (data.positions.employee?.length > 0 ||
-        data.positions.internship?.length > 0 ||
-        data.positions.volunteer?.length > 0) ? (
-        <OpenPositions>
-          <h3>We're hiring!</h3>
-          <div>
-            <div className="arrow">
-              <img src={btmFacingArrow} role="presentation" alt="" />
-            </div>
-            <div className="jobs">
-              {data.positions.employee?.length > 0 ? (
-                <div>
-                  <h4>Employee</h4>
-                  <ul>
-                    {data.positions.employee.map(job => (
-                      <li key={job}>{job}</li>
-                    ))}
-                  </ul>
-                </div>
-              ) : undefined}
-              {data.positions.internship?.length > 0 ? (
-                <div>
-                  <h4>Internship</h4>
-                  <ul>
-                    {data.positions.internship.map(job => (
-                      <li key={job}>{job}</li>
-                    ))}
-                  </ul>
-                </div>
-              ) : undefined}
-
-              {data.positions.volunteer?.length > 0 ? (
-                <div>
-                  <h4>Volunteer</h4>
-                  <ul>
-                    {data.positions.volunteer.map(job => (
-                      <li key={job}>{job}</li>
-                    ))}
-                  </ul>
-                </div>
-              ) : undefined}
-            </div>
-          </div>
-        </OpenPositions>
-      ) : undefined}
-    </>
-  );
-};
+        </div>
+      </OpenPositions>
+    ) : undefined}
+  </>
+);
 
 export const pageQuery = graphql`
   query {

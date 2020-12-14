@@ -193,91 +193,89 @@ const Home = ({ data }) => {
 
 export default Home;
 
-export const HomeTemplate = ({ data }) => {
-  return (
-    <>
-      <Hero>
-        <div className="hero-copy">
-          <h1>{data.header?.tagline}</h1>
-          {data.header?.mission && (
-            <Markdown options={{ forceBlock: true }}>{data.header?.mission}</Markdown>
-          )}
-          <StyledLink to={data.header?.cta?.to} className="underlined d-inline-block-md d-none-sm">
-            <span>{data.header?.cta?.label}</span>
-          </StyledLink>
-        </div>
-        <div className="hero-image">
-          <Img image={data.header?.featured_image?.image} alt={data.header?.featured_image?.alt} />
-        </div>
-        <div className="d-none-md">
-          <StyledLink to={data.header?.cta?.to} className="underlined" $callToAction>
-            <span>{data.header?.cta?.label}</span>
-          </StyledLink>
-        </div>
-      </Hero>
-      <PinnedActivites data-state="reversed">
-        <Heading>
-          <Title>
-            Our
-            <br />
-            activities
-          </Title>
-          <StyledLink
-            to={data.activities?.cta?.to}
-            className="underlined d-inline-block-md d-none-sm"
-          >
-            <span>{data.activities?.cta?.label}</span>
-          </StyledLink>
-        </Heading>
-        <div className="content gap">
-          {data.activities?.featured_activities.map(({ name, logo, color, tags, slug }) => (
-            <Activity name={name} logo={logo} color={color} tags={tags} key={name} to={slug} />
-          ))}
-        </div>
-        <StyledLink to={data.activities?.cta?.to} className="underlined d-none-md" $callToAction>
+export const HomeTemplate = ({ data }) => (
+  <>
+    <Hero>
+      <div className="hero-copy">
+        <h1>{data.header?.tagline}</h1>
+        {data.header?.mission && (
+          <Markdown options={{ forceBlock: true }}>{data.header?.mission}</Markdown>
+        )}
+        <StyledLink to={data.header?.cta?.to} className="underlined d-inline-block-md d-none-sm">
+          <span>{data.header?.cta?.label}</span>
+        </StyledLink>
+      </div>
+      <div className="hero-image">
+        <Img image={data.header?.featured_image?.image} alt={data.header?.featured_image?.alt} />
+      </div>
+      <div className="d-none-md">
+        <StyledLink to={data.header?.cta?.to} className="underlined" $callToAction>
+          <span>{data.header?.cta?.label}</span>
+        </StyledLink>
+      </div>
+    </Hero>
+    <PinnedActivites data-state="reversed">
+      <Heading>
+        <Title>
+          Our
+          <br />
+          activities
+        </Title>
+        <StyledLink
+          to={data.activities?.cta?.to}
+          className="underlined d-inline-block-md d-none-sm"
+        >
           <span>{data.activities?.cta?.label}</span>
         </StyledLink>
-      </PinnedActivites>
-      <PinnedStories>
-        <Heading>
-          <Title>
-            Our
-            <br /> stories
-          </Title>
-          <StyledLink
-            to={data.stories?.cta?.to}
-            className="bold6 underlined work-sans d-inline-block-md d-none-sm"
-          >
-            <span>{data.stories?.cta?.label}</span>
-          </StyledLink>
-        </Heading>
-        <div className="content">
-          <div className="img-container">
-            <Img
-              image={data.stories?.featured_image?.image}
-              alt={data.stories?.featured_image?.alt}
-              className="d-block-md d-none-sm"
-            />
-          </div>
-          <div className="stories">
-            {data.stories?.featured_stories.map(({ slug, title, date }) => (
-              <PinnedStory key={title} className="pinned-story">
-                <StyledLink to={slug} className="pinned-story-link">
-                  {title}
-                </StyledLink>
-                <div className="story-date">{date}</div>
-              </PinnedStory>
-            ))}
-          </div>
-        </div>
-        <StyledLink to={data.stories?.cta?.to} className="underlined d-none-md" $callToAction>
+      </Heading>
+      <div className="content gap">
+        {data.activities?.featured_activities.map(({ name, logo, color, tags, slug }) => (
+          <Activity name={name} logo={logo} color={color} tags={tags} key={name} to={slug} />
+        ))}
+      </div>
+      <StyledLink to={data.activities?.cta?.to} className="underlined d-none-md" $callToAction>
+        <span>{data.activities?.cta?.label}</span>
+      </StyledLink>
+    </PinnedActivites>
+    <PinnedStories>
+      <Heading>
+        <Title>
+          Our
+          <br /> stories
+        </Title>
+        <StyledLink
+          to={data.stories?.cta?.to}
+          className="bold6 underlined work-sans d-inline-block-md d-none-sm"
+        >
           <span>{data.stories?.cta?.label}</span>
         </StyledLink>
-      </PinnedStories>
-      <Newsletter content={data.newsletter} />
-    </>
-  );
-};
+      </Heading>
+      <div className="content">
+        <div className="img-container">
+          <Img
+            image={data.stories?.featured_image?.image}
+            alt={data.stories?.featured_image?.alt}
+            className="d-block-md d-none-sm"
+          />
+        </div>
+        <div className="stories">
+          {data.stories?.featured_stories.map(({ slug, title, date }) => (
+            <PinnedStory key={title} className="pinned-story">
+              <StyledLink to={slug} className="pinned-story-link">
+                {title}
+              </StyledLink>
+              <div className="story-date">{date}</div>
+            </PinnedStory>
+          ))}
+        </div>
+      </div>
+      <StyledLink to={data.stories?.cta?.to} className="underlined d-none-md" $callToAction>
+        <span>{data.stories?.cta?.label}</span>
+      </StyledLink>
+    </PinnedStories>
+    <Newsletter content={data.newsletter} />
+  </>
+);
 
 export const query = graphql`
   {

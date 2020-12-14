@@ -34,29 +34,27 @@ const StyledNewsletter = styled.section`
   }
 `;
 
-const Newsletter = ({ content }) => {
-  return (
-    <StyledNewsletter>
-      <h2 id="a11y-email-field">
-        {content?.heading}
-        <br /> <span className="regular">{content?.subheading}</span>
-      </h2>
-      <form
-        action="https://openknowledge.us8.list-manage.com/subscribe/post"
-        method="POST"
-        target="_blank"
-      >
-        <InputGroup>
-          <Input type="email" name="MERGE0" required />
-          <input type="hidden" name="u" value="16c22b5f724fd6ef8c78c79fc" />
-          <input type="hidden" name="id" value="1760a73ee6" />
-          <Button type="submit" className="button">
-            signup&nbsp;&#x276F;
-          </Button>
-        </InputGroup>
-      </form>
-    </StyledNewsletter>
-  );
-};
+const Newsletter = ({ content }) => (
+  <StyledNewsletter>
+    <h2 id="a11y-email-field">
+      {content?.heading}
+      <br /> <span className="regular">{content?.subheading}</span>
+    </h2>
+    <form
+      action="https://openknowledge.us8.list-manage.com/subscribe/post"
+      method="POST"
+      target="_blank"
+    >
+      <InputGroup>
+        <Input type="email" name="MERGE0" required />
+        <input type="hidden" name="u" value="16c22b5f724fd6ef8c78c79fc" />
+        <input type="hidden" name="id" value="1760a73ee6" />
+        <Button type="submit" className="button">
+          signup&nbsp;&#x276F;
+        </Button>
+      </InputGroup>
+    </form>
+  </StyledNewsletter>
+);
 
 export default Newsletter;

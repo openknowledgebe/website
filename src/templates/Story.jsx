@@ -35,22 +35,15 @@ export default function Story({ data }) {
   );
 }
 
-export const StoryTemplate = ({ data, preview }) => {
-  return (
-    <article>
-      <StoryHeader title={data.title} date={data.date} author={data.author} />
-      <Article>
-        {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
-        <Tags className="gap">
-          {data.tags &&
-            data.tags.map(tag => {
-              return <Tag key={tag}>{tag}</Tag>;
-            })}
-        </Tags>
-      </Article>
-    </article>
-  );
-};
+export const StoryTemplate = ({ data, preview }) => (
+  <article>
+    <StoryHeader title={data.title} date={data.date} author={data.author} />
+    <Article>
+      {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
+      <Tags className="gap">{data.tags && data.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>
+    </Article>
+  </article>
+);
 
 export const pageQuery = graphql`
   query($slug: String!) {

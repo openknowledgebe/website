@@ -21,12 +21,10 @@ const Activity = ({ entry, getAsset }) => {
   data.featured_image.image = getAsset(entry.getIn(['data', 'featured_image', 'image'])).toString();
 
   if (data.members) {
-    data.members = data.members.map(member => {
-      return {
-        ...member,
-        picture: member.picture && getAsset(member.picture).toString()
-      };
-    });
+    data.members = data.members.map(member => ({
+      ...member,
+      picture: member.picture && getAsset(member.picture).toString()
+    }));
   }
 
   const merged = { ...init, ...data };

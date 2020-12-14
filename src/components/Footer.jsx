@@ -78,54 +78,52 @@ const StyledFooter = styled.footer`
   }
 `;
 
-const Footer = ({ data }) => {
-  return (
-    <StyledFooter>
-      <div>
-        <div className="contact">
-          <h3>{data.contact.heading}</h3>
-          <address>
-            <Markdown>{data.contact.contact_info}</Markdown>
-          </address>
-        </div>
-        <div className="socials">
-          <h3>{data.socials.heading}</h3>
-          <div className="flex">
-            <a
-              href={data.socials.twitter}
-              className="mg-r-b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={twitterIcon} alt="Twitter" />
-            </a>
-            <a
-              href={data.socials.github}
-              className="mg-r-b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={githubIcon} alt="Github" />
-            </a>
-            <a
-              href={data.socials.facebook}
-              className="mg-r-b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={facebookIcon} alt="Facebook" />
-            </a>
-          </div>
+const Footer = ({ data }) => (
+  <StyledFooter>
+    <div>
+      <div className="contact">
+        <h3>{data.contact.heading}</h3>
+        <address>
+          <Markdown>{data.contact.contact_info}</Markdown>
+        </address>
+      </div>
+      <div className="socials">
+        <h3>{data.socials.heading}</h3>
+        <div className="flex">
+          <a
+            href={data.socials.twitter}
+            className="mg-r-b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={twitterIcon} alt="Twitter" />
+          </a>
+          <a
+            href={data.socials.github}
+            className="mg-r-b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubIcon} alt="Github" />
+          </a>
+          <a
+            href={data.socials.facebook}
+            className="mg-r-b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={facebookIcon} alt="Facebook" />
+          </a>
         </div>
       </div>
-      <div>
-        <NavItems className="footer-nav unstyled-links work-sans" links={data.footer_nav} />
-        <div className="license">
-          <Markdown>{data.attributions}</Markdown>
-        </div>
+    </div>
+    <div>
+      <NavItems className="footer-nav unstyled-links work-sans" links={data.footer_nav} />
+      <div className="license">
+        <Markdown>{data.attributions}</Markdown>
       </div>
-    </StyledFooter>
-  );
-};
+    </div>
+  </StyledFooter>
+);
 
 export default Footer;
