@@ -86,6 +86,7 @@ directors:
       twitter: https://twitter.com/ToonNelissen
     name: Toon Nelissen
     task: Treasurer
+    picture: toonnelissen.png
   - name: Joost Schouppe
     contact_info:
       email: joost@openknowledge.be
