@@ -8,6 +8,8 @@ local_backend: true
 media_folder: static/images/uploads
 public_folder: /images/uploads
 
+publish_mode: editorial_workflow
+
 collections:
   - name: 'activities'
     label: 'Activities'
