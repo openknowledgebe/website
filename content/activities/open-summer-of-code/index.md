@@ -23,6 +23,7 @@ members:
       linkedin: https://www.linkedin.com/in/mietcls/
       twitter: https://twitter.com/Choisissez
     id: 440845b7-f8c6-41ec-8a1a-bf8ad83d930d
+    picture: mietclaes.jpg
   - name: Astrid Steenackers
     picture: astridsteenackers.jpg
     contact_info:
