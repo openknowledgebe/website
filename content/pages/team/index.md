@@ -1,7 +1,8 @@
 ---
 header:
   featured_image:
-    image: okbe-withname.svg
+    image: openbelgium.jpg
+    alt: Open Belgium volunteers
   about_volunteers:
     heading: Our volunteers
     body: We have too many volunteers to sum them all up by name but Open Knowledge
