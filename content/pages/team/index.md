@@ -29,6 +29,7 @@ team:
       email: evan@hackyourfuture.be
       linkedin: https://www.linkedin.com/in/evan-cole/
       twitter: https://twitter.com/HackYFutureBE/
+    picture: evancole.png
   - name: Astrid Steenackers
     task: Event & Community Coordinator
     contact_info:
