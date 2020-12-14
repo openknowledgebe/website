@@ -63,6 +63,7 @@ directors:
       email: miet@openknowledge.be
       linkedin: https://www.linkedin.com/in/mietcls/
       twitter: https://twitter.com/Choisissez
+    picture: mietclaes.jpg
   - name: Pieter Colpaert
     contact_info:
       email: pieter@openknowledge.be
