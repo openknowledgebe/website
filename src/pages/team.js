@@ -13,10 +13,6 @@ const Header = styled.header`
   & .img {
     width: 100%;
     margin-top: 2rem;
-
-    & > img {
-      width: 100%;
-    }
   }
 
   & article {
@@ -33,7 +29,8 @@ const Header = styled.header`
 
   @media (min-width: ${breakpoints.medium + 51}px) {
     display: grid;
-    grid-template-areas: 't i i' 'v i i' 'v i i';
+    grid-template-areas: 't i' 'v i' 'v i';
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: flex-start;
 
@@ -44,8 +41,9 @@ const Header = styled.header`
     & .img {
       grid-area: i;
       margin: 0;
-      max-width: ${dimensions.featured.width}px !important;
+      max-width: ${dimensions.featured.width}px;
       height: 100%;
+      justify-self: flex-end;
 
       & > * {
         height: 100%;
