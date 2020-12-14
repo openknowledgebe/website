@@ -30,7 +30,7 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
       ...new Set(data.activities.featured_activities.filter(Boolean))
     ];
 
-    if (activities && activities.size === data.activities.featured_activities.length) {
+    if (activities && activities.size >= data.activities.featured_activities.length) {
       data.activities.featured_activities = data.activities.featured_activities.map(activity => {
         const activityData = activities.getIn([activity]).toJS();
         activityData.slug = `${window.location.protocol}//${window.location.host}/activities/${activity}`;
@@ -44,7 +44,7 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
 
     data.stories.featured_stories = [...new Set(data.stories.featured_stories.filter(Boolean))];
 
-    if (stories && stories.size === data.stories.featured_stories.length) {
+    if (stories && stories.size >= data.stories.featured_stories.length) {
       data.stories.featured_stories = data.stories.featured_stories.map(story => {
         const storyData = stories.getIn([story]).toJS();
         storyData.slug = `${window.location.protocol}//${window.location.host}/stories/${story}`;
