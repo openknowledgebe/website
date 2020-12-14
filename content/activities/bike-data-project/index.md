@@ -5,6 +5,9 @@ color: "#ef4823"
 tags:
   - open data
   - community
+  - civic tech
+  - sustainable cities
+  - cycling
 to: https://www.bikedataproject.org/
 catchphrase: Open bike data platform for and by cyclists. Making cyclists more
   visible & cities more liveable with open data.
