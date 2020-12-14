@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { Button, Input } from './UI';
@@ -35,24 +35,21 @@ const StyledNewsletter = styled.section`
 `;
 
 const Newsletter = ({ content }) => {
-  const input = useRef();
-  const submit = e => {
-    e.preventDefault();
-  };
   return (
     <StyledNewsletter>
       <h2 id="a11y-email-field">
         {content?.heading}
         <br /> <span className="regular">{content?.subheading}</span>
       </h2>
-      <form onSubmit={submit}>
+      <form
+        action="https://openknowledge.us8.list-manage.com/subscribe/post"
+        method="POST"
+        target="_blank"
+      >
         <InputGroup>
-          <Input
-            placeholder="name@email.com"
-            type="email"
-            ref={input}
-            aria-labelledby="a11y-email-field"
-          />
+          <Input type="email" name="MERGE0" required />
+          <input type="hidden" name="u" value="16c22b5f724fd6ef8c78c79fc" />
+          <input type="hidden" name="id" value="1760a73ee6" />
           <Button type="submit" className="button">
             signup&nbsp;&#x276F;
           </Button>
