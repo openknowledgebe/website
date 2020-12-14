@@ -26,6 +26,10 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
       'activities'
     ]);
 
+    data.activities.featured_activities = [
+      ...new Set(data.activities.featured_activities.filter(Boolean))
+    ];
+
     if (activities && activities.size === data.activities.featured_activities.length) {
       data.activities.featured_activities = data.activities.featured_activities.map(activity => {
         const activityData = activities.getIn([activity]).toJS();
@@ -37,6 +41,9 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
 
   if (data.stories?.featured_stories) {
     const stories = fieldsMetaData.getIn(['stories', 'featured_stories', 'story', 'stories']);
+
+    data.stories.featured_stories = [...new Set(data.stories.featured_stories.filter(Boolean))];
+
     if (stories && stories.size === data.stories.featured_stories.length) {
       data.stories.featured_stories = data.stories.featured_stories.map(story => {
         const storyData = stories.getIn([story]).toJS();

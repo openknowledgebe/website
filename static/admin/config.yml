@@ -192,7 +192,7 @@ collections:
                 allow_add: true
                 add_to_top: true
                 label_singular: 'an activity'
-                summary: '{{field.activity}}'
+                summary: '{{fields.activity}}'
                 field:
                   {
                     label: 'Activity',
@@ -242,7 +242,7 @@ collections:
                 allow_add: true
                 add_to_top: true
                 label_singular: 'a story'
-                summary: '{{field.story}}'
+                summary: '{{fields.story}}'
                 field:
                   {
                     label: 'Story',
