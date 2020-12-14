@@ -43,6 +43,7 @@ team:
       email: dries@openknowledge.be
       twitter: https://twitter.com/DVRansbeeck
       linkedin: https://be.linkedin.com/in/driesvanransbeeck
+    picture: driesvanransbeeck.jpg
 directors:
   - name: Jonathan Beliën
     task: Activity lead
