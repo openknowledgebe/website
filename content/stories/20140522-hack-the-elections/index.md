@@ -57,4 +57,4 @@ Hosted at the Engagor offices: Grauwpoort 1, 9000 Gent.
 **Where do I sign up?**
 
 Just go to <http://hacktheelections.com/> and we’ll see you on saturday.  
-![Hacktheelections](Bn0OmwUCMAA1T7r.png:large)
+![Hacktheelections](Bn0OmwUCMAA1T7r.png)
