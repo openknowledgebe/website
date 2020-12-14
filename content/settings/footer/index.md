@@ -13,8 +13,8 @@ socials:
   twitter: https://twitter.com/openknowledgebe
   facebook: https://www.facebook.com/OpenKnowledgeBE
 footer_nav:
-  - label: Open Knowledge
-    to: /
+  - label: About
+    to: /about
   - to: /team
     label: Team
   - to: /activities
