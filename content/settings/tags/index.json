@@ -10,10 +10,16 @@
       "name": "civic labs"
     },
     {
+      "name": "civic tech"
+    },
+    {
       "name": "co-creation"
     },
     {
       "name": "community"
+    },
+    {
+      "name": "cycling"
     },
     {
       "name": "diversity"
@@ -56,6 +62,9 @@
     },
     {
       "name": "osoc"
+    },
+    {
+      "name": "sustainable cities"
     },
     {
       "name": "wikidata"
