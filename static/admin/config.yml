@@ -249,9 +249,9 @@ collections:
                     name: 'story',
                     widget: 'relation',
                     collection: stories,
-                    search_fields: ['title', 'date'],
+                    search_fields: ['title'],
                     value_field: '{{slug}}',
-                    display_fields: ['title', 'date'],
+                    display_fields: ['title'],
                   }
               - label: 'Call to action'
                 name: 'cta'
