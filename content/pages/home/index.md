@@ -31,5 +31,5 @@ newsletter:
   subheading: Subscribe to our mailing list!
 seo:
   title: Home
-  description: Home
+  description: Home page
 ---
