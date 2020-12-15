@@ -1,7 +1,7 @@
 ---
 name: Test
 logo: osmbe-logo.png
-color: "#394836"
+color: "#6dc45b"
 tags:
   - open data
 featured_image:
