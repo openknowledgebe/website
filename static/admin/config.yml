@@ -8,6 +8,8 @@ local_backend: true
 media_folder: static/images/uploads
 public_folder: /images/uploads
 
+publish_mode: editorial_workflow
+
 collections:
   - name: 'activities'
     label: 'Activities'
@@ -19,6 +21,7 @@ collections:
     create: true
     identifier_field: name
     slug: '{{name}}'
+    preview_path: 'activities/{{name}}'
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Logo', name: 'logo', widget: 'image', allow_multiple: false }
@@ -114,6 +117,7 @@ collections:
     public_folder: ''
     create: true
     slug: '{{year}}{{month}}{{day}}-{{title}}'
+    preview_path: '{{year}}/{{month}}/{{day}}/{{title}}'
     fields:
       - label: 'Date'
         name: 'date'
