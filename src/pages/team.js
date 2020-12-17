@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { Img, Person, Title } from '../components/UI';
 import { breakpoints, dimensions } from '../styles/globals';
-import { btmFacingArrow } from '../images/icons';
+import { PinnedStory } from '../components/Story';
 
 const Header = styled.header`
   & .img {
@@ -83,16 +83,14 @@ const Members = styled.article`
   }
 `;
 
-const OpenPositions = styled.article`
-  & > div {
-    display: flex;
-    & .arrow {
-      margin-right: 2rem;
-      width: 50px;
+const JobOpportunies = styled.article`
+  & {
+    h3 {
+      margin-bottom: 3rem;
     }
-    & .arrow > img {
-      height: 100%;
-      max-width: 50px;
+
+    > div {
+      text-align: center;
     }
   }
 `;
@@ -108,6 +106,15 @@ export default function Team({ data }) {
     frontmatter: { seo }
   } = data.team;
 
+  const jobs = data.jobs.edges.map(
+    ({
+      node: {
+        fields: { slug },
+        frontmatter: { title, date }
+      }
+    }) => ({ slug, title, date })
+  );
+
   return (
     <Layout>
       <SEO title={seo.title} description={seo.description} />
@@ -122,7 +129,8 @@ export default function Team({ data }) {
             }
           },
           team: mapPictures(data.team.frontmatter.team),
-          directors: mapPictures(data.team.frontmatter.directors)
+          directors: mapPictures(data.team.frontmatter.directors),
+          jobs: jobs.length ? jobs : undefined
         }}
       />
     </Layout>
@@ -146,7 +154,6 @@ export const TeamTemplate = ({ data }) => (
         )}
       </article>
     </Header>
-
     {data?.team && (
       <Members>
         <h3>Team</h3>
@@ -163,7 +170,6 @@ export const TeamTemplate = ({ data }) => (
         </div>
       </Members>
     )}
-
     {data?.directors && (
       <Members>
         <h3>Board of directors</h3>
@@ -181,52 +187,24 @@ export const TeamTemplate = ({ data }) => (
       </Members>
     )}
 
-    {data?.positions &&
-    (data.positions.employee?.length > 0 ||
-      data.positions.internship?.length > 0 ||
-      data.positions.volunteer?.length > 0) ? (
-      <OpenPositions>
-        <h3>We're hiring!</h3>
-        <div>
-          <div className="arrow">
-            <img src={btmFacingArrow} role="presentation" alt="" />
-          </div>
+    {data.opportunities && (
+      <JobOpportunies id="opportunities">
+        <h3>{data.opportunities.heading}</h3>
+        {data.jobs ? (
           <div className="jobs">
-            {data.positions.employee?.length > 0 ? (
-              <div>
-                <h4>Employee</h4>
-                <ul>
-                  {data.positions.employee.map(job => (
-                    <li key={job}>{job}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : undefined}
-            {data.positions.internship?.length > 0 ? (
-              <div>
-                <h4>Internship</h4>
-                <ul>
-                  {data.positions.internship.map(job => (
-                    <li key={job}>{job}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : undefined}
-
-            {data.positions.volunteer?.length > 0 ? (
-              <div>
-                <h4>Volunteer</h4>
-                <ul>
-                  {data.positions.volunteer.map(job => (
-                    <li key={job}>{job}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : undefined}
+            {data.jobs.map(({ title, date, slug }) => (
+              <PinnedStory key={slug} title={title} date={date} />
+            ))}
           </div>
-        </div>
-      </OpenPositions>
-    ) : undefined}
+        ) : (
+          data.opportunities.default_text && (
+            <div>
+              <Markdown>{data.opportunities.default_text}</Markdown>
+            </div>
+          )
+        )}
+      </JobOpportunies>
+    )}
   </>
 );
 
@@ -263,9 +241,30 @@ export const pageQuery = graphql`
             linkedin
           }
         }
+        opportunities {
+          heading
+          default_text
+        }
         seo {
           description
           title
+        }
+      }
+    }
+
+    jobs: allMarkdownRemark(
+      filter: { frontmatter: { tags: { in: "job" } }, fields: { collection: { eq: "story" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "LL")
+          }
+          fields {
+            slug
+          }
         }
       }
     }

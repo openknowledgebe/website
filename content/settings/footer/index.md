@@ -21,6 +21,8 @@ footer_nav:
     label: Our activities
   - to: /stories
     label: Our stories
+  - label: Jobs
+    to: /team#opportunities
 attributions: >-
   </>  Source code available under the MIT license.
 
