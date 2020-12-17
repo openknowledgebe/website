@@ -193,7 +193,7 @@ export const TeamTemplate = ({ data }) => (
         {data.jobs ? (
           <div className="jobs">
             {data.jobs.map(({ title, date, slug }) => (
-              <PinnedStory key={slug} title={title} date={date} />
+              <PinnedStory key={slug} title={title} date={date} slug={slug} />
             ))}
           </div>
         ) : (
