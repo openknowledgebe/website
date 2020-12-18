@@ -98,10 +98,46 @@ module.exports = {
         defaultQuality: 100
       }
     },
-    // `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        feeds: [
+          {
+            output: '/rss.xml',
+            title: "Open Knowledge Belgium's RSS Feed",
+            query: `
+            {
+              allMarkdownRemark(
+                filter: { fields: { collection: { eq: "story" } } }
+                sort: { fields: frontmatter___date, order: DESC }
+              ) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      date(formatString: "LL")
+                      author
+                      tags
+                    }
+                    excerpt(pruneLength: 304)
+                    html
+                    fields {
+                      slug
+                    }
+                  }
+                }
+              }
+            }`
+          }
+        ]
+      }
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
-    //   options: {}
+    //   options: {
+    //     display: 'standalone',
+    //     icon: 'src/images/logo/okbe.svg'
+    //   }
     // },
     `gatsby-plugin-react-helmet`,
     {
