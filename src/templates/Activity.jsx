@@ -56,11 +56,11 @@ const ContactBox = styled.div`
 
   & .content {
     display: flex;
-    height: 100%;
   }
 
   & .content address {
     margin-left: 2.5rem;
+    overflow-x: auto;
   }
 
   & .content address > div {
@@ -83,7 +83,7 @@ const ContactBox = styled.div`
     margin-right: 1.5rem;
   }
 
-  @media (min-width: ${breakpoints.medium}px) {
+  @media (min-width: ${breakpoints.large}px) {
     box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.05);
   }
 `;
@@ -110,27 +110,6 @@ const ActivityHeader = styled.header`
     padding: 3rem var(--page-lr-margin);
   }
 
-  @media (min-width: ${breakpoints.medium}px) {
-    & .container > ${ContactBox} {
-      padding-left: var(--page-lr-margin);
-      padding-right: var(--page-lr-margin);
-    }
-
-    & .container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    & .container > ${ContactBox} {
-      align-self: flex-start;
-      margin-left: auto;
-    }
-
-    & .container > ${MainSection} {
-      margin-right: 5em;
-    }
-  }
-
   @media (min-width: ${breakpoints.large}px) {
     display: flex;
     flex-direction: row;
@@ -140,6 +119,7 @@ const ActivityHeader = styled.header`
     & .container {
       width: 45%;
       padding: 0;
+
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
