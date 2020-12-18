@@ -1,15 +1,16 @@
 ---
 name: HackYourFuture Belgium
 logo: hyfbe-logo.png
-color: '#1c2294'
+color: "#1c2294"
 tags:
   - open education
   - diversity
   - inclusion
+  - community
 to: https://hackyourfuture.be/
 catchphrase: Helping new talent into the tech world
 featured_image:
-  alt: ''
+  alt: ""
   image: hyfbe-picture.jpg
 contact_info:
   socials:
