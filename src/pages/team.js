@@ -22,7 +22,7 @@ const Values = styled.article`
 `;
 
 const Volunteers = styled.article`
-  padding: 2rem;
+  padding: 2rem 0;
   & .img {
     width: 100%;
   }
@@ -148,7 +148,7 @@ export const TeamTemplate = ({ data }) => (
           ))}
         </div>
       </Values>
-      <Volunteers data-state="reversed">
+      <Volunteers>
         <div className="content">
           <h3>{data?.volunteers?.heading}</h3>
           <div className="p-medium">
