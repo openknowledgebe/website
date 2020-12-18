@@ -133,6 +133,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       team: [Members]
       directors: [Members]
       stories: Stories
+      volunteers: Volunteers
+    }
+
+    type Volunteers {
+      featured_image: FeaturedImage
     }
 
     type Header {

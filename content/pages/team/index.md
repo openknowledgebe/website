@@ -1,14 +1,20 @@
 ---
-header:
+values_section:
+  heading: Values
+  values:
+    - Community-driven
+    - Empowering
+    - Equality
+    - Impact
+    - Transparency
+volunteers:
+  heading: Volunteers
+  body: We have too many volunteers to sum them all up by name but Open Knowledge
+    Belgium wouldn't be complete without them. All of our activities rely on the
+    great work of passionate volunteers, and we're eternally grateful for that.
   featured_image:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
-  about_volunteers:
-    heading: Volunteers
-    body: We have too many volunteers to sum them all up by name but Open Knowledge
-      Belgium wouldn't be complete without them. All of our activities rely on
-      the great work of passionate volunteers, and we're eternally grateful for
-      that.
 team:
   - name: Lien Arits
     task: Community and Communications Coordinator HackYourFuture Belgium

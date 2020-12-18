@@ -5,41 +5,54 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { Img, Person, Title } from '../components/UI';
+import { Img, Person, Tag, Title } from '../components/UI';
 import { breakpoints, dimensions } from '../styles/globals';
 import { StoryCard, StoryCardContainer } from '../components/Story';
 
-const Header = styled.header`
+const Values = styled.article`
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+
+  & {
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+`;
+
+const Volunteers = styled.article`
+  padding: 2rem 0;
   & .img {
     width: 100%;
-    margin-top: 2rem;
   }
 
-  & article {
-    padding: 0;
-
-    & h3 {
-      margin-top: 3rem;
-    }
-
-    & p {
-      margin-top: 0;
-    }
+  & .p-medium {
+    display: none;
   }
 
   @media (min-width: ${breakpoints.medium + 51}px) {
     display: grid;
-    grid-template-areas: 't i' 'v i' 'v i';
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: flex-start;
+    grid-template-columns: 0.6fr 1fr;
+    column-gap: 1rem;
 
-    & ${Title} {
-      grid-area: t;
+    & .p-mobile {
+      display: none;
+    }
+
+    & .p-medium {
+      display: block;
+    }
+
+    & .content {
+      align-self: center;
+
+      h3 {
+        margin-bottom: 2rem;
+      }
     }
 
     & .img {
-      grid-area: i;
       margin: 0;
       max-width: ${dimensions.featured.width}px;
       height: 100%;
@@ -53,20 +66,6 @@ const Header = styled.header`
       & > img {
         object-fit: cover;
       }
-    }
-
-    & article {
-      grid-area: v;
-
-      & h3 {
-        margin-top: 0;
-      }
-    }
-  }
-
-  @media (min-width: ${breakpoints.intermidiate}px) {
-    & ${Title}, & article {
-      max-width: 60%;
     }
   }
 `;
@@ -119,11 +118,11 @@ export default function Team({ data }) {
       <TeamTemplate
         data={{
           ...data.team.frontmatter,
-          header: {
-            ...data.team.frontmatter.header,
+          volunteers: {
+            ...data.team.frontmatter.volunteers,
             featured_image: {
-              ...data.team.frontmatter.header.featured_image,
-              image: data.team.frontmatter.header.featured_image.image
+              ...data.team.frontmatter.volunteers.featured_image,
+              image: data.team.frontmatter.volunteers.featured_image.image
             }
           },
           team: mapPictures(data.team.frontmatter.team),
@@ -137,18 +136,40 @@ export default function Team({ data }) {
 
 export const TeamTemplate = ({ data }) => (
   <>
-    <Header>
+    <section>
       <Title as="h1">Team</Title>
-      <div className="img">
-        <Img image={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
-      </div>
-      <article>
-        <h3>{data?.header?.about_volunteers.heading}</h3>
-        {data?.header?.about_volunteers.body && (
-          <Markdown options={{ forceBlock: true }}>{data.header.about_volunteers.body}</Markdown>
-        )}
-      </article>
-    </Header>
+      <Values>
+        <h3>{data?.values_section?.heading}</h3>
+        <div className="values gap">
+          {data?.values_section?.values.map(tag => (
+            <Tag css="background-color: #f9f6ff" key={tag}>
+              {tag}
+            </Tag>
+          ))}
+        </div>
+      </Values>
+      <Volunteers>
+        <div className="content">
+          <h3>{data?.volunteers?.heading}</h3>
+          <div className="p-medium">
+            {data?.volunteers.body && (
+              <Markdown options={{ forceBlock: true }}>{data.volunteers.body}</Markdown>
+            )}
+          </div>
+        </div>
+        <div className="img">
+          <Img
+            image={data?.volunteers?.featured_image.image}
+            alt={data?.volunteers?.featured_image.alt}
+          />
+        </div>
+        <div className="p-mobile">
+          {data?.volunteers.body && (
+            <Markdown options={{ forceBlock: true }}>{data.volunteers.body}</Markdown>
+          )}
+        </div>
+      </Volunteers>
+    </section>
     {data?.team && (
       <Members>
         <h3>Team</h3>
@@ -207,14 +228,16 @@ export const pageQuery = graphql`
   query {
     team: markdownRemark(fields: { collection: { eq: "team" } }) {
       frontmatter {
-        header {
+        volunteers {
           featured_image {
             ...GeneralFeaturedImage
           }
-          about_volunteers {
-            heading
-            body
-          }
+          heading
+          body
+        }
+        values_section {
+          values
+          heading
         }
         team {
           name

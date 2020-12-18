@@ -125,6 +125,7 @@ const global = css`
   }
 
   section[data-state='reversed'],
+  article[data-state='reversed'],
   footer {
     box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.05);
   }

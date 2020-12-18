@@ -4,9 +4,8 @@ import StyleInjector from './StyleInjector';
 import { TeamTemplate } from '../../pages/team';
 
 const init = {
-  header: {
-    about_volunteers: {}
-  },
+  volunteers: {},
+  values_section: {},
   job: {}
 };
 
@@ -29,17 +28,15 @@ const Team = ({ entry, getAsset }) => {
 
   const merged = { ...init, ...data };
 
-  merged.header.featured_image = merged.header.featured_image || {};
+  merged.volunteers.featured_image = merged.volunteers.featured_image || {};
 
-  if (merged.header.featured_image.image) {
-    merged.header.featured_image.image = getAsset(
-      entry.getIn(['data', 'header', 'featured_image', 'image'])
+  if (merged.volunteers.featured_image.image) {
+    merged.volunteers.featured_image.image = getAsset(
+      entry.getIn(['data', 'volunteers', 'featured_image', 'image'])
     ).toString();
   } else {
-    merged.header.featured_image.image = 'https://via.placeholder.com/850x550/';
+    merged.volunteers.featured_image.image = 'https://via.placeholder.com/850x550/';
   }
-
-  merged.header.about_volunteers = merged.header.about_volunteers || {};
 
   return (
     <StyleInjector>
