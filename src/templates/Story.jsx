@@ -39,8 +39,8 @@ export const StoryTemplate = ({ data, preview }) => (
   <article>
     <StoryHeader title={data.title} date={data.date} author={data.author} />
     <Article>
-      {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
       <Tags className="gap">{data.tags && data.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}</Tags>
+      {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
     </Article>
   </article>
 );

@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
                 github
                 twitter
                 facebook
+                linkedin
               }
             }
           }

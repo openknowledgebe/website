@@ -12,13 +12,14 @@ socials:
   github: https://github.com/openknowledgebe
   twitter: https://twitter.com/openknowledgebe
   facebook: https://www.facebook.com/OpenKnowledgeBE
+  linkedin: https://www.linkedin.com/company/open-knowledge-belgium/
 footer_nav:
   - label: About
     to: /about
   - to: /team
     label: Team
   - to: /activities
-    label: Our activities
+    label: Activities
   - to: /stories
     label: Our stories
   - label: Jobs

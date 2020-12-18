@@ -196,7 +196,7 @@ collections:
                 allow_add: true
                 add_to_top: true
                 label_singular: 'an activity'
-                summary: '{{field.activity}}'
+                summary: '{{fields.activity}}'
                 field:
                   {
                     label: 'Activity',
@@ -246,16 +246,16 @@ collections:
                 allow_add: true
                 add_to_top: true
                 label_singular: 'a story'
-                summary: '{{field.story}}'
+                summary: '{{fields.story}}'
                 field:
                   {
                     label: 'Story',
                     name: 'story',
                     widget: 'relation',
                     collection: stories,
-                    search_fields: ['title', 'date'],
+                    search_fields: ['title'],
                     value_field: '{{slug}}',
-                    display_fields: ['title', 'date'],
+                    display_fields: ['title'],
                   }
               - label: 'Call to action'
                 name: 'cta'
@@ -458,6 +458,7 @@ collections:
               - { label: Github, name: github, widget: string }
               - { label: 'Twitter', name: 'twitter', widget: 'string' }
               - { label: 'Facebook', name: 'facebook', widget: 'string' }
+              - { label: 'LinkedIn', name: 'linkedin', widget: 'string' }
           - label: 'Footer Navigation'
             name: 'footer_nav'
             widget: 'list'

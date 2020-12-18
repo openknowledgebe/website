@@ -4,7 +4,7 @@ header:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
   about_volunteers:
-    heading: Our volunteers
+    heading: Volunteers
     body: We have too many volunteers to sum them all up by name but Open Knowledge
       Belgium wouldn't be complete without them. All of our activities rely on
       the great work of passionate volunteers, and we're eternally grateful for
@@ -17,12 +17,6 @@ team:
       linkedin: https://www.linkedin.com/in/lien-arits-88722683/
       twitter: https://twitter.com/LienArits
     picture: lienarits.jpg
-  - name: Manon Brulard
-    task: Project Coordinator HackYourFuture Belgium
-    contact_info:
-      email: manon@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/manon-brulard-6a84833a/
-      twitter: https://twitter.com/BrulardManon
   - name: Evan Cole
     task: Educational Coordinator HackYourFuture Belgium
     contact_info:

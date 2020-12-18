@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
 
 import NavItems from './NavItems';
-import { facebookIcon, githubIcon, twitterIcon } from '../images/icons';
+import { facebookIcon, githubIcon, twitterIcon, linkedinIcon } from '../images/icons';
 import { breakpoints } from '../styles/globals';
 
 const StyledFooter = styled.footer`
@@ -113,6 +113,14 @@ const Footer = ({ data }) => (
             rel="noopener noreferrer"
           >
             <img src={facebookIcon} alt="Facebook" />
+          </a>
+          <a
+            href={data.socials.linkedin}
+            className="mg-r-b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedinIcon} alt="LinkedIn" />
           </a>
         </div>
       </div>

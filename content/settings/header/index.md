@@ -6,8 +6,8 @@ nav_items:
     to: /about
   - label: Team
     to: /team
-  - label: Our activities
+  - label: Activities
     to: /activities
-  - label: Our stories
+  - label: Stories
     to: /stories
 ---
