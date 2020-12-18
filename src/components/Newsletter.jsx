@@ -46,7 +46,13 @@ const Newsletter = ({ content }) => (
       target="_blank"
     >
       <InputGroup>
-        <Input type="email" name="MERGE0" required />
+        <Input
+          type="email"
+          name="MERGE0"
+          required
+          placeholder="name@example.com"
+          aria-labelledby="a11y-email-field"
+        />
         <input type="hidden" name="u" value="16c22b5f724fd6ef8c78c79fc" />
         <input type="hidden" name="id" value="1760a73ee6" />
         <Button type="submit" className="button">
