@@ -21,7 +21,7 @@ footer_nav:
   - to: /activities
     label: Activities
   - to: /stories
-    label: Our stories
+    label: Stories
   - label: Jobs
     to: /team#opportunities
 attributions: >-
