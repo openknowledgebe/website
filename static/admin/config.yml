@@ -50,7 +50,7 @@ collections:
               widget: string,
               required: false,
               hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
-              default: '',
+              default: ''
             }
       - label: 'Contact info'
         name: 'contact_info'
@@ -80,7 +80,7 @@ collections:
               name: 'picture',
               widget: 'image',
               allow_multiple: false,
-              required: false,
+              required: false
             }
           - label: 'Contact info'
             name: 'contact_info'
@@ -168,7 +168,7 @@ collections:
                       widget: string,
                       required: false,
                       hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
-                      default: '',
+                      default: ''
                     }
               - label: 'Call to action'
                 name: 'cta'
@@ -181,7 +181,7 @@ collections:
                       label: 'Link',
                       name: 'to',
                       widget: 'string',
-                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!'
                     }
           - label: 'Activities Section'
             name: 'activities'
@@ -205,7 +205,7 @@ collections:
                     collection: activities,
                     search_fields: ['name'],
                     value_field: '{{slug}}',
-                    display_fields: ['name'],
+                    display_fields: ['name']
                   }
               - label: 'Call to action'
                 name: 'cta'
@@ -218,7 +218,7 @@ collections:
                       label: 'Link',
                       name: 'to',
                       widget: 'string',
-                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!'
                     }
           - label: 'Stories Section'
             name: 'stories'
@@ -237,7 +237,7 @@ collections:
                       widget: string,
                       required: false,
                       hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
-                      default: '',
+                      default: ''
                     }
               - label: 'Featured Stories'
                 name: 'featured_stories'
@@ -255,7 +255,7 @@ collections:
                     collection: stories,
                     search_fields: ['title'],
                     value_field: '{{slug}}',
-                    display_fields: ['title'],
+                    display_fields: ['title']
                   }
               - label: 'Call to action'
                 name: 'cta'
@@ -268,7 +268,7 @@ collections:
                       label: 'Link',
                       name: 'to',
                       widget: 'string',
-                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                      hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!'
                     }
           - label: 'Newsletter Section'
             name: 'newsletter'
@@ -286,7 +286,7 @@ collections:
                   label: 'Title',
                   name: 'title',
                   widget: 'string',
-                  hint: 'Appears in the browser tab.',
+                  hint: 'Appears in the browser tab.'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Team'
@@ -320,7 +320,7 @@ collections:
                       widget: string,
                       required: false,
                       hint: 'a.k.a "ALT". Always fill this field if you can meaningfully describe the image.',
-                      default: '',
+                      default: ''
                     }
           - label: 'Team members'
             name: 'team'
@@ -337,7 +337,7 @@ collections:
                   name: 'picture',
                   widget: 'image',
                   allow_multiple: false,
-                  required: false,
+                  required: false
                 }
               - label: 'Contact info'
                 name: 'contact_info'
@@ -361,7 +361,7 @@ collections:
                   name: 'picture',
                   widget: 'image',
                   allow_multiple: false,
-                  required: false,
+                  required: false
                 }
               - label: 'Contact info'
                 name: 'contact_info'
@@ -382,7 +382,7 @@ collections:
                   name: 'default_text',
                   widget: markdown,
                   minimal: true,
-                  hint: 'This text will appear when there is no job opportunity.',
+                  hint: 'This text will appear when there is no job opportunity.'
                 }
           - label: 'SEO & Meta'
             name: 'seo'
@@ -392,7 +392,7 @@ collections:
                   label: 'Title',
                   name: 'title',
                   widget: 'string',
-                  hint: 'Appears in the browser tab.',
+                  hint: 'Appears in the browser tab.'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'About'
@@ -410,7 +410,7 @@ collections:
                   label: 'Title',
                   name: 'title',
                   widget: 'string',
-                  hint: 'Appears in the browser tab.',
+                  hint: 'Appears in the browser tab.'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
   - name: 'header_footer'
@@ -434,7 +434,7 @@ collections:
                   label: 'Link',
                   name: 'to',
                   widget: 'string',
-                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!'
                 }
       - label: 'Footer'
         name: 'footer'
@@ -468,7 +468,7 @@ collections:
                   label: 'Link',
                   name: 'to',
                   widget: 'string',
-                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!',
+                  hint: 'Use a relative URL (e.g. /about) if the link is an internal link. It is preferable to use a relative URL whenever possible!'
                 }
           - label: 'Attributions'
             name: 'attributions'
@@ -490,3 +490,23 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
+      - label: 'Site Metadata'
+        name: siteMetadata
+        file: content/settings/sitemetadata/index.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - { label: 'Title', name: 'title', widget: string }
+          - { label: 'Description', name: 'description', widget: text }
+          - { label: 'URL', name: 'siteUrl', widget: string }
+          - label: 'Social'
+            name: 'social'
+            widget: object
+            fields:
+              - {
+                  label: 'Twitter',
+                  name: 'twitter',
+                  widget: string,
+                  hint: 'Only the twitter handle!'
+                }
