@@ -1,16 +1,8 @@
+const siteMetadata = require('./content/settings/sitemetadata/index.json');
+
 module.exports = {
   siteMetadata: {
-    title: `Open Knowledge Belgium`,
-    // TODO UPDATE FOLLOWING
-    author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`
-    },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    social: {
-      twitter: `kylemathews`
-    }
+    ...siteMetadata
   },
   plugins: [
     {
@@ -106,10 +98,46 @@ module.exports = {
         defaultQuality: 100
       }
     },
-    // `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        feeds: [
+          {
+            output: '/rss.xml',
+            title: "Open Knowledge Belgium's RSS Feed",
+            query: `
+            {
+              allMarkdownRemark(
+                filter: { fields: { collection: { eq: "story" } } }
+                sort: { fields: frontmatter___date, order: DESC }
+              ) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      date(formatString: "LL")
+                      author
+                      tags
+                    }
+                    excerpt(pruneLength: 304)
+                    html
+                    fields {
+                      slug
+                    }
+                  }
+                }
+              }
+            }`
+          }
+        ]
+      }
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
-    //   options: {}
+    //   options: {
+    //     display: 'standalone',
+    //     icon: 'src/images/logo/okbe.svg'
+    //   }
     // },
     `gatsby-plugin-react-helmet`,
     {
@@ -118,7 +146,8 @@ module.exports = {
         modulePath: `${__dirname}/src/cms`
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    { resolve: `gatsby-plugin-sitemap`, options: { sitemapSize: 5000 } }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`

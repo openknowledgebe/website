@@ -499,3 +499,23 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - { label: 'Name', name: 'name', widget: string }
+      - label: 'Site Metadata'
+        name: siteMetadata
+        file: content/settings/sitemetadata/index.json
+        format: json
+        editor:
+          preview: false
+        fields:
+          - { label: 'Title', name: 'title', widget: string }
+          - { label: 'Description', name: 'description', widget: text }
+          - { label: 'URL', name: 'siteUrl', widget: string }
+          - label: 'Social'
+            name: 'social'
+            widget: object
+            fields:
+              - {
+                  label: 'Twitter',
+                  name: 'twitter',
+                  widget: string,
+                  hint: 'Only the twitter handle!'
+                }
