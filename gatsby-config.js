@@ -110,7 +110,8 @@ module.exports = {
         modulePath: `${__dirname}/src/cms`
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    { resolve: `gatsby-plugin-sitemap`, options: { sitemapSize: 5000 } }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`
