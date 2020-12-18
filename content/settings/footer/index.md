@@ -18,9 +18,9 @@ footer_nav:
   - to: /team
     label: Team
   - to: /activities
-    label: Our activities
+    label: Activities
   - to: /stories
-    label: Our stories
+    label: Stories
 attributions: >-
   </>  Source code available under the MIT license.
 

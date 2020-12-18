@@ -132,10 +132,7 @@ export default function Team({ data }) {
 export const TeamTemplate = ({ data }) => (
   <>
     <Header>
-      <Title as="h1">
-        Our <br />
-        Team
-      </Title>
+      <Title as="h1">Team</Title>
       <div className="img">
         <Img image={data?.header?.featured_image.image} alt={data?.header?.featured_image.alt} />
       </div>

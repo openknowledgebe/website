@@ -37,11 +37,10 @@ const Activities = ({ data }) => {
   const activities = data.activities.edges;
   return (
     <Layout>
-      <SEO title="Our activities" />
+      <SEO title="Activities" />
       <section>
         <Title as="h1" css="margin-bottom: 3rem;">
-          Our <br />
-          activities
+          Activities
         </Title>
         <ActivitiesContainer>
           {activities &&

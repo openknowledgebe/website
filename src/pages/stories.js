@@ -23,12 +23,9 @@ const Stories = ({ data }) => {
   const stories = data.stories.edges;
   return (
     <Layout>
-      <SEO title="Our stories" />
+      <SEO title="Stories" />
       <section>
-        <Title as="h1">
-          Our <br />
-          stories
-        </Title>
+        <Title as="h1">Stories</Title>
         <StoriesContainer>
           {stories &&
             stories.map(({ node: { frontmatter: { title, date }, excerpt, fields: { slug } } }) => (
