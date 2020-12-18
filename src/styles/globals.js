@@ -110,6 +110,10 @@ const global = css`
   }
 
   /* Sections */
+  main {
+    overflow-x: hidden;
+  }
+
   section,
   header,
   footer,
