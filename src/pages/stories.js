@@ -1,23 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import StoryCard from '../components/Story/Card';
+import { StoryCard, StoryCardContainer } from '../components/Story';
 import { Title } from '../components/UI';
-import { breakpoints } from '../styles/globals';
-
-const StoriesContainer = styled.div`
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`;
 
 const Stories = ({ data }) => {
   const stories = data.stories.edges;
@@ -29,12 +16,12 @@ const Stories = ({ data }) => {
           Our <br />
           stories
         </Title>
-        <StoriesContainer>
+        <StoryCardContainer>
           {stories &&
             stories.map(({ node: { frontmatter: { title, date }, excerpt, fields: { slug } } }) => (
               <StoryCard key={title} title={title} date={date} excerpt={excerpt} to={slug} />
             ))}
-        </StoriesContainer>
+        </StoryCardContainer>
       </section>
     </Layout>
   );

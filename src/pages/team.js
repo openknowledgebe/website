@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { Img, Person, Title } from '../components/UI';
 import { breakpoints, dimensions } from '../styles/globals';
-import { PinnedStory } from '../components/Story';
+import { StoryCard, StoryCardContainer } from '../components/Story';
 
 const Header = styled.header`
   & .img {
@@ -85,11 +85,8 @@ const Members = styled.article`
 
 const JobOpportunies = styled.article`
   & {
-    h3 {
-      margin-bottom: 3rem;
-    }
-
-    > div {
+    .default {
+      margin-top: 3rem;
       text-align: center;
     }
   }
@@ -109,10 +106,11 @@ export default function Team({ data }) {
   const jobs = data.jobs.edges.map(
     ({
       node: {
+        excerpt,
         fields: { slug },
         frontmatter: { title, date }
       }
-    }) => ({ slug, title, date })
+    }) => ({ excerpt, slug, title, date })
   );
 
   return (
@@ -191,14 +189,14 @@ export const TeamTemplate = ({ data }) => (
       <JobOpportunies id="opportunities">
         <h3>{data.opportunities.heading}</h3>
         {data.jobs ? (
-          <div className="jobs">
-            {data.jobs.map(({ title, date, slug }) => (
-              <PinnedStory key={slug} title={title} date={date} slug={slug} />
+          <StoryCardContainer className="jobs">
+            {data.jobs.map(({ title, date, slug, excerpt }) => (
+              <StoryCard key={slug} title={title} excerpt={excerpt} date={date} to={slug} />
             ))}
-          </div>
+          </StoryCardContainer>
         ) : (
           data.opportunities.default_text && (
-            <div>
+            <div className="default">
               <Markdown>{data.opportunities.default_text}</Markdown>
             </div>
           )
@@ -262,6 +260,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "LL")
           }
+          excerpt(pruneLength: 304)
           fields {
             slug
           }
