@@ -115,10 +115,10 @@ directors:
       linkedin: https://www.linkedin.com/in/mathias-van-compernolle-b0a6b011/
       twitter: https://twitter.com/mvcomper
     task: Secretary
-positions:
-  volunteer: []
-  internship: []
-  employee: []
+opportunities:
+  heading: Opportunities
+  default_text: We don't have any career opportunities at the moment but you can
+    always contact us at [team@openknowledge.be](mailto:team@openknowledge.be).
 seo:
   title: Team
   description: Team

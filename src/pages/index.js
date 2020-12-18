@@ -8,6 +8,7 @@ import SEO from '../components/SEO';
 import Newsletter from '../components/Newsletter';
 import Activity from '../components/Activity';
 import { Img, StyledLink, Title } from '../components/UI';
+import { PinnedStory } from '../components/Story';
 import { breakpoints, dimensions } from '../styles/globals';
 
 const PinnedActivites = styled.section`
@@ -66,27 +67,6 @@ const PinnedStories = styled.section`
         width: 100%;
       }
     }
-  }
-`;
-
-const PinnedStory = styled.div`
-  padding: 2rem 0;
-
-  &:not(:first-of-type) {
-    border-top: 0.5px solid #a7a5a1;
-  }
-
-  &:first-of-type {
-    padding-top: 0;
-  }
-
-  & .pinned-story-link {
-    display: block;
-  }
-
-  & .story-date {
-    font-size: 1.4rem;
-    color: var(--color-secondary);
   }
 `;
 
@@ -253,12 +233,7 @@ export const HomeTemplate = ({ data }) => (
         </div>
         <div className="stories">
           {data.stories?.featured_stories.map(({ slug, title, date }) => (
-            <PinnedStory key={title} className="pinned-story">
-              <StyledLink to={slug} className="pinned-story-link">
-                {title}
-              </StyledLink>
-              <div className="story-date">{date}</div>
-            </PinnedStory>
+            <PinnedStory key={slug} title={title} date={date} slug={slug} />
           ))}
         </div>
       </div>

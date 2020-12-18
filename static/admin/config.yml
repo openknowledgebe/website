@@ -370,32 +370,20 @@ collections:
                   - { label: Email, name: email, widget: string }
                   - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
                   - { label: LinkedIn, name: linkedin, widget: string, required: false }
-          - label: 'Open positions'
-            name: 'positions'
+          - label: 'Job Section'
+            name: 'opportunities'
             widget: 'object'
             summary: 'Expand'
+            hint: "When a job ad is created it'll be automatically visible on the live website! You should not worry about not seeing it in the preview here."
             fields:
-              - label: 'Employee'
-                name: 'employee'
-                widget: list
-                add_to_top: true
-                allow_add: true
-                summary: '{{fields.job}}'
-                field: { label: 'Job', name: 'job', widget: string }
-              - label: 'Internship'
-                name: 'internship'
-                widget: list
-                add_to_top: true
-                allow_add: true
-                summary: '{{fields.job}}'
-                field: { label: 'Job', name: 'job', widget: string }
-              - label: 'Volunteer'
-                name: 'volunteer'
-                widget: list
-                add_to_top: true
-                allow_add: true
-                summary: '{{fields.job}}'
-                field: { label: 'Job', name: 'job', widget: string }
+              - { label: 'Heading', name: 'heading', widget: string }
+              - {
+                  label: 'Default Text',
+                  name: 'default_text',
+                  widget: markdown,
+                  minimal: true,
+                  hint: 'This text will appear when there is no job opportunity.',
+                }
           - label: 'SEO & Meta'
             name: 'seo'
             widget: 'object'

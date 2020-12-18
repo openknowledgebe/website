@@ -6,7 +6,8 @@ import { TeamTemplate } from '../../pages/team';
 const init = {
   header: {
     about_volunteers: {}
-  }
+  },
+  job: {}
 };
 
 const Team = ({ entry, getAsset }) => {
