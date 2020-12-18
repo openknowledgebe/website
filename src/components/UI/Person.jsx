@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { twitterBlackIcon, mailIcon, linkedinIcon, headshotIcon } from '../../images/icons';
+import { twitterBlackIcon, mailIcon, linkedinBlackIcon, headshotIcon } from '../../images/icons';
 
 import Img from './Img';
 
@@ -64,7 +64,7 @@ const Person = ({ name, picture, socials, task }) => (
           )}
           {socials.linkedin && (
             <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
-              <img src={linkedinIcon} alt="LinkedIn" />
+              <img src={linkedinBlackIcon} alt="LinkedIn" />
             </a>
           )}
           {socials.twitter && (

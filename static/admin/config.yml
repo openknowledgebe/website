@@ -470,6 +470,7 @@ collections:
               - { label: Github, name: github, widget: string }
               - { label: 'Twitter', name: 'twitter', widget: 'string' }
               - { label: 'Facebook', name: 'facebook', widget: 'string' }
+              - { label: 'LinkedIn', name: 'linkedin', widget: 'string' }
           - label: 'Footer Navigation'
             name: 'footer_nav'
             widget: 'list'

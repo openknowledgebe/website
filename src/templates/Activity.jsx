@@ -11,7 +11,7 @@ import {
   btmFacingArrow,
   facebookBlackIcon,
   twitterBlackIcon,
-  linkedinIcon,
+  linkedinBlackIcon,
   githubBlackIcon
 } from '../images/icons';
 
@@ -279,7 +279,7 @@ export const ActivityTemplate = ({ data }) => (
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img src={linkedinIcon} alt="Linkedin" />
+                      <img src={linkedinBlackIcon} alt="Linkedin" />
                     </a>
                   )}
 
