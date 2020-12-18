@@ -4,7 +4,7 @@ header:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
   about_volunteers:
-    heading: Our volunteers
+    heading: Volunteers
     body: We have too many volunteers to sum them all up by name but Open Knowledge
       Belgium wouldn't be complete without them. All of our activities rely on
       the great work of passionate volunteers, and we're eternally grateful for
