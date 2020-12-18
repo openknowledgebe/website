@@ -17,12 +17,6 @@ team:
       linkedin: https://www.linkedin.com/in/lien-arits-88722683/
       twitter: https://twitter.com/LienArits
     picture: lienarits.jpg
-  - name: Manon Brulard
-    task: Project Coordinator HackYourFuture Belgium
-    contact_info:
-      email: manon@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/manon-brulard-6a84833a/
-      twitter: https://twitter.com/BrulardManon
   - name: Evan Cole
     task: Educational Coordinator HackYourFuture Belgium
     contact_info:
