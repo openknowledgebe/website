@@ -1,7 +1,7 @@
 ---
 values_section:
   heading: Values
-  value:
+  values:
     - Community-driven
     - Empowering
     - Equality
