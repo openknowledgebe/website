@@ -35,13 +35,13 @@ const ActivitiesContainer = styled.div`
 
 const Activities = ({ data }) => {
   const activities = data.activities.edges;
+  const { seo } = data.page.frontmatter;
+
   return (
     <Layout>
-      <SEO title="Activities" />
+      <SEO title={seo.title} description={seo.description} />
       <section>
-        <Title as="h1" css="margin-bottom: 3rem;">
-          Activities
-        </Title>
+        <Title as="h1">{seo.title}</Title>
         <ActivitiesContainer>
           {activities &&
             activities.map(
@@ -50,9 +50,7 @@ const Activities = ({ data }) => {
                   frontmatter: { name, logo, color, tags },
                   fields: { slug: to }
                 }
-              }) => (
-                <Activity key={name} name={name} logo={logo} tags={tags} color={color} to={to} />
-              )
+              }) => <Activity key={to} name={name} logo={logo} tags={tags} color={color} to={to} />
             )}
         </ActivitiesContainer>
       </section>
@@ -79,6 +77,14 @@ export const pageQuery = graphql`
           fields {
             slug
           }
+        }
+      }
+    }
+    page: markdownRemark(fields: { collection: { eq: "activities" } }) {
+      frontmatter {
+        seo {
+          description
+          title
         }
       }
     }

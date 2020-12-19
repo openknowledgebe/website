@@ -18,6 +18,7 @@ activities:
   cta:
     label: Discover all activities
     to: /activities
+  heading: Activities
 stories:
   featured_image:
     image: community.jpg
@@ -26,6 +27,7 @@ stories:
   cta:
     label: Discover all stories
     to: /stories
+  heading: Stories
 newsletter:
   heading: Want to stay up-to-date?
   subheading: Subscribe to our mailing list!

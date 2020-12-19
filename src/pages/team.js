@@ -10,8 +10,8 @@ import { breakpoints, dimensions } from '../styles/globals';
 import { StoryCard, StoryCardContainer } from '../components/Story';
 
 const Values = styled.article`
-  padding: 2rem 0;
-  margin-bottom: 2rem;
+  padding: 0;
+  margin: 2rem 0;
 
   & {
     .values {
@@ -22,7 +22,7 @@ const Values = styled.article`
 `;
 
 const Volunteers = styled.article`
-  padding: 2rem 0;
+  padding: 0;
   & .img {
     width: 100%;
   }
@@ -84,8 +84,11 @@ const Members = styled.article`
 
 const JobOpportunies = styled.article`
   & {
+    h3 {
+      margin-bottom: 3rem;
+    }
+
     .default {
-      margin-top: 3rem;
       text-align: center;
     }
   }
@@ -127,7 +130,8 @@ export default function Team({ data }) {
           },
           team: mapPictures(data.team.frontmatter.team),
           directors: mapPictures(data.team.frontmatter.directors),
-          jobs: jobs.length ? jobs : undefined
+          jobs: jobs.length ? jobs : undefined,
+          title: seo.title
         }}
       />
     </Layout>
@@ -137,7 +141,7 @@ export default function Team({ data }) {
 export const TeamTemplate = ({ data }) => (
   <>
     <section>
-      <Title as="h1">Team</Title>
+      <Title as="h1">{data.title}</Title>
       <Values>
         <h3>{data?.values_section?.heading}</h3>
         <div className="values gap">

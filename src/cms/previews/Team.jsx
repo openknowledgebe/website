@@ -26,7 +26,7 @@ const Team = ({ entry, getAsset }) => {
     }));
   }
 
-  const merged = { ...init, ...data };
+  const merged = { ...init, ...data, title: data.seo?.title };
 
   merged.volunteers.featured_image = merged.volunteers.featured_image || {};
 

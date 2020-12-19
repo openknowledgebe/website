@@ -196,7 +196,7 @@ export const HomeTemplate = ({ data }) => (
     </Hero>
     <PinnedActivites data-state="reversed">
       <Heading>
-        <Title>Activities</Title>
+        <Title css="margin: 0">{data.activities?.heading}</Title>
         <StyledLink
           to={data.activities?.cta?.to}
           className="underlined d-inline-block-md d-none-sm"
@@ -215,7 +215,7 @@ export const HomeTemplate = ({ data }) => (
     </PinnedActivites>
     <PinnedStories>
       <Heading>
-        <Title>Stories</Title>
+        <Title css="margin: 0">{data.stories?.heading}</Title>
         <StyledLink
           to={data.stories?.cta?.to}
           className="bold6 underlined work-sans d-inline-block-md d-none-sm"
@@ -261,6 +261,7 @@ export const query = graphql`
           }
         }
         activities {
+          heading
           featured_activities {
             frontmatter {
               name
@@ -278,6 +279,7 @@ export const query = graphql`
           }
         }
         stories {
+          heading
           cta {
             label
             to

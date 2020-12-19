@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 import { Article, Title } from '../components/UI';
 
 const Header = styled.header`
-  padding: 0 0 3rem;
+  padding: 0;
 `;
 
 export default function About({ data }) {

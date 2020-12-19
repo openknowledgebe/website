@@ -143,12 +143,60 @@ collections:
   - name: pages
     label: Pages
     files:
+      - label: 'About'
+        name: 'about'
+        file: content/pages/about/index.md
+        media_folder: ''
+        public_folder: ''
+        fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab. Also used as the page title!'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Content', name: 'body', widget: 'markdown' }
+      - label: 'Activities'
+        name: 'activities_page'
+        file: content/pages/activities/index.md
+        media_folder: ''
+        public_folder: ''
+        editor:
+          preview: false
+        fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab. Also used as the page title!'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Home'
         name: 'homepage'
         file: content/pages/home/index.md
         media_folder: ''
         public_folder: ''
         fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
           - label: 'Header'
             name: 'header'
             widget: 'object'
@@ -189,6 +237,7 @@ collections:
             summary: 'Expand'
             collapsed: true
             fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
               - label: 'Featured Activities'
                 name: 'featured_activities'
                 widget: 'list'
@@ -226,6 +275,7 @@ collections:
             summary: 'Expand'
             collapsed: true
             fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
               - label: 'Featured image'
                 name: 'featured_image'
                 widget: 'object'
@@ -278,6 +328,31 @@ collections:
             fields:
               - { label: 'Heading', name: 'heading', widget: string }
               - { label: 'Subheading', name: 'subheading' }
+      - label: 'Stories'
+        name: 'stories_page'
+        file: content/pages/stories/index.md
+        media_folder: ''
+        public_folder: ''
+        editor:
+          preview: false
+        fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab. Also used as the page title!'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Team'
+        name: team
+        file: content/pages/team/index.md
+        media_folder: ''
+        public_folder: ''
+        fields:
           - label: 'SEO & Meta'
             name: 'seo'
             widget: 'object'
@@ -289,12 +364,6 @@ collections:
                   hint: 'Appears in the browser tab.'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
-      - label: 'Team'
-        name: team
-        file: content/pages/team/index.md
-        media_folder: ''
-        public_folder: ''
-        fields:
           - label: Values Section
             name: values_section
             widget: object
@@ -393,35 +462,6 @@ collections:
                   minimal: true,
                   hint: 'This text will appear when there is no job opportunity.'
                 }
-          - label: 'SEO & Meta'
-            name: 'seo'
-            widget: 'object'
-            fields:
-              - {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                  hint: 'Appears in the browser tab.'
-                }
-              - { label: 'Description', name: 'description', widget: 'string' }
-      - label: 'About'
-        name: 'about'
-        file: content/pages/about/index.md
-        media_folder: ''
-        public_folder: ''
-        fields:
-          - { label: 'Content', name: 'body', widget: 'markdown' }
-          - label: 'SEO & Meta'
-            name: 'seo'
-            widget: 'object'
-            fields:
-              - {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                  hint: 'Appears in the browser tab.'
-                }
-              - { label: 'Description', name: 'description', widget: 'string' }
   - name: 'header_footer'
     label: 'Header & Footer'
     files:
@@ -485,20 +525,6 @@ collections:
   - name: 'settings'
     label: 'Settings'
     files:
-      - label: 'Tags'
-        name: 'tags'
-        file: content/settings/tags/index.json
-        format: json
-        fields:
-          - label: 'Tags'
-            name: 'tags'
-            widget: 'list'
-            allow_add: true
-            add_to_top: true
-            label_singular: 'a tag'
-            summary: '{{fields.name}}'
-            fields:
-              - { label: 'Name', name: 'name', widget: string }
       - label: 'Site Metadata'
         name: siteMetadata
         file: content/settings/sitemetadata/index.json
@@ -519,3 +545,17 @@ collections:
                   widget: string,
                   hint: 'Only the twitter handle!'
                 }
+      - label: 'Tags'
+        name: 'tags'
+        file: content/settings/tags/index.json
+        format: json
+        fields:
+          - label: 'Tags'
+            name: 'tags'
+            widget: 'list'
+            allow_add: true
+            add_to_top: true
+            label_singular: 'a tag'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }
