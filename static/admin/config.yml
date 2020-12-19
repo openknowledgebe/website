@@ -158,7 +158,26 @@ collections:
                   label: 'Title',
                   name: 'title',
                   widget: 'string',
-                  hint: 'Appears in the browser tab.'
+                  hint: 'Appears in the browser tab. Also used as the page title!'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Activities'
+        name: 'activities_page'
+        file: content/pages/activities/index.md
+        media_folder: ''
+        public_folder: ''
+        editor:
+          preview: false
+        fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab. Also used as the page title!'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Home'
@@ -305,6 +324,25 @@ collections:
                   name: 'title',
                   widget: 'string',
                   hint: 'Appears in the browser tab.'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Stories'
+        name: 'stories_page'
+        file: content/pages/stories/index.md
+        media_folder: ''
+        public_folder: ''
+        editor:
+          preview: false
+        fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab. Also used as the page title!'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Team'
