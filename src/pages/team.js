@@ -127,7 +127,8 @@ export default function Team({ data }) {
           },
           team: mapPictures(data.team.frontmatter.team),
           directors: mapPictures(data.team.frontmatter.directors),
-          jobs: jobs.length ? jobs : undefined
+          jobs: jobs.length ? jobs : undefined,
+          title: seo.title
         }}
       />
     </Layout>
@@ -137,7 +138,7 @@ export default function Team({ data }) {
 export const TeamTemplate = ({ data }) => (
   <>
     <section>
-      <Title as="h1">Team</Title>
+      <Title as="h1">{data.title}</Title>
       <Values>
         <h3>{data?.values_section?.heading}</h3>
         <div className="values gap">

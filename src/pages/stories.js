@@ -8,15 +8,17 @@ import { Title } from '../components/UI';
 
 const Stories = ({ data }) => {
   const stories = data.stories.edges;
+
+  const { seo } = data.page.frontmatter;
   return (
     <Layout>
-      <SEO title="Stories" />
+      <SEO title={seo.title} description={seo.description} />
       <section>
-        <Title as="h1">Stories</Title>
+        <Title as="h1">{seo.title}</Title>
         <StoryCardContainer>
           {stories &&
             stories.map(({ node: { frontmatter: { title, date }, excerpt, fields: { slug } } }) => (
-              <StoryCard key={title} title={title} date={date} excerpt={excerpt} to={slug} />
+              <StoryCard key={slug} title={title} date={date} excerpt={excerpt} to={slug} />
             ))}
         </StoryCardContainer>
       </section>
@@ -42,6 +44,15 @@ export const pageQuery = graphql`
           fields {
             slug
           }
+        }
+      }
+    }
+
+    page: markdownRemark(fields: { collection: { eq: "stories" } }) {
+      frontmatter {
+        seo {
+          description
+          title
         }
       }
     }
