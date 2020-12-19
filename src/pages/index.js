@@ -136,7 +136,7 @@ const completeHomeStories = (featured, normal) => {
     i += 1;
   }
 
-  return [...new Map([...stories].sort((s1, s2) => s2 - s1)).values()];
+  return [...stories.values()];
 };
 
 const Home = ({ data }) => {
