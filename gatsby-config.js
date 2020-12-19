@@ -165,9 +165,5 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`
-  ],
-  mapping: {
-    'MarkdownRemark.frontmatter.stories.featured_stories': `MarkdownRemark.fields.o_slug`,
-    'MarkdownRemark.frontmatter.activities.featured_activities': `MarkdownRemark.fields.o_slug`
-  }
+  ]
 };
