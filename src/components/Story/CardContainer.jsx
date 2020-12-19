@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { breakpoints } from '../../styles/globals';
 
 const StoryCardContainer = styled.div`
-  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;

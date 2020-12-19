@@ -41,9 +41,7 @@ const Activities = ({ data }) => {
     <Layout>
       <SEO title={seo.title} description={seo.description} />
       <section>
-        <Title as="h1" css="margin-bottom: 3rem;">
-          {seo.title}
-        </Title>
+        <Title as="h1">{seo.title}</Title>
         <ActivitiesContainer>
           {activities &&
             activities.map(

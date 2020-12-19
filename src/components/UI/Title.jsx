@@ -3,7 +3,7 @@ import { underline } from '../../styles/globals';
 
 const Title = styled.h2`
   position: relative;
-  margin: 0;
+  margin: 0 0 3rem;
   &::after {
     ${underline}
     width: 5rem;

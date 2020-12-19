@@ -196,7 +196,7 @@ export const HomeTemplate = ({ data }) => (
     </Hero>
     <PinnedActivites data-state="reversed">
       <Heading>
-        <Title>{data.activities?.heading}</Title>
+        <Title css="margin: 0">{data.activities?.heading}</Title>
         <StyledLink
           to={data.activities?.cta?.to}
           className="underlined d-inline-block-md d-none-sm"
@@ -215,7 +215,7 @@ export const HomeTemplate = ({ data }) => (
     </PinnedActivites>
     <PinnedStories>
       <Heading>
-        <Title>{data.stories?.heading}</Title>
+        <Title css="margin: 0">{data.stories?.heading}</Title>
         <StyledLink
           to={data.stories?.cta?.to}
           className="bold6 underlined work-sans d-inline-block-md d-none-sm"
