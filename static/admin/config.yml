@@ -226,6 +226,7 @@ collections:
             summary: 'Expand'
             collapsed: true
             fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
               - label: 'Featured Activities'
                 name: 'featured_activities'
                 widget: 'list'
@@ -263,6 +264,7 @@ collections:
             summary: 'Expand'
             collapsed: true
             fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
               - label: 'Featured image'
                 name: 'featured_image'
                 widget: 'object'
