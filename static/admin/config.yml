@@ -149,7 +149,6 @@ collections:
         media_folder: ''
         public_folder: ''
         fields:
-          - { label: 'Content', name: 'body', widget: 'markdown' }
           - label: 'SEO & Meta'
             name: 'seo'
             widget: 'object'
@@ -161,6 +160,7 @@ collections:
                   hint: 'Appears in the browser tab. Also used as the page title!'
                 }
               - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Content', name: 'body', widget: 'markdown' }
       - label: 'Activities'
         name: 'activities_page'
         file: content/pages/activities/index.md
@@ -186,6 +186,17 @@ collections:
         media_folder: ''
         public_folder: ''
         fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
           - label: 'Header'
             name: 'header'
             widget: 'object'
@@ -317,17 +328,6 @@ collections:
             fields:
               - { label: 'Heading', name: 'heading', widget: string }
               - { label: 'Subheading', name: 'subheading' }
-          - label: 'SEO & Meta'
-            name: 'seo'
-            widget: 'object'
-            fields:
-              - {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                  hint: 'Appears in the browser tab.'
-                }
-              - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Stories'
         name: 'stories_page'
         file: content/pages/stories/index.md
@@ -353,6 +353,17 @@ collections:
         media_folder: ''
         public_folder: ''
         fields:
+          - label: 'SEO & Meta'
+            name: 'seo'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  hint: 'Appears in the browser tab.'
+                }
+              - { label: 'Description', name: 'description', widget: 'string' }
           - label: Values Section
             name: values_section
             widget: object
@@ -451,17 +462,6 @@ collections:
                   minimal: true,
                   hint: 'This text will appear when there is no job opportunity.'
                 }
-          - label: 'SEO & Meta'
-            name: 'seo'
-            widget: 'object'
-            fields:
-              - {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                  hint: 'Appears in the browser tab.'
-                }
-              - { label: 'Description', name: 'description', widget: 'string' }
   - name: 'header_footer'
     label: 'Header & Footer'
     files:
