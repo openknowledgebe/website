@@ -126,6 +126,19 @@ const Heading = styled.div`
   margin-bottom: 3rem;
 `;
 
+const completeHomeStories = (featured, normal) => {
+  const stories = new Map();
+  featured.forEach(story => stories.set(story.slug, story));
+
+  let i = 0;
+  while (stories.size < 3) {
+    if (!stories.has(normal[i].slug)) stories.set(normal[i].slug, normal[i]);
+    i += 1;
+  }
+
+  return [...new Map([...stories].sort((s1, s2) => s2 - s1)).values()];
+};
+
 const Home = ({ data }) => {
   const {
     frontmatter: { seo }
@@ -142,10 +155,19 @@ const Home = ({ data }) => {
     featured_activities: featuredActivities
   };
 
-  const featuredStories = data.home.frontmatter.stories.featured_stories.map(story => ({
+  let featuredStories = data.home.frontmatter.stories.featured_stories.map(story => ({
     ...story.frontmatter,
     ...story.fields
   }));
+
+  if (featuredStories.length < 3) {
+    const storiesToAppend = data.stories.edges.map(({ node: story }) => ({
+      ...story.frontmatter,
+      ...story.fields
+    }));
+
+    featuredStories = completeHomeStories(featuredStories, storiesToAppend);
+  }
 
   const stories = {
     ...data.home.frontmatter.stories,
@@ -163,6 +185,7 @@ const Home = ({ data }) => {
       image: data.home.frontmatter.header.featured_image.image
     }
   };
+
   return (
     <Layout>
       <SEO title={seo.title} description={seo.description} />
@@ -302,6 +325,23 @@ export const query = graphql`
         seo {
           description
           title
+        }
+      }
+    }
+    stories: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "story" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+      limit: 3
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "LL")
+          }
+          fields {
+            slug
+          }
         }
       }
     }
