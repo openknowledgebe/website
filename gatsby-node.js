@@ -134,6 +134,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       directors: [Members]
       stories: Stories
       volunteers: Volunteers
+      activities: Activities
     }
 
     type Volunteers {
@@ -144,8 +145,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       featured_image: FeaturedImage
     }
 
+    type Activities {
+      featured_activities: [MarkdownRemark] @link(by: "fields.o_slug")
+    }
+
     type Stories {
       featured_image: FeaturedImage
+      featured_stories: [MarkdownRemark] @link(by: "fields.o_slug")
     }
 
     type Members {
