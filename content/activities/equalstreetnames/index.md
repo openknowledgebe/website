@@ -19,7 +19,7 @@ contact_info:
     github: https://github.com/openknowledgebe/equalstreetnames/
 members:
   - name: Jonathan Beliën
-    task: Techincal Lead
+    task: Technical Lead
     picture: jonathanbelien.jpg
     contact_info:
       twitter: https://twitter.com/jbelien
