@@ -3,7 +3,8 @@ import React from 'react';
 import StyleInjector from './StyleInjector';
 import { HomeTemplate } from '../../pages/index';
 
-const Home = ({ entry, getAsset, fieldsMetaData }) => {
+const Home = ({ entry, getAsset, fieldsMetaData, boundGetAsset, config, isLoadingAsset }) => {
+  if (isLoadingAsset) return <div>Loading...</div>;
   const { data } = entry.toJS();
 
   if (data.header?.featured_image?.image) {
@@ -32,9 +33,23 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
 
     if (activities && activities.size >= data.activities.featured_activities.length) {
       data.activities.featured_activities = data.activities.featured_activities.map(activity => {
-        const activityData = activities.getIn([activity]).toJS();
-        activityData.slug = `${window.location.protocol}//${window.location.host}/activities/${activity}`;
-        return activityData;
+        let activityData = activities.getIn([activity]);
+        const logo = activityData.get('logo');
+        const slug = activity.split('/')[0];
+        activityData = activityData.set('path', `content/activities/${slug}/${logo}`);
+
+        // hack to get the logo displayed
+        activityData = activityData.set(
+          'logo',
+          boundGetAsset(
+            config.get('collections').get(0).set('type', 'folder_based_collection'),
+            activityData
+          )(logo).toString()
+        );
+
+        return activityData
+          .set('slug', `${window.location.protocol}//${window.location.host}/activities/${slug}`)
+          .toJS();
       });
     }
   }
@@ -47,7 +62,14 @@ const Home = ({ entry, getAsset, fieldsMetaData }) => {
     if (stories && stories.size >= data.stories.featured_stories.length) {
       data.stories.featured_stories = data.stories.featured_stories.map(story => {
         const storyData = stories.getIn([story]).toJS();
-        storyData.slug = `${window.location.protocol}//${window.location.host}/stories/${story}`;
+        const date = new Date(storyData.date);
+        storyData.slug = `${window.location.protocol}//${
+          window.location.host
+        }/${date.getFullYear()}/${(date.getMonth() + 1)
+          .toString()
+          .padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${
+          story.split(/-(.+)/)[1].split('/')[0]
+        }`;
         storyData.date = storyData.date.toLocaleDateString('en', {
           year: 'numeric',
           month: 'long',
