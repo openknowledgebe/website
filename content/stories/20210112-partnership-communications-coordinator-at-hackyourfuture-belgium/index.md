@@ -1,7 +1,7 @@
 ---
 date: 2021-01-12T10:11:34.793Z
 author: Lien Arits
-title: Partnership & Communications Coordinator at HackYourFuture Belgium
+title: "Vacancy: Partnership & Communications Coordinator at HackYourFuture Belgium"
 excerpt: We’re looking for someone who creates value and opportunities with the
   outside world for HackYourFuture Belgium and our students. Working with the
   General Coordinator, Educational Coordinator, and our dedicated community of
@@ -16,8 +16,6 @@ Hack Your Future Belgium* is a coding school for refugees and newcomers, active 
 We’re looking for someone who creates value and opportunities with the outside world for Hack Your Future Belgium and our students. Working with the General Coordinator, Educational Coordinator, and our dedicated community of volunteers, you will help Hack Your Future bring new talent into the tech world.
 
 The Partnership & Communication Coordinator’s principle objectives are to support the active HYF Be community, and to make sure our students find opportunities after the program by growing our network of companies and partner organizations. Your efforts will contribute to the graduation of 60 students in 2021 and a sustainable future for the organization.
-
- 
 
 ### **As Partnership and Communication Coordinator, you’ll have as main responsibilities:**
 
@@ -90,11 +88,9 @@ You will report directly to the General Coordinator of Hack Your Future, and sec
 * Desk in our office at BeCentral
 * Flexibility about remote working (100% remote as long as obliged by the government)
 
-Are you the one we’re looking for?
+**Are you the one we’re looking for?**
 
 Send us your CV and Cover Letter to jobs@openknowledge.be. The deadline is **Friday 29 January 2021, 22:00 GMT+1.** Short-listed candidates will be invited for the next steps of the selection process.
-
-
 
 Recruitment in response to this vacancy is not appreciated.
 
