@@ -1,6 +1,6 @@
 ---
 name: Open Belgium
-logo: openbelgium-logo.png
+logo: triangle-4x.png
 color: "#ffff"
 tags:
   - event
