@@ -25,8 +25,7 @@ activities:
 stories:
   featured_image:
     image: 49690588841_628ae61daa_o.jpg
-  featured_stories:
-    - 20201110-open-knowledge-belgium-defines-5-priorities-for-the-federal-digital-agenda/index
+  featured_stories: []
   cta:
     label: Discover all stories
     to: /stories
