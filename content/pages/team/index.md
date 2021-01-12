@@ -1,4 +1,7 @@
 ---
+seo:
+  title: Team
+  description: Team
 values_section:
   heading: Values
   values:
@@ -17,7 +20,7 @@ volunteers:
     alt: Open Belgium volunteers
 team:
   - name: Lien Arits
-    task: Community and Communications Coordinator HackYourFuture Belgium
+    task: General Coordinator HackYourFuture Belgium
     contact_info:
       email: lien@hackyourfuture.be
       linkedin: https://www.linkedin.com/in/lien-arits-88722683/
@@ -125,7 +128,4 @@ opportunities:
   heading: Opportunities
   default_text: We don't have any career opportunities at the moment but you can
     always contact us at [team@openknowledge.be](mailto:team@openknowledge.be).
-seo:
-  title: Team
-  description: Team
 ---
