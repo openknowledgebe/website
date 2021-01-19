@@ -61,6 +61,7 @@ directors:
       email: raf.buyle@openknowledge.be
       linkedin: https://be.linkedin.com/in/rafbuyle
       twitter: https://twitter.com/rafke
+    picture: raf-buyle.jpg
   - name: Miet Claes
     task: Chairwoman
     contact_info:
@@ -74,12 +75,14 @@ directors:
       linkedin: https://be.linkedin.com/in/pcolpaert
       twitter: https://twitter.com/pietercolpaert
     task: Activity Lead
+    picture: pieter-colpaert.jpg
   - name: Gwen Franck
     contact_info:
       email: gwen@openknowledge.be
       linkedin: https://www.linkedin.com/in/gwenfranck/
       twitter: https://twitter.com/g_fra
     task: Policy Advisor
+    picture: gwen.jpg
   - name: Bert Jehoul
     contact_info:
       email: bert@openknowledge.be
@@ -100,12 +103,14 @@ directors:
       linkedin: https://www.linkedin.com/in/joost-schouppe-60393948/
       twitter: https://twitter.com/joostjakob
     task: Human Capital Lead
+    picture: joost.png
   - name: Thimo Thoeye
     contact_info:
       email: thimo@openknowledge.be
       linkedin: https://be.linkedin.com/in/thimothoeye
       twitter: https://twitter.com/tthoeye
     task: Secretary
+    picture: thimo.jpg
   - name: Dries Vanacker
     contact_info:
       email: dries.vanacker@openknowledge.be
@@ -118,12 +123,14 @@ directors:
       twitter: https://twitter.com/toon
       linkedin: https://be.linkedin.com/in/toonvanagt
       email: toon@openknowledge.be
+    picture: toon.jpg
   - name: Mathias Van Compernolle
     contact_info:
       email: mathias@openknowledge.be
       linkedin: https://www.linkedin.com/in/mathias-van-compernolle-b0a6b011/
       twitter: https://twitter.com/mvcomper
     task: Secretary
+    picture: mathias.jpg
 opportunities:
   heading: Opportunities
   default_text: We don't have any career opportunities at the moment but you can
