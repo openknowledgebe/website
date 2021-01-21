@@ -110,7 +110,7 @@ directors:
       linkedin: https://be.linkedin.com/in/thimothoeye
       twitter: https://twitter.com/tthoeye
     task: Secretary
-    picture: thimo.jpg
+    picture: thimo-thoeye.jpg
   - name: Dries Vanacker
     contact_info:
       email: dries.vanacker@openknowledge.be
@@ -123,14 +123,14 @@ directors:
       twitter: https://twitter.com/toon
       linkedin: https://be.linkedin.com/in/toonvanagt
       email: toon@openknowledge.be
-    picture: toon.jpg
+    picture: toon-vanagt.jpg
   - name: Mathias Van Compernolle
     contact_info:
       email: mathias@openknowledge.be
       linkedin: https://www.linkedin.com/in/mathias-van-compernolle-b0a6b011/
       twitter: https://twitter.com/mvcomper
     task: Secretary
-    picture: mathias.jpg
+    picture: mathias-vc.jpg
 opportunities:
   heading: Opportunities
   default_text: We don't have any career opportunities at the moment but you can
