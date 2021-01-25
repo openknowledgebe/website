@@ -23,7 +23,6 @@ I feel very proud and immensely grateful to all people - with different backgrou
 
   ![#osoc18](osoc18.jpg "open summer of code 2018")
 
-   \
   In the last 2 editions we also managed to broaden our community and welcomed 10 students of [HackYourFuture Belgium](https://hackyourfuture.be/) in the program each year. Meanwhile, Open Summer of Code is going beyond the Belgian borders: there’s one in [Spain](https://summerofcode.es/) and one in The Netherlands coming up!  
 * Thanks to our [Civic Lab Meetups](https://www.meetup.com/Civic-Lab-brussels/), our community got the chance to meet up on a biweekly basis and contribute to community-driven open source projects. Our Civic Hack nights allowed us to get things done while meeting incredibly interesting people. It has been a privilege to meet so many people who want to make a difference for their local community. Today, the Meetup group counts 1460 members.\
     \
@@ -33,6 +32,8 @@ I feel very proud and immensely grateful to all people - with different backgrou
     *Image*: https://twitter.com/DVRansbeeck/status/1049766150740082690 
 
   ![Influencair](influencair.jpg "Influencair night")
+
+
 * Thanks to the open curriculum (Creative Commons licensed) made by HackYourFuture in The Netherlands, we launched our own chapter of [HackYourFuture](https://hackyourfuture.be/) - a coding school for refugees & newcomers with limited access to education and the labour market - in Belgium. Courses are given by volunteer-coaches on Sunday afternoons! Since May 2018, 160 students have started the program and 80% of our graduates found an internship, a job or went to longer term studies.\
     *Image*: https://twitter.com/DVRansbeeck/status/944203513667751936\
     *Image*: https://twitter.com/DVRansbeeck/status/990273415809466368  
