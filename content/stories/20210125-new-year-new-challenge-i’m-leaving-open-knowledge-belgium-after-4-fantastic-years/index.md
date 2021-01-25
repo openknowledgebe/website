@@ -23,7 +23,6 @@ I feel very proud and immensely grateful to all people - with different backgrou
 
   ![#osoc18](osoc18.jpg "open summer of code 2018")
 
-  *Image*: https://twitter.com/DVRansbeeck/status/1022757872046944256/photo/1\
    \
   In the last 2 editions we also managed to broaden our community and welcomed 10 students of [HackYourFuture Belgium](https://hackyourfuture.be/) in the program each year. Meanwhile, Open Summer of Code is going beyond the Belgian borders: there’s one in [Spain](https://summerofcode.es/) and one in The Netherlands coming up!  
 * Thanks to our [Civic Lab Meetups](https://www.meetup.com/Civic-Lab-brussels/), our community got the chance to meet up on a biweekly basis and contribute to community-driven open source projects. Our Civic Hack nights allowed us to get things done while meeting incredibly interesting people. It has been a privilege to meet so many people who want to make a difference for their local community. Today, the Meetup group counts 1460 members.\
@@ -31,7 +30,9 @@ I feel very proud and immensely grateful to all people - with different backgrou
   Besides our meetups, we also organise our yearly [Open Belgium conference](https://2021.openbelgium.be/), which provides a platform for 300 government officials, researchers, industry influencers and open enthusiasts to share their experiences on open knowledge and open data.  
 * With [Influencair](https://influencair.be/) (one of our Civic Lab Brussels projects), we’ve set up a citizen network for air quality measurements in Brussels: in one evening we brought together 100 citizens to build their own sensor. Toon Nelissen, the technical lead behind Influencair, even made it to the national television to explain his story and the project!\
     *Image*: https://twitter.com/DVRansbeeck/status/1007200183858364417\
-    *Image*: https://twitter.com/DVRansbeeck/status/1049766150740082690  
+    *Image*: https://twitter.com/DVRansbeeck/status/1049766150740082690 
+
+  ![Influencair](influencair.jpg "Influencair night")
 * Thanks to the open curriculum (Creative Commons licensed) made by HackYourFuture in The Netherlands, we launched our own chapter of [HackYourFuture](https://hackyourfuture.be/) - a coding school for refugees & newcomers with limited access to education and the labour market - in Belgium. Courses are given by volunteer-coaches on Sunday afternoons! Since May 2018, 160 students have started the program and 80% of our graduates found an internship, a job or went to longer term studies.\
     *Image*: https://twitter.com/DVRansbeeck/status/944203513667751936\
     *Image*: https://twitter.com/DVRansbeeck/status/990273415809466368  
