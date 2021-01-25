@@ -29,7 +29,7 @@ I feel very proud and immensely grateful to all people - with different backgrou
   Besides our meetups, we also organise our yearly [Open Belgium conference](https://2021.openbelgium.be/), which provides a platform for 300 government officials, researchers, industry influencers and open enthusiasts to share their experiences on open knowledge and open data.  
 * With [Influencair](https://influencair.be/) (one of our Civic Lab Brussels projects), we’ve set up a citizen network for air quality measurements in Brussels: in one evening we brought together 100 citizens to build their own sensor. Toon Nelissen, the technical lead behind Influencair, even [made it to the national television](https://twitter.com/DVRansbeeck/status/1049766150740082690) to explain his story and the project!
 
-  We also got the chance to demo the project to the former Prime Minister Charles Michel and former Minister of the Digital Agenda Alexander De Croo during their visit to BeCentral.
+  We also got the chance to demo the project to former Prime Minister Charles Michel and former Minister of the Digital Agenda Alexander De Croo during their visit to BeCentral.
 
   ![Influencair](influencair-visit-becentral.jpg "Influencair")
 * Thanks to the open curriculum (Creative Commons licensed) made by HackYourFuture in The Netherlands, we launched our own chapter of [HackYourFuture](https://hackyourfuture.be/) - a coding school for refugees & newcomers with limited access to education and the labour market - in Belgium. Courses are given by volunteer-coaches on Sunday afternoons! Since May 2018, 160 students have started the program and 80% of our graduates found an internship, a job or went to longer term studies.
