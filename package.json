@@ -4,9 +4,9 @@
   "homepage": "https://github.com/openknowledgebe/website",
   "version": "0.1.0",
   "dependencies": {
+    "@fontsource/chivo": "^4.1.0",
+    "@fontsource/work-sans": "^4.1.0",
     "babel-plugin-styled-components": "^1.12.0",
-    "fontsource-chivo": "^3.1.5",
-    "fontsource-work-sans": "^3.1.6",
     "gatsby": "^2.30.1",
     "gatsby-image": "^2.10.0",
     "gatsby-plugin-feed": "^2.11.0",
