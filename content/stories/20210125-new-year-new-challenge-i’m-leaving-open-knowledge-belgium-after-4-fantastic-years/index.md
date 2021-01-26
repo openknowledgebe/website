@@ -57,7 +57,7 @@ I’ll keep my email dries@openknowledge.be, so please feel free to drop my mess
 
 ## **Leaving on a mission to make cycling more local, open & circular**
 
-In the coming months Manon Brulard - with whom I had the chance to work on several projects at Open Knowledge Belgium - and I will make the transition from non-profit to social profit and, more specifically, we will look at [how the production of bicycles can be made more local, open and circular](start.longlife.bike).
+In the coming months Manon Brulard - with whom I had the chance to work on several projects at Open Knowledge Belgium - and I will make the transition from non-profit to social profit and, more specifically, we will look at [how the production of bicycles can be made more local, open and circular](https://start.longlife.bike/start-of-our-journey).
 
 Covid-19 has been a game changer which made us all stay at home. We didn't have any other choice than radically changing the way we live, work, travel and consume. These changes in our behavior resulted in a lower ecological footprint per person and thus, paradoxically enough, created the kind of change we need to make in order to save our planet. However, the way we produce and use goods hasn't changed. If we want to make the EU climate-neutral by 2050 and build an economy with net-zero greenhouse gas emissions, it's time to change the way we produce things. And this also counts for bicycles.
 
