@@ -19,6 +19,10 @@ contact_info:
     linkedin: https://www.linkedin.com/company/hackyourfuture-belgium
     facebook: https://www.facebook.com/HackYFutureBE
   email: contact@hackyourfuture.be
+members:
+  - name: Evan Cole
+    task: Educational Director
+    id: a7e91893-86dd-41fd-bc5b-917a5b8bb4ee
 ---
 
 HackYourFuture Belgium is a coding school with the mission to help new talent into tech. With a focus on refugees and newcomers, they aim to empower their students' technical and soft skills, necessary start their career in the Belgian IT field.
