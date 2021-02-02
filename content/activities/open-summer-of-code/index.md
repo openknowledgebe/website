@@ -1,5 +1,5 @@
 ---
-name: Open summer of code
+name: open summer of code
 logo: osoc-logo.png
 color: "#ffffff"
 tags:
