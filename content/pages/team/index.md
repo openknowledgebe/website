@@ -34,19 +34,12 @@ team:
       twitter: https://twitter.com/HackYFutureBE/
     picture: evancole.png
   - name: Astrid Steenackers
-    task: Event & Community Coordinator
+    task: General Coordinator
     contact_info:
       email: astrid@openknowledge.be
       twitter: https://twitter.com/SteenackersA
       linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
     picture: astridsteenackers.jpg
-  - name: Dries Van Ransbeeck
-    task: General Coordinator
-    contact_info:
-      email: dries@openknowledge.be
-      twitter: https://twitter.com/DVRansbeeck
-      linkedin: https://be.linkedin.com/in/driesvanransbeeck
-    picture: driesvanransbeeck.jpg
 directors:
   - name: Jonathan Beliën
     task: Activity lead
