@@ -37,4 +37,7 @@ We willen met HackYourFuture het tekort aan diversiteit en inclusie in de IT sec
 **CSR**\
 Hiervoor zijn we op zoek naar bedrijven die de stap willen zetten naar tewerkstelling van nieuwkomers. Veel spelers in de IT sector zijn op zoek naar projecten om hun ***corporate social responsibility*** op te nemen. Wij bieden hen de kans om bij te dragen aan duurzaam werk, dankzij ons projectbureau waarin we onze junior web developers begeleiden in hun eerste opdrachten.
 
-Door te tonen over welke ***hard en soft skills*** onze community van alumni beschikken, willen we de drempels verlagen voor bedrijven die terughoudend zijn in de aanwerving van **nieuw talent**.
+Door te tonen over welke ***hard en soft skills*** onze community van alumni beschikken, willen we de drempels verlagen voor bedrijven die terughoudend zijn in de aanwerving van **nieuw talent**.\
+\
+**Heb je interesse?**\
+Stuur ons een mail naar contact@hackyourfuture.be
