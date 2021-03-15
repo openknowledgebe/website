@@ -1,7 +1,7 @@
 ---
 date: 2021-03-15T11:37:03.232Z
 author: Lien Arits
-title: HackYourFuture Lab @ Ghent brengt nieuwkomers dichterbij Gentse IT bedrijven
+title: HackYourFuture Lab @ Ghent brings newcomers closer to IT companies.
 excerpt: >-
   HackYourFuture Belgium has launched HackYourFuture Lab @ Ghent in
   collaboration with Artevelde University of Applied Sciences.
