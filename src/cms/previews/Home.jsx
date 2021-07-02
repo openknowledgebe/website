@@ -63,12 +63,11 @@ const Home = ({ entry, getAsset, fieldsMetaData, boundGetAsset, config, isLoadin
       data.stories.featured_stories = data.stories.featured_stories.map(story => {
         const storyData = stories.getIn([story]).toJS();
         const date = new Date(storyData.date);
-        storyData.slug = `${window.location.protocol}//${
-          window.location.host
-        }/${date.getFullYear()}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date
-          .getDate()
-          .toString()
-          .padStart(2, '0')}/${story.split(/-(.+)/)[1].split('/')[0]}`;
+        storyData.slug = `${window.location.protocol}//${window.location.host}`;
+        storyData.slug += `/${date.getFullYear()}`;
+        storyData.slug += `/${(date.getMonth() + 1).toString().padStart(2, '0')}`;
+        storyData.slug += `/${date.getDate().toString().padStart(2, '0')}`;
+        storyData.slug += `/${story.split(/-(.+)/)[1].split('/')[0]}`;
         storyData.date = storyData.date.toLocaleDateString('en', {
           year: 'numeric',
           month: 'long',

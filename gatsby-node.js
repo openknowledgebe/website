@@ -18,13 +18,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       const base = slug.split(/-(.+)/)[1];
       const date = new Date(node.frontmatter.date);
 
+      let value = `/${date.getFullYear()}`;
+      value += `/${(date.getMonth() + 1).toString().padStart(2, '0')}`;
+      value += `/${date.getDate().toString().padStart(2, '0')}`;
+      value += `/${base}`;
       createNodeField({
         node,
         name: `slug`,
-        value: `/${date.getFullYear()}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date
-          .getDate()
-          .toString()
-          .padStart(2, '0')}/${base}`
+        value
       });
 
       createNodeField({
