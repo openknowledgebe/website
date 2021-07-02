@@ -21,9 +21,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: `slug`,
-        value: `/${date.getFullYear()}/${(date.getMonth() + 1)
+        value: `/${date.getFullYear()}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date
+          .getDate()
           .toString()
-          .padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${base}`
+          .padStart(2, '0')}/${base}`
       });
 
       createNodeField({

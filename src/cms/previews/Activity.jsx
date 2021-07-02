@@ -8,8 +8,7 @@ import { ActivityTemplate } from '../../templates/Activity';
 const init = {
   name: 'Noname',
   featured_image: { image: 'https://via.placeholder.com/850x550/' },
-  body:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra nisl ante, quis mattis magna sagittis nec. Morbi luctus nisl a nisi tincidunt interdum. Duis at pharetra purus. Etiam imperdiet, nunc id ullamcorper hendrerit, tellus felis ultricies tortor, vitae hendrerit augue mauris eu velit.'
+  body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra nisl ante, quis mattis magna sagittis nec. Morbi luctus nisl a nisi tincidunt interdum. Duis at pharetra purus. Etiam imperdiet, nunc id ullamcorper hendrerit, tellus felis ultricies tortor, vitae hendrerit augue mauris eu velit.'
 };
 
 const Activity = ({ entry, getAsset }) => {

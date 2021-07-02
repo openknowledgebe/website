@@ -1,7 +1,7 @@
 ---
 date: 2021-01-12T10:11:34.793Z
 author: Lien Arits
-title: "Vacancy: Partnership & Communications Coordinator at HackYourFuture Belgium"
+title: 'Vacancy: Partnership & Communications Coordinator at HackYourFuture Belgium'
 excerpt: We’re looking for someone who creates value and opportunities with the
   outside world for HackYourFuture Belgium and our students. Working with the
   General Coordinator, Educational Coordinator, and our dedicated community of
@@ -9,9 +9,10 @@ excerpt: We’re looking for someone who creates value and opportunities with th
 tags:
   - job
 ---
+
 Do you believe in a world where chances are equal and job opportunities are given to talented people, no matter what their background is?
 
-Hack Your Future Belgium* is a coding school for refugees and newcomers, active in different countries across Europe, and in Belgium part of the umbrella organization Open Knowledge Belgium. Currently refugees and newcomers have very few opportunities that prepare them for the job-market, despite having so much potential among them. We prepare our students to become the next generation of much needed developers. We coach them in becoming full-stack web developers with the clear aim of preparing them for the job-market.
+Hack Your Future Belgium\* is a coding school for refugees and newcomers, active in different countries across Europe, and in Belgium part of the umbrella organization Open Knowledge Belgium. Currently refugees and newcomers have very few opportunities that prepare them for the job-market, despite having so much potential among them. We prepare our students to become the next generation of much needed developers. We coach them in becoming full-stack web developers with the clear aim of preparing them for the job-market.
 
 We’re looking for someone who creates value and opportunities with the outside world for Hack Your Future Belgium and our students. Working with the General Coordinator, Educational Coordinator, and our dedicated community of volunteers, you will help Hack Your Future bring new talent into the tech world.
 
@@ -21,72 +22,72 @@ The Partnership & Communication Coordinator’s principle objectives are to supp
 
 **Partnerships**
 
-* Actively look for internship and job opportunities for the Hack Your Future graduates 
-* Maintain relationships with partner-companies
-* Matching graduate students to available internship and job opportunities
-* Overseeing career training sessions together with our volunteers
-* Develop and organize events for Hack Your Future students and alumni
-* Follow-up with graduates on how they perform on the job-market
+- Actively look for internship and job opportunities for the Hack Your Future graduates
+- Maintain relationships with partner-companies
+- Matching graduate students to available internship and job opportunities
+- Overseeing career training sessions together with our volunteers
+- Develop and organize events for Hack Your Future students and alumni
+- Follow-up with graduates on how they perform on the job-market
 
 **Communication**
 
-* Develop and implement a communication plan
-* Translate partnerships into stories that serve our mission
-* Update and maintain our website and SoMe communication channels
-* Manage our internal communication channels for students, alumni and volunteers
+- Develop and implement a communication plan
+- Translate partnerships into stories that serve our mission
+- Update and maintain our website and SoMe communication channels
+- Manage our internal communication channels for students, alumni and volunteers
 
 **Teamwork**
 
-* Proactively look for partnerships to make Hack Your Future Belgium sustainable
-* Support of General and Education Coordinator to optimize our students’ experience
-* Find partners for our Students’ Final Project together with the Educational Director
-* Contribute to long-term strategy & directions along with the OKBE Board
+- Proactively look for partnerships to make Hack Your Future Belgium sustainable
+- Support of General and Education Coordinator to optimize our students’ experience
+- Find partners for our Students’ Final Project together with the Educational Director
+- Contribute to long-term strategy & directions along with the OKBE Board
 
 You will report directly to the General Coordinator of Hack Your Future, and secondarily to the General Coordinator of Open Knowledge.
 
 **Requirements:**
 
-* Bachelor or equivalent skills and experience
-* Min. 3y of relevant work experience
-* Background in sales/recruitment/fund-raising/communications management
-* Passionate about helping people
-* Enthusiastic about closing deals with partners
-* Great social skills.You enjoy speaking to students and company representatives (HR/IT)
-* Both independent and a team player
-* Able to plan, keep deadlines and manage the communication planning
-* Goal oriented. You like to get things done
-* Hands-on mentality. You are a creative problem-solver
-* Available regularly on Sundays to help oversee HYF classes
-* Available on scheduled evenings for meetings with students & volunteers
-* Fluency in English and French/Dutch (both written and spoken)
+- Bachelor or equivalent skills and experience
+- Min. 3y of relevant work experience
+- Background in sales/recruitment/fund-raising/communications management
+- Passionate about helping people
+- Enthusiastic about closing deals with partners
+- Great social skills.You enjoy speaking to students and company representatives (HR/IT)
+- Both independent and a team player
+- Able to plan, keep deadlines and manage the communication planning
+- Goal oriented. You like to get things done
+- Hands-on mentality. You are a creative problem-solver
+- Available regularly on Sundays to help oversee HYF classes
+- Available on scheduled evenings for meetings with students & volunteers
+- Fluency in English and French/Dutch (both written and spoken)
 
 **Very nice to haves:**
 
-* Immediate availability is a plus
-* Network in tech-sector
-* Experience in photo and/or video editing
-* Experience setting up community events
-* (Basic) Knowledge of software development
-* Experience working in an intercultural context
-* All forms of volunteer work experience
-* Experience with Open Source projects
+- Immediate availability is a plus
+- Network in tech-sector
+- Experience in photo and/or video editing
+- Experience setting up community events
+- (Basic) Knowledge of software development
+- Experience working in an intercultural context
+- All forms of volunteer work experience
+- Experience with Open Source projects
 
 **What we offer:**
 
-* Your work directly impacts the lives of really great people that are new in Belgium
-* A job in the Open Knowledge Belgium team, with highly motivated colleagues
-* A community of experienced and super skilled volunteers
-* Opportunities to build your network within the Open Knowledge and tech community
-* Room for your own input and ideas
-* A 100% FTE contract until *November 2021* (extendable, depending on funding)
-* *[Pay scale: PC 329.01 B1c](https://www.aclvb.be/sites/default/files/aclvb/329-01_n_01042020.pdf)*
-* Your own laptop
-* Meal Vouchers
-* Health insurance benefits
-* Flexible working hours
-* Compensation for commuting via public transport or bicycle
-* Desk in our office at BeCentral
-* Flexibility about remote working (100% remote as long as obliged by the government)
+- Your work directly impacts the lives of really great people that are new in Belgium
+- A job in the Open Knowledge Belgium team, with highly motivated colleagues
+- A community of experienced and super skilled volunteers
+- Opportunities to build your network within the Open Knowledge and tech community
+- Room for your own input and ideas
+- A 100% FTE contract until _November 2021_ (extendable, depending on funding)
+- _[Pay scale: PC 329.01 B1c](https://www.aclvb.be/sites/default/files/aclvb/329-01_n_01042020.pdf)_
+- Your own laptop
+- Meal Vouchers
+- Health insurance benefits
+- Flexible working hours
+- Compensation for commuting via public transport or bicycle
+- Desk in our office at BeCentral
+- Flexibility about remote working (100% remote as long as obliged by the government)
 
 **Are you the one we’re looking for?**
 

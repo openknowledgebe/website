@@ -1,7 +1,7 @@
 ---
 name: EqualStreetNames
 logo: okbe.svg
-color: "#740e74"
+color: '#740e74'
 tags:
   - gender equality
   - civic tech
@@ -35,6 +35,7 @@ members:
       linkedin: https://www.linkedin.com/in/manon-brulard-6a84833a/
     id: bb72b230-85d1-414f-bb10-cc6d4982dc41
 ---
+
 The names of public spaces (streets, avenues, squares and others) define the identity of a city and how citizens interact with it. Many cities suffer from a major inequality between male and female street names and we want to help fix this.
 
 There are several ways to approach the inequality of street names and leverage a positive change in our society. Ours is with the use of Open Data to create a map visualizing the street names by gender.

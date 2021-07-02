@@ -15,6 +15,7 @@ tags:
   - job
   - co-creation
 ---
+
 Last Friday we presented our project 'HackYourFuture Lab @ Ghent' to the Ghent deputy mayor for Welfare, Astrid Debruycker.
 Last year, she called for innovative solutions to specific challenges in Ghent's society.
 \
@@ -38,8 +39,7 @@ We want HackYourFuture to help address the lack of **diversity and inclusion** i
 CSR**\
 For 'The Agency', we are **looking for companies** that want to take the step towards employing newcomers. Many players in the IT sector are looking for projects to incorporate their **corporate social responsibility**. We offer them the chance to contribute to **sustainable work**, thanks to our project office where we guide our junior web developers in their first assignments.
 
-By demonstrating the ***hard and soft skills*** of our community of alumni, we want to lower the barriers for companies who are hesitant to hire **new talent**.
-
+By demonstrating the **_hard and soft skills_** of our community of alumni, we want to lower the barriers for companies who are hesitant to hire **new talent**.
 
 \
 **Are you interested?**\

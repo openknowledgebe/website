@@ -1,7 +1,7 @@
 ---
 name: Open Belgium
 logo: triangle-4x.png
-color: "#ffff"
+color: '#ffff'
 tags:
   - event
   - open data
@@ -10,7 +10,7 @@ tags:
 to: https://openbelgium.be/
 catchphrase: Let's make Belgian knowledge open, usable, useful, used
 featured_image:
-  alt: ""
+  alt: ''
   image: openbelgium.jpg
 contact_info:
   socials:

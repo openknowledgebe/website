@@ -1,7 +1,7 @@
 ---
 name: Civic Lab Brussels
 logo: civiclab.png
-color: "#ffffff"
+color: '#ffffff'
 to: https://www.meetup.com/Civic-Lab-brussels/
 catchphrase: Join the biweekly Civic Hack Night to help create open societal
   solutions and meet other civic innovators!
@@ -28,4 +28,5 @@ members:
       twitter: https://twitter.com/DVRansbeeck
     id: d5555944-094b-40c3-91e8-0c1aeccba5e7
 ---
+
 Civic Lab Brussels is a meetup for those interested in creating open societal solutions through mainly science and technology, also known as public interest tech and civic tech. During our biweekly open gatherings (all backgrounds welcome) you can present your civic project, join other civic projects or just meet other engaged citizens in Brussels. Come and join us every 2 weeks on Tuesday night!

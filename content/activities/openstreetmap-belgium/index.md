@@ -1,7 +1,7 @@
 ---
 name: OpenStreetMap Belgium
 logo: osmbe-logo.png
-color: "#ffffff"
+color: '#ffffff'
 tags:
   - openstreetmap
   - open data
@@ -27,7 +27,7 @@ members:
     task: Board member
     contact_info:
       twitter: https://twitter.com/jbelien
-      email: ""
+      email: ''
       linkedin: https://www.linkedin.com/in/jbelien/
     id: 5597a68c-ffe6-4779-8786-721536ef1a1f
     picture: jonathanbelien.jpg

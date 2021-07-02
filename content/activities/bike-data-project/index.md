@@ -1,7 +1,7 @@
 ---
 name: Bike Data Project
 logo: bikedataproject.png
-color: "#ef4823"
+color: '#ef4823'
 tags:
   - open data
   - community
@@ -12,7 +12,7 @@ to: https://www.bikedataproject.org/
 catchphrase: Open bike data platform for and by cyclists. Making cyclists more
   visible & cities more liveable with open data.
 featured_image:
-  alt: ""
+  alt: ''
   image: illustration.png
 contact_info:
   email: bikedataproject@openknowledge.be
@@ -46,6 +46,7 @@ members:
     picture: driesvanransbeeck.jpg
     id: 7b86565a-ae26-4633-a9f3-bbc2e14a3976
 ---
+
 Thanks to the data shared by citizens around the world, the Bike Data Project aims at showing where and when people ride their bicycles. The data gathered will help local communities and decision-makers make cycling and cities safer.
 
 The project provides the opportunity to collect all cycling data from different applications into one platform, which is - based on the principle of open source and open data - adaptable and accessible by everyone to ensure it benefits society.

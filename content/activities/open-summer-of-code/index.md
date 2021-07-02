@@ -1,7 +1,7 @@
 ---
 name: Open summer of code
 logo: osoc-logo.png
-color: "#ffffff"
+color: '#ffffff'
 tags:
   - open source
   - co-creation
@@ -9,7 +9,7 @@ to: https://osoc.be/
 catchphrase: Innovative open source projects, made by incredibly motivated
   students, coaches & organisations.
 featured_image:
-  alt: ""
+  alt: ''
   image: osoc19.jpg
 contact_info:
   email: info@osoc.be
@@ -32,6 +32,7 @@ members:
       linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
     id: b9454b99-a981-4bf8-bb08-6523758fc114
 ---
+
 Open summer of code is an intense summer programme, giving young potential students with development-, communication-, design- and business skills a summer job with a real challenge. Their mission? Transforming open innovation projects into powerful real-world services for real organisations and companies.
 
 The osoc team provides the students with training, network and necessary support. We encourage a setting in which partners, civic technologists, students, coaches and organisers intersect, collaborate and start prototyping the future.

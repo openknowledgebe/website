@@ -65,11 +65,10 @@ const Home = ({ entry, getAsset, fieldsMetaData, boundGetAsset, config, isLoadin
         const date = new Date(storyData.date);
         storyData.slug = `${window.location.protocol}//${
           window.location.host
-        }/${date.getFullYear()}/${(date.getMonth() + 1)
+        }/${date.getFullYear()}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date
+          .getDate()
           .toString()
-          .padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${
-          story.split(/-(.+)/)[1].split('/')[0]
-        }`;
+          .padStart(2, '0')}/${story.split(/-(.+)/)[1].split('/')[0]}`;
         storyData.date = storyData.date.toLocaleDateString('en', {
           year: 'numeric',
           month: 'long',

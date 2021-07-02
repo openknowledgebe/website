@@ -17,9 +17,15 @@ const Stories = ({ data }) => {
         <Title as="h1">{seo.title}</Title>
         <StoryCardContainer>
           {stories &&
-            stories.map(({ node: { frontmatter: { title, date }, excerpt, fields: { slug } } }) => (
-              <StoryCard key={slug} title={title} date={date} excerpt={excerpt} to={slug} />
-            ))}
+            stories.map(
+              ({
+                node: {
+                  frontmatter: { title, date },
+                  excerpt,
+                  fields: { slug }
+                }
+              }) => <StoryCard key={slug} title={title} date={date} excerpt={excerpt} to={slug} />
+            )}
         </StoryCardContainer>
       </section>
     </Layout>
