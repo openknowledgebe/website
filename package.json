@@ -8,7 +8,7 @@
     "@fontsource/work-sans": "^4.4.5",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^2.32.13",
-    "gatsby-image": "^3.8.0",
+    "gatsby-image": "^3.10.0",
     "gatsby-plugin-feed": "^2.13.1",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-netlify-cms": "^4.10.1",
