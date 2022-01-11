@@ -25,7 +25,8 @@ activities:
 stories:
   featured_image:
     image: 49690588841_628ae61daa_o.jpg
-  featured_stories: []
+  featured_stories:
+    - 20220111-open-knowledge-belgium-is-looking-for-a-business-developer-project-manager-f-m-x/index
   cta:
     label: Discover all stories
     to: /stories
