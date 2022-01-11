@@ -19,13 +19,12 @@ volunteers:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
 team:
-  - name: Lien Arits
-    task: General Coordinator HackYourFuture Belgium
+  - name: "Lizhen Xu "
+    task: General Manager HYF Digitalents
+    picture: lizhen-photo.jpg
     contact_info:
-      email: lien@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/lien-arits-88722683/
-      twitter: https://twitter.com/LienArits
-    picture: lienarits.jpg
+      email: lizhen@hackyourfuture.be
+      linkedin: https://www.linkedin.com/in/lizhenxu/
   - name: Evan Cole
     task: Educational Coordinator HackYourFuture Belgium
     contact_info:
