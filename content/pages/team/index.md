@@ -26,7 +26,7 @@ team:
       linkedin: https://www.linkedin.com/in/gelilaali/?originalSubdomain=be
     picture: gelila.jpg
   - name: Evan Cole
-    task: Educational Coordinator HackYourFuture Belgium
+    task: Instructional Designer HYF Digitalents
     contact_info:
       email: evan@hackyourfuture.be
       linkedin: https://www.linkedin.com/in/evan-cole/
@@ -37,9 +37,9 @@ team:
     contact_info:
       linkedin: https://www.linkedin.com/in/yoshi-malaise/?originalSubdomain=be
       email: yoshi@hackyourfuture.be
-    picture: yoshi.jpg
+    picture: yoshi.png
   - name: Astrid Steenackers
-    task: General Coordinator
+    task: General Manager Open Knowledge Belgium
     contact_info:
       email: astrid@openknowledge.be
       twitter: https://twitter.com/SteenackersA
