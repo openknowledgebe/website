@@ -30,7 +30,7 @@ team:
     contact_info:
       email: gelila@hackyourfuture.be
       linkedin: https://www.linkedin.com/in/gelilaali/?originalSubdomain=be
-    picture: mask-group-1-.png
+    picture: gelila.jpg
   - name: Evan Cole
     task: Educational Coordinator HackYourFuture Belgium
     contact_info:
