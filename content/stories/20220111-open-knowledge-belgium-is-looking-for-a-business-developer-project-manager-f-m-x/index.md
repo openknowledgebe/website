@@ -3,13 +3,12 @@ date: 2022-01-11T10:03:56.925Z
 author: Astrid Steenackers
 title: Open Knowledge Belgium is looking for a Business Developer & Project
   Manager (F/M/X)
-excerpt: "*We are looking for a business development coordinator. We need
-  \\*you\\* if you have a passion for everything open, and can infect other
-  people with your enthusiasm. Our organization consists of plenty of people
-  with ideas, and we know there are many partners out there that like to support
-  or work with us. We need you to turn those ideas into projects. You know how
-  to open doors, get the right people together and keep them on the right
-  track.*"
+excerpt: We are looking for a business development coordinator. We need *you* if
+  you have a passion for everything open, and can infect other people with your
+  enthusiasm. Our organization consists of plenty of people with ideas, and we
+  know there are many partners out there that like to support or work with us.
+  We need you to turn those ideas into projects. You know how to open doors, get
+  the right people together and keep them on the right track.
 tags:
   - job
   - community
