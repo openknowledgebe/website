@@ -19,12 +19,6 @@ volunteers:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
 team:
-  - name: Yoshi Malaise
-    task: Educational coordinator and researcher HYF Digitalents
-    contact_info:
-      linkedin: https://www.linkedin.com/in/yoshi-malaise/?originalSubdomain=be
-      email: yoshi@hackyourfuture.be
-    picture: yoshi.jpg
   - name: Gelila Ali
     task: Educational officer HYF Digitalents
     contact_info:
@@ -38,6 +32,12 @@ team:
       linkedin: https://www.linkedin.com/in/evan-cole/
       twitter: https://twitter.com/HackYFutureBE/
     picture: evancole.png
+  - name: Yoshi Malaise
+    task: Educational coordinator and researcher HYF Digitalents
+    contact_info:
+      linkedin: https://www.linkedin.com/in/yoshi-malaise/?originalSubdomain=be
+      email: yoshi@hackyourfuture.be
+    picture: yoshi.jpg
   - name: Astrid Steenackers
     task: General Coordinator
     contact_info:
