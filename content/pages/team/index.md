@@ -19,13 +19,12 @@ volunteers:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
 team:
-  - name: Lien Arits
-    task: General Coordinator HackYourFuture Belgium
+  - name: Gelila Ali
+    task: Educational officer HYF Digitalents
     contact_info:
-      email: lien@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/lien-arits-88722683/
-      twitter: https://twitter.com/LienArits
-    picture: lienarits.jpg
+      email: gelila@hackyourfuture.be
+      linkedin: https://www.linkedin.com/in/gelilaali/?originalSubdomain=be
+    picture: gelila.jpg
   - name: Evan Cole
     task: Educational Coordinator HackYourFuture Belgium
     contact_info:
@@ -33,6 +32,12 @@ team:
       linkedin: https://www.linkedin.com/in/evan-cole/
       twitter: https://twitter.com/HackYFutureBE/
     picture: evancole.png
+  - name: Yoshi Malaise
+    task: Educational coordinator and researcher HYF Digitalents
+    contact_info:
+      linkedin: https://www.linkedin.com/in/yoshi-malaise/?originalSubdomain=be
+      email: yoshi@hackyourfuture.be
+    picture: yoshi.jpg
   - name: Astrid Steenackers
     task: General Coordinator
     contact_info:
@@ -40,6 +45,12 @@ team:
       twitter: https://twitter.com/SteenackersA
       linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
     picture: astridsteenackers.jpg
+  - name: "Lizhen Xu "
+    task: General Manager HYF Digitalents
+    picture: lizhen-photo.jpg
+    contact_info:
+      email: lizhen@hackyourfuture.be
+      linkedin: https://www.linkedin.com/in/lizhenxu/
 directors:
   - name: Jonathan Beliën
     task: Activity lead
