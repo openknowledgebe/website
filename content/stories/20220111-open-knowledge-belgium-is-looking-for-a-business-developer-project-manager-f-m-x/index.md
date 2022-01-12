@@ -80,7 +80,7 @@ tags:
 
 #### **Interested?**
 
-#### Send us your resume and motivation letter to astrid@openknowledge.be. The deadline is **Friday 4th February 2022 , 22:00 GMT+1.** Suitable candidates will be invited for a personal conversation
+#### Send your resume and motivation letter to astrid@openknowledge.be. The deadline is **Friday 4th February 2022 , 22:00 GMT+1.** Suitable candidates will be invited for a personal conversation
 
 #### Open Knowledge Belgium vzw/asbl does not and shall not discriminate on the basis of race, color, religion, gender, gender expression, age, national origin, disability, marital status and sexual orientation in any of its activities or operations. We are committed to providing an inclusive and welcoming environment for all members of our staff, volunteers, and partners
 
