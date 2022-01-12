@@ -18,7 +18,7 @@ tags:
 
 **As a grassroots organisation we consist of people, mainly volunteers, passionate about openness, using advocacy, research, technology and projects to unlock information, enabling people to use and share knowledge.**
 
-*We are looking for a business development coordinator. We need \*you\* if you have a passion for everything open, and can infect other people with your enthusiasm. Our organization consists of plenty of people with ideas, and we know there are many partners out there that like to support or work with us. We need you to turn those ideas into projects. You know how to open doors, get the right people together and keep them on the right track.*
+*We are looking for a business development coordinator. We need you if you have a passion for everything open, and can infect other people with your enthusiasm. Our organization consists of plenty of people with ideas, and we know there are many partners out there that like to support or work with us. We need you to turn those ideas into projects. You know how to open doors, get the right people together and keep them on the right track.*
 
 *You will be supported by our general manager who keeps the organization afloat. You will be their partner in daily operations, such as following up on projects, event organisation, communication & design.*
 
