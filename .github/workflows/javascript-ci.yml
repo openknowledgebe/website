@@ -1,4 +1,4 @@
-name: JavaScript CI
+name: Node.js CI
 
 on:
   push:
@@ -8,13 +8,11 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
+      fail-fast: false
       matrix:
         node-version: [16.x, 18.x]
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
