@@ -6,7 +6,7 @@
   "dependencies": {
     "@fontsource/chivo": "^4.5.7",
     "@fontsource/work-sans": "^4.5.7",
-    "babel-plugin-styled-components": "^1.13.2",
+    "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^2.13.1",
