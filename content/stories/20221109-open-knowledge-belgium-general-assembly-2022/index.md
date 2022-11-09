@@ -16,3 +16,5 @@ Members get to shape and vote on the direction the non-profit is going. The next
 
 How do you join?\
 Simply fill out this form before **November 25th**. There is an annual membership fee of 5€. Of course, observing is free.
+
+Join Open Knowledge Belgium now: <https://forms.gle/jLFJpKJJoAEPC5Yj9>
