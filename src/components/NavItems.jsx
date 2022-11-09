@@ -88,33 +88,35 @@ const Nav = styled.nav`
   }
 `;
 
-const NavItems = ({ isTop = false, className, isOpen, toggle, links }) => (
-  <>
-    {isTop && (
-      <Hamburger
-        className={`hamburger ${isOpen ? 'open' : ''}`}
-        type="button"
-        onClick={() => toggle()}
-      >
-        <span />
-      </Hamburger>
-    )}
-    <Nav className={`bold6 ${className}`} style={{ display: isOpen ? 'block' : '' }}>
-      <ul className="nav-items">
-        {links.map(link => (
-          <li key={link.to}>
-            <StyledLink
-              to={link.to}
-              activeClassName={isTop ? 'active underlined' : ''}
-              className="inline hoverable"
-            >
-              <span>{link.label}</span>
-            </StyledLink>
-          </li>
-        ))}
-      </ul>
-    </Nav>
-  </>
-);
+function NavItems({ isTop = false, className, isOpen, toggle, links }) {
+  return (
+    <>
+      {isTop && (
+        <Hamburger
+          className={`hamburger ${isOpen ? 'open' : ''}`}
+          type="button"
+          onClick={() => toggle()}
+        >
+          <span />
+        </Hamburger>
+      )}
+      <Nav className={`bold6 ${className}`} style={{ display: isOpen ? 'block' : '' }}>
+        <ul className="nav-items">
+          {links.map(link => (
+            <li key={link.to}>
+              <StyledLink
+                to={link.to}
+                activeClassName={isTop ? 'active underlined' : ''}
+                className="inline hoverable"
+              >
+                <span>{link.label}</span>
+              </StyledLink>
+            </li>
+          ))}
+        </ul>
+      </Nav>
+    </>
+  );
+}
 
 export default NavItems;

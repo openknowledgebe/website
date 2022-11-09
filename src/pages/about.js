@@ -24,17 +24,19 @@ export default function About({ data }) {
   );
 }
 
-export const AboutTemplate = ({ data, preview }) => (
-  <article>
-    <Header>
-      <Title as="h1">{data.seo?.title}</Title>
-    </Header>
+export function AboutTemplate({ data, preview }) {
+  return (
+    <article>
+      <Header>
+        <Title as="h1">{data.seo?.title}</Title>
+      </Header>
 
-    <Article>
-      {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
-    </Article>
-  </article>
-);
+      <Article>
+        {preview ? data.body : data.body && <div dangerouslySetInnerHTML={{ __html: data.body }} />}
+      </Article>
+    </article>
+  );
+}
 
 export const query = graphql`
   {

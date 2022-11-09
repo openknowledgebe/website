@@ -23,13 +23,15 @@ const StyledPinnedStory = styled.div`
   }
 `;
 
-const PinnedStory = ({ title, date, slug }) => (
-  <StyledPinnedStory>
-    <StyledLink to={slug} className="pinned-story-link">
-      {title}
-    </StyledLink>
-    <div className="story-date">{date}</div>
-  </StyledPinnedStory>
-);
+function PinnedStory({ title, date, slug }) {
+  return (
+    <StyledPinnedStory>
+      <StyledLink to={slug} className="pinned-story-link">
+        {title}
+      </StyledLink>
+      <div className="story-date">{date}</div>
+    </StyledPinnedStory>
+  );
+}
 
 export default PinnedStory;

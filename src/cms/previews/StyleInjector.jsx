@@ -4,7 +4,7 @@ import { StyleSheetManager } from 'styled-components';
 import { GlobalStyle } from '../../styles/globals';
 
 // Nasty workaround to make Styled Components work with the custom preview
-const StyleInjector = ({ children }) => {
+function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const StyleInjector = ({ children }) => {
       </StyleSheetManager>
     )
   );
-};
+}
 StyleInjector.propTypes = {
   children: PropTypes.node.isRequired
 };

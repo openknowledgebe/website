@@ -3,7 +3,7 @@ import React from 'react';
 import StyleInjector from './StyleInjector';
 import { HomeTemplate } from '../../pages/index';
 
-const Home = ({ entry, getAsset, fieldsMetaData, boundGetAsset, config, isLoadingAsset }) => {
+function Home({ entry, getAsset, fieldsMetaData, boundGetAsset, config, isLoadingAsset }) {
   if (isLoadingAsset) return <div>Loading...</div>;
   const { data } = entry.toJS();
 
@@ -83,6 +83,6 @@ const Home = ({ entry, getAsset, fieldsMetaData, boundGetAsset, config, isLoadin
       <HomeTemplate data={data} />
     </StyleInjector>
   );
-};
+}
 
 export default Home;

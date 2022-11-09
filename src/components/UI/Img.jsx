@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'gatsby-image';
 
-const Img = ({ image, imageStyle, alt, ...rest }) => {
+function Img({ image, imageStyle, alt, ...rest }) {
   let src = image;
   if (typeof image === 'object') {
     if (image.childImageSharp) {
@@ -20,6 +20,6 @@ const Img = ({ image, imageStyle, alt, ...rest }) => {
       {...rest}
     />
   );
-};
+}
 
 export default Img;

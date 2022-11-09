@@ -3,7 +3,7 @@ import React from 'react';
 import StyleInjector from './StyleInjector';
 import { AboutTemplate } from '../../pages/about';
 
-const About = ({ entry, widgetFor }) => {
+function About({ entry, widgetFor }) {
   const { data } = entry.toJS();
 
   data.body = widgetFor('body');
@@ -13,6 +13,6 @@ const About = ({ entry, widgetFor }) => {
       <AboutTemplate data={data} preview />
     </StyleInjector>
   );
-};
+}
 
 export default About;
