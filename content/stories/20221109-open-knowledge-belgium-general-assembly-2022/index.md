@@ -7,6 +7,7 @@ excerpt: The Belgian open data community is thriving, and we are inviting anyone
   official member!
 tags:
   - event
+  - general assembly
 ---
 **Open Knowledge Belgium is calling for members!**
 
