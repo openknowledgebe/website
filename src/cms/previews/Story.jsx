@@ -4,7 +4,7 @@ import StyleInjector from './StyleInjector';
 import { StoryTemplate } from '../../templates/Story';
 import { StoryCard } from '../../components/Story';
 
-const Story = ({ entry, widgetFor }) => {
+function Story({ entry, widgetFor }) {
   const { data } = entry.toJS();
 
   const excerpt = data.excerpt || data.body;
@@ -29,6 +29,6 @@ const Story = ({ entry, widgetFor }) => {
       </div>
     </StyleInjector>
   );
-};
+}
 
 export default Story;

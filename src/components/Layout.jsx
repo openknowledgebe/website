@@ -9,7 +9,7 @@ import '../styles/normalize.css';
 // custom CSS styles
 import { GlobalStyle } from '../styles/globals';
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   const { footerData, headerData } = useStaticQuery(graphql`
     query {
       footerData: allMarkdownRemark(filter: { fields: { collection: { eq: "footer" } } }) {
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
       </div>
     </>
   );
-};
+}
 
 export default Layout;
 

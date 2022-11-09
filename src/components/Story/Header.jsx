@@ -23,20 +23,22 @@ const Link = styled(StyledLink)`
   }
 `;
 
-const Header = ({ title, date, author, to }) => (
-  <header className="work-sans" style={{ padding: 0, marginBottom: '1rem' }}>
-    {to ? (
-      <Link to={to}>
+function Header({ title, date, author, to }) {
+  return (
+    <header className="work-sans" style={{ padding: 0, marginBottom: '1rem' }}>
+      {to ? (
+        <Link to={to}>
+          <Title>{title}</Title>
+        </Link>
+      ) : (
         <Title>{title}</Title>
-      </Link>
-    ) : (
-      <Title>{title}</Title>
-    )}
-    <Meta>
-      {date && <Date date={date} />}
-      {author && <address>{author}</address>}
-    </Meta>
-  </header>
-);
+      )}
+      <Meta>
+        {date && <Date date={date} />}
+        {author && <address>{author}</address>}
+      </Meta>
+    </header>
+  );
+}
 
 export default Header;

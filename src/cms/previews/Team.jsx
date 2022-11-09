@@ -9,7 +9,7 @@ const init = {
   job: {}
 };
 
-const Team = ({ entry, getAsset }) => {
+function Team({ entry, getAsset }) {
   const { data } = entry.toJS();
 
   if (data.directors) {
@@ -43,6 +43,6 @@ const Team = ({ entry, getAsset }) => {
       <TeamTemplate data={merged} />
     </StyleInjector>
   );
-};
+}
 
 export default Team;

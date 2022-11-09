@@ -203,101 +203,103 @@ export default function Activity({ data }) {
   );
 }
 
-export const ActivityTemplate = ({ data }) => (
-  <>
-    <ActivityHeader>
-      <div className="banner-image">
-        <Img image={data.featured_image.image} alt={data.featured_image.alt} />
-      </div>
-      <div className="container">
-        <MainSection>
-          <div className="heading gap">
-            <Title as="h1">{data.name}</Title>
-            {data.tags && data.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
-          </div>
-          {data.catchphrase && <h3>{data.catchphrase}</h3>}
-          <Markdown options={{ forceBlock: true }}>{data.body}</Markdown>
-        </MainSection>
-        <ContactBox>
-          <h3>Contact us</h3>
-          <div className="content">
-            <div className="arrow">
-              <img src={btmFacingArrow} role="presentation" alt="" />
+export function ActivityTemplate({ data }) {
+  return (
+    <>
+      <ActivityHeader>
+        <div className="banner-image">
+          <Img image={data.featured_image.image} alt={data.featured_image.alt} />
+        </div>
+        <div className="container">
+          <MainSection>
+            <div className="heading gap">
+              <Title as="h1">{data.name}</Title>
+              {data.tags && data.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
             </div>
-            <address>
-              {data.contact_info.website && (
+            {data.catchphrase && <h3>{data.catchphrase}</h3>}
+            <Markdown options={{ forceBlock: true }}>{data.body}</Markdown>
+          </MainSection>
+          <ContactBox>
+            <h3>Contact us</h3>
+            <div className="content">
+              <div className="arrow">
+                <img src={btmFacingArrow} role="presentation" alt="" />
+              </div>
+              <address>
+                {data.contact_info.website && (
+                  <div>
+                    <span className="work-sans bold6">Website</span>
+                    <br />
+                    <ActivityLink href={data.contact_info.website}>
+                      {data.contact_info.website}
+                    </ActivityLink>
+                  </div>
+                )}
                 <div>
-                  <span className="work-sans bold6">Website</span>
+                  <span className="work-sans bold6">Email</span>
                   <br />
-                  <ActivityLink href={data.contact_info.website}>
-                    {data.contact_info.website}
+                  <ActivityLink href={`mailto:${data.contact_info.email}`}>
+                    {data.contact_info.email}
                   </ActivityLink>
                 </div>
-              )}
-              <div>
-                <span className="work-sans bold6">Email</span>
-                <br />
-                <ActivityLink href={`mailto:${data.contact_info.email}`}>
-                  {data.contact_info.email}
-                </ActivityLink>
-              </div>
-              {data.contact_info.socials && (
-                <div className="flex socials">
-                  {data.contact_info.socials.github && (
-                    <a
-                      href={data.contact_info.socials.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={githubBlackIcon} alt="Github" />
-                    </a>
-                  )}
+                {data.contact_info.socials && (
+                  <div className="flex socials">
+                    {data.contact_info.socials.github && (
+                      <a
+                        href={data.contact_info.socials.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={githubBlackIcon} alt="Github" />
+                      </a>
+                    )}
 
-                  {data.contact_info.socials.linkedin && (
-                    <a
-                      href={data.contact_info.socials.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={linkedinBlackIcon} alt="Linkedin" />
-                    </a>
-                  )}
+                    {data.contact_info.socials.linkedin && (
+                      <a
+                        href={data.contact_info.socials.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={linkedinBlackIcon} alt="Linkedin" />
+                      </a>
+                    )}
 
-                  {data.contact_info.socials.twitter && (
-                    <a
-                      href={data.contact_info.socials.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={twitterBlackIcon} alt="Linkedin" />
-                    </a>
-                  )}
+                    {data.contact_info.socials.twitter && (
+                      <a
+                        href={data.contact_info.socials.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={twitterBlackIcon} alt="Linkedin" />
+                      </a>
+                    )}
 
-                  {data.contact_info.socials.facebook && (
-                    <a
-                      href={data.contact_info.socials.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={facebookBlackIcon} alt="Linkedin" />
-                    </a>
-                  )}
-                </div>
-              )}
-            </address>
-          </div>
-        </ContactBox>
-      </div>
-    </ActivityHeader>
-    {data.members && data.members.length > 0 && (
-      <Members>
-        {data.members.map(({ name, task, picture, contact_info: socials, id }) => (
-          <Person key={id} name={name} task={task} socials={socials} picture={picture} />
-        ))}
-      </Members>
-    )}
-  </>
-);
+                    {data.contact_info.socials.facebook && (
+                      <a
+                        href={data.contact_info.socials.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={facebookBlackIcon} alt="Linkedin" />
+                      </a>
+                    )}
+                  </div>
+                )}
+              </address>
+            </div>
+          </ContactBox>
+        </div>
+      </ActivityHeader>
+      {data.members && data.members.length > 0 && (
+        <Members>
+          {data.members.map(({ name, task, picture, contact_info: socials, id }) => (
+            <Person key={id} name={name} task={task} socials={socials} picture={picture} />
+          ))}
+        </Members>
+      )}
+    </>
+  );
+}
 
 export const pageQuery = graphql`
   query ($slug: String!) {

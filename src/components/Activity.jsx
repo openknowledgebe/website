@@ -62,7 +62,7 @@ const ActivityLinks = styled.div`
   }
 `;
 
-const Activity = ({ name, logo, color, tags, to }) => {
+function Activity({ name, logo, color, tags, to }) {
   const [hovering, setHovering] = useState(false);
   const defaultColor = 'var(--bg-light)';
   return (
@@ -96,6 +96,6 @@ const Activity = ({ name, logo, color, tags, to }) => {
       </ActivityLinks>
     </ActivityCard>
   );
-};
+}
 
 export default Activity;

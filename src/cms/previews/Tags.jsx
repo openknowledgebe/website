@@ -8,7 +8,7 @@ const TagExt = styled(Tag)`
   background-color: #f9f6ff;
 `;
 
-const Tags = ({ entry }) => {
+function Tags({ entry }) {
   const { data } = entry.toJS();
   return (
     <StyleInjector>
@@ -19,6 +19,6 @@ const Tags = ({ entry }) => {
       ))}
     </StyleInjector>
   );
-};
+}
 
 export default Tags;

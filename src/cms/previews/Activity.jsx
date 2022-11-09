@@ -11,7 +11,7 @@ const init = {
   body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra nisl ante, quis mattis magna sagittis nec. Morbi luctus nisl a nisi tincidunt interdum. Duis at pharetra purus. Etiam imperdiet, nunc id ullamcorper hendrerit, tellus felis ultricies tortor, vitae hendrerit augue mauris eu velit.'
 };
 
-const Activity = ({ entry, getAsset }) => {
+function Activity({ entry, getAsset }) {
   const { data } = entry.toJS();
 
   data.logo = getAsset(entry.getIn(['data', 'logo'])).toString();
@@ -45,6 +45,6 @@ const Activity = ({ entry, getAsset }) => {
       </div>
     </StyleInjector>
   );
-};
+}
 
 export default Activity;

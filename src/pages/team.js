@@ -138,95 +138,97 @@ export default function Team({ data }) {
   );
 }
 
-export const TeamTemplate = ({ data }) => (
-  <>
-    <section>
-      <Title as="h1">{data.title}</Title>
-      <Values>
-        <h3>{data?.values_section?.heading}</h3>
-        <div className="values gap">
-          {data?.values_section?.values.map(tag => (
-            <Tag css="background-color: #f9f6ff" key={tag}>
-              {tag}
-            </Tag>
-          ))}
-        </div>
-      </Values>
-      <Volunteers>
-        <div className="content">
-          <h3>{data?.volunteers?.heading}</h3>
-          <div className="p-medium">
+export function TeamTemplate({ data }) {
+  return (
+    <>
+      <section>
+        <Title as="h1">{data.title}</Title>
+        <Values>
+          <h3>{data?.values_section?.heading}</h3>
+          <div className="values gap">
+            {data?.values_section?.values.map(tag => (
+              <Tag css="background-color: #f9f6ff" key={tag}>
+                {tag}
+              </Tag>
+            ))}
+          </div>
+        </Values>
+        <Volunteers>
+          <div className="content">
+            <h3>{data?.volunteers?.heading}</h3>
+            <div className="p-medium">
+              {data?.volunteers.body && (
+                <Markdown options={{ forceBlock: true }}>{data.volunteers.body}</Markdown>
+              )}
+            </div>
+          </div>
+          <div className="img">
+            <Img
+              image={data?.volunteers?.featured_image.image}
+              alt={data?.volunteers?.featured_image.alt}
+            />
+          </div>
+          <div className="p-mobile">
             {data?.volunteers.body && (
               <Markdown options={{ forceBlock: true }}>{data.volunteers.body}</Markdown>
             )}
           </div>
-        </div>
-        <div className="img">
-          <Img
-            image={data?.volunteers?.featured_image.image}
-            alt={data?.volunteers?.featured_image.alt}
-          />
-        </div>
-        <div className="p-mobile">
-          {data?.volunteers.body && (
-            <Markdown options={{ forceBlock: true }}>{data.volunteers.body}</Markdown>
-          )}
-        </div>
-      </Volunteers>
-    </section>
-    {data?.team && (
-      <Members>
-        <h3>Team</h3>
-        <div className="members">
-          {data.team.map(({ name, task, contact_info: socials, picture }) => (
-            <Person
-              key={socials.email}
-              task={task}
-              socials={socials}
-              name={name}
-              picture={picture}
-            />
-          ))}
-        </div>
-      </Members>
-    )}
-    {data?.directors && (
-      <Members>
-        <h3>Board of directors</h3>
-        <div className="members">
-          {data.directors.map(({ name, task, contact_info: socials, picture }) => (
-            <Person
-              key={socials.email}
-              task={task}
-              socials={socials}
-              name={name}
-              picture={picture}
-            />
-          ))}
-        </div>
-      </Members>
-    )}
-
-    {data.opportunities && (
-      <JobOpportunies id="opportunities">
-        <h3>{data.opportunities.heading}</h3>
-        {data.jobs ? (
-          <StoryCardContainer className="jobs">
-            {data.jobs.map(({ title, date, slug, excerpt }) => (
-              <StoryCard key={slug} title={title} excerpt={excerpt} date={date} to={slug} />
+        </Volunteers>
+      </section>
+      {data?.team && (
+        <Members>
+          <h3>Team</h3>
+          <div className="members">
+            {data.team.map(({ name, task, contact_info: socials, picture }) => (
+              <Person
+                key={socials.email}
+                task={task}
+                socials={socials}
+                name={name}
+                picture={picture}
+              />
             ))}
-          </StoryCardContainer>
-        ) : (
-          data.opportunities.default_text && (
-            <div className="default">
-              <Markdown>{data.opportunities.default_text}</Markdown>
-            </div>
-          )
-        )}
-      </JobOpportunies>
-    )}
-  </>
-);
+          </div>
+        </Members>
+      )}
+      {data?.directors && (
+        <Members>
+          <h3>Board of directors</h3>
+          <div className="members">
+            {data.directors.map(({ name, task, contact_info: socials, picture }) => (
+              <Person
+                key={socials.email}
+                task={task}
+                socials={socials}
+                name={name}
+                picture={picture}
+              />
+            ))}
+          </div>
+        </Members>
+      )}
+
+      {data.opportunities && (
+        <JobOpportunies id="opportunities">
+          <h3>{data.opportunities.heading}</h3>
+          {data.jobs ? (
+            <StoryCardContainer className="jobs">
+              {data.jobs.map(({ title, date, slug, excerpt }) => (
+                <StoryCard key={slug} title={title} excerpt={excerpt} date={date} to={slug} />
+              ))}
+            </StoryCardContainer>
+          ) : (
+            data.opportunities.default_text && (
+              <div className="default">
+                <Markdown>{data.opportunities.default_text}</Markdown>
+              </div>
+            )
+          )}
+        </JobOpportunies>
+      )}
+    </>
+  );
+}
 
 export const pageQuery = graphql`
   query {

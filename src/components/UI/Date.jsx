@@ -5,6 +5,8 @@ const StyledDate = styled.time`
   color: var(--color-secondary);
 `;
 
-const Date = ({ date }) => <StyledDate dateTime={date}>{date}</StyledDate>;
+function Date({ date }) {
+  return <StyledDate dateTime={date}>{date}</StyledDate>;
+}
 
 export default Date;

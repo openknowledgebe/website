@@ -60,7 +60,7 @@ const StyledHeader = styled.header`
   }
 `;
 
-const Header = ({ data }) => {
+function Header({ data }) {
   const [isOpen, setOpen] = useState();
   const callbackMenuToggled = () => {
     setOpen(!isOpen);
@@ -82,6 +82,6 @@ const Header = ({ data }) => {
       />
     </StyledHeader>
   );
-};
+}
 
 export default Header;

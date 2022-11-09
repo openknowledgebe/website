@@ -41,41 +41,43 @@ const PersonFooter = styled.div`
   }
 `;
 
-const Person = ({ name, picture, socials, task }) => (
-  <StyledPerson>
-    <div className="img">
-      {picture ? (
-        <Img alt={name} image={picture} />
-      ) : (
-        <Img role="presentation" alt="" src={headshotIcon} />
-      )}
-    </div>
-    <PersonFooter>
-      <div>
-        <h4>{name}</h4>
-        {task && <p>{task}</p>}
+function Person({ name, picture, socials, task }) {
+  return (
+    <StyledPerson>
+      <div className="img">
+        {picture ? (
+          <Img alt={name} image={picture} />
+        ) : (
+          <Img role="presentation" alt="" src={headshotIcon} />
+        )}
       </div>
-      {socials && (
-        <div className="socials flex">
-          {socials.email && (
-            <a href={`mailto:${socials.email}`}>
-              <img src={mailIcon} alt="Email address" />
-            </a>
-          )}
-          {socials.linkedin && (
-            <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
-              <img src={linkedinBlackIcon} alt="LinkedIn" />
-            </a>
-          )}
-          {socials.twitter && (
-            <a href={socials.twitter} target="_blank" rel="noopener noreferrer">
-              <img src={twitterBlackIcon} alt="twitter" />
-            </a>
-          )}
+      <PersonFooter>
+        <div>
+          <h4>{name}</h4>
+          {task && <p>{task}</p>}
         </div>
-      )}
-    </PersonFooter>
-  </StyledPerson>
-);
+        {socials && (
+          <div className="socials flex">
+            {socials.email && (
+              <a href={`mailto:${socials.email}`}>
+                <img src={mailIcon} alt="Email address" />
+              </a>
+            )}
+            {socials.linkedin && (
+              <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
+                <img src={linkedinBlackIcon} alt="LinkedIn" />
+              </a>
+            )}
+            {socials.twitter && (
+              <a href={socials.twitter} target="_blank" rel="noopener noreferrer">
+                <img src={twitterBlackIcon} alt="twitter" />
+              </a>
+            )}
+          </div>
+        )}
+      </PersonFooter>
+    </StyledPerson>
+  );
+}
 
 export default Person;

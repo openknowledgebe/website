@@ -33,7 +33,7 @@ const ActivitiesContainer = styled.div`
   }
 `;
 
-const Activities = ({ data }) => {
+function Activities({ data }) {
   const activities = data.activities.edges;
   const { seo } = data.page.frontmatter;
 
@@ -56,7 +56,7 @@ const Activities = ({ data }) => {
       </section>
     </Layout>
   );
-};
+}
 
 export default Activities;
 

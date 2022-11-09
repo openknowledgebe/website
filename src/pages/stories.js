@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import { StoryCard, StoryCardContainer } from '../components/Story';
 import { Title } from '../components/UI';
 
-const Stories = ({ data }) => {
+function Stories({ data }) {
   const stories = data.stories.edges;
 
   const { seo } = data.page.frontmatter;
@@ -30,7 +30,7 @@ const Stories = ({ data }) => {
       </section>
     </Layout>
   );
-};
+}
 
 export default Stories;
 
