@@ -19,25 +19,6 @@ volunteers:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
 team:
-  - name: Gelila Ali
-    task: Educational officer HYF Digitalents
-    contact_info:
-      email: gelila@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/gelilaali/?originalSubdomain=be
-    picture: gelila.jpg
-  - name: Evan Cole
-    task: Instructional Designer HYF Digitalents
-    contact_info:
-      email: evan@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/evan-cole/
-      twitter: https://twitter.com/HackYFutureBE/
-    picture: evancole.png
-  - name: Yoshi Malaise
-    task: Educational coordinator and researcher HYF Digitalents
-    contact_info:
-      linkedin: https://www.linkedin.com/in/yoshi-malaise/?originalSubdomain=be
-      email: yoshi@hackyourfuture.be
-    picture: yoshi.png
   - name: Astrid Steenackers
     task: General Manager Open Knowledge Belgium
     contact_info:
@@ -45,13 +26,28 @@ team:
       twitter: https://twitter.com/SteenackersA
       linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
     picture: astridsteenackers.jpg
-  - name: "Lizhen Xu "
-    task: General Manager HYF Digitalents
-    picture: lizhen-photo.jpg
-    contact_info:
-      email: lizhen@hackyourfuture.be
-      linkedin: https://www.linkedin.com/in/lizhenxu/
 directors:
+  - name: Joran Van Daele
+    picture: joran.jpg
+    contact_info:
+      email: joran@openknowledge.be
+      linkedin: https://www.linkedin.com/in/joran-van-daele-baab857b/
+  - name: Inti Valderas Caro
+    picture: inti.jpg
+    contact_info:
+      email: inti@openknowledge.be
+      linkedin: https://www.linkedin.com/in/inti-valderas-caro/
+  - name: Cyrille Mathieu
+    picture: cyrille.jpg
+    contact_info:
+      email: cyrille@openknowledge.be
+      linkedin: https://www.linkedin.com/in/cyrille-mathieu/
+  - name: Eveline Vlassenroot
+    contact_info:
+      email: eveline@openknowledge.be
+      twitter: https://twitter.com/EvelineVlas
+      linkedin: https://www.linkedin.com/in/eveline-vlassenroot/
+    picture: eveline.jpg
   - name: Jonathan Beliën
     task: Activity lead
     contact_info:
@@ -66,13 +62,6 @@ directors:
       linkedin: https://be.linkedin.com/in/rafbuyle
       twitter: https://twitter.com/rafke
     picture: rafbuyle.jpg
-  - name: Miet Claes
-    task: Chairwoman
-    contact_info:
-      email: miet@openknowledge.be
-      linkedin: https://www.linkedin.com/in/mietcls/
-      twitter: https://twitter.com/Choisissez
-    picture: mietclaes.jpg
   - name: Pieter Colpaert
     contact_info:
       email: pieter@openknowledge.be
@@ -80,13 +69,6 @@ directors:
       twitter: https://twitter.com/pietercolpaert
     task: Activity Lead
     picture: pietercolpaert.jpg
-  - name: Gwen Franck
-    contact_info:
-      email: gwen@openknowledge.be
-      linkedin: https://www.linkedin.com/in/gwenfranck/
-      twitter: https://twitter.com/g_fra
-    task: Policy Advisor
-    picture: gwenfranck.jpg
   - name: Bert Jehoul
     contact_info:
       email: bert@openknowledge.be
@@ -94,13 +76,6 @@ directors:
       linkedin: https://www.linkedin.com/in/bertjehoul/
     picture: bertjehoul.jpg
     task: Treasurer
-  - contact_info:
-      email: toon.nelissen@openknowledge.be
-      linkedin: https://www.linkedin.com/in/toonnelissen/
-      twitter: https://twitter.com/ToonNelissen
-    name: Toon Nelissen
-    task: Treasurer
-    picture: toonnelissen.png
   - name: Joost Schouppe
     contact_info:
       email: joost@openknowledge.be
@@ -115,26 +90,12 @@ directors:
       twitter: https://twitter.com/tthoeye
     task: Secretary
     picture: thimothoeye.jpg
-  - name: Dries Vanacker
-    contact_info:
-      email: dries.vanacker@openknowledge.be
-      twitter: https://twitter.com/drievana
-      linkedin: https://www.linkedin.com/in/dries-vanacker/
-    picture: driesvanacker.jpg
-    task: Human Capital Lead
   - name: Toon Vanagt
     contact_info:
       twitter: https://twitter.com/toon
       linkedin: https://be.linkedin.com/in/toonvanagt
       email: toon@openknowledge.be
     picture: toonvanagt.png
-  - name: Mathias Van Compernolle
-    contact_info:
-      email: mathias@openknowledge.be
-      linkedin: https://www.linkedin.com/in/mathias-van-compernolle-b0a6b011/
-      twitter: https://twitter.com/mvcomper
-    task: Secretary
-    picture: mathiasvancompernolle.jpg
 opportunities:
   heading: Opportunities
   default_text: We don't have any career opportunities at the moment but you can
