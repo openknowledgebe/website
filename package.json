@@ -7,7 +7,7 @@
     "@fontsource/chivo": "^4.5.10",
     "@fontsource/work-sans": "^4.5.12",
     "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^2.32.13",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^2.13.1",
     "gatsby-plugin-manifest": "^2.12.1",
