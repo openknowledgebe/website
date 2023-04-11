@@ -18,21 +18,8 @@ volunteers:
   featured_image:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
-team:
-  - name: Astrid Steenackers
-    task: General Manager Open Knowledge Belgium
-    contact_info:
-      email: astrid@openknowledge.be
-      twitter: https://twitter.com/SteenackersA
-      linkedin: https://www.linkedin.com/in/astrid-steenackers-96105195/
-    picture: astridsteenackers.jpg
+team: []
 directors:
-  - name: Eveline Vlassenroot
-    contact_info:
-      email: eveline@openknowledge.be
-      twitter: https://twitter.com/EvelineVlas
-      linkedin: https://www.linkedin.com/in/eveline-vlassenroot/
-    picture: eveline.jpg
   - name: Cyrille Mathieu
     picture: cyrille.jpg
     contact_info:
