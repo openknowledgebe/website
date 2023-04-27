@@ -3,8 +3,8 @@ contact:
   heading: Contact
   contact_info: |-
     Open knowledge Belgium VZW / asbl  
-    Cantersteen 12  
-    1000 Brussels  
+    Witte Patersstraat / Rue des Pères Blancs 4
+    1040 Etterbeek (Brussels)
     BE 0845 419 930  
     [info@openknowledge.be](mailto:info@openknowledge.be)
 socials:
