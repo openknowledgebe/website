@@ -20,28 +20,6 @@ volunteers:
     alt: Open Belgium volunteers
 team: []
 directors:
-  - name: Cyrille Mathieu
-    picture: cyrille.jpg
-    contact_info:
-      email: cyrille@openknowledge.be
-      linkedin: https://www.linkedin.com/in/cyrille-mathieu/
-  - name: Inti Valderas Caro
-    picture: inti.jpg
-    contact_info:
-      email: inti@openknowledge.be
-      linkedin: https://www.linkedin.com/in/inti-valderas-caro/
-  - name: Joran Van Daele
-    picture: joran.jpg
-    contact_info:
-      email: joran@openknowledge.be
-      linkedin: https://www.linkedin.com/in/joran-van-daele-baab857b/
-  - name: Jonathan Beliën
-    task: ""
-    contact_info:
-      email: jonathan@openknowledge.be
-      twitter: https://twitter.com/jbelien
-      linkedin: https://www.linkedin.com/in/jbelien/
-    picture: jonathanbelien.jpg
   - name: Pieter Colpaert
     contact_info:
       email: pieter@openknowledge.be
