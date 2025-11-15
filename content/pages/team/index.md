@@ -20,6 +20,16 @@ volunteers:
     alt: Open Belgium volunteers
 team: []
 directors:
+  - name: Lenn In't Ven
+    task: Board member
+    contact_info:
+      email: lenn.intven@openknowledge.be
+  - name: Jodi De Loof
+    task: Board member
+    picture: jodi_de_loof.jpg
+    contact_info:
+      email: jodi.deloof@openknowledge.be
+      linkedin: https://www.linkedin.com/in/jodideloof/
   - name: Klaus Dillen
     task: Chairman
     picture: 1585911706800.jpeg
