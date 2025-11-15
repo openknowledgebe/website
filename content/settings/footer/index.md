@@ -2,10 +2,14 @@
 contact:
   heading: Contact
   contact_info: |-
-    Open knowledge Belgium VZW / asbl  
-    Witte Patersstraat / Rue des Pères Blancs 4  
-    1040 Etterbeek (Brussels)  
-    BE 0845 419 930  
+    Open knowledge Belgium VZW
+
+    Kempische steenweg 303/48
+
+    3﻿500 Hasselt
+
+    BE 0845 419 930[](mailto:info@openknowledge.be)
+
     [info@openknowledge.be](mailto:info@openknowledge.be)
 socials:
   heading: Online & social channels
