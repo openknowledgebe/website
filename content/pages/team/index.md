@@ -19,7 +19,13 @@ volunteers:
     image: openbelgium.jpg
     alt: Open Belgium volunteers
 team: []
-directors: []
+directors:
+  - name: Inti Valderas Caro
+    task: Board member
+    picture: inti.jpg
+    contact_info:
+      email: inti.valderascaro@openknowledge.be
+      linkedin: https://www.linkedin.com/in/inti-valderas-caro/
 opportunities:
   heading: Opportunities
   default_text: We don't have any career opportunities at the moment but you can
