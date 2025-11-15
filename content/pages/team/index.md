@@ -20,6 +20,12 @@ volunteers:
     alt: Open Belgium volunteers
 team: []
 directors:
+  - name: Klaus Dillen
+    task: Chairman
+    picture: 1585911706800.jpeg
+    contact_info:
+      email: klaus.dillen@openknowledge.be
+      linkedin: https://www.linkedin.com/in/klaus-d-44383732/
   - name: Inti Valderas Caro
     task: Board member
     picture: inti.jpg
